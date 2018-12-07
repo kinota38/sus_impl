@@ -15,17 +15,43 @@
      * Get an `Html` object by calling the built-in Play welcome
      * template and passing a `String` message.
      *@
-    <div class="show-login-btn">
-        <i class="fas fa-sign-in-alt"></i>
-        Show Login Form
+    <div class="eyes">
+        <div id="eye">
+            <div class="ball"></div>
+        </div>
+
+        <div id="eye">
+            <div class="ball"></div>
+        </div>
+    </div>
+    <div class="show-btn">
+        <div class="show-login-btn">
+            <i class="fas fa-sign-in-alt"></i>
+            Show Login Form
+        </div>
+        <div class="show-sign-up-btn">
+            <i class="fas fa-sign-in-alt"></i>
+            Show Sign Up Form
+        </div>
     </div>
     <div class="login-box">
         <div class="hide-login-btn"><i class="fas fa-times"></i></div>
-        <form class="login-form" action="login.html" method="post">
-            <h1>@message</h1>
+        <form class="login-form" action="/section" method="post">
+            <h1>Login</h1>
             <input class="txtb" type="text" name="" placeholder="Username">
             <input class="txtb" type="password" name="" placeholder="Password">
             <input class="login-btn" type="submit" name="" value="Login">
+            @helper.CSRF.formField
+        </form>
+    </div>
+    <div class="sign-up-box">
+        <div class="hide-sign-up-btn"><i class="fas fa-times"></i></div>
+        <form class="sign-up-form" action="/section" method="post">
+            <h1>Sign up</h1>
+            <input class="txtb" type="text" name="" placeholder="Username">
+            <input class="txtb" type="password" name="" placeholder="Password">
+            <input class="sign-up-btn" type="submit" name="" value="Sign up">
+            @helper.CSRF.formField
         </form>
     </div>
 }

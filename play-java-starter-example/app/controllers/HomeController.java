@@ -3,6 +3,10 @@ package controllers;
 import play.mvc.*;
 
 import views.html.*;
+import views.html.section.*;
+import views.html.section.grades.*;
+
+import java.util.Map;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -18,6 +22,15 @@ public class HomeController extends Controller {
      */
     public Result index() {
         return ok(index.render("Welcome guys!"));
+    }
+
+    public Result login() {
+        Map<String, String[]> form = request().body().asFormUrlEncoded();
+        return ok(section.render());
+    }
+
+    public Result grade(){
+        return ok(grades.render());
     }
 
 }
