@@ -167,3 +167,282 @@
     filters.ExampleFilter
 
 2018-12-04 22:17:34,247 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-361 - Application started (Dev)
+2018-12-04 22:47:12,842 [INFO] from application in application-akka.actor.default-dispatcher-11 - ApplicationTimer demo: Stopping application at 2018-12-04T13:47:12.842Z after 1778s.
+2018-12-04 22:47:13,067 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-375 - ApplicationTimer demo: Starting application at 2018-12-04T13:47:13.066Z
+2018-12-04 22:47:13,176 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-375 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:47:13,182 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-375 - Application started (Dev)
+2018-12-04 22:47:54,800 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2018-12-04T13:47:54.800Z after 41s.
+2018-12-04 22:47:54,942 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-379 - ApplicationTimer demo: Starting application at 2018-12-04T13:47:54.942Z
+2018-12-04 22:47:55,014 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-379 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:47:55,024 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-379 - Application started (Dev)
+2018-12-04 22:47:55,143 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-379 - [CSRF] Check failed because no or invalid token found in body for /login.html
+2018-12-04 22:47:55,146 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-379 - [CSRF] Check failed with NoTokenInBody for /login.html
+2018-12-04 22:50:40,389 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2018-12-04T13:50:40.389Z after 166s.
+2018-12-04 22:50:40,700 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-398 - ApplicationTimer demo: Starting application at 2018-12-04T13:50:40.700Z
+2018-12-04 22:50:40,936 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-398 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:50:40,947 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-398 - Application started (Dev)
+2018-12-04 22:50:44,827 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-401 - [CSRF] Check failed because no or invalid token found in body for /section
+2018-12-04 22:50:44,827 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-401 - [CSRF] Check failed with NoTokenInBody for /section
+2018-12-04 22:54:51,147 [INFO] from application in application-akka.actor.default-dispatcher-11 - ApplicationTimer demo: Stopping application at 2018-12-04T13:54:51.147Z after 251s.
+2018-12-04 22:54:51,303 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-415 - ApplicationTimer demo: Starting application at 2018-12-04T13:54:51.303Z
+2018-12-04 22:54:51,396 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-415 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:54:51,404 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-415 - Application started (Dev)
+2018-12-04 22:54:54,710 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-417 - [CSRF] Check failed because no or invalid token found in body for /login
+2018-12-04 22:54:54,710 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-417 - [CSRF] Check failed with NoTokenInBody for /login
+2018-12-04 22:55:06,144 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-415 - [CSRF] Check failed because no or invalid token found in body for /login
+2018-12-04 22:55:06,144 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-415 - [CSRF] Check failed with NoTokenInBody for /login
+2018-12-04 22:56:15,298 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2018-12-04T13:56:15.298Z after 84s.
+2018-12-04 22:56:15,529 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-397 - ApplicationTimer demo: Starting application at 2018-12-04T13:56:15.529Z
+2018-12-04 22:56:15,638 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-397 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:56:15,644 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-397 - Application started (Dev)
+2018-12-04 22:58:54,627 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-436 - 
+
+! @7a5ne7e30 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[シンボルを見つけられません
+  シンボル:   変数 section
+  場所: クラス controllers.HomeController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$26.onPush(Ops.scala:1304)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2018-12-04 22:59:31,104 [INFO] from application in application-akka.actor.default-dispatcher-11 - ApplicationTimer demo: Stopping application at 2018-12-04T13:59:31.104Z after 196s.
+2018-12-04 22:59:31,293 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-435 - ApplicationTimer demo: Starting application at 2018-12-04T13:59:31.293Z
+2018-12-04 22:59:31,415 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-435 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 22:59:31,432 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-435 - Application started (Dev)
+2018-12-04 23:03:27,475 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2018-12-04T14:03:27.475Z after 236s.
+2018-12-04 23:03:27,682 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-435 - ApplicationTimer demo: Starting application at 2018-12-04T14:03:27.682Z
+2018-12-04 23:03:27,755 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-435 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:03:27,761 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-435 - Application started (Dev)
+2018-12-04 23:17:22,104 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2018-12-04T14:17:22.104Z after 835s.
+2018-12-04 23:17:22,403 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-478 - ApplicationTimer demo: Starting application at 2018-12-04T14:17:22.403Z
+2018-12-04 23:17:22,504 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-478 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:17:22,518 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-478 - Application started (Dev)
+2018-12-04 23:26:26,676 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2018-12-04T14:26:26.676Z after 544s.
+2018-12-04 23:26:26,909 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-497 - ApplicationTimer demo: Starting application at 2018-12-04T14:26:26.909Z
+2018-12-04 23:26:27,016 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-497 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:26:27,024 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-497 - Application started (Dev)
+2018-12-04 23:30:37,013 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2018-12-04T14:30:37.012Z after 251s.
+2018-12-04 23:30:37,173 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-519 - ApplicationTimer demo: Starting application at 2018-12-04T14:30:37.173Z
+2018-12-04 23:30:37,278 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-519 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:30:37,284 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-519 - Application started (Dev)
+2018-12-04 23:34:17,473 [INFO] from application in application-akka.actor.default-dispatcher-12 - ApplicationTimer demo: Stopping application at 2018-12-04T14:34:17.473Z after 220s.
+2018-12-04 23:34:17,645 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-544 - ApplicationTimer demo: Starting application at 2018-12-04T14:34:17.645Z
+2018-12-04 23:34:17,754 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-544 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:34:17,762 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-544 - Application started (Dev)
+2018-12-04 23:35:41,520 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2018-12-04T14:35:41.520Z after 84s.
+2018-12-04 23:35:41,641 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-546 - ApplicationTimer demo: Starting application at 2018-12-04T14:35:41.641Z
+2018-12-04 23:35:41,703 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-546 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:35:41,706 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-546 - Application started (Dev)
+2018-12-04 23:36:36,335 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2018-12-04T14:36:36.335Z after 55s.
+2018-12-04 23:36:36,510 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-543 - ApplicationTimer demo: Starting application at 2018-12-04T14:36:36.510Z
+2018-12-04 23:36:36,590 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-543 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:36:36,594 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-543 - Application started (Dev)
+2018-12-04 23:37:16,244 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2018-12-04T14:37:16.244Z after 40s.
+2018-12-04 23:37:16,379 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-542 - ApplicationTimer demo: Starting application at 2018-12-04T14:37:16.379Z
+2018-12-04 23:37:16,428 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-542 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:37:16,431 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-542 - Application started (Dev)
+2018-12-04 23:40:38,077 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2018-12-04T14:40:38.077Z after 202s.
+2018-12-04 23:40:38,380 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-576 - ApplicationTimer demo: Starting application at 2018-12-04T14:40:38.380Z
+2018-12-04 23:40:38,528 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-576 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:40:38,540 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-576 - Application started (Dev)
+2018-12-04 23:43:29,703 [INFO] from application in application-akka.actor.default-dispatcher-22 - ApplicationTimer demo: Stopping application at 2018-12-04T14:43:29.703Z after 171s.
+2018-12-04 23:43:29,870 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-572 - ApplicationTimer demo: Starting application at 2018-12-04T14:43:29.870Z
+2018-12-04 23:43:29,950 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-572 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:43:29,956 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-572 - Application started (Dev)
+2018-12-04 23:48:04,933 [INFO] from application in application-akka.actor.default-dispatcher-14 - ApplicationTimer demo: Stopping application at 2018-12-04T14:48:04.933Z after 275s.
+2018-12-04 23:48:05,156 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-604 - ApplicationTimer demo: Starting application at 2018-12-04T14:48:05.156Z
+2018-12-04 23:48:05,246 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-604 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:48:05,252 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-604 - Application started (Dev)
+2018-12-04 23:50:50,512 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2018-12-04T14:50:50.512Z after 165s.
+2018-12-04 23:50:50,709 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-574 - ApplicationTimer demo: Starting application at 2018-12-04T14:50:50.708Z
+2018-12-04 23:50:50,843 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-574 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-04 23:50:50,852 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-574 - Application started (Dev)
+2018-12-05 00:41:56,786 [INFO] from application in application-akka.actor.default-dispatcher-25 - ApplicationTimer demo: Stopping application at 2018-12-04T15:41:56.786Z after 3066s.
+2018-12-05 00:41:57,004 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-630 - ApplicationTimer demo: Starting application at 2018-12-04T15:41:57.004Z
+2018-12-05 00:41:57,171 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-630 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-05 00:41:57,179 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-630 - Application started (Dev)
+2018-12-05 00:57:11,847 [INFO] from application in application-akka.actor.default-dispatcher-26 - ApplicationTimer demo: Stopping application at 2018-12-04T15:57:11.847Z after 914s.
+2018-12-05 00:57:11,995 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-651 - ApplicationTimer demo: Starting application at 2018-12-04T15:57:11.995Z
+2018-12-05 00:57:12,111 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-651 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-05 00:57:12,124 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-651 - Application started (Dev)
+2018-12-05 01:11:15,531 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-15 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-12-05 01:11:15,549 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-15 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-12-05 01:18:55,735 [INFO] from application in application-akka.actor.default-dispatcher-41 - ApplicationTimer demo: Stopping application at 2018-12-04T16:18:55.735Z after 1304s.
+2018-12-05 01:18:55,942 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-723 - ApplicationTimer demo: Starting application at 2018-12-04T16:18:55.942Z
+2018-12-05 01:18:55,995 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-723 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-05 01:18:55,998 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-723 - Application started (Dev)
+2018-12-07 10:46:22,473 [INFO] from application in application-akka.actor.default-dispatcher-13 - ApplicationTimer demo: Stopping application at 2018-12-07T01:46:22.473Z after 206847s.
+2018-12-07 10:46:22,730 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-727 - ApplicationTimer demo: Starting application at 2018-12-07T01:46:22.729Z
+2018-12-07 10:46:22,829 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-727 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2018-12-07 10:46:22,833 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-727 - Application started (Dev)

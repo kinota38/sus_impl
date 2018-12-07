@@ -15,7 +15,7 @@ body{
   background-image: linear-gradient(45deg,#9fbaa8,#31354c);
   transition: 0.4s;
 }
-.login-form{
+.login-form, .sign-up-form{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,9 +23,19 @@ body{
   color: white;
   text-align: center;
 }
-.login-form h1{
+.login-form h1, .sign-up-form h1{
   font-weight: 400;
   margin-top: 0;
+}
+
+.sign-up-box{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg,#9fbaa8,#4a69bd);
+  transition: 0.4s;
 }
 .txtb{
   display: block;
@@ -40,7 +50,7 @@ body{
   border-radius: 6px;
   text-align: center;
 }
-.login-btn{
+.login-btn, .sign-up-btn{
   width: 240px;
   background: #2c3e50;
   border: 0;
@@ -49,7 +59,7 @@ body{
   border-radius: 6px;
   cursor: pointer;
 }
-.hide-login-btn{
+.hide-login-btn, .hide-sign-up-btn{
   color: #000;
   position: absolute;
   top: 40px;
@@ -58,19 +68,52 @@ body{
   font-size: 24px;
   opacity: .7;
 }
-.show-login-btn{
+.show-btn{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.show-login-btn, .show-sign-up-btn{
+  display: block;
   color: white;
   border: 2px solid;
   padding: 10px;
   cursor: pointer;
+  margin: 20px 0;
 }
-.showed{
+.showed-login{
   left: 0;
 }
-.hide{
-  display: none;
+.showed-sign-up{
+  right: 0;
+}
+
+.eyes{
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+#eye{
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.ball{
+  width: 10px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 5px solid  #784212 ;
 }
