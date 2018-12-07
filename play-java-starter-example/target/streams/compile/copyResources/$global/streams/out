@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/logback.xml,/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/application.conf,/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes,/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/target/scala-2.12/classes/routes)[0m
