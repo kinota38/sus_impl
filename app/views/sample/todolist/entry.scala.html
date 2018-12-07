@@ -1,0 +1,16 @@
+@(entry: models.Task)
+
+@main("#" + entry.id) {
+    <h1>タスク #@entry.id</h1>
+    <a href="edit/@entry.id">編集</a>
+    <a href="/delete/@entry.id" onclick="return confirm_delete(@entry.id);">削除</a>
+    <dl>
+        <dt>タスク名</dt>
+        <dd>@entry.title</dd>
+        <dt>投稿日時</dt>
+        <dd>@entry.registered_at</dd>
+        <dt>最終更新日時</dt>
+        <dd>@entry.updated_at</dd>
+    </dl>
+    <a href="/">戻る</a>
+}

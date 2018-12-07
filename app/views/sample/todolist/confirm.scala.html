@@ -1,0 +1,17 @@
+@(title: String,name: String)
+
+
+@register("確認") {
+    <h2>入力内容の確認</h2>
+    <p>入力内容が正しいか確認してください</p>
+    <dl>
+        <dt>タスク名</dt>
+        <dd>@title</dd>
+    </dl>
+    <form method="post" action="/register/complete">
+        <input type="hidden" name="username" value="@name">
+        <input type="hidden" name="title" value="@title">
+        @helper.CSRF.formField
+        <input type="submit" value="登録する">
+    </form>
+}

@@ -1,0 +1,11 @@
+@(name: String)
+
+@register("開始") {
+    <h2>タスク登録の開始</h2>
+    <form method="post" action="/register/title">
+
+        @helper.CSRF.formField
+        <input type="hidden" name="username" value="@name">
+        <input type="submit" value="送信">
+    </form>
+}

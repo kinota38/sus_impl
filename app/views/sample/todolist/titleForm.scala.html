@@ -1,0 +1,14 @@
+@(name: String)
+@register("タスク名入力") {
+    <h2>タスク名入力</h2>
+    <form id="titleForm" method="post" action="/register/confirm">
+        <dl>
+            <dt><label>名前</label></dt>
+            <dd><input type="text" name="title" autocomplete="on" required></dd>
+        </dl>
+
+        @helper.CSRF.formField
+        <input type="hidden" name="username" value="@name">
+        <input type="submit" value="送信">
+    </form>
+}

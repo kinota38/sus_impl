@@ -1,0 +1,15 @@
+@(entry: models.Task, name: String)
+
+@register("投稿完了") {
+    <h2>Thank you</h2>
+    <p>以下の内容でタスクを登録しました</p>
+    <dl>
+        <dt>ID</dt>
+        <dd>@entry.id</dd>
+        <dt>タスク名</dt>
+        <dd>@entry.title</dd>
+        <dt>投稿日時</dt>
+        <dd>@entry.registered_at</dd>
+    </dl>
+    <a href="/index/@name">一覧に戻る</a>
+}

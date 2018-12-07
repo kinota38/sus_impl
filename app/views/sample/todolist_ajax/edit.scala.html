@@ -1,0 +1,33 @@
+@import models.Task
+@(entry: Task)
+
+@main("更新") {
+<h1>タスクの編集</h1>
+<form method="post" action="/todolist/edit/update">
+    <div id="ajax-todolist-edit" class="col-half" style="display; none">
+        <h2>タスクの編集<span id="edit-id"></span></h2>
+        <dl>
+            <dt>タスク名</dt>
+            <dd>
+                <input type="text" name="title" autocomplete="on" required>
+            </dd>
+            <dt><label for="done">状態</label></dt>
+            <dd>
+                @if(entry.done) {
+                <input type="radio" name="done" value="完了" required checked>
+                <input type="radio" name="done" value="未完了" required>
+                } else {
+                <input type="radio" name="done" value="完了" required>
+                <input type="radio" name="done" value="未完了" required checked>
+                }
+
+
+            </dd>
+        </dl>
+        <button onclick="close_edit_form(); return false;">閉じる</button>
+        <button onclick="delete_entry(); return false;">削除</button>
+    </div>
+    @helper.CSRF.formField
+    <input type="submit" value="更新">
+</form>
+}
