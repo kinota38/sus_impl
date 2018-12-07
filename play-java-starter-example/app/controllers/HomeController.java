@@ -5,6 +5,7 @@ import play.mvc.*;
 import views.html.*;
 import views.html.section.*;
 import views.html.section.grades.*;
+import views.html.calendar.*;
 
 import java.util.Map;
 
@@ -31,6 +32,10 @@ public class HomeController extends Controller {
 
     public Result grade(){
         return ok(grades.render());
+    }
+
+    public Result calendar(){
+        return ok(calendar.render());
     }
 
 }

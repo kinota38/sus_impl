@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 07 12:26:36 JST 2018
+// @DATE:Fri Dec 07 12:59:17 JST 2018
 
 import play.api.mvc.Call
 
@@ -37,6 +37,12 @@ package controllers {
     def grade(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "grades")
+    }
+  
+    // @LINE:12
+    def calendar(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "calendar")
     }
   
     // @LINE:6

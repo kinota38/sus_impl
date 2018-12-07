@@ -9,7 +9,7 @@ POST    /section                    controllers.HomeController.login
 
 GET     /grades                     controllers.HomeController.grade
 
-
+GET     /calendar                   controllers.HomeController.calendar
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
