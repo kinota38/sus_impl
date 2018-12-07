@@ -2,12 +2,20 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-# An example controller showing how to use dependency injection
-GET     /count                      controllers.CountController.count
-# An example controller showing how to write asynchronous code
-GET     /message                    controllers.AsyncController.message
+# signup and signin controller
+GET     /                           controllers.SignUpandInController.helperTop
+GET     /signup                     controllers.SignUpandInController.signupForm
+GET     /                           controllers.SignUpandInController.helperTop
+GET     /database/users             controllers.SignUpandInController.userList
+POST    /signup/register            controllers.SignUpandInController.registerUser
+GET     /signin                     controllers.SignUpandInController.signinForm
+POST     /signin              controllers.SignUpandInController.signIn
+GET      /helper/:username          controllers.SignUpandInController.mypageForm(username: String)
+
+# mypage controller
+GET      /signout                    controllers.MainControllers.signOut
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /robot.txt                              controllers.Default.notFound
+GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
+GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
