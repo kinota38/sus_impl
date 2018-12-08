@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/helpertop.css")">
+</head>
+<body>
+<main>
+    <span style="color:#ff0000;" id="error-field" class="error"></span><br>
+    <form id="signup-form">
+        <label>名前</label><br>
+        <input type="text" name="name" id="signup_name" autocomplete="on" required><br>
+        <select id="highschool_area" name="highschool_area" class="highschool_area"></select>
+        <select id="highschool" name="highschool" class="highschool"></select><br>
+        <label>パスワード</label><br>
+        <input type="password" name="pass1" id="signup_pass1" autocomplete="on" required><br>
+        <label>パスワード(確認用)</label><br>
+        <input type="password" name="pass2" id="signup_pass2" autocomplete="on" required><br>
+        @helper.CSRF.formField
+    </form>
+    <br>
+    <button class="button" onclick="check(); return false;">登録</button>
+
+
+    <button class="button" onclick="location.href='/'">戻る</button>
+</main>
+<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>
+<script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>
+<script src="@routes.Assets.versioned("/javascripts/signupandin/signup.js")"></script>
+
+</body>
+</html>
