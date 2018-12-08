@@ -10,10 +10,12 @@ GET     /database/users             controllers.SignUpandInController.userList
 POST    /signup/register            controllers.SignUpandInController.registerUser
 GET     /signin                     controllers.SignUpandInController.signinForm
 POST     /signin              controllers.SignUpandInController.signIn
-GET      /helper/:username          controllers.SignUpandInController.mypageForm(username: String)
+GET      /helper/:username          controllers.MainController.mypageForm(username: String)
 
 # mypage controller
-GET      /signout                    controllers.MainControllers.signOut
+GET      /signout                    controllers.MainController.signOut
+GET     /grades                     controllers.MainController.grade
+GET     /calendar                   controllers.MainController.calendar
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

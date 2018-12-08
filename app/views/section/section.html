@@ -1,0 +1,63 @@
+@(name: String)
+
+@main("Mypage") {
+    <div class="header">
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#">MypageTop</a></li>
+                <li><a href="#">AccountSetting</a></li>
+                <li><a href="/signout">LogOut</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navToggle">
+        <span></span><span></span><span></span><span>menu</span>
+    </div>
+    <div class="main">
+        <div class="services">
+            <h1>@name</h1>
+            <div class="cen">
+                <a class="fixed" href="/grades">
+                <div class="service">
+                    <i class="far fa-calendar-alt"></i>
+                    <h2>Calendar</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                </a>
+
+                <a class="fixed" href="/grades">
+                <div class="service">
+                    <i class="fas fa-user-graduate"></i>
+                    <h2>grades</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                </a>
+
+                <div class="service">
+                    <i class="fab fa-android"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-apple-pay"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fas fa-taxi"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-youtube"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
