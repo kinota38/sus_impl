@@ -1,15 +1,17 @@
-.calendar-title {
-  text-align: center;
+table {
+  align: center;
+  border: solid 1px #000000;
 }
-.calendar-table {
-  margin: 0 auto;
-  .is-today {
-    color: red;
-  }
-  td {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-  }
+th {
+  border: solid 1px #000000;
+}
+td {
+  border: solid 1px #000000;
+}
+.tdlink {
+  cursor: pointer;
+  // display: block;
+}
+.tdlink:hover {
+  background-color: #ff0000;
 }

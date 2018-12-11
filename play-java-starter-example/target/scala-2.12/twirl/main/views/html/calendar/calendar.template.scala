@@ -30,28 +30,18 @@ object calendar extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.H
       {
 
 
-Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
-<html lang="en">
-<head>
-    """),format.raw/*5.58*/("""
-    """),format.raw/*6.5*/("""<title></title>
-    <link rel="stylesheet" href=""""),_display_(/*7.35*/routes/*7.41*/.Assets.versioned("stylesheets/calendar.css")),format.raw/*7.86*/("""">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*8.55*/routes/*8.61*/.Assets.versioned("images/favicon.png")),format.raw/*8.100*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*9.35*/routes/*9.41*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*9.112*/("""">
-</head>
-<body>
-<h2 class="calendar-title"><span id="js-year"></span>年 <span id="js-month"></span>月</h2>
-<table class="calendar-table">
-    <thead>
-    <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
-    </thead>
-    <tbody id="js-calendar-body"></tbody>
-    <script src=""""),_display_(/*18.19*/routes/*18.25*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*18.75*/(""""></script>
-    <script src=""""),_display_(/*19.19*/routes/*19.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*19.73*/(""""></script>
-    <script src=""""),_display_(/*20.19*/routes/*20.25*/.Assets.versioned("/javascripts/calendar.js")),format.raw/*20.70*/("""" type="text/javascript"></script>
-</table>
-</body>
-</html>"""))
+Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](format.raw/*1.16*/("""
+
+    """),format.raw/*3.5*/("""<button id="tmonth" onclick='setCalendar()'>今月</button>
+    <button id="bmonth" onclick='backmm(this);return false;'><<</button>
+    <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
+    <span id="year"></span>年<span id="month"></span>月<br />
+    <span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span><br />
+<span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>
+    <div id="result" >
+
+    </div>
+""")))}))
       }
     }
   }
@@ -67,11 +57,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 13:03:12 JST 2018
+                  DATE: Tue Dec 11 12:41:41 JST 2018
                   SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/calendar/calendar.scala.html
-                  HASH: 9018793c8f26a3973c61608b748c8545a82c97f3
-                  MATRIX: 1042->1|1113->98|1144->103|1220->153|1234->159|1299->204|1382->261|1396->267|1456->306|1519->343|1533->349|1625->420|1959->727|1974->733|2045->783|2102->813|2117->819|2186->867|2243->897|2258->903|2324->948
-                  LINES: 33->2|36->5|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|49->18|49->18|49->18|50->19|50->19|50->19|51->20|51->20|51->20
+                  HASH: f841c33d728ed7210cf6a3824d34b666dc2daeae
+                  MATRIX: 1042->1|1063->14|1101->15|1133->21
+                  LINES: 33->1|33->1|33->1|35->3
                   -- GENERATED --
               */
           
