@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/conf/routes
-// @DATE:Sat Dec 08 11:15:36 JST 2018
+// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Fri Dec 14 11:35:09 JST 2018
 
 package router
 
@@ -18,9 +18,9 @@ class Routes(
   SignUpandInController_1: controllers.SignUpandInController,
   // @LINE:13
   MainController_0: controllers.MainController,
-  // @LINE:21
+  // @LINE:19
   Default_3: controllers.Default,
-  // @LINE:22
+  // @LINE:20
   Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -31,9 +31,9 @@ class Routes(
     SignUpandInController_1: controllers.SignUpandInController,
     // @LINE:13
     MainController_0: controllers.MainController,
-    // @LINE:21
+    // @LINE:19
     Default_3: controllers.Default,
-    // @LINE:22
+    // @LINE:20
     Assets_2: controllers.Assets
   ) = this(errorHandler, SignUpandInController_1, MainController_0, Default_3, Assets_2, "/")
 
@@ -56,8 +56,6 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.SignUpandInController.signIn"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """helper/""" + "$" + """username<[^/]+>""", """controllers.MainController.mypageForm(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signout""", """controllers.MainController.signOut"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades""", """controllers.MainController.grade"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar""", """controllers.MainController.calendar"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """robot.txt""", """controllers.Default.notFound"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """favicon.ico""", """controllers.Assets.at(path:String = "/public/images", file:String = "favicon.png")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
@@ -230,47 +228,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_MainController_grade9_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades")))
-  )
-  private[this] lazy val controllers_MainController_grade9_invoker = createInvoker(
-    MainController_0.grade,
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.MainController",
-      "grade",
-      Nil,
-      "GET",
-      this.prefix + """grades""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:18
-  private[this] lazy val controllers_MainController_calendar10_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("calendar")))
-  )
-  private[this] lazy val controllers_MainController_calendar10_invoker = createInvoker(
-    MainController_0.calendar,
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.MainController",
-      "calendar",
-      Nil,
-      "GET",
-      this.prefix + """calendar""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:21
-  private[this] lazy val controllers_Default_notFound11_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val controllers_Default_notFound9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("robot.txt")))
   )
-  private[this] lazy val controllers_Default_notFound11_invoker = createInvoker(
+  private[this] lazy val controllers_Default_notFound9_invoker = createInvoker(
     Default_3.notFound,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -284,11 +246,11 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_Assets_at12_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_Assets_at10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("favicon.ico")))
   )
-  private[this] lazy val controllers_Assets_at12_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at10_invoker = createInvoker(
     Assets_2.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -302,11 +264,11 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_Assets_versioned13_route = Route("GET",
+  // @LINE:21
+  private[this] lazy val controllers_Assets_versioned11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned11_invoker = createInvoker(
     Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -377,34 +339,22 @@ class Routes(
         controllers_MainController_signOut8_invoker.call(MainController_0.signOut)
       }
   
-    // @LINE:17
-    case controllers_MainController_grade9_route(params@_) =>
+    // @LINE:19
+    case controllers_Default_notFound9_route(params@_) =>
       call { 
-        controllers_MainController_grade9_invoker.call(MainController_0.grade)
+        controllers_Default_notFound9_invoker.call(Default_3.notFound)
       }
   
-    // @LINE:18
-    case controllers_MainController_calendar10_route(params@_) =>
-      call { 
-        controllers_MainController_calendar10_invoker.call(MainController_0.calendar)
+    // @LINE:20
+    case controllers_Assets_at10_route(params@_) =>
+      call(Param[String]("path", Right("/public/images")), Param[String]("file", Right("favicon.png"))) { (path, file) =>
+        controllers_Assets_at10_invoker.call(Assets_2.at(path, file))
       }
   
     // @LINE:21
-    case controllers_Default_notFound11_route(params@_) =>
-      call { 
-        controllers_Default_notFound11_invoker.call(Default_3.notFound)
-      }
-  
-    // @LINE:22
-    case controllers_Assets_at12_route(params@_) =>
-      call(Param[String]("path", Right("/public/images")), Param[String]("file", Right("favicon.png"))) { (path, file) =>
-        controllers_Assets_at12_invoker.call(Assets_2.at(path, file))
-      }
-  
-    // @LINE:23
-    case controllers_Assets_versioned13_route(params@_) =>
+    case controllers_Assets_versioned11_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned13_invoker.call(Assets_2.versioned(path, file))
+        controllers_Assets_versioned11_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }

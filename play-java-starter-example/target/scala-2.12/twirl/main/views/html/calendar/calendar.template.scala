@@ -67,8 +67,8 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 15:11:46 JST 2018
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/app/views/calendar/calendar.scala.html
+                  DATE: Fri Dec 14 11:34:13 JST 2018
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/calendar/calendar.scala.html
                   HASH: 802450ffc16679a450893dac5690521955cd3d04
                   MATRIX: 1042->0|1113->97|1144->102|1220->152|1234->158|1299->203|1382->260|1396->266|1456->305|1519->342|1533->348|1625->419|1959->726|1974->732|2045->782|2102->812|2117->818|2186->866|2243->896|2258->902|2324->947
                   LINES: 33->1|36->4|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|49->17|49->17|49->17|50->18|50->18|50->18|51->19|51->19|51->19

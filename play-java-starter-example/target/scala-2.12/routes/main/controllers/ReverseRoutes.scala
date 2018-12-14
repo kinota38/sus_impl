@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/conf/routes
-// @DATE:Sat Dec 08 11:15:36 JST 2018
+// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Fri Dec 14 11:35:09 JST 2018
 
 import play.api.mvc.Call
 
@@ -71,22 +71,10 @@ package controllers {
     }
 
   
-    // @LINE:17
-    def grade(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "grades")
-    }
-  
     // @LINE:13
     def mypageForm(username:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "helper/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
-    }
-  
-    // @LINE:18
-    def calendar(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "calendar")
     }
   
     // @LINE:16
@@ -97,20 +85,20 @@ package controllers {
   
   }
 
-  // @LINE:22
+  // @LINE:20
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:22
+    // @LINE:20
     def at(): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public/images"), ("file", "favicon.png"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "favicon.ico")
     }
   
-    // @LINE:23
+    // @LINE:21
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -118,14 +106,14 @@ package controllers {
   
   }
 
-  // @LINE:21
+  // @LINE:19
   class ReverseDefault(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:21
+    // @LINE:19
     def notFound(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "robot.txt")

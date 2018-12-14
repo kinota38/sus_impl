@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/conf/routes
-// @DATE:Sat Dec 08 11:15:36 JST 2018
+// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Fri Dec 14 11:35:09 JST 2018
 
 
 package router {
