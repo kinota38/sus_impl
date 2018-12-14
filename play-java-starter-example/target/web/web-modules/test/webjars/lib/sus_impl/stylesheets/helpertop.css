@@ -1,0 +1,54 @@
+
+body {
+
+}
+
+#header{
+    height:50px;
+    background-color:#0dd4f7;
+    margin:0px;
+    padding:0px;
+    position: relative;
+}
+
+#header-main{
+    height:30px;
+}
+
+#header-signin{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+#signinbutton{
+    height:50px;
+    width:100px;
+    background-color:#0dd4f7;
+    border:none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+#signinbutton:hover{
+    background-color:#36a8ff;
+}
+
+#main{
+    text-align:center
+}
+#signupbutton{
+    position:relative;
+    top:30px;
+    width: 128px;
+    height: 64px;
+
+    border:none;
+    background-color:#0dd4f7;
+    -webkit-transition: all 1s;
+        transition: all 1s;
+}
+
+#signupbutton:hover{
+    background-color:#36a8ff;
+}

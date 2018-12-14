@@ -1,3 +1,5 @@
+
+
 var support = {
   searchParams: 'URLSearchParams' in self,
   iterable: 'Symbol' in self && 'iterator' in Symbol,
@@ -439,6 +441,7 @@ try {
 }
 
 export function fetch(input, init) {
+
   return new Promise(function(resolve, reject) {
     var request = new Request(input, init)
 

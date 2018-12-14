@@ -44,14 +44,16 @@ Seq[Any](format.raw/*8.1*/("""
         <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.Assets.versioned("stylesheets/section.css")),format.raw/*14.89*/("""">
         <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
         <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*16.116*/("""">
+
     </head>
     <body>
         <main>
-            """),format.raw/*21.35*/("""
-            """),_display_(/*22.14*/content),format.raw/*22.21*/("""
-        """),format.raw/*23.9*/("""</main>
-        <script src=""""),_display_(/*24.23*/routes/*24.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*24.79*/(""""></script>
-        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*25.77*/(""""></script>
+            """),format.raw/*22.35*/("""
+            """),_display_(/*23.14*/content),format.raw/*23.21*/("""
+        """),format.raw/*24.9*/("""</main>
+        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*25.79*/(""""></script>
+        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*26.77*/(""""></script>
+        <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("/javascripts/mypage.js")),format.raw/*27.72*/(""""></script>
     </body>
 </html>
 """))
@@ -70,11 +72,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 12:26:36 JST 2018
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/main.scala.html
-                  HASH: b937aca01829c3fc7721dc2da31cbe4cf3b0bf82
-                  MATRIX: 1214->260|1338->291|1365->292|1445->397|1481->406|1516->414|1542->419|1616->466|1631->472|1696->516|1784->577|1799->583|1860->622|1928->663|1943->669|2036->740|2117->886|2158->900|2186->907|2222->916|2279->946|2294->952|2365->1002|2426->1036|2441->1042|2510->1090
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|51->22|52->23|53->24|53->24|53->24|54->25|54->25|54->25
+                  DATE: Sat Dec 08 11:52:00 JST 2018
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/app/views/section/main.scala.html
+                  HASH: 02908772eef034214f23daf354b1ab22f29aa9e7
+                  MATRIX: 1214->260|1338->291|1365->292|1445->397|1481->406|1516->414|1542->419|1616->466|1631->472|1696->516|1784->577|1799->583|1860->622|1928->663|1943->669|2036->740|2118->887|2159->901|2187->908|2223->917|2280->947|2295->953|2366->1003|2427->1037|2442->1043|2511->1091|2572->1125|2587->1131|2651->1174
+                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|51->22|52->23|52->23|53->24|54->25|54->25|54->25|55->26|55->26|55->26|56->27|56->27|56->27
                   -- GENERATED --
               */
           

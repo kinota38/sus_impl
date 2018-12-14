@@ -1,12 +1,22 @@
-@main("カレンダー"){
-
-    <button id="tmonth" onclick='setCalendar()'>今月</button>
-    <button id="bmonth" onclick='backmm(this);return false;'><<</button>
-    <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
-    <span id="year"></span>年<span id="month"></span>月<br />
-    <span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span><br />
-<span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>
-    <div id="result" >
-
-    </div>
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Here's where we render the page title `String`. *@
+    <title></title>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">
+</head>
+<body>
+<h2 class="calendar-title"><span id="js-year"></span>年 <span id="js-month"></span>月</h2>
+<table class="calendar-table">
+    <thead>
+    <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+    </thead>
+    <tbody id="js-calendar-body"></tbody>
+    <script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>
+    <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>
+    <script src="@routes.Assets.versioned("/javascripts/calendar.js")" type="text/javascript"></script>
+</table>
+</body>
+</html>

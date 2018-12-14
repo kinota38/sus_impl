@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/controllers/HomeController.java:38:1: シンボルを見つけられません[0m
-[0m[[0m[31merror[0m] [0m[0m  シンボル:   変数 calendar[0m
-[0m[[0m[31merror[0m] [0m[0m  場所: クラス controllers.HomeController[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok(calendar.render());[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/app/controllers/SignUpandInController.java:96:1: 不適合な型: io.ebean.ExpressionList<models.User>をjava.util.Optional<models.User>に変換できません:[0m
+[0m[[0m[31merror[0m] [0m[0m                final Optional<User> user = Ebean.find(User.class).where().eq("username",name1);[0m

@@ -22,57 +22,73 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object section extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object section extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(name: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
-    """),format.raw/*2.5*/("""<div class="services">
-        <h1>Our Services</h1>
-        <div class="cen">
-            <a class="fixed" href="/grades">
-            <div class="service">
-                <i class="far fa-calendar-alt"></i>
-                <h2>Calendar</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
-            </a>
+Seq[Any](format.raw/*2.1*/("""
+"""),_display_(/*3.2*/main("Mypage")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
+    """),format.raw/*4.5*/("""<div class="header">
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#">MypageTop</a></li>
+                <li><a href="#">AccountSetting</a></li>
+                <li><a href="/signout">LogOut</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navToggle">
+        <span></span><span></span><span></span><span>menu</span>
+    </div>
+    <div class="main">
+        <div class="services">
+            <h1>"""),_display_(/*18.18*/name),format.raw/*18.22*/("""</h1>
+            <div class="cen">
+                <a class="fixed" href="/grades">
+                <div class="service">
+                    <i class="far fa-calendar-alt"></i>
+                    <h2>Calendar</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                </a>
 
-            <a class="fixed" href="/grades">
-            <div class="service">
-                <i class="fas fa-user-graduate"></i>
-                <h2>grades</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
-            </a>
+                <a class="fixed" href="/grades">
+                <div class="service">
+                    <i class="fas fa-user-graduate"></i>
+                    <h2>grades</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                </a>
 
-            <div class="service">
-                <i class="fab fa-android"></i>
-                <h2>Service Name</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <div class="service">
+                    <i class="fab fa-android"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-apple-pay"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fas fa-taxi"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-youtube"></i>
+                    <h2>Service Name</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
             </div>
 
-            <div class="service">
-                <i class="fab fa-apple-pay"></i>
-                <h2>Service Name</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
-
-            <div class="service">
-                <i class="fas fa-taxi"></i>
-                <h2>Service Name</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
-
-            <div class="service">
-                <i class="fab fa-youtube"></i>
-                <h2>Service Name</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
         </div>
     </div>
 """)))}))
@@ -80,9 +96,9 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(name:String): play.twirl.api.HtmlFormat.Appendable = apply(name)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (name) => apply(name)
 
   def ref: this.type = this
 
@@ -91,11 +107,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 12:26:36 JST 2018
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 50d10504393eac830bf6ac42c8ef1f723c5737ba
-                  MATRIX: 1040->1|1071->24|1110->26|1141->31
-                  LINES: 33->1|33->1|33->1|34->2
+                  DATE: Sat Dec 08 02:58:27 JST 2018
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/app/views/section/section.html
+                  HASH: 1de81710a829a86784f0335471b94e53eeb56dfe
+                  MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1185->39|1666->493|1691->497
+                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|49->18|49->18
                   -- GENERATED --
               */
           

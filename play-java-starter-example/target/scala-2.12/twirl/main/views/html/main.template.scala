@@ -41,19 +41,19 @@ Seq[Any](format.raw/*8.1*/("""
     <head>
         """),format.raw/*12.62*/("""
         """),format.raw/*13.9*/("""<title>"""),_display_(/*13.17*/title),format.raw/*13.22*/("""</title>
-        <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.Assets.versioned("stylesheets/login.css")),format.raw/*14.87*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.Assets.versioned("stylesheets/top.css")),format.raw/*14.85*/("""">
         <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
         <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*16.116*/("""">
+
     </head>
     <body>
         <main>
-            """),format.raw/*21.35*/("""
-            """),_display_(/*22.14*/content),format.raw/*22.21*/("""
-        """),format.raw/*23.9*/("""</main>
-        <script src=""""),_display_(/*24.23*/routes/*24.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*24.79*/(""""></script>
-        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*25.77*/(""""></script>
-        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("javascripts/index.js")),format.raw/*26.70*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("javascripts/hello.js")),format.raw/*27.70*/("""" type="text/javascript"></script>
+            """),format.raw/*22.35*/("""
+            """),_display_(/*23.14*/content),format.raw/*23.21*/("""
+        """),format.raw/*24.9*/("""</main>
+        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*25.79*/(""""></script>
+        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*26.77*/(""""></script>
+        <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("javascripts/signupandin/signup.js")),format.raw/*27.83*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -72,11 +72,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 12:26:36 JST 2018
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/main.scala.html
-                  HASH: c21a9c0cded8fd72e5f3276c5180eb0e956bf0ed
-                  MATRIX: 1206->260|1330->291|1357->292|1437->397|1473->406|1508->414|1534->419|1608->466|1623->472|1686->514|1774->575|1789->581|1850->620|1918->661|1933->667|2026->738|2107->884|2148->898|2176->905|2212->914|2269->944|2284->950|2355->1000|2416->1034|2431->1040|2500->1088|2561->1122|2576->1128|2638->1169|2722->1226|2737->1232|2799->1273
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|51->22|52->23|53->24|53->24|53->24|54->25|54->25|54->25|55->26|55->26|55->26|56->27|56->27|56->27
+                  DATE: Sat Dec 08 11:52:00 JST 2018
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/app/views/main.scala.html
+                  HASH: adcaf4ff6ef65e6736641a522f500056b11bedff
+                  MATRIX: 1206->260|1330->291|1357->292|1437->397|1473->406|1508->414|1534->419|1608->466|1623->472|1684->512|1772->573|1787->579|1848->618|1916->659|1931->665|2024->736|2106->883|2147->897|2175->904|2211->913|2268->943|2283->949|2354->999|2415->1033|2430->1039|2499->1087|2560->1121|2575->1127|2650->1181
+                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|51->22|52->23|52->23|53->24|54->25|54->25|54->25|55->26|55->26|55->26|56->27|56->27|56->27
                   -- GENERATED --
               */
           

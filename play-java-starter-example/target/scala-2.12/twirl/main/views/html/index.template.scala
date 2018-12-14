@@ -38,16 +38,8 @@ Seq[Any](format.raw/*6.1*/("""
 """),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
 
     """),format.raw/*17.8*/("""
-    """),format.raw/*18.5*/("""<div class="eyes">
-        <div id="eye">
-            <div class="ball"></div>
-        </div>
 
-        <div id="eye">
-            <div class="ball"></div>
-        </div>
-    </div>
-    <div class="show-btn">
+    """),format.raw/*19.5*/("""<div class="show-btn">
         <div class="show-login-btn">
             <i class="fas fa-sign-in-alt"></i>
             Show Login Form
@@ -59,25 +51,25 @@ Seq[Any](format.raw/*6.1*/("""
     </div>
     <div class="login-box">
         <div class="hide-login-btn"><i class="fas fa-times"></i></div>
-        <form class="login-form" action="/section" method="post">
+        <form class="login-form" action="/signin" method="post">
             <h1>Login</h1>
             <input class="txtb" type="text" name="" placeholder="Username">
             <input class="txtb" type="password" name="" placeholder="Password">
             <input class="login-btn" type="submit" name="" value="Login">
-            """),_display_(/*44.14*/helper/*44.20*/.CSRF.formField),format.raw/*44.35*/("""
-        """),format.raw/*45.9*/("""</form>
+            """),_display_(/*36.14*/helper/*36.20*/.CSRF.formField),format.raw/*36.35*/("""
+        """),format.raw/*37.9*/("""</form>
     </div>
     <div class="sign-up-box">
         <div class="hide-sign-up-btn"><i class="fas fa-times"></i></div>
-        <form class="sign-up-form" action="/section" method="post">
+        <form class="sign-up-form">
             <h1>Sign up</h1>
             <input class="txtb" type="text" name="" placeholder="Username">
             <input class="txtb" type="password" name="" placeholder="Password">
-            <input class="sign-up-btn" type="submit" name="" value="Sign up">
-            """),_display_(/*54.14*/helper/*54.20*/.CSRF.formField),format.raw/*54.35*/("""
-        """),format.raw/*55.9*/("""</form>
+            <button class="sign-up-btn" onclick="check(); return false;">登録</button>
+            """),_display_(/*46.14*/helper/*46.20*/.CSRF.formField),format.raw/*46.35*/("""
+        """),format.raw/*47.9*/("""</form>
     </div>
-""")))}),format.raw/*57.2*/("""
+""")))}),format.raw/*49.2*/("""
 """))
       }
     }
@@ -94,11 +86,11 @@ Seq[Any](format.raw/*6.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 07 12:26:36 JST 2018
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/index.scala.html
-                  HASH: 1984aeb0d2b74eefbe54288488cec8351ea31515
-                  MATRIX: 1037->95|1148->113|1176->308|1204->310|1236->333|1276->335|1309->464|1341->469|2280->1381|2295->1387|2331->1402|2367->1411|2860->1877|2875->1883|2911->1898|2947->1907|2997->1927
-                  LINES: 31->5|36->6|37->11|38->12|38->12|38->12|40->17|41->18|67->44|67->44|67->44|68->45|77->54|77->54|77->54|78->55|80->57
+                  DATE: Fri Dec 07 13:22:37 JST 2018
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/app/views/helpertop.scala.html
+                  HASH: f9f3b82779eda3f105b43c84ee47d7ed928bba9d
+                  MATRIX: 1037->95|1148->113|1176->308|1204->310|1236->333|1276->335|1309->464|1342->470|2095->1196|2110->1202|2146->1217|2182->1226|2650->1667|2665->1673|2701->1688|2737->1697|2787->1717
+                  LINES: 31->5|36->6|37->11|38->12|38->12|38->12|40->17|42->19|59->36|59->36|59->36|60->37|69->46|69->46|69->46|70->47|72->49
                   -- GENERATED --
               */
           
