@@ -1,0 +1,41 @@
+table {
+  align: center;
+  border: solid 1px #000000;
+}
+th {
+  border: solid 1px #000000;
+}
+td {
+  border: solid 1px #000000;
+}
+
+div.calendar{
+    //height : 100%;
+    //width : 100%;
+    //border: solid 1px #000000;
+}
+
+div.date_base {
+border: solid 1px #000000;
+    display: inline-block;
+    //width : 20px;
+    text-align : center;
+}
+div.date{
+border: solid 1px #000000;
+    display: inline-block;
+    //width : 20px;
+    text-align : center;
+    cursor: pointer;
+    // display: block;
+}
+.tdlink {
+  cursor: pointer;
+  // display: block;
+}
+div.date:hover{
+    background-color: #ff0000;
+}
+.tdlink:hover {
+  background-color: #ff0000;
+}
