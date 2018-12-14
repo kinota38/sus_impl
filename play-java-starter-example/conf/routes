@@ -14,6 +14,8 @@ GET      /helper/:username          controllers.MainController.mypageForm(userna
 
 # mypage controller
 GET      /signout                    controllers.MainController.signOut
+GET      /grades                      controllers.MainController.grade
+GET      /calendar                   controllers.MainController.calendar
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound
