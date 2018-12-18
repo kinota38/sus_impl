@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 11:35:09 JST 2018
+// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Fri Dec 14 12:23:20 JST 2018
 
 import play.api.mvc.Call
 
@@ -71,10 +71,22 @@ package controllers {
     }
 
   
+    // @LINE:17
+    def grade(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "grades")
+    }
+  
     // @LINE:13
     def mypageForm(username:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "helper/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
+    }
+  
+    // @LINE:18
+    def calendar(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "calendar")
     }
   
     // @LINE:16
@@ -85,20 +97,20 @@ package controllers {
   
   }
 
-  // @LINE:20
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:20
+    // @LINE:22
     def at(): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public/images"), ("file", "favicon.png"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "favicon.ico")
     }
   
-    // @LINE:21
+    // @LINE:23
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -106,14 +118,14 @@ package controllers {
   
   }
 
-  // @LINE:19
+  // @LINE:21
   class ReverseDefault(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:19
+    // @LINE:21
     def notFound(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "robot.txt")

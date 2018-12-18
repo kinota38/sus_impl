@@ -50,8 +50,8 @@ Seq[Any](_display_(/*1.2*/main("成績")/*1.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 14 11:34:13 JST 2018
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
+                  DATE: Fri Dec 14 12:23:20 JST 2018
+                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
                   HASH: 013e5cb3865593e79976c9ffde8adf2fafa5cc03
                   MATRIX: 1046->1|1064->11|1103->13|1134->18
                   LINES: 33->1|33->1|33->1|34->2

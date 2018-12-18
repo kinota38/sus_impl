@@ -9,7 +9,7 @@ import play.libs.Json;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import utility.Digest;
-import views.html.calendar.calendar;
+import views.html.section.calendar.calendar;
 import views.html.section.grades.grades;
 import views.html.section.section;
 

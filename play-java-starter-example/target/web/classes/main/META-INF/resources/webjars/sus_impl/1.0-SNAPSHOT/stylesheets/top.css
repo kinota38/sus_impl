@@ -1,7 +1,8 @@
 *{
   font-family: "montserrat",sans-serif;
 }
-body{
+html, body{
+  height: 100%;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(75deg,#99FFFF,#4a69bd);
@@ -99,8 +100,8 @@ position:absolute;
 }
 
 .header{
+    height: 100%;
     font-family: "fantasy";
-    position: fixed;
     margin-top:5%;
     margin-left:5%;
     font-size:100px;
