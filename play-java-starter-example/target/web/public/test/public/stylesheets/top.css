@@ -78,7 +78,7 @@ position:absolute;
 }
 .show-btn{
   position: absolute;
-  top: 50%;
+  top: 300px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -100,7 +100,7 @@ position:absolute;
 
 .header{
     font-family: "fantasy";
-    position: absolute;
+    position: fixed;
     margin-top:5%;
     margin-left:5%;
     font-size:100px;

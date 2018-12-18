@@ -1,24 +1,24 @@
 !function($) {
     // ページロード完了時に行う操作
     $(document).ready(() => {
-//        const $ = jQuery;
-//        var option = '';
-//        import('./areaandschool.js')
-//          .then(ah => {
-//              return new ah.areaList();
-//            }).then(area => {
-//                for (var i=0;i<area.length;i++) {
-//                    if (area === $('#highschool_area').val()){
-//                            option += '<option value="' + i + '" selected="selected">' + area[i] + '</option>\n';
-//                    }else{
-//                        option += '<option value="' + i + '">' + area[i] + '</option>\n';
-//                    }
-//                }
-//
-//                $('#highschool_area').html(option);
-//                setHighSchool();
+        const $ = jQuery;
+        var option = '';
+        import('./areaandschool.js')
+          .then(ah => {
+              return new ah.areaList();
+            }).then(area => {
+                for (var i=0;i<area.length;i++) {
+                    if (area === $('#highschool_area').val()){
+                            option += '<option value="' + i + '" selected="selected">' + area[i] + '</option>\n';
+                    }else{
+                        option += '<option value="' + i + '">' + area[i] + '</option>\n';
+                    }
+                }
 
-//            });
+                $('#highschool_area').html(option);
+                setHighSchool();
+
+            });
 
 
     });
@@ -49,7 +49,7 @@ function check(){
         }).then(value => {
 
             if(value==0){
-                fetch("/signup/register",{method:'post',body: get_form("#signup-form"),})
+                fetch("/signup/register",{method:'post',body: get_form(".sign-up-form"),})
                                 .then(res => {
                                     if(!res.ok){
                                         alert("登録できませんでした");
@@ -92,11 +92,11 @@ function setHighSchool(){
       .then(ah => {
           return new ah.highschoolList(Number($('#highschool_area').val()));
         }).then(highschool => {
-              for (const school of highschool) {
-                     if (school === $('#highschool').val()){
-                             option += '<option value="' + school + '" selected="selected">' + school + '</option>\n';
+              for (var i=0;i<highschool.length;i++) {
+                     if (highschool[i] === $('#highschool').val()){
+                             option += '<option value="' + i + '" selected="selected">' + highschool[i] + '</option>\n';
                      }else{
-                         option += '<option value="' + school + '">' + school + '</option>\n';
+                         option += '<option value="' + i + '">' + highschool[i]+ '</option>\n';
                      }
                  }
                  option += '<option value="' + "その他" + '">' + "その他" + '</option>\n';

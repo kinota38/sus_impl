@@ -2,9 +2,6 @@ package controllers;
 
 import play.mvc.*;
 import views.html.*;
-import views.html.section.*;
-import views.html.section.grades.*;
-import views.html.calendar.*;
 import io.ebean.Ebean;
 import models.User;
 import java.util.List;
@@ -16,7 +13,6 @@ import utility.Digest;
 import java.util.Optional;
 import java.util.UUID;
 
-import models.sample;
 
 public class SignUpandInController extends Controller {
 
@@ -27,10 +23,6 @@ public class SignUpandInController extends Controller {
         return ok(helpertop.render());
     }
 
-
-    public Result signupForm() {
-        return ok(signup.render());
-    }
 
     //Userのリストを返す
     public Result userList() {
@@ -72,16 +64,10 @@ public class SignUpandInController extends Controller {
         }
         Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
         if(user.isPresent()){
-            sample data1 = new sample("aaa");
-            data1.user = user.get();
-            sample data2 = new sample("bbb");
-            data2.user = user.get();
-            data1.save();
-            data2.save();
 
 
 
-            return redirect("/helper/" + user.get().username+user.get().ss.get(0).message);
+            return redirect("/helper/" + user.get().username);
         }
         return ok(signin.render(""));
 
@@ -92,27 +78,28 @@ public class SignUpandInController extends Controller {
         final String name1 = request().body().asFormUrlEncoded().get("name")[0];
         final String pass1 = request().body().asFormUrlEncoded().get("pass")[0];
 
-            try {
-                final Optional<User> user = Ebean.find(User.class).where().eq("username",name1).findOneOrEmpty();
-                if(user.isPresent()){
-                    User one = user.get();
-                    Digest dig = new Digest(one.salt);//ダイジェスト化に用いる
-                    if(dig.toDigestString(pass1).equals(one.password)){
-                        final String sessionid = UUID.randomUUID().toString();
-                        one.sessionid = sessionid;
-                        one.save();
-                        response().setCookie(Http.Cookie.builder("sessionid",sessionid).build());
-                        return redirect("/helper/"+one.username);
-                    }
-
+        try {
+            final Optional<User> user = Ebean.find(User.class).where().eq("username",name1).findOneOrEmpty();
+            if(user.isPresent()){
+                User one = user.get();
+                Digest dig = new Digest(one.salt);//ダイジェスト化に用いる
+                if(dig.toDigestString(pass1).equals(one.password)){
+                    final String sessionid = UUID.randomUUID().toString();
+                    one.sessionid = sessionid;
+                    one.save();
+                    response().setCookie(Http.Cookie.builder("sessionid",sessionid).build());
+                    return redirect("/helper/"+one.username);
                 }
 
-            } catch (NoSuchAlgorithmException e) {
-
             }
+
+        } catch (NoSuchAlgorithmException e) {
+
+        }
         return unauthorized(signin.render("Username or Password inccorect"));
     }
 
 
 }
+
 

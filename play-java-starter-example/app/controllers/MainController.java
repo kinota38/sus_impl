@@ -1,27 +1,21 @@
 package controllers;
 
-import play.mvc.*;
-import views.html.*;
 import io.ebean.Ebean;
-import models.User;
-import java.util.List;
 import play.libs.Json;
-import java.security.NoSuchAlgorithmException;
-import java.util.Map;
-import utility.Digest;
-import views.html.calendar.calendar;
-import views.html.section.grades.grades;
-import views.html.section.section;
+import play.mvc.*;
+import views.html.section.calendar.*;
+import views.html.section.grades.*;
+import views.html.section.*;
+import models.User;
+import models.Grade;
 
-import java.util.UUID;
+import java.util.List;
 
 public class MainController extends Controller {
 
 
     public Result mypageForm(String username){
-        String name = username + "さん";
-        String sessionid = request().cookies().get("sessionid").value();
-        return ok(section.render(name));
+        return ok(section.render(username));
     }
 
     public Result signOut(){
@@ -35,13 +29,15 @@ public class MainController extends Controller {
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
-    public Result grade(){
+    public Result grade(String username){
         return ok(grades.render());
     }
 
     public Result calendar(){
         return ok(calendar.render());
     }
+
+
 
 
 }

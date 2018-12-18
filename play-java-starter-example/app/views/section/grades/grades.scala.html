@@ -1,5 +1,32 @@
 @main("成績") {
+    <div class="addgrade">
+        <span></span><span></span>
+    </div>
     <div>
         <canvas id="myChart"></canvas>
     </div>
+
+<div class="layer" id="register-layer"></div>
+<div class="popup" id="register-popup">
+    <div>popup</div>
+    <form id="register-form">
+        科目名:<input type="text" class="register-input" name="register-subject"><br>
+        目標:<input type="text" class="register-input" name="register-target"><br>
+        現在:<input type="text" class="register-input" name="register-now"><br>
+        @helper.CSRF.formField
+    </form>
+    <button  onclick="register(); return false;">追加</button>
+
+</div>
+
+<div class ="layer" id="edit-layer"></div>
+<div class="popup" id="edit-popup">
+    <div>popup</div>
+    <form id="edit-form">
+        <span id="input-type"></span>:<input type="text" name="new-grade" class="input-number" id="edit-grade"><br>
+        @helper.CSRF.formField
+    </form>
+    <span id="edit_button-field"></span>
+</div>
+
 }

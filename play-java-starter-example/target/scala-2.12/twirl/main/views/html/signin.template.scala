@@ -77,7 +77,7 @@ Seq[Any](format.raw/*3.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 14 11:34:13 JST 2018
+                  DATE: Fri Dec 14 21:00:39 JST 2018
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/signin.scala.html
                   HASH: f24617966642282c74957daf60bf6999810f15c2
                   MATRIX: 949->2|1058->18|1085->19|1232->140|1246->146|1306->185|1371->223|1386->229|1449->271|1636->431|1662->436|1934->681|1949->687|1985->702|2026->715|2234->896|2249->902|2320->952|2387->992|2402->998|2471->1046

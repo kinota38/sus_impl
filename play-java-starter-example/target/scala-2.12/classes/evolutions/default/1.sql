@@ -3,6 +3,15 @@
 
 # --- !Ups
 
+create table grade (
+  id                            bigint auto_increment not null,
+  subject                       varchar(255) not null,
+  now_grade                     integer not null,
+  target_grade                  integer not null,
+  user_id                       bigint,
+  constraint pk_grade primary key (id)
+);
+
 create table user (
   id                            bigint auto_increment not null,
   username                      varchar(255) not null,
@@ -14,23 +23,16 @@ create table user (
   constraint pk_user primary key (id)
 );
 
-create table sample (
-  id                            bigint auto_increment not null,
-  message                       varchar(255) not null,
-  user_id                       bigint,
-  constraint pk_sample primary key (id)
-);
-
-alter table sample add constraint fk_sample_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
-create index ix_sample_user_id on sample (user_id);
+alter table grade add constraint fk_grade_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
+create index ix_grade_user_id on grade (user_id);
 
 
 # --- !Downs
 
-alter table sample drop constraint if exists fk_sample_user_id;
-drop index if exists ix_sample_user_id;
+alter table grade drop constraint if exists fk_grade_user_id;
+drop index if exists ix_grade_user_id;
+
+drop table if exists grade;
 
 drop table if exists user;
-
-drop table if exists sample;
 

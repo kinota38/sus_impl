@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/test/FunctionalTest.java:20:1: シンボルを見つけられません[0m
+[0m[[0m[31merror[0m] [0m[0m  シンボル:   クラス index[0m
+[0m[[0m[31merror[0m] [0m[0m  場所: パッケージ views.html[0m
+[0m[[0m[31merror[0m] [0m[0m        Content html = views.html.index.render("Your new application is ready.");[0m

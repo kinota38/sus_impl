@@ -3,10 +3,13 @@ package models;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.*;
 import play.data.validation.Constraints;
 import play.data.format.Formats;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -77,9 +80,9 @@ public class User extends Model{
     public int highscool;
 
 
-
-    @OneToMany
-    public List<sample> ss;
+    @JsonBackReference
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<Grade> grade = new ArrayList<>();
 
 
     public User(final String name, final String password, final String salt, final int highscool_area, final int highscool ) {
