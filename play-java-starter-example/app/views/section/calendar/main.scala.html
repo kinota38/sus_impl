@@ -4,15 +4,60 @@
 <head>
     <title>@title</title>
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">
 </head>
 <body>
+
     <main>
+        <header>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content-left">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li>
+                    <button id="tmonth" onclick='setCalendar()'>今月</button>
+                </li>
+                <li>
+                    <button id="bmonth" onclick='backmm(this);return false;'><<</button>
+                </li>
+                <li>
+                    <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
+                </li>
+
+                <li id="white">
+                    <span id="year"></span>年<span id="month"></span>月<br />
+                </li>
+                <li style="float:right" class="dropdown">
+                    <a class="active" href="#about"><i class="fas fa-user"></i></a>
+                    <div class="dropdown-content-right">
+                        <a href="#">Account Info</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <div class="wrapper">
+            <div class="menu">
+
+            </div>
+
             @* And here's where we render the `Html` object containing
             * the page content. *@
             @content
-       </main>
+        </div>
+    </main>
     <script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>
     <script src="@routes.Assets.versioned("/javascripts/calendar.js")"></script>
     <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>

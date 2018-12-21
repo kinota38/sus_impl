@@ -1,37 +1,38 @@
-table {
-  align: center;
-  border: solid 1px #000000;
+div.wrapper{
+    display: flex;
 }
-th {
-  border: solid 1px #000000;
-}
-td {
-  border: solid 1px #000000;
+
+div.menu{
+    width:20vw;
 }
 
 body{
 background-image: linear-gradient(75deg,white,#e1e1e1);
 }
 div.calendar{
+    padding-top: 60px;
     background-color: white;
     border: 1px solid #e1e1e1;
     font-family: Montserrat;
     font-weight: 100;
-    position: absolute;
+    width: 80vw;
+    /*position: absolute;*/
     /*選択不可*/
     user-select: none; /* CSS3 */
-        -moz-user-select: none; /* Firefox */
-        -webkit-user-select: none; /* Safari、Chromeなど */
-        -ms-user-select: none; /* IE10かららしい */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10かららしい */
 }
 
 div.week_base{
+    width:100%;
     color: #888888;
 }
 div.date_base {
-
+    width:14.1%;
     display: inline-block;
-    //width : 20px;
+    border-right: 1px solid #ffffff;
+    /*width : 20px;*/
     text-align : center;
 
 }
@@ -47,13 +48,15 @@ div.date{
     border-right: 1px solid #e1e1e6;
     border-top: 1px solid #e1e1e6;
     text-align : right;
+    width:14.1%;
+    height:10vh;
     cursor: pointer;
     transition: 0.4s ;
 
 }
-div.date:last-child{
+/*div.date:last-child{
     border-right: 0;
-}
+}*/
 
 
 

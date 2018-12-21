@@ -108,7 +108,7 @@ function setCalendar(yy, mm) {
   }*/
   out += "<div class='week_base'>"
   for(var i in youbi){
-    out += "<div class='date_base' style='width:"+ (windowWidth/8)+"px; height"+20+"px;'>" + youbi[i] + "</div>";
+    out += "<div class='date_base'>" + youbi[i] + "</div>";
   }
   out += "</div>"
 
@@ -126,17 +126,27 @@ function setCalendar(yy, mm) {
     m_now = 12;
     y_now = yy - 1;
   }
+  var m_flag = 0;
   for(var i=1; i<=row; i++) {
     out += "<div class='week'>"
 
     for(var j=7*i-6; j<=7*i; j++){
+
+        var output_str = days[j-1]+"";
+
         if(days[j-1] == 1){
             y_now = (m_now + 1 > 12)? y_now + 1 : y_now;
             m_now = (m_now + 1 > 12)? 1 : m_now + 1;
+            m_flag++;
+            output_str = m_now + "月1日";
         }
-        out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
-        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px;' >"
-                                        +days[j-1]+"</div>";
+        var color_day = (m_flag==1)? "000000" : "CCCCCC" ;
+        /*out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
+        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px; color:#"+ color_day +";' >"
+                                        +output_str+"</div>";
+                                        */
+        out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'>"
+                                                +output_str+"</div>";
     }
 
     out += "</div>"
