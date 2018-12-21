@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Tue Dec 18 00:21:13 JST 2018
+// @DATE:Thu Dec 20 23:31:23 JST 2018
 
 package router
 
@@ -20,9 +20,9 @@ class Routes(
   MainController_2: controllers.MainController,
   // @LINE:19
   GradeController_1: controllers.GradeController,
-  // @LINE:24
-  Default_3: controllers.Default,
   // @LINE:25
+  Default_3: controllers.Default,
+  // @LINE:26
   Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -35,9 +35,9 @@ class Routes(
     MainController_2: controllers.MainController,
     // @LINE:19
     GradeController_1: controllers.GradeController,
-    // @LINE:24
-    Default_3: controllers.Default,
     // @LINE:25
+    Default_3: controllers.Default,
+    // @LINE:26
     Assets_4: controllers.Assets
   ) = this(errorHandler, SignUpandInController_0, MainController_2, GradeController_1, Default_3, Assets_4, "/")
 
@@ -60,6 +60,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signout""", """controllers.MainController.signOut"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/""" + "$" + """username<[^/]+>""", """controllers.MainController.grade(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar""", """controllers.MainController.calendar"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/gradeslist/""" + "$" + """username<[^/]+>""", """controllers.GradeController.gradesList(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/gradelist/""" + "$" + """username<[^/]+>""", """controllers.GradeController.gradeList(username:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grade/register""", """controllers.GradeController.registerGrade"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grade/edit""", """controllers.GradeController.editGrade"""),
@@ -236,10 +237,28 @@ class Routes(
   )
 
   // @LINE:19
-  private[this] lazy val controllers_GradeController_gradeList9_route = Route("GET",
+  private[this] lazy val controllers_GradeController_gradesList9_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades/gradeslist/"), DynamicPart("username", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_GradeController_gradesList9_invoker = createInvoker(
+    GradeController_1.gradesList(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.GradeController",
+      "gradesList",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """grades/gradeslist/""" + "$" + """username<[^/]+>""",
+      """ grade controller""",
+      Seq()
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_GradeController_gradeList10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades/gradelist/"), DynamicPart("username", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_GradeController_gradeList9_invoker = createInvoker(
+  private[this] lazy val controllers_GradeController_gradeList10_invoker = createInvoker(
     GradeController_1.gradeList(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -248,16 +267,16 @@ class Routes(
       Seq(classOf[String]),
       "GET",
       this.prefix + """grades/gradelist/""" + "$" + """username<[^/]+>""",
-      """ grade controller""",
+      """""",
       Seq()
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_GradeController_registerGrade10_route = Route("POST",
+  // @LINE:21
+  private[this] lazy val controllers_GradeController_registerGrade11_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grade/register")))
   )
-  private[this] lazy val controllers_GradeController_registerGrade10_invoker = createInvoker(
+  private[this] lazy val controllers_GradeController_registerGrade11_invoker = createInvoker(
     GradeController_1.registerGrade,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -271,11 +290,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_GradeController_editGrade11_route = Route("POST",
+  // @LINE:22
+  private[this] lazy val controllers_GradeController_editGrade12_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grade/edit")))
   )
-  private[this] lazy val controllers_GradeController_editGrade11_invoker = createInvoker(
+  private[this] lazy val controllers_GradeController_editGrade12_invoker = createInvoker(
     GradeController_1.editGrade,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -289,11 +308,11 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_Default_notFound12_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_Default_notFound13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("robot.txt")))
   )
-  private[this] lazy val controllers_Default_notFound12_invoker = createInvoker(
+  private[this] lazy val controllers_Default_notFound13_invoker = createInvoker(
     Default_3.notFound,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -307,11 +326,11 @@ class Routes(
     )
   )
 
-  // @LINE:25
-  private[this] lazy val controllers_Assets_at13_route = Route("GET",
+  // @LINE:26
+  private[this] lazy val controllers_Assets_at14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("favicon.ico")))
   )
-  private[this] lazy val controllers_Assets_at13_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at14_invoker = createInvoker(
     Assets_4.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -325,11 +344,11 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
+  // @LINE:27
+  private[this] lazy val controllers_Assets_versioned15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned15_invoker = createInvoker(
     Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -401,39 +420,45 @@ class Routes(
       }
   
     // @LINE:19
-    case controllers_GradeController_gradeList9_route(params@_) =>
+    case controllers_GradeController_gradesList9_route(params@_) =>
       call(params.fromPath[String]("username", None)) { (username) =>
-        controllers_GradeController_gradeList9_invoker.call(GradeController_1.gradeList(username))
+        controllers_GradeController_gradesList9_invoker.call(GradeController_1.gradesList(username))
       }
   
     // @LINE:20
-    case controllers_GradeController_registerGrade10_route(params@_) =>
-      call { 
-        controllers_GradeController_registerGrade10_invoker.call(GradeController_1.registerGrade)
+    case controllers_GradeController_gradeList10_route(params@_) =>
+      call(params.fromPath[String]("username", None)) { (username) =>
+        controllers_GradeController_gradeList10_invoker.call(GradeController_1.gradeList(username))
       }
   
     // @LINE:21
-    case controllers_GradeController_editGrade11_route(params@_) =>
+    case controllers_GradeController_registerGrade11_route(params@_) =>
       call { 
-        controllers_GradeController_editGrade11_invoker.call(GradeController_1.editGrade)
+        controllers_GradeController_registerGrade11_invoker.call(GradeController_1.registerGrade)
       }
   
-    // @LINE:24
-    case controllers_Default_notFound12_route(params@_) =>
+    // @LINE:22
+    case controllers_GradeController_editGrade12_route(params@_) =>
       call { 
-        controllers_Default_notFound12_invoker.call(Default_3.notFound)
+        controllers_GradeController_editGrade12_invoker.call(GradeController_1.editGrade)
       }
   
     // @LINE:25
-    case controllers_Assets_at13_route(params@_) =>
-      call(Param[String]("path", Right("/public/images")), Param[String]("file", Right("favicon.png"))) { (path, file) =>
-        controllers_Assets_at13_invoker.call(Assets_4.at(path, file))
+    case controllers_Default_notFound13_route(params@_) =>
+      call { 
+        controllers_Default_notFound13_invoker.call(Default_3.notFound)
       }
   
     // @LINE:26
-    case controllers_Assets_versioned14_route(params@_) =>
+    case controllers_Assets_at14_route(params@_) =>
+      call(Param[String]("path", Right("/public/images")), Param[String]("file", Right("favicon.png"))) { (path, file) =>
+        controllers_Assets_at14_invoker.call(Assets_4.at(path, file))
+      }
+  
+    // @LINE:27
+    case controllers_Assets_versioned15_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned14_invoker.call(Assets_4.versioned(path, file))
+        controllers_Assets_versioned15_invoker.call(Assets_4.versioned(path, file))
       }
   }
 }

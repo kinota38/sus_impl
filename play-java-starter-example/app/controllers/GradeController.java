@@ -17,6 +17,22 @@ public class GradeController extends Controller {
         User user = Ebean.find(User.class).where().eq("username",username).findOne();
         return ok(Json.toJson(user.grade));
     }
+//userと同じ志望校の人の成績を返す
+    public Result gradesList(String username) {
+        User user = Ebean.find(User.class).where().eq("username",username).findOne();
+        List<Grade> all_grades = Ebean.find(Grade.class).findList();
+        List<Grade> grades = new ArrayList<>();
+        for(Grade grade : all_grades){
+            if(grade.user.uni_area==user.uni_area
+               && grade.user.university.equals(user.university)
+               && grade.user.major.equals(user.major))
+            {
+                grades.add(grade);
+
+            }
+        }
+        return ok(Json.toJson(grades));
+    }
 
     public Result registerGrade() {
         try {
@@ -25,9 +41,8 @@ public class GradeController extends Controller {
             String username = request.get("hidden-username")[0];
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
             String subject = request.get("register-subject")[0];
-            int target = Integer.parseInt(request.get("register-target")[0]);
             int now = Integer.parseInt(request.get("register-now")[0]);
-            final Grade entry = new Grade(subject,target,now);
+            final Grade entry = new Grade(username,subject,now);
             entry.user = user;
             entry.save();
             return gradeList(username);
@@ -43,14 +58,9 @@ public class GradeController extends Controller {
             // モデル更新
             String username = request.get("username")[0];
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
-            int now_or_target = Integer.parseInt(request.get("now_or_target")[0]);
             int index = Integer.parseInt(request.get("index")[0]);
             int new_grade = Integer.parseInt(request.get("new-grade")[0]);
-            if(now_or_target==0){//現在を更新
-                user.grade.get(index).nowGrade = new_grade;
-            }else if(now_or_target==1){//目標を更新
-                user.grade.get(index).targetGrade = new_grade;
-            }
+            user.grade.get(index).nowGrade = new_grade;
             user.save();
             return gradeList(username);
         } catch (Exception e) {

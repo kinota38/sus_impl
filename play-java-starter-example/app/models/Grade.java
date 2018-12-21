@@ -20,6 +20,11 @@ public class Grade extends Model{
     @Constraints.MaxLength(25)
     @Formats.NonEmpty
     @Column(nullable = false)
+    public String username;
+
+    @Constraints.MaxLength(25)
+    @Formats.NonEmpty
+    @Column(nullable = false)
     public String subject;
 
     @Constraints.MaxLength(25)
@@ -27,19 +32,14 @@ public class Grade extends Model{
     @Column(nullable = false)
     public int nowGrade;
 
-    @Constraints.MaxLength(25)
-    @Formats.NonEmpty
-    @Column(nullable = false)
-    public int targetGrade;
-
     @JsonManagedReference
     @ManyToOne
     public User user;
 
 
-    public Grade(final String subject, final int targetGrade, final int nowGrade) {
+    public Grade(final String username, final String subject, final int nowGrade) {
+        this.username = username;
         this.subject = subject;
-        this.targetGrade = targetGrade;
         this.nowGrade = nowGrade;
     }
 

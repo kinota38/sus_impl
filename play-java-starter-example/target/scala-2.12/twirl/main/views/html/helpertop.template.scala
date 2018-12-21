@@ -64,16 +64,25 @@ Seq[Any](_display_(/*14.2*/main("helpertop")/*14.19*/ {_display_(Seq[Any](format
                 <select class="txtb" id="highschool_area" name="highschool_area"></select>
                 <select class="txtb" id="highschool" name="highschool"></select>
             </div>
+            <div class="uni-select-box">
+                <br>
+                志望校選択
+                <select class="txtb" id="uni_area" name="uni_area"></select>
+                <select class="txtb" id="university" name="university"></select>
+                学部名(正式名称)
+                <input class="txtb" type="text" id="signup_major" name="major" placeholder="例)情報工学部">
+            </div>
+
             <br>
             パスワード
             <input class="txtb" type="password" id="signup_pass1" name="pass1" placeholder="Password">
             <input class="txtb" type="password" id="signup_pass2" name="pass2" placeholder="Comfirm Password">
             <br>
             <button class="sign-up-btn" onclick="check(); return false;">登録</button>
-            """),_display_(/*53.14*/helper/*53.20*/.CSRF.formField),format.raw/*53.35*/("""
-        """),format.raw/*54.9*/("""</form>
+            """),_display_(/*62.14*/helper/*62.20*/.CSRF.formField),format.raw/*62.35*/("""
+        """),format.raw/*63.9*/("""</form>
     </div>
-""")))}),format.raw/*56.2*/("""
+""")))}),format.raw/*65.2*/("""
 
 
 """))
@@ -92,11 +101,11 @@ Seq[Any](_display_(/*14.2*/main("helpertop")/*14.19*/ {_display_(Seq[Any](format
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 18 10:57:26 JST 2018
+                  DATE: Wed Dec 19 16:25:16 JST 2018
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/helpertop.scala.html
-                  HASH: e0998bd610bc39811759ada7437391606f676ad0
-                  MATRIX: 1225->294|1251->311|1291->313|1324->442|1357->448|2714->1778|2729->1784|2765->1799|2801->1808|2851->1828
-                  LINES: 37->14|37->14|37->14|39->19|41->21|73->53|73->53|73->53|74->54|76->56
+                  HASH: 9bcfd016d90e0c23dde4593fdddfcd19429780d7
+                  MATRIX: 1225->294|1251->311|1291->313|1324->442|1357->448|3104->2168|3119->2174|3155->2189|3191->2198|3241->2218
+                  LINES: 37->14|37->14|37->14|39->19|41->21|82->62|82->62|82->62|83->63|85->65
                   -- GENERATED --
               */
           

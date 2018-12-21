@@ -1,3 +1,28 @@
+$('.navToggle').click(function() {//右上のメニューボタン
+    $(this).toggleClass('active');
+
+    if ($(this).hasClass('active')) {
+        $('.globalMenuSp,.main').addClass('active');
+        screenLock();
+    } else {
+        $('.globalMenuSp,.main').removeClass('active');
+        screenUnLock("screenLock");
+    }
+});
+$('.layer').click(function(e) {//popup時に枠外をクリックすると閉じる
+    $('.popup, .layer').hide();
+});
+$("#edit-grade").click(//編集時にテキストボックスにフォーカスが当たると全選択する
+    function(){
+        $(this).select();
+    }
+);
+document.onkeypress = enter;
+function enter(){
+  if( window.event.keyCode == 13 ){
+    return false;
+  }
+}
 
 // 色の設定
 var colorSet = {
@@ -14,58 +39,21 @@ var colorSet = {
 // 色のRGB変換
 var color = Chart.helpers.color;
 
-$('.addgrade').click(function() {
-    $('#register-popup, #register-layer').show();
-});
-$('.layer').click(function(e) {
-    $('.popup, .layer').hide();
-});
 
-var dataLabelPlugin = {
-    afterDatasetsDraw: function (chart, easing) {
-        // To only draw at the end of animation, check for easing === 1
-        var ctx = chart.ctx;
+var myChart1;//自分と周りの棒グラフ
+var config1;
+var myChart2;//累計の折れ線グラフ
+var config2;
 
-        chart.data.datasets.forEach(function (dataset, i) {
-            var meta = chart.getDatasetMeta(i);
-            if (!meta.hidden) {
-                meta.data.forEach(function (element, index) {
-                    // Draw the text in black, with the specified font
-                    ctx.fillStyle = 'rgb(0, 0, 0)';
-
-                    var fontSize = 16;
-                    var fontStyle = 'normal';
-                    var fontFamily = 'Helvetica Neue';
-                    ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
-
-                    // Just naively convert to string for now
-                    var dataString = chart.data.labels[index];
-
-                    // Make sure alignment settings are correct
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-
-                    var padding = -5;
-                    var position = element.tooltipPosition();
-                    ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding);
-                });
-            }
-        });
-    }
-};
-
-var myRadar;
-var config;
 !function($) {
     // ページロード完了時に行う操作
     $(document).ready(() => {
-        var username = getusername();
-        fetch("/grades/gradelist/"+username).then(response => {
+        fetch("/grades/gradeslist/"+getusername()).then(response => {
             // 結果をJSONとして受け取る
             return response.json();
         }).then(entries => {
-
-            create_chart(entries);
+            create_chart1(entries);
+            create_chart2();
 
         });
 
@@ -73,88 +61,176 @@ var config;
     });
 }(jQuery);
 
-function create_chart(entries){
-    var labels = [];
-    var now_grades = [];
-    var target_grades = [];
-    for(const grade of entries){
-        labels.push(grade["subject"]);
-        now_grades.push(grade["nowGrade"]);
-        target_grades.push(grade["targetGrade"]);
-    }
-    config = {
-        type: 'polarArea',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: "現在",
-                backgroundColor: color(colorSet.blue).alpha(0.5).rgbString(),
-                borderColor: colorSet.blue,
-                pointBackgroundColor: colorSet.blue,
-                data: now_grades
-            },{
-                label: "目標",
-                backgroundColor: color(colorSet.red).alpha(0.5).rgbString(),
-                borderColor: colorSet.red,
-                pointBackgroundColor: colorSet.red,
-                data: target_grades
-            },]
-        },
-        plugins: [dataLabelPlugin],
-        options: {
-            animation: {
-                // アニメーションにかかる秒数(ミリ秒)
-                duration: 1000,
-                // アニメーションの種類
-                easing: 'linear',
-                animateScale:true,
-            },
+function create_chart1(grades){
 
-            showTooltips: false,
-            legend: { display: false },
-            title: {
-                display: true,
-                fontSize:20,
-                fontColor:'#666',
-                text: '成績チャート'
-            },
-            scale: {
-                display: true,
-                pointLabels: {
-                    fontSize: 15,
-                    fontColor: colorSet.yellow
+    [labels,now_grades,ave_grades] = create_data1(grades);
+    config1 = {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: "自分の成績",
+                        backgroundColor: color(colorSet.blue).alpha(0.5).rgbString(),
+                        borderColor: colorSet.blue,
+                        data: now_grades
+                    },{
+                        label: "同じ志望校の受験生の平均",
+                        backgroundColor: color(colorSet.red).alpha(0.5).rgbString(),
+                        borderColor: colorSet.red,
+                        data: ave_grades
+                    },]
                 },
-                ticks: {
-                    display: true,
-                    fontSize: 12,
-                    fontColor: colorSet.green,
-                    min: 0,
-                    max: 100,
-                    beginAtZero: true
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    },
+                    title: {
+                        display: true,
+                        fontSize: 18,
+                        text: '成績'
+                    },
+                    layout: {
+                        padding: {
+                            left: 0,
+                            right: 0,
+                            top: 80,
+                            bottom: 0
+                        }
+                    },
+                    animation:{
+                        duration:1000,
+                        easing:'linear'
 
-                },
-                gridLines: {
-                    display: true,
-                    color: colorSet.yellow
+                    }
                 }
 
+
             }
-        }
-
-
-    }
-    myRadar = new Chart($("#myChart"), config);
+    myChart1 = new Chart($("#myChart1"), config1);
 
 }
 
-const canvas = document.querySelector("#myChart");
+function create_data1(grades){
+    var username = getusername();
+    var labels = [];
+    var now_grades = [];
+    var tmp_sub = {};//出てくる教科と人数を全て保存
+    var sum_grades = {};
+    for(const grade of grades){
+        if(grade["subject"] in tmp_sub){
+            tmp_sub[grade["subject"]] += 1;
+            sum_grades[grade["subject"]] += grade["nowGrade"];
+        }else{
+            tmp_sub[grade["subject"]] = 1;
+            sum_grades[grade["subject"]] = grade["nowGrade"];
+        }
+        if(username==grade["username"]){
+            labels.push(grade["subject"]);
+            now_grades.push(grade["nowGrade"]);
+        }
+    }
+
+    var ave_grades = [];
+    for(subject of labels){
+        if(subject in tmp_sub){
+            ave_grades.push(sum_grades[subject]/tmp_sub[subject]);
+        }else{
+            ave_grades.push(0);
+        }
+    }
+
+    return [labels,now_grades,ave_grades];
+}
+
+const sampleData = {
+  labels: ["p0", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"],
+  sample1: [1.9, 2.32, 1.52, 0.79, 1.37, 1.28, 1.92, 1.44, 2.58, 0.01, 0.71, 4.25],
+  timestamp: ["2018/04/16", "2018/04/17", "2018/04/19", "2018/04/20", "2018/05/01", "2018/05/02", "2018/05/04", "2018/05/07", "2018/05/10", "2018/05/14", "2018/05/17", "2018/05/18"]
+};
+function create_chart2(){
+    const postDate = new Date();
+    config2 =  {
+                       type: 'line',
+                         data: {
+                           datasets: [{
+                             label: 'sample1 (dist: linear)',
+                             borderColor:colorSet.red,
+                             lineTension: 0,
+                             fill: false,
+                             data: [], // set data points later
+
+                           }]
+                         },
+                         options: {
+                            title: {
+                                display: true,
+                                fontSize: 18,
+                                text: '成績推移'
+                            },
+                            layout: {
+                                padding: {
+                                    left: 80,
+                                    right: 0,
+                                    bottom: 0
+                                }
+                            },
+                            legend:{
+                                display:false
+                            },
+                           scales: {
+                             xAxes: [{
+                               type: 'time', // specify time series type
+                               distribution: 'linear', // use 'linear'(default) or 'series'
+                               ticks: {
+                                 source: 'data'
+                               },
+                               time: {
+                                   unit: 'week'
+                               }
+                             }],
+                             yAxes: [{
+                                 ticks: {
+                                     beginAtZero:true
+                                 }
+                             }]
+                           }
+                         },
+                           layout: {
+                               padding: {
+                                   left: 100,
+                                   right: 100,
+                                   top: 80,
+                                   bottom: -90
+                               }
+                           },
+                           animation:{
+                               duration:1000,
+                               easing:'easeOutQuad'
+                           }
+
+                     };
+              for (let i = 0; i < sampleData.sample1.length; i++) {
+                // format data samples to be combined with Date object
+                config2.data.datasets[0].data.push({
+                  y: sampleData.sample1[i],
+                  t: new Date(sampleData.timestamp[i]) // like 'new Data('2018/4/12 03:21')'
+                });
+              }
+    var myChart2 = new Chart($("#myChart2"),config2);
+}
+
+const canvas = document.querySelector("#myChart1");
 canvas.addEventListener('click', (e) => show_edit_form(e));
 
 function show_edit_form(e){
-    var element = myRadar.getElementAtEvent(e)[0];
+    var element = myChart1.getElementAtEvent(e)[0];
     if(element!==(void 0)){
-        $("#input-type").text(config.data.datasets[element._datasetIndex].label);
-        $('#edit-grade').val(config.data.datasets[element._datasetIndex].data[element._index]);
+        $("#input-type").text(config1.data.datasets[element._datasetIndex].label);
+        $('#edit-grade').val(config1.data.datasets[element._datasetIndex].data[element._index]);
         $('#edit-popup, #edit-layer').show();
         const updatebutton =  $("<input>").attr("type", "button")
                                  .on('click',function(){
@@ -179,15 +255,21 @@ function register(){
             }
 
         }).then(json => {
-            config.data.labels.push($("*[name=register-subject]").val());
-            config.data.datasets[0].data.push($("*[name=register-now]").val());
-            config.data.datasets[1].data.push($("*[name=register-target]").val());
-            myRadar.update();
+            fetch("/grades/gradeslist/"+getusername()).then(response => {
+                        // 結果をJSONとして受け取る
+                        return response.json();
+                    }).then(entries => {
+                        [labels,now_grades,ave_grades] = create_data1(entries);
+                        config1.data.labels = labels;
+                        config1.data.datasets[0].data = now_grades;
+                        config1.data.datasets[1].data = ave_grades;
+                        myChart1.update();
+                    });
+
         }, error => {
                alert("登録できませんでした");
            });
            delete_hidden('hidden-username', 'register-form' );
-           $('.popup, .layer').hide();
 
 }
 
@@ -206,8 +288,8 @@ function edit(element){
             }
 
         }).then(json => {
-            config.data.datasets[element._datasetIndex].data[element._index] = ($("#edit-grade").val());
-            myRadar.update();
+            config1.data.datasets[element._datasetIndex].data[element._index] = ($("#edit-grade").val());
+            myChart1.update();
         }, error => {
                alert("変更できませんでした");
            });
@@ -240,7 +322,37 @@ function delete_hidden(name, formid ){
 }
 
 
+
+
+
 function getusername(){
     var url = location.href.split("/");
     return url[url.length-1];
+}
+
+function screenLock(){
+    // ロック用のdivを生成
+    var element = document.createElement('div');
+    element.id = "screenLock";
+    // ロック用のスタイル
+    element.style.height = '100%';
+    element.style.left = '0px';
+    element.style.position = 'fixed';
+    element.style.top = '0px';
+    element.style.width = '100%';
+    element.style.zIndex = '2';
+    element.style.opacity = '0';
+    element.style.backgroundColor = '#000';
+
+    var objBody = document.getElementsByTagName("body").item(0);
+    objBody.appendChild(element);
+
+
+}
+
+// div削除関数
+function screenUnLock( id_name ){
+    var dom_obj = document.getElementById(id_name);
+    var dom_obj_parent=dom_obj.parentNode;
+    dom_obj_parent.removeChild(dom_obj);
 }

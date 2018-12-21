@@ -36,13 +36,16 @@ public class SignUpandInController extends Controller {
             // モデル更新
             String username = request.get("name")[0];
             String pass = request.get("pass1")[0];
-            int highschool_area = Integer.parseInt(request.get("highschool_area")[0]);
-            int highschool = Integer.parseInt(request.get("highschool")[0]);
+            String highschool_area = request.get("highschool_area")[0];
+            String highschool = request.get("highschool")[0];
+            String uni_area = request.get("uni_area")[0];
+            String university = request.get("university")[0];
+            String major = request.get("major")[0];
             final String salt = UUID.randomUUID().toString();
             Digest dig = new Digest(salt);//ダイジェスト化に用いる
             try {
                 String digested = dig.toDigestString(pass);
-                final User entry = new User(username, digested,salt,highschool_area,highschool);
+                final User entry = new User(username, digested,salt,highschool_area,highschool,uni_area,university,major);
                 entry.save();
             } catch (NoSuchAlgorithmException e) {
                 System.out.println(e);

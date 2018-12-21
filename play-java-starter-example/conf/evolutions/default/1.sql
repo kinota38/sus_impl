@@ -5,9 +5,9 @@
 
 create table grade (
   id                            bigint auto_increment not null,
+  username                      varchar(255) not null,
   subject                       varchar(255) not null,
   now_grade                     integer not null,
-  target_grade                  integer not null,
   user_id                       bigint,
   constraint pk_grade primary key (id)
 );
@@ -18,8 +18,11 @@ create table user (
   password                      varchar(255) not null,
   salt                          varchar(255) not null,
   sessionid                     varchar(255),
-  highscool_area                integer not null,
-  highscool                     integer not null,
+  highscool_area                varchar(255),
+  highscool                     varchar(255),
+  uni_area                      varchar(255),
+  university                    varchar(255),
+  major                         varchar(255),
   constraint pk_user primary key (id)
 );
 

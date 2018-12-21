@@ -16,6 +16,7 @@ GET      /grades/:username           controllers.MainController.grade(username: 
 GET      /calendar                   controllers.MainController.calendar
 
 # grade controller
+GET      /grades/gradeslist/:username controllers.GradeController.gradesList(username: String)
 GET      /grades/gradelist/:username controllers.GradeController.gradeList(username: String)
 POST     /grade/register             controllers.GradeController.registerGrade
 POST     /grade/edit             controllers.GradeController.editGrade

@@ -62,37 +62,67 @@ public class User extends Model{
     public String sessionid;
 
     /**
-     * 高校の地域(インデックス)
+     * 高校の地域
      */
     @Constraints.Required
     @Constraints.MaxLength(255)
     @Formats.NonEmpty
     @Column(nullable = true)
-    public int highscool_area;
+    public String highscool_area;
 
     /**
-     * 高校名(インデックス)
+     * 高校名
      */
     @Constraints.Required
     @Constraints.MaxLength(255)
     @Formats.NonEmpty
     @Column(nullable = true)
-    public int highscool;
+    public String highscool;
 
+    /**
+     * 志望校の地域
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = true)
+    public String uni_area;
+
+    /**
+     * 志望校名
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = true)
+    public String university;
+
+    /**
+     * 学部名
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = true)
+    public String major;
 
     @JsonBackReference
     @OneToMany(cascade = CascadeType.ALL)
     public List<Grade> grade = new ArrayList<>();
 
 
-    public User(final String name, final String password, final String salt, final int highscool_area, final int highscool ) {
+    public User(final String name, final String password, final String salt,
+                final String highscool_area, final String highscool ,
+                final String uni_area,final String university,
+                final String major) {
         this.username = name;
         this.password = password;
         this.salt = salt;
         this.highscool = highscool;
         this.highscool_area = highscool_area;
-
-
+        this.university = university;
+        this.uni_area = uni_area;
+        this.major = major;
     }
 
     /**
