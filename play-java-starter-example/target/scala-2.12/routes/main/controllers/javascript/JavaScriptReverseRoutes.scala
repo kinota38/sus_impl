@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Thu Dec 20 23:31:23 JST 2018
+// @DATE:Sat Dec 22 16:39:15 JST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:26
+  // @LINE:29
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:29
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:30
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -49,12 +49,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
-    def registerGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.GradeController.registerGrade",
+    // @LINE:23
+    def registerAccGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GradeController.registerAccGrade",
       """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grade/register"})
+        function(username0) {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/registeracc/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
         }
       """
     )
@@ -69,6 +69,26 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:24
+    def editGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GradeController.editGrade",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/edit"})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def registerGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GradeController.registerGrade",
+      """
+        function(username0) {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/register" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
+        }
+      """
+    )
+  
     // @LINE:19
     def gradesList: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.GradeController.gradesList",
@@ -79,19 +99,29 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:22
-    def editGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.GradeController.editGrade",
+    // @LINE:25
+    def removeGrade: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GradeController.removeGrade",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grade/edit"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/remove"})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def accGradeList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GradeController.accGradeList",
+      """
+        function(username0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/accgradelist/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
         }
       """
     )
   
   }
 
-  // @LINE:25
+  // @LINE:28
   class ReverseDefault(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -99,7 +129,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
+    // @LINE:28
     def notFound: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Default.notFound",
       """

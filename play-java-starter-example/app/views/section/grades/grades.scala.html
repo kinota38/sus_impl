@@ -1,34 +1,30 @@
 @main("成績") {
-<div class="header">
-    <nav class="globalMenuSp">
-        <ul>
-            <li><a href="#">MypageTop</a></li>
-            <li><a href="#">AccountSetting</a></li>
-            <li><a href="/signout">LogOut</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="navToggle">
-    <span></span><span></span><span></span><span>menu</span>
-</div>
+
 <div class="main">
+    <form id="dummy-form">
+        @helper.CSRF.formField
+    </form>
 
     <div  id="first-section">
         <div  class="first-element" id="first-chart">
-            <canvas  id="myChart1" ></canvas>
+            <div id="first-radio">
+                <input type="radio" name="first-radio" value="ave_grades" checked>平均点
+                <input type="radio" name="first-radio" value="max_grades">最高点
             </div>
+            <canvas  id="myChart1" ></canvas>
+            <button class="button" id="acc-register-button" onclick="add_to_acc();">累積に追加する</button>
+        </div>
         <div class="first-element" id="register-grade">
-            <div>popup</div>
             <form id="register-form">
-                科目名:<br><input type="text" class="register-input" name="register-subject"><br>
-                得点:<br><input type="text" class="register-input" name="register-now"><br>
+                科目名<br><input type="text" class="register-input" name="register-subject"><br>
+                得点<br><input type="text" class="register-input" name="register-now"><br>
+                タグ<br><input type="text" class="register-input" name="register-tag"><br>
                 @helper.CSRF.formField
             </form>
             <button  onclick="register(); return false;">追加</button>
 
         </div>
     </div>
-
     <div class ="layer" id="edit-layer"></div>
     <div class="popup" id="edit-popup">
         <div>popup</div>
@@ -40,6 +36,7 @@
     </div>
 
     <div id="chart-area2">
+        <select name="sources" id="chart2-select" class="custom-select sources" placeholder="科目選択"></select>
         <canvas id="myChart2" ></canvas>
     </div>
 </div>

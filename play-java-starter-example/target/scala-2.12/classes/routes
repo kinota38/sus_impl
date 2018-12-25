@@ -17,9 +17,12 @@ GET      /calendar                   controllers.MainController.calendar
 
 # grade controller
 GET      /grades/gradeslist/:username controllers.GradeController.gradesList(username: String)
-GET      /grades/gradelist/:username controllers.GradeController.gradeList(username: String)
-POST     /grade/register             controllers.GradeController.registerGrade
-POST     /grade/edit             controllers.GradeController.editGrade
+GET      /grades/gradelist/:username  controllers.GradeController.gradeList(username: String)
+GET      /grades/accgradelist/:username  controllers.GradeController.accGradeList(username: String)
+POST     /grades/register:username     controllers.GradeController.registerGrade(username: String)
+POST     /grades/registeracc/:username  controllers.GradeController.registerAccGrade(username: String)
+POST     /grades/edit                 controllers.GradeController.editGrade
+POST     /grades/remove               controllers.GradeController.removeGrade
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

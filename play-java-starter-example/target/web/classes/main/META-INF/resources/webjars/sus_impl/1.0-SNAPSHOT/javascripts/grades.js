@@ -1,14 +1,4 @@
-$('.navToggle').click(function() {//右上のメニューボタン
-    $(this).toggleClass('active');
 
-    if ($(this).hasClass('active')) {
-        $('.globalMenuSp,.main').addClass('active');
-        screenLock();
-    } else {
-        $('.globalMenuSp,.main').removeClass('active');
-        screenUnLock("screenLock");
-    }
-});
 $('.layer').click(function(e) {//popup時に枠外をクリックすると閉じる
     $('.popup, .layer').hide();
 });
@@ -17,6 +7,52 @@ $("#edit-grade").click(//編集時にテキストボックスにフォーカス�
         $(this).select();
     }
 );
+
+$('input[name="first-radio"]').change(function() {
+    changeChart1($('input[name="first-radio"]:checked').val());
+})
+$('#chart2-select').change(function(){
+    changeChart2();
+});
+//chart2のセレクトボックスの装飾
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function() {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+
+
+//間違ってエンターキーを押した時に送信されないようにする
 document.onkeypress = enter;
 function enter(){
   if( window.event.keyCode == 13 ){
@@ -42,8 +78,10 @@ var color = Chart.helpers.color;
 
 var myChart1;//自分と周りの棒グラフ
 var config1;
+var mychart1_data;
 var myChart2;//累計の折れ線グラフ
 var config2;
+var myChart2_data;
 
 !function($) {
     // ページロード完了時に行う操作
@@ -53,8 +91,13 @@ var config2;
             return response.json();
         }).then(entries => {
             create_chart1(entries);
-            create_chart2();
 
+        });
+        fetch("/grades/accgradelist/"+getusername()).then(response => {
+            // 結果をJSONとして受け取る
+            return response.json();
+        }).then(entries => {
+            create_chart2(entries);
         });
 
 
@@ -62,22 +105,21 @@ var config2;
 }(jQuery);
 
 function create_chart1(grades){
-
-    [labels,now_grades,ave_grades] = create_data1(grades);
+    mychart1_data = create_data1(grades);
     config1 = {
                 type: 'bar',
                 data: {
-                    labels: labels,
+                    labels: mychart1_data.labels,
                     datasets: [{
                         label: "自分の成績",
                         backgroundColor: color(colorSet.blue).alpha(0.5).rgbString(),
                         borderColor: colorSet.blue,
-                        data: now_grades
+                        data: mychart1_data.now_grades
                     },{
-                        label: "同じ志望校の受験生の平均",
+                        label: "同じ志望校の受験生",
                         backgroundColor: color(colorSet.red).alpha(0.5).rgbString(),
                         borderColor: colorSet.red,
-                        data: ave_grades
+                        data: mychart1_data.ave_grades
                     },]
                 },
                 options: {
@@ -120,6 +162,7 @@ function create_data1(grades){
     var now_grades = [];
     var tmp_sub = {};//出てくる教科と人数を全て保存
     var sum_grades = {};
+    var max_grades = {};
     for(const grade of grades){
         if(grade["subject"] in tmp_sub){
             tmp_sub[grade["subject"]] += 1;
@@ -128,40 +171,42 @@ function create_data1(grades){
             tmp_sub[grade["subject"]] = 1;
             sum_grades[grade["subject"]] = grade["nowGrade"];
         }
+        if(((grade["subject"] in max_grades) && max_grades[grade["subject"]]<grade["nowGrade"]) || !(grade["subject"] in max_grades)){
+           max_grades[grade["subject"]] = grade["nowGrade"];
+        }
         if(username==grade["username"]){
             labels.push(grade["subject"]);
             now_grades.push(grade["nowGrade"]);
         }
     }
-
     var ave_grades = [];
+    var max_gradeslist = [];
     for(subject of labels){
         if(subject in tmp_sub){
             ave_grades.push(sum_grades[subject]/tmp_sub[subject]);
+            max_gradeslist.push(max_grades[subject]);
         }else{
             ave_grades.push(0);
         }
     }
 
-    return [labels,now_grades,ave_grades];
+    return {labels:labels,
+            now_grades:now_grades,
+            ave_grades:ave_grades,
+            max_grades:max_gradeslist};
 }
 
-const sampleData = {
-  labels: ["p0", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"],
-  sample1: [1.9, 2.32, 1.52, 0.79, 1.37, 1.28, 1.92, 1.44, 2.58, 0.01, 0.71, 4.25],
-  timestamp: ["2018/04/16", "2018/04/17", "2018/04/19", "2018/04/20", "2018/05/01", "2018/05/02", "2018/05/04", "2018/05/07", "2018/05/10", "2018/05/14", "2018/05/17", "2018/05/18"]
-};
-function create_chart2(){
-    const postDate = new Date();
+function create_chart2(grades){
+    myChart2_data = create_data2(grades);
     config2 =  {
                        type: 'line',
                          data: {
                            datasets: [{
-                             label: 'sample1 (dist: linear)',
+                             label: '点数',
                              borderColor:colorSet.red,
                              lineTension: 0,
                              fill: false,
-                             data: [], // set data points later
+                             data: myChart2_data["合計"],
 
                            }]
                          },
@@ -213,22 +258,67 @@ function create_chart2(){
                            }
 
                      };
-              for (let i = 0; i < sampleData.sample1.length; i++) {
-                // format data samples to be combined with Date object
-                config2.data.datasets[0].data.push({
-                  y: sampleData.sample1[i],
-                  t: new Date(sampleData.timestamp[i]) // like 'new Data('2018/4/12 03:21')'
-                });
-              }
-    var myChart2 = new Chart($("#myChart2"),config2);
+
+    myChart2 = new Chart($("#myChart2"),config2);
+
+    addoption(myChart2_data);
+
 }
 
-const canvas = document.querySelector("#myChart1");
-canvas.addEventListener('click', (e) => show_edit_form(e));
+function create_data2(grades){
+    var data = {"合計":[]};
+    if(grades.length>0){
+        var sum = 0;
+        var date = grades[0]["registeredAt"];
+        for (const grade of grades) {
+            if(date !== grade["registeredAt"]){
+                data["合計"].push({
+                    y: sum,
+                    t: new Date(date) // like 'new Data('2018/4/12 03:21')'
+                });
+                sum = grade["accGrade"];
+                date = grade["registeredAt"];
+            }else{
+                sum += Number(grade["accGrade"]);
+            }
+
+            if(grade["subject"] in data){
+                data[grade["subject"]].push({
+                                                y: grade["accGrade"],
+                                                t: new Date(grade["registeredAt"]) // like 'new Data('2018/4/12 03:21')'
+                                                 });
+            }else{
+                data[grade["subject"]] = [{
+                                              y: grade["accGrade"],
+                                              t: new Date(grade["registeredAt"]) // like 'new Data('2018/4/12 03:21')'
+                                               }];
+            }
+        }
+        data["合計"].push({
+            y: sum,
+            t: new Date(date) // like 'new Data('2018/4/12 03:21')'
+        });
+    }
+    return data;
+}
+
+function changeChart1(type){
+    config1.data.datasets[1].data = mychart1_data[type];
+    myChart1.update();
+}
+
+function changeChart2(){
+    config2.data.datasets[0].data = myChart2_data[$("#chart2-select").val()];
+    myChart2.update();
+}
+
+
+const canvas1 = document.querySelector("#myChart1");
+canvas1.addEventListener('click', (e) => show_edit_form(e));
 
 function show_edit_form(e){
     var element = myChart1.getElementAtEvent(e)[0];
-    if(element!==(void 0)){
+    if(element!==(void 0) && element._datasetIndex==0){
         $("#input-type").text(config1.data.datasets[element._datasetIndex].label);
         $('#edit-grade').val(config1.data.datasets[element._datasetIndex].data[element._index]);
         $('#edit-popup, #edit-layer').show();
@@ -237,16 +327,20 @@ function show_edit_form(e){
                                     edit(element);
                                  })
                                  .attr("value", "変更").addClass("button");
-        $("#edit_button-field").empty().append(updatebutton);
+        const removebutton =  $("<input>").attr("type", "button")
+                                 .on('click',function(){
+                                    remove(element);
+                                 })
+                                 .attr("value", "削除").addClass("button");
+        $("#edit_button-field").empty().append(updatebutton).append(removebutton);
     }
 
 }
 
 function register(){
     const $ = jQuery;
-    make_hidden(getusername(), "hidden-username",'register-form');
 
-    fetch("/grade/register",{method:'post',body: get_form("#register-form"),})
+    fetch("/grades/register"+getusername(),{method:'post',body: get_form("#register-form"),})
         .then(res => {
             if(!res.ok){
                 throw new Error("登録できませんでした");
@@ -259,27 +353,25 @@ function register(){
                         // 結果をJSONとして受け取る
                         return response.json();
                     }).then(entries => {
-                        [labels,now_grades,ave_grades] = create_data1(entries);
-                        config1.data.labels = labels;
-                        config1.data.datasets[0].data = now_grades;
-                        config1.data.datasets[1].data = ave_grades;
+                        mychart1_data = create_data1(entries);
+                        config1.data.labels = mychart1_data.labels;
+                        config1.data.datasets[0].data = mychart1_data.now_grades;
+                        config1.data.datasets[1].data = mychart1_data[$('input[name="first-radio"]:checked').val()];
                         myChart1.update();
                     });
 
         }, error => {
                alert("登録できませんでした");
            });
-           delete_hidden('hidden-username', 'register-form' );
 
 }
 
 function edit(element){
     const $ = jQuery;
     var body = get_form("#edit-form");
-    body.append('now_or_target',element._datasetIndex);
     body.append('index',element._index);
     body.append('username',getusername());
-    fetch("/grade/edit",{method:'post',body: body,})
+    fetch("/grades/edit",{method:'post',body: body,})
         .then(res => {
             if(!res.ok){
                 throw new Error("変更できませんでした");
@@ -288,13 +380,86 @@ function edit(element){
             }
 
         }).then(json => {
-            config1.data.datasets[element._datasetIndex].data[element._index] = ($("#edit-grade").val());
+            mychart1_data = create_data1(json);
+            config1.data.datasets[0].data = mychart1_data["now_grades"];
+            config1.data.datasets[1].data = mychart1_data[$('input[name="first-radio"]').val()];
             myChart1.update();
         }, error => {
                alert("変更できませんでした");
            });
         $('.popup, .layer').hide();
 }
+
+function remove(element){
+    if(confirm("削除しますか？")){
+        const $ = jQuery;
+        const data = get_form("#dummy-form");
+        data.append('index',element._index);
+        data.append('username',getusername());
+        fetch("/grades/remove",{method:'post',body: data,})
+            .then(res => {
+                if(!res.ok){
+                    throw new Error("削除できませんでした");
+                }else{
+                    return res.json();
+                }
+
+            }).then(json => {
+                fetch("/grades/gradeslist/"+getusername()).then(response => {
+                        // 結果をJSONとして受け取る
+                        return response.json();
+                    }).then(entries => {
+                        mychart1_data = create_data1(entries);
+                        config1.data.labels = mychart1_data.labels;
+                        config1.data.datasets[0].data = mychart1_data.now_grades;
+                        config1.data.datasets[1].data = mychart1_data[$('input[name="first-radio"]').val()];
+                        myChart1.update();
+                    });
+            }, error => {
+                   alert("削除できませんでした");
+               });
+        $('.popup, .layer').hide();
+
+    }
+
+}
+
+function add_to_acc(){
+    var labels = config1.data.labels;
+    var now_grades = config1.data.datasets[0].data;
+    const data = get_form("#dummy-form");
+    for(var i=0;i<labels.length;i++){
+        data.append(labels[i],now_grades[i]);
+    }
+    fetch("/grades/registeracc/"+getusername(),{method:'post',body: data,})
+            .then(res => {
+                if(!res.ok){
+                    throw new Error("登録できませんでした");
+                }else{
+                    return res.json();
+                }
+
+            }).then(entries => {
+                myChart2_data = create_data2(entries);
+                config2.data.datasets[0].data = myChart2_data["合計"];
+                myChart2.update();
+                addoption(myChart2_data);
+            }, error => {
+                   alert("登録できませんでした");
+               });
+}
+
+function addoption(data){
+    var option = "";
+        for (const i in data) {
+            option += '<option value="' + i + '">' + i + '</option>\n';
+        }
+        $('#chart2-select').html(option);
+}
+
+
+
+
 
 // フォーム情報を取得する
 function get_form(tag) {
@@ -307,21 +472,6 @@ function get_form(tag) {
 
 }
 
-// make_hidden : hiddenを作成する : Version 1.1
-function make_hidden( value,name, formid ){
-    var q = document.createElement('input');
-    q.type = 'hidden';
-    q.name = name;
-    q.value = value;
-	if (formid){ document.getElementById(formid).appendChild(q); }
-    else{ document.forms[0].appendChild(q); }
-}
-
-function delete_hidden(name, formid ){
-     document.getElementById(formid).removeChild(document.getElementsByName(name)[0]);
-}
-
-
 
 
 
@@ -330,29 +480,3 @@ function getusername(){
     return url[url.length-1];
 }
 
-function screenLock(){
-    // ロック用のdivを生成
-    var element = document.createElement('div');
-    element.id = "screenLock";
-    // ロック用のスタイル
-    element.style.height = '100%';
-    element.style.left = '0px';
-    element.style.position = 'fixed';
-    element.style.top = '0px';
-    element.style.width = '100%';
-    element.style.zIndex = '2';
-    element.style.opacity = '0';
-    element.style.backgroundColor = '#000';
-
-    var objBody = document.getElementsByTagName("body").item(0);
-    objBody.appendChild(element);
-
-
-}
-
-// div削除関数
-function screenUnLock( id_name ){
-    var dom_obj = document.getElementById(id_name);
-    var dom_obj_parent=dom_obj.parentNode;
-    dom_obj_parent.removeChild(dom_obj);
-}

@@ -42,18 +42,43 @@ Seq[Any](format.raw/*8.1*/("""
         """),format.raw/*12.62*/("""
         """),format.raw/*13.9*/("""<title>"""),_display_(/*13.17*/title),format.raw/*13.22*/("""</title>
         <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.Assets.versioned("stylesheets/grades.css")),format.raw/*14.88*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
-        <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*16.116*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*15.39*/routes/*15.45*/.Assets.versioned("stylesheets/navBar.css")),format.raw/*15.88*/("""">
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*16.59*/routes/*16.65*/.Assets.versioned("images/favicon.png")),format.raw/*16.104*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*17.39*/routes/*17.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*17.116*/("""">
     </head>
     <body>
         <main>
-            """),format.raw/*21.35*/("""
-            """),_display_(/*22.14*/content),format.raw/*22.21*/("""
-        """),format.raw/*23.9*/("""</main>
-        <script src=""""),_display_(/*24.23*/routes/*24.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*24.79*/(""""></script>
-        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*25.77*/(""""></script>
-        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("javascripts/Chart.bundle.js")),format.raw/*26.77*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("javascripts/grades.js")),format.raw/*27.71*/("""" type="text/javascript"></script>
+            <header>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content-left">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li style="float:right" class="dropdown">
+                        <a class="active" href="#about"><i class="fas fa-user"></i></a>
+                        <div class="dropdown-content-right">
+                            <a href="#">Account Info</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </header>
+            """),format.raw/*46.35*/("""
+            """),_display_(/*47.14*/content),format.raw/*47.21*/("""
+        """),format.raw/*48.9*/("""</main>
+        <script src=""""),_display_(/*49.23*/routes/*49.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*49.79*/(""""></script>
+        <script src=""""),_display_(/*50.23*/routes/*50.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*50.77*/(""""></script>
+        <script src=""""),_display_(/*51.23*/routes/*51.29*/.Assets.versioned("javascripts/Chart.bundle.js")),format.raw/*51.77*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*52.23*/routes/*52.29*/.Assets.versioned("javascripts/grades.js")),format.raw/*52.71*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -72,11 +97,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 14 21:00:39 JST 2018
+                  DATE: Fri Dec 21 18:53:57 JST 2018
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html
-                  HASH: 0c2497dc20209dfca948b7618a13dcab8981d982
-                  MATRIX: 1221->260|1345->291|1372->292|1452->397|1488->406|1523->414|1549->419|1623->466|1638->472|1702->515|1790->576|1805->582|1866->621|1934->662|1949->668|2042->739|2123->885|2164->899|2192->906|2228->915|2285->945|2300->951|2371->1001|2432->1035|2447->1041|2516->1089|2577->1123|2592->1129|2661->1177|2745->1234|2760->1240|2823->1282
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|51->22|52->23|53->24|53->24|53->24|54->25|54->25|54->25|55->26|55->26|55->26|56->27|56->27|56->27
+                  HASH: af8d519a8752be12aa59a88e7d9411dd10472dbb
+                  MATRIX: 1221->260|1345->291|1372->292|1452->397|1488->406|1523->414|1549->419|1623->466|1638->472|1702->515|1770->556|1785->562|1849->605|1937->666|1952->672|2013->711|2081->752|2096->758|2189->829|3346->2051|3387->2065|3415->2072|3451->2081|3508->2111|3523->2117|3594->2167|3655->2201|3670->2207|3739->2255|3800->2289|3815->2295|3884->2343|3968->2400|3983->2406|4046->2448
+                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|75->46|76->47|76->47|77->48|78->49|78->49|78->49|79->50|79->50|79->50|80->51|80->51|80->51|81->52|81->52|81->52
                   -- GENERATED --
               */
           

@@ -6,11 +6,13 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.*;
 import play.data.format.Formats;
 import play.data.validation.Constraints;
+
+import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name="Grade")
-public class Grade extends Model{
+@Table(name="AccGrade")
+public class AccGrade extends Model{
 
 
     @Id
@@ -30,7 +32,7 @@ public class Grade extends Model{
     @Constraints.MaxLength(25)
     @Formats.NonEmpty
     @Column(nullable = false)
-    public int nowGrade;
+    public int accGrade;
 
     @Constraints.MaxLength(25)
     @Formats.NonEmpty
@@ -41,12 +43,17 @@ public class Grade extends Model{
     @ManyToOne
     public User user;
 
+    /**
+     * 投稿日時(ソートしやすくするためミリ秒で保存)
+     */
+    public Long registeredAt;
 
-    public Grade(final String username, final String subject, final int nowGrade,final String tag) {
+    public AccGrade(final String username, final String subject, final int accGrade,final String tag, final Long registerAt) {
         this.username = username;
         this.subject = subject;
-        this.nowGrade = nowGrade;
+        this.accGrade = accGrade;
         this.tag = tag;
+        this.registeredAt = registerAt;
     }
 
 }

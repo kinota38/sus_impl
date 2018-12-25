@@ -108,7 +108,11 @@ public class User extends Model{
 
     @JsonBackReference
     @OneToMany(cascade = CascadeType.ALL)
-    public List<Grade> grade = new ArrayList<>();
+    public List<Grade> grade;
+
+    @JsonBackReference
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<AccGrade> acc_grade;
 
 
     public User(final String name, final String password, final String salt,

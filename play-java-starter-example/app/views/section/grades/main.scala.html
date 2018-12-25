@@ -12,11 +12,36 @@
         @* Here's where we render the page title `String`. *@
         <title>@title</title>
         <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/grades.css")">
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
         <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">
     </head>
     <body>
         <main>
+            <header>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content-left">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li style="float:right" class="dropdown">
+                        <a class="active" href="#about"><i class="fas fa-user"></i></a>
+                        <div class="dropdown-content-right">
+                            <a href="#">Account Info</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </header>
             @* And here's where we render the `Html` object containing
             * the page content. *@
             @content

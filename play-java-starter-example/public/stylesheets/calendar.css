@@ -1,40 +1,79 @@
-table {
-  align: center;
-  border: solid 1px #000000;
-}
-th {
-  border: solid 1px #000000;
-}
-td {
-  border: solid 1px #000000;
+div.wrapper{
+    display: flex;
+    padding-top:40px
 }
 
+div.menu{
+    min-width: 200px;
+    /*width:20vw;*/
+}
+
+#calendar-result{
+
+}
+
+body{
+    background-image: linear-gradient(75deg,white,#e1e1e1);
+}
 div.calendar{
-    //height : 100%;
-    //width : 100%;
-    //border: solid 1px #000000;
+
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    font-family: Montserrat;
+    font-weight: 100;
+    /*width: 80vw;*/
+    /*position: absolute;*/
+    /*選択不可*/
+    user-select: none; /* CSS3 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10かららしい */
 }
 
+div.week_base{
+display: flex;
+    height : 20px;
+    color: #888888;
+}
 div.date_base {
-border: solid 1px #000000;
-    display: inline-block;
-    //width : 20px;
+    width:14.15%;
+
+    border-right: 1px solid #ffffff;
+    /*width : 20px;*/
     text-align : center;
+
 }
+div.week{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #A8B2B9;
+}
+
 div.date{
-border: solid 1px #000000;
-    display: inline-block;
-    //width : 20px;
-    text-align : center;
+
+    border-right: 1px solid #e1e1e6;
+    border-bottom: 1px solid #e1e1e6;
+    text-align : right;
+    width:14.15%;
+    height:14vh;
     cursor: pointer;
-    // display: block;
+    transition: 0.4s ;
+
 }
+/*div.date:last-child{
+    border-right: 0;
+}*/
+
+
+
 .tdlink {
   cursor: pointer;
   // display: block;
 }
 div.date:hover{
-    background-color: #ff0000;
+    background-color: #A4C6FF;
 }
 .tdlink:hover {
   background-color: #ff0000;

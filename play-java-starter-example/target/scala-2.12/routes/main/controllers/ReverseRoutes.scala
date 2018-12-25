@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Thu Dec 20 23:31:23 JST 2018
+// @DATE:Sat Dec 22 16:39:15 JST 2018
 
 import play.api.mvc.Call
 
@@ -11,20 +11,20 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:26
+  // @LINE:29
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:26
+    // @LINE:29
     def at(): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public/images"), ("file", "favicon.png"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "favicon.ico")
     }
   
-    // @LINE:27
+    // @LINE:30
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -39,10 +39,10 @@ package controllers {
     }
 
   
-    // @LINE:21
-    def registerGrade(): Call = {
+    // @LINE:23
+    def registerAccGrade(username:String): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "grade/register")
+      Call("POST", _prefix + { _defaultPrefix } + "grades/registeracc/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
     // @LINE:20
@@ -51,28 +51,46 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "grades/gradelist/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
+    // @LINE:24
+    def editGrade(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "grades/edit")
+    }
+  
+    // @LINE:22
+    def registerGrade(username:String): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "grades/register" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
+    }
+  
     // @LINE:19
     def gradesList(username:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "grades/gradeslist/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
-    // @LINE:22
-    def editGrade(): Call = {
+    // @LINE:25
+    def removeGrade(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "grade/edit")
+      Call("POST", _prefix + { _defaultPrefix } + "grades/remove")
+    }
+  
+    // @LINE:21
+    def accGradeList(username:String): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "grades/accgradelist/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
   }
 
-  // @LINE:25
+  // @LINE:28
   class ReverseDefault(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:25
+    // @LINE:28
     def notFound(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "robot.txt")

@@ -31,47 +31,44 @@ object grades extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
 
 
 Seq[Any](_display_(/*1.2*/main("成績")/*1.12*/ {_display_(Seq[Any](format.raw/*1.14*/("""
-"""),format.raw/*2.1*/("""<div class="header">
-    <nav class="globalMenuSp">
-        <ul>
-            <li><a href="#">MypageTop</a></li>
-            <li><a href="#">AccountSetting</a></li>
-            <li><a href="/signout">LogOut</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="navToggle">
-    <span></span><span></span><span></span><span>menu</span>
-</div>
-<div class="main">
+
+"""),format.raw/*3.1*/("""<div class="main">
+    <form id="dummy-form">
+        """),_display_(/*5.10*/helper/*5.16*/.CSRF.formField),format.raw/*5.31*/("""
+    """),format.raw/*6.5*/("""</form>
 
     <div  id="first-section">
         <div  class="first-element" id="first-chart">
-            <canvas  id="myChart1" ></canvas>
+            <div id="first-radio">
+                <input type="radio" name="first-radio" value="ave_grades" checked>平均点
+                <input type="radio" name="first-radio" value="max_grades">最高点
             </div>
+            <canvas  id="myChart1" ></canvas>
+            <button class="button" id="acc-register-button" onclick="add_to_acc();">累積に追加する</button>
+        </div>
         <div class="first-element" id="register-grade">
-            <div>popup</div>
             <form id="register-form">
-                科目名:<br><input type="text" class="register-input" name="register-subject"><br>
-                得点:<br><input type="text" class="register-input" name="register-now"><br>
-                """),_display_(/*25.18*/helper/*25.24*/.CSRF.formField),format.raw/*25.39*/("""
-            """),format.raw/*26.13*/("""</form>
+                科目名<br><input type="text" class="register-input" name="register-subject"><br>
+                得点<br><input type="text" class="register-input" name="register-now"><br>
+                タグ<br><input type="text" class="register-input" name="register-tag"><br>
+                """),_display_(/*22.18*/helper/*22.24*/.CSRF.formField),format.raw/*22.39*/("""
+            """),format.raw/*23.13*/("""</form>
             <button  onclick="register(); return false;">追加</button>
 
         </div>
     </div>
-
     <div class ="layer" id="edit-layer"></div>
     <div class="popup" id="edit-popup">
         <div>popup</div>
         <form id="edit-form">
             <span id="input-type"></span>:<input type="text" name="new-grade" class="input-number" id="edit-grade"><br>
-            """),_display_(/*37.14*/helper/*37.20*/.CSRF.formField),format.raw/*37.35*/("""
-        """),format.raw/*38.9*/("""</form>
+            """),_display_(/*33.14*/helper/*33.20*/.CSRF.formField),format.raw/*33.35*/("""
+        """),format.raw/*34.9*/("""</form>
         <span id="edit_button-field"></span>
     </div>
 
     <div id="chart-area2">
+        <select name="sources" id="chart2-select" class="custom-select sources" placeholder="科目選択"></select>
         <canvas id="myChart2" ></canvas>
     </div>
 </div>
@@ -91,11 +88,11 @@ Seq[Any](_display_(/*1.2*/main("成績")/*1.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Thu Dec 20 23:06:44 JST 2018
+                  DATE: Tue Dec 25 12:01:39 JST 2018
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
-                  HASH: 117fba3aae6e5db26996d96d34c4d5650b91a97e
-                  MATRIX: 1046->1|1064->11|1103->13|1130->14|1990->847|2005->853|2041->868|2082->881|2489->1261|2504->1267|2540->1282|2576->1291
-                  LINES: 33->1|33->1|33->1|34->2|57->25|57->25|57->25|58->26|69->37|69->37|69->37|70->38
+                  HASH: d814281b15a029a031bf3ecfcd3c783df10255d3
+                  MATRIX: 1046->1|1064->11|1103->13|1131->15|1212->70|1226->76|1261->91|1292->96|2175->952|2190->958|2226->973|2267->986|2673->1365|2688->1371|2724->1386|2760->1395
+                  LINES: 33->1|33->1|33->1|35->3|37->5|37->5|37->5|38->6|54->22|54->22|54->22|55->23|65->33|65->33|65->33|66->34
                   -- GENERATED --
               */
           

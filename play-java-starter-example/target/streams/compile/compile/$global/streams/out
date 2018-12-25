@@ -1,2 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/controllers/SignUpandInController.java:1:1: class、interfaceまたはenumがありません[0m
-[0m[[0m[31merror[0m] [0m[0mpapackage controllers;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/controllers/GradeController.java:96:1: 変数 usernameはすでにメソッド registerAccGrade(java.lang.String)で定義されています[0m
+[0m[[0m[31merror[0m] [0m[0m            String username = request.get("hidden-username")[0];[0m
