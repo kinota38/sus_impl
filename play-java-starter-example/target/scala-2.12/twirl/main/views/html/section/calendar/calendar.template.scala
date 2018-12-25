@@ -32,12 +32,14 @@ object calendar extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.H
 
 Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](format.raw/*1.16*/("""
 
-    """),format.raw/*3.5*/("""<button id="tmonth" onclick='setCalendar()'>今月</button>
+    """),format.raw/*3.5*/("""<!--　<button id="tmonth" onclick='setCalendar()'>今月</button>
     <button id="bmonth" onclick='backmm(this);return false;'><<</button>
     <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
+
     <span id="year"></span>年<span id="month"></span>月<br />
+
     <span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span><br />
-    <span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>
+    <span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>-->
     <div id="calendar-result" ></div>
 """)))}))
       }
@@ -55,9 +57,9 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 18 11:41:56 JST 2018
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/calendar.scala.html
-                  HASH: 9e3b34d10751bfc37a0b9492eef3f869859fb867
+                  DATE: Tue Dec 25 10:28:57 JST 2018
+                  SOURCE: /Users/daikichi/Desktop/sus_impl2/play-java-starter-example/app/views/section/calendar/calendar.scala.html
+                  HASH: 6fd71d4a9e6e5ab53e91e3a8f05956094fb72f1f
                   MATRIX: 1050->1|1071->14|1109->15|1141->21
                   LINES: 33->1|33->1|33->1|35->3
                   -- GENERATED --

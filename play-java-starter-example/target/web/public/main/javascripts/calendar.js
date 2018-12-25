@@ -2,6 +2,7 @@ const $ = jQuery;
 var $window = $(window);
 window.onload = function() {
   setCalendar();
+  setMiniCalendar();
 };
 
 var pushing_flag=0;
@@ -38,7 +39,7 @@ $window.resize(function (){
 //}
 
 // カレンダー生成（引数は前月や翌月移動に備えてのもの）
-function setCalendar(yy, mm) {
+function makeCalendar(yy, mm) {
   var yy, mm;
   // yy,mmが未定義なら（つまり一番最初にページを開いたときに）そのときの年月を変数yy,mmに付与する
   if (!yy && !mm) {
@@ -108,7 +109,7 @@ function setCalendar(yy, mm) {
   }*/
   out += "<div class='week_base'>"
   for(var i in youbi){
-    out += "<div class='date_base' style='width:"+ (windowWidth/8)+"px; height"+20+"px;'>" + youbi[i] + "</div>";
+    out += "<div class='date_base'>" + youbi[i] + "</div>";
   }
   out += "</div>"
 
@@ -126,17 +127,28 @@ function setCalendar(yy, mm) {
     m_now = 12;
     y_now = yy - 1;
   }
+  var m_flag = 0;
   for(var i=1; i<=row; i++) {
     out += "<div class='week'>"
 
     for(var j=7*i-6; j<=7*i; j++){
+
+        var output_str = days[j-1]+"";
+
         if(days[j-1] == 1){
             y_now = (m_now + 1 > 12)? y_now + 1 : y_now;
             m_now = (m_now + 1 > 12)? 1 : m_now + 1;
+            m_flag++;
+            output_str = m_now + "/1";
         }
+        var color_day = (m_flag==1)? "000000" : "CCCCCC" ;
+        /*out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
+        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px; color:#"+ color_day +";' >"
+                                        +output_str+"</div>";
+                                        */
         out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
-        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px;' >"
-                                        +days[j-1]+"</div>";
+       +" style='color:#"+ color_day +";' >"
+                                                +output_str+"</div>";
     }
 
     out += "</div>"
@@ -144,9 +156,19 @@ function setCalendar(yy, mm) {
 
   out += "</div>";
 
+  return out;
+
   // 最後にhtmlへどかっと渡す
   document.getElementById("calendar-result").innerHTML = out;
   document.getElementById("calendar-result").style.width = (windowWidth/8*7+9)  + 'px';
+}
+
+function setCalendar(yy,mm){
+    var out = makeCalendar(yy,mm);
+    var windowWidth = $window.width();
+    var windowHeight = $window.height();
+    document.getElementById("calendar-result").innerHTML = out;
+    document.getElementById("calendar-result").style.width = (windowWidth/8*7+9)  + 'px';
 }
 
 // 前月へ移動（年度をまたぐときはyyを調整する必要がある点に留意）

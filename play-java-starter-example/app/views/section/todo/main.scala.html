@@ -1,0 +1,44 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@title</title>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendarMini.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">
+</head>
+<body>
+
+<main>
+    <div id="todo-list" class="drawer-menu" padding-top="28">
+        <span id="todo-name-field" class="error"></span>
+        <span id="todo-message-field" class="error"></span>
+        <span id="todo-error-field" class="error"></span>
+        <h2>タスク追加</h2>
+        <form id="todo-form">
+            <dl>
+                <dt>タスク名</dt>
+                <input type="text" name="title" autocomplete="on" class="textinput" required>
+                <dt>締め切り</dt>
+                <input type="date" name="deadline" id="deadline" class="textinput"></input>
+            </dl>
+            <input type="hidden" name="done-active" id="done-active" value="0">
+            @helper.CSRF.formField
+        </form>
+        <button onclick="task_new(); return false;">追加</button>
+        <button onclick="cancel_todo(); return false;">キャンセル</button><br><br>
+    </div>
+
+    <div id="todo-field" class="contents">
+        <br><br><h2>TODOリスト一覧</h2>
+        <button onclick="search_done(); return false;">完了/未完了</button>
+        <div id="todo-table"></div>
+    </div>
+</main>
+<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>
+<script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>
+<script src="@routes.Assets.versioned("/javascripts/todo.js")"></script>
+</body>
+</html>

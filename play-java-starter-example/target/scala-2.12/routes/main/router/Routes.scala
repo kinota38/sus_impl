@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @SOURCE:/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/conf/routes
+// @DATE:Tue Dec 25 11:31:16 JST 2018
 
 package router
 
@@ -15,31 +15,35 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  SignUpandInController_1: controllers.SignUpandInController,
+  SignUpandInController_0: controllers.SignUpandInController,
   // @LINE:13
-  MainController_0: controllers.MainController,
-  // @LINE:21
+  MainController_1: controllers.MainController,
+  // @LINE:16
+  TodoController_2: controllers.TodoController,
+  // @LINE:24
   Default_3: controllers.Default,
-  // @LINE:22
-  Assets_2: controllers.Assets,
+  // @LINE:25
+  Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    SignUpandInController_1: controllers.SignUpandInController,
+    SignUpandInController_0: controllers.SignUpandInController,
     // @LINE:13
-    MainController_0: controllers.MainController,
-    // @LINE:21
+    MainController_1: controllers.MainController,
+    // @LINE:16
+    TodoController_2: controllers.TodoController,
+    // @LINE:24
     Default_3: controllers.Default,
-    // @LINE:22
-    Assets_2: controllers.Assets
-  ) = this(errorHandler, SignUpandInController_1, MainController_0, Default_3, Assets_2, "/")
+    // @LINE:25
+    Assets_4: controllers.Assets
+  ) = this(errorHandler, SignUpandInController_0, MainController_1, TodoController_2, Default_3, Assets_4, "/")
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, SignUpandInController_1, MainController_0, Default_3, Assets_2, prefix)
+    new Routes(errorHandler, SignUpandInController_0, MainController_1, TodoController_2, Default_3, Assets_4, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -55,6 +59,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.SignUpandInController.signinForm"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.SignUpandInController.signIn"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """helper/""" + "$" + """username<[^/]+>""", """controllers.MainController.mypageForm(username:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """todoApplication""", """controllers.TodoController.todoTop"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signout""", """controllers.MainController.signOut"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades""", """controllers.MainController.grade"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar""", """controllers.MainController.calendar"""),
@@ -73,7 +78,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_SignUpandInController_helperTop0_invoker = createInvoker(
-    SignUpandInController_1.helperTop,
+    SignUpandInController_0.helperTop,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -91,7 +96,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
   )
   private[this] lazy val controllers_SignUpandInController_signupForm1_invoker = createInvoker(
-    SignUpandInController_1.signupForm,
+    SignUpandInController_0.signupForm,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -109,7 +114,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_SignUpandInController_helperTop2_invoker = createInvoker(
-    SignUpandInController_1.helperTop,
+    SignUpandInController_0.helperTop,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -127,7 +132,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("database/users")))
   )
   private[this] lazy val controllers_SignUpandInController_userList3_invoker = createInvoker(
-    SignUpandInController_1.userList,
+    SignUpandInController_0.userList,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -145,7 +150,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup/register")))
   )
   private[this] lazy val controllers_SignUpandInController_registerUser4_invoker = createInvoker(
-    SignUpandInController_1.registerUser,
+    SignUpandInController_0.registerUser,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -163,7 +168,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
   )
   private[this] lazy val controllers_SignUpandInController_signinForm5_invoker = createInvoker(
-    SignUpandInController_1.signinForm,
+    SignUpandInController_0.signinForm,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -181,7 +186,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
   )
   private[this] lazy val controllers_SignUpandInController_signIn6_invoker = createInvoker(
-    SignUpandInController_1.signIn,
+    SignUpandInController_0.signIn,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SignUpandInController",
@@ -199,7 +204,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("helper/"), DynamicPart("username", """[^/]+""",true)))
   )
   private[this] lazy val controllers_MainController_mypageForm7_invoker = createInvoker(
-    MainController_0.mypageForm(fakeValue[String]),
+    MainController_1.mypageForm(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.MainController",
@@ -213,11 +218,29 @@ class Routes(
   )
 
   // @LINE:16
-  private[this] lazy val controllers_MainController_signOut8_route = Route("GET",
+  private[this] lazy val controllers_TodoController_todoTop8_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("todoApplication")))
+  )
+  private[this] lazy val controllers_TodoController_todoTop8_invoker = createInvoker(
+    TodoController_2.todoTop,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TodoController",
+      "todoTop",
+      Nil,
+      "GET",
+      this.prefix + """todoApplication""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:19
+  private[this] lazy val controllers_MainController_signOut9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signout")))
   )
-  private[this] lazy val controllers_MainController_signOut8_invoker = createInvoker(
-    MainController_0.signOut,
+  private[this] lazy val controllers_MainController_signOut9_invoker = createInvoker(
+    MainController_1.signOut,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.MainController",
@@ -230,12 +253,12 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_MainController_grade9_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_MainController_grade10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades")))
   )
-  private[this] lazy val controllers_MainController_grade9_invoker = createInvoker(
-    MainController_0.grade,
+  private[this] lazy val controllers_MainController_grade10_invoker = createInvoker(
+    MainController_1.grade,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.MainController",
@@ -248,12 +271,12 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_MainController_calendar10_route = Route("GET",
+  // @LINE:21
+  private[this] lazy val controllers_MainController_calendar11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("calendar")))
   )
-  private[this] lazy val controllers_MainController_calendar10_invoker = createInvoker(
-    MainController_0.calendar,
+  private[this] lazy val controllers_MainController_calendar11_invoker = createInvoker(
+    MainController_1.calendar,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.MainController",
@@ -266,11 +289,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_Default_notFound11_route = Route("GET",
+  // @LINE:24
+  private[this] lazy val controllers_Default_notFound12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("robot.txt")))
   )
-  private[this] lazy val controllers_Default_notFound11_invoker = createInvoker(
+  private[this] lazy val controllers_Default_notFound12_invoker = createInvoker(
     Default_3.notFound,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -284,12 +307,12 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_Assets_at12_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_Assets_at13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("favicon.ico")))
   )
-  private[this] lazy val controllers_Assets_at12_invoker = createInvoker(
-    Assets_2.at(fakeValue[String], fakeValue[String]),
+  private[this] lazy val controllers_Assets_at13_invoker = createInvoker(
+    Assets_4.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -302,12 +325,12 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_Assets_versioned13_route = Route("GET",
+  // @LINE:26
+  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
-    Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+    Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -326,85 +349,91 @@ class Routes(
     // @LINE:6
     case controllers_SignUpandInController_helperTop0_route(params@_) =>
       call { 
-        controllers_SignUpandInController_helperTop0_invoker.call(SignUpandInController_1.helperTop)
+        controllers_SignUpandInController_helperTop0_invoker.call(SignUpandInController_0.helperTop)
       }
   
     // @LINE:7
     case controllers_SignUpandInController_signupForm1_route(params@_) =>
       call { 
-        controllers_SignUpandInController_signupForm1_invoker.call(SignUpandInController_1.signupForm)
+        controllers_SignUpandInController_signupForm1_invoker.call(SignUpandInController_0.signupForm)
       }
   
     // @LINE:8
     case controllers_SignUpandInController_helperTop2_route(params@_) =>
       call { 
-        controllers_SignUpandInController_helperTop2_invoker.call(SignUpandInController_1.helperTop)
+        controllers_SignUpandInController_helperTop2_invoker.call(SignUpandInController_0.helperTop)
       }
   
     // @LINE:9
     case controllers_SignUpandInController_userList3_route(params@_) =>
       call { 
-        controllers_SignUpandInController_userList3_invoker.call(SignUpandInController_1.userList)
+        controllers_SignUpandInController_userList3_invoker.call(SignUpandInController_0.userList)
       }
   
     // @LINE:10
     case controllers_SignUpandInController_registerUser4_route(params@_) =>
       call { 
-        controllers_SignUpandInController_registerUser4_invoker.call(SignUpandInController_1.registerUser)
+        controllers_SignUpandInController_registerUser4_invoker.call(SignUpandInController_0.registerUser)
       }
   
     // @LINE:11
     case controllers_SignUpandInController_signinForm5_route(params@_) =>
       call { 
-        controllers_SignUpandInController_signinForm5_invoker.call(SignUpandInController_1.signinForm)
+        controllers_SignUpandInController_signinForm5_invoker.call(SignUpandInController_0.signinForm)
       }
   
     // @LINE:12
     case controllers_SignUpandInController_signIn6_route(params@_) =>
       call { 
-        controllers_SignUpandInController_signIn6_invoker.call(SignUpandInController_1.signIn)
+        controllers_SignUpandInController_signIn6_invoker.call(SignUpandInController_0.signIn)
       }
   
     // @LINE:13
     case controllers_MainController_mypageForm7_route(params@_) =>
       call(params.fromPath[String]("username", None)) { (username) =>
-        controllers_MainController_mypageForm7_invoker.call(MainController_0.mypageForm(username))
+        controllers_MainController_mypageForm7_invoker.call(MainController_1.mypageForm(username))
       }
   
     // @LINE:16
-    case controllers_MainController_signOut8_route(params@_) =>
+    case controllers_TodoController_todoTop8_route(params@_) =>
       call { 
-        controllers_MainController_signOut8_invoker.call(MainController_0.signOut)
+        controllers_TodoController_todoTop8_invoker.call(TodoController_2.todoTop)
       }
   
-    // @LINE:17
-    case controllers_MainController_grade9_route(params@_) =>
+    // @LINE:19
+    case controllers_MainController_signOut9_route(params@_) =>
       call { 
-        controllers_MainController_grade9_invoker.call(MainController_0.grade)
+        controllers_MainController_signOut9_invoker.call(MainController_1.signOut)
       }
   
-    // @LINE:18
-    case controllers_MainController_calendar10_route(params@_) =>
+    // @LINE:20
+    case controllers_MainController_grade10_route(params@_) =>
       call { 
-        controllers_MainController_calendar10_invoker.call(MainController_0.calendar)
+        controllers_MainController_grade10_invoker.call(MainController_1.grade)
       }
   
     // @LINE:21
-    case controllers_Default_notFound11_route(params@_) =>
+    case controllers_MainController_calendar11_route(params@_) =>
       call { 
-        controllers_Default_notFound11_invoker.call(Default_3.notFound)
+        controllers_MainController_calendar11_invoker.call(MainController_1.calendar)
       }
   
-    // @LINE:22
-    case controllers_Assets_at12_route(params@_) =>
+    // @LINE:24
+    case controllers_Default_notFound12_route(params@_) =>
+      call { 
+        controllers_Default_notFound12_invoker.call(Default_3.notFound)
+      }
+  
+    // @LINE:25
+    case controllers_Assets_at13_route(params@_) =>
       call(Param[String]("path", Right("/public/images")), Param[String]("file", Right("favicon.png"))) { (path, file) =>
-        controllers_Assets_at12_invoker.call(Assets_2.at(path, file))
+        controllers_Assets_at13_invoker.call(Assets_4.at(path, file))
       }
   
-    // @LINE:23
-    case controllers_Assets_versioned13_route(params@_) =>
+    // @LINE:26
+    case controllers_Assets_versioned14_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned13_invoker.call(Assets_2.versioned(path, file))
+        controllers_Assets_versioned14_invoker.call(Assets_4.versioned(path, file))
       }
   }
 }

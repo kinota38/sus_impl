@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @SOURCE:/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/conf/routes
+// @DATE:Tue Dec 25 11:31:16 JST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -10,6 +10,126 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers.javascript {
+
+  // @LINE:25
+  class ReverseAssets(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:25
+    def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Assets.at",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "favicon.ico"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Assets.versioned",
+      """
+        function(file1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[Asset]].javascriptUnbind + """)("file", file1)})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:24
+  class ReverseDefault(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:24
+    def notFound: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Default.notFound",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "robot.txt"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:13
+  class ReverseMainController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:20
+    def grade: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.grade",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "grades"})
+        }
+      """
+    )
+  
+    // @LINE:13
+    def mypageForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.mypageForm",
+      """
+        function(username0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "helper/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def calendar: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.calendar",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "calendar"})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def signOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.signOut",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signout"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:16
+  class ReverseTodoController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:16
+    def todoTop: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.todoTop",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "todoApplication"})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:6
   class ReverseSignUpandInController(_prefix: => String) {
@@ -79,106 +199,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "signin"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:13
-  class ReverseMainController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def grade: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.MainController.grade",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "grades"})
-        }
-      """
-    )
-  
-    // @LINE:13
-    def mypageForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.MainController.mypageForm",
-      """
-        function(username0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "helper/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
-        }
-      """
-    )
-  
-    // @LINE:18
-    def calendar: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.MainController.calendar",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "calendar"})
-        }
-      """
-    )
-  
-    // @LINE:16
-    def signOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.MainController.signOut",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signout"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:22
-  class ReverseAssets(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:22
-    def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Assets.at",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "favicon.ico"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Assets.versioned",
-      """
-        function(file1) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[Asset]].javascriptUnbind + """)("file", file1)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:21
-  class ReverseDefault(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:21
-    def notFound: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Default.notFound",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "robot.txt"})
         }
       """
     )

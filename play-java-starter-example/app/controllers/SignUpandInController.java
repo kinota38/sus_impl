@@ -4,7 +4,6 @@ import play.mvc.*;
 import views.html.*;
 import views.html.section.*;
 import views.html.section.grades.*;
-import views.html.calendar.*;
 import io.ebean.Ebean;
 import models.User;
 import java.util.List;
@@ -29,7 +28,7 @@ public class SignUpandInController extends Controller {
 
 
     public Result signupForm() {
-        return ok(signup.render());
+        return ok();
     }
 
     //Userのリストを返す
@@ -78,9 +77,6 @@ public class SignUpandInController extends Controller {
             data2.user = user.get();
             data1.save();
             data2.save();
-
-
-
             return redirect("/helper/" + user.get().username+user.get().ss.get(0).message);
         }
         return ok(signin.render(""));

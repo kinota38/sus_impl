@@ -1,3 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:13:1: value mypageForm is not a member of controllers.SignUpandInController[0m
-[0m[[0m[31merror[0m] [0m[0mGET      /helper/:username          controllers.SignUpandInController.mypageForm(username: String)[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/app/controllers/TodoController.java:23:1: シンボルを見つけられません[0m
+[0m[[0m[31merror[0m] [0m[0m  シンボル:   メソッド ok()[0m
+[0m[[0m[31merror[0m] [0m[0m  場所: クラス controllers.TodoController[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok();[0m

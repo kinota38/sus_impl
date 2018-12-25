@@ -12,6 +12,9 @@ GET     /signin                     controllers.SignUpandInController.signinForm
 POST     /signin              controllers.SignUpandInController.signIn
 GET      /helper/:username          controllers.MainController.mypageForm(username: String)
 
+
+GET     /todoApplication            controllers.TodoController.todoTop
+
 # mypage controller
 GET      /signout                    controllers.MainController.signOut
 GET      /grades                      controllers.MainController.grade
@@ -21,3 +24,4 @@ GET      /calendar                   controllers.MainController.calendar
 GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
 GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
+
