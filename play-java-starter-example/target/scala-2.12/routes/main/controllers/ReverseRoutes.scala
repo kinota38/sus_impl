@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @SOURCE:/Users/shibainu/Documents2/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Thu Jan 10 00:09:19 JST 2019
 
 import play.api.mvc.Call
 
@@ -20,16 +20,8 @@ package controllers {
   
     // @LINE:6
     def helperTop(): Call = {
-    
-      () match {
       
-        // @LINE:6
-        case ()  =>
-          
-          Call("GET", _prefix)
-      
-      }
-    
+      Call("GET", _prefix)
     }
   
     // @LINE:7
@@ -38,25 +30,25 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "signup")
     }
   
-    // @LINE:10
+    // @LINE:9
     def registerUser(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "signup/register")
     }
   
-    // @LINE:11
+    // @LINE:10
     def signinForm(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "signin")
     }
   
-    // @LINE:9
+    // @LINE:8
     def userList(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "database/users")
     }
   
-    // @LINE:12
+    // @LINE:11
     def signIn(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "signin")
@@ -64,35 +56,41 @@ package controllers {
   
   }
 
-  // @LINE:13
+  // @LINE:12
   class ReverseMainController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:17
+    // @LINE:16
     def grade(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "grades")
     }
   
-    // @LINE:13
+    // @LINE:12
     def mypageForm(username:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "helper/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
-    // @LINE:18
-    def calendar(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "calendar")
-    }
-  
-    // @LINE:16
+    // @LINE:15
     def signOut(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "signout")
+    }
+  
+    // @LINE:18
+    def calendarDay(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "calendar/day")
+    }
+  
+    // @LINE:17
+    def calendarMonth(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "calendar/month")
     }
   
   }

@@ -9,7 +9,8 @@ import play.libs.Json;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import utility.Digest;
-import views.html.section.calendar.calendar;
+import views.html.section.calendar.month.*;
+import views.html.section.calendar.day.day;
 import views.html.section.grades.grades;
 import views.html.section.section;
 
@@ -39,9 +40,11 @@ public class MainController extends Controller {
         return ok(grades.render());
     }
 
-    public Result calendar(){
+    public Result calendarMonth(){
         return ok(calendar.render());
     }
+
+    public Result calendarDay() { return ok(day.render()); }
 
 
 }

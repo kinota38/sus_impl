@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @SOURCE:/Users/shibainu/Documents2/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Thu Jan 10 00:09:19 JST 2019
 
 package router
 
@@ -16,7 +16,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   SignUpandInController_1: controllers.SignUpandInController,
-  // @LINE:13
+  // @LINE:12
   MainController_0: controllers.MainController,
   // @LINE:21
   Default_3: controllers.Default,
@@ -29,7 +29,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     SignUpandInController_1: controllers.SignUpandInController,
-    // @LINE:13
+    // @LINE:12
     MainController_0: controllers.MainController,
     // @LINE:21
     Default_3: controllers.Default,
@@ -49,7 +49,6 @@ class Routes(
   def documentation = List(
     ("""GET""", this.prefix, """controllers.SignUpandInController.helperTop"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.SignUpandInController.signupForm"""),
-    ("""GET""", this.prefix, """controllers.SignUpandInController.helperTop"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """database/users""", """controllers.SignUpandInController.userList"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup/register""", """controllers.SignUpandInController.registerUser"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signin""", """controllers.SignUpandInController.signinForm"""),
@@ -57,7 +56,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """helper/""" + "$" + """username<[^/]+>""", """controllers.MainController.mypageForm(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signout""", """controllers.MainController.signOut"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades""", """controllers.MainController.grade"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar""", """controllers.MainController.calendar"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar/month""", """controllers.MainController.calendarMonth"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """calendar/day""", """controllers.MainController.calendarDay"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """robot.txt""", """controllers.Default.notFound"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """favicon.ico""", """controllers.Assets.at(path:String = "/public/images", file:String = "favicon.png")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
@@ -105,28 +105,10 @@ class Routes(
   )
 
   // @LINE:8
-  private[this] lazy val controllers_SignUpandInController_helperTop2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix)))
-  )
-  private[this] lazy val controllers_SignUpandInController_helperTop2_invoker = createInvoker(
-    SignUpandInController_1.helperTop,
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.SignUpandInController",
-      "helperTop",
-      Nil,
-      "GET",
-      this.prefix + """""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:9
-  private[this] lazy val controllers_SignUpandInController_userList3_route = Route("GET",
+  private[this] lazy val controllers_SignUpandInController_userList2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("database/users")))
   )
-  private[this] lazy val controllers_SignUpandInController_userList3_invoker = createInvoker(
+  private[this] lazy val controllers_SignUpandInController_userList2_invoker = createInvoker(
     SignUpandInController_1.userList,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -140,11 +122,11 @@ class Routes(
     )
   )
 
-  // @LINE:10
-  private[this] lazy val controllers_SignUpandInController_registerUser4_route = Route("POST",
+  // @LINE:9
+  private[this] lazy val controllers_SignUpandInController_registerUser3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup/register")))
   )
-  private[this] lazy val controllers_SignUpandInController_registerUser4_invoker = createInvoker(
+  private[this] lazy val controllers_SignUpandInController_registerUser3_invoker = createInvoker(
     SignUpandInController_1.registerUser,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -158,11 +140,11 @@ class Routes(
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_SignUpandInController_signinForm5_route = Route("GET",
+  // @LINE:10
+  private[this] lazy val controllers_SignUpandInController_signinForm4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
   )
-  private[this] lazy val controllers_SignUpandInController_signinForm5_invoker = createInvoker(
+  private[this] lazy val controllers_SignUpandInController_signinForm4_invoker = createInvoker(
     SignUpandInController_1.signinForm,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -176,11 +158,11 @@ class Routes(
     )
   )
 
-  // @LINE:12
-  private[this] lazy val controllers_SignUpandInController_signIn6_route = Route("POST",
+  // @LINE:11
+  private[this] lazy val controllers_SignUpandInController_signIn5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signin")))
   )
-  private[this] lazy val controllers_SignUpandInController_signIn6_invoker = createInvoker(
+  private[this] lazy val controllers_SignUpandInController_signIn5_invoker = createInvoker(
     SignUpandInController_1.signIn,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -194,11 +176,11 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_MainController_mypageForm7_route = Route("GET",
+  // @LINE:12
+  private[this] lazy val controllers_MainController_mypageForm6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("helper/"), DynamicPart("username", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_MainController_mypageForm7_invoker = createInvoker(
+  private[this] lazy val controllers_MainController_mypageForm6_invoker = createInvoker(
     MainController_0.mypageForm(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -212,11 +194,11 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_MainController_signOut8_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val controllers_MainController_signOut7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signout")))
   )
-  private[this] lazy val controllers_MainController_signOut8_invoker = createInvoker(
+  private[this] lazy val controllers_MainController_signOut7_invoker = createInvoker(
     MainController_0.signOut,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -230,11 +212,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_MainController_grade9_route = Route("GET",
+  // @LINE:16
+  private[this] lazy val controllers_MainController_grade8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades")))
   )
-  private[this] lazy val controllers_MainController_grade9_invoker = createInvoker(
+  private[this] lazy val controllers_MainController_grade8_invoker = createInvoker(
     MainController_0.grade,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -248,19 +230,37 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_MainController_calendar10_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("calendar")))
+  // @LINE:17
+  private[this] lazy val controllers_MainController_calendarMonth9_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("calendar/month")))
   )
-  private[this] lazy val controllers_MainController_calendar10_invoker = createInvoker(
-    MainController_0.calendar,
+  private[this] lazy val controllers_MainController_calendarMonth9_invoker = createInvoker(
+    MainController_0.calendarMonth,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.MainController",
-      "calendar",
+      "calendarMonth",
       Nil,
       "GET",
-      this.prefix + """calendar""",
+      this.prefix + """calendar/month""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:18
+  private[this] lazy val controllers_MainController_calendarDay10_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("calendar/day")))
+  )
+  private[this] lazy val controllers_MainController_calendarDay10_invoker = createInvoker(
+    MainController_0.calendarDay,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.MainController",
+      "calendarDay",
+      Nil,
+      "GET",
+      this.prefix + """calendar/day""",
       """""",
       Seq()
     )
@@ -336,57 +336,57 @@ class Routes(
       }
   
     // @LINE:8
-    case controllers_SignUpandInController_helperTop2_route(params@_) =>
+    case controllers_SignUpandInController_userList2_route(params@_) =>
       call { 
-        controllers_SignUpandInController_helperTop2_invoker.call(SignUpandInController_1.helperTop)
+        controllers_SignUpandInController_userList2_invoker.call(SignUpandInController_1.userList)
       }
   
     // @LINE:9
-    case controllers_SignUpandInController_userList3_route(params@_) =>
+    case controllers_SignUpandInController_registerUser3_route(params@_) =>
       call { 
-        controllers_SignUpandInController_userList3_invoker.call(SignUpandInController_1.userList)
+        controllers_SignUpandInController_registerUser3_invoker.call(SignUpandInController_1.registerUser)
       }
   
     // @LINE:10
-    case controllers_SignUpandInController_registerUser4_route(params@_) =>
+    case controllers_SignUpandInController_signinForm4_route(params@_) =>
       call { 
-        controllers_SignUpandInController_registerUser4_invoker.call(SignUpandInController_1.registerUser)
+        controllers_SignUpandInController_signinForm4_invoker.call(SignUpandInController_1.signinForm)
       }
   
     // @LINE:11
-    case controllers_SignUpandInController_signinForm5_route(params@_) =>
+    case controllers_SignUpandInController_signIn5_route(params@_) =>
       call { 
-        controllers_SignUpandInController_signinForm5_invoker.call(SignUpandInController_1.signinForm)
+        controllers_SignUpandInController_signIn5_invoker.call(SignUpandInController_1.signIn)
       }
   
     // @LINE:12
-    case controllers_SignUpandInController_signIn6_route(params@_) =>
-      call { 
-        controllers_SignUpandInController_signIn6_invoker.call(SignUpandInController_1.signIn)
+    case controllers_MainController_mypageForm6_route(params@_) =>
+      call(params.fromPath[String]("username", None)) { (username) =>
+        controllers_MainController_mypageForm6_invoker.call(MainController_0.mypageForm(username))
       }
   
-    // @LINE:13
-    case controllers_MainController_mypageForm7_route(params@_) =>
-      call(params.fromPath[String]("username", None)) { (username) =>
-        controllers_MainController_mypageForm7_invoker.call(MainController_0.mypageForm(username))
+    // @LINE:15
+    case controllers_MainController_signOut7_route(params@_) =>
+      call { 
+        controllers_MainController_signOut7_invoker.call(MainController_0.signOut)
       }
   
     // @LINE:16
-    case controllers_MainController_signOut8_route(params@_) =>
+    case controllers_MainController_grade8_route(params@_) =>
       call { 
-        controllers_MainController_signOut8_invoker.call(MainController_0.signOut)
+        controllers_MainController_grade8_invoker.call(MainController_0.grade)
       }
   
     // @LINE:17
-    case controllers_MainController_grade9_route(params@_) =>
+    case controllers_MainController_calendarMonth9_route(params@_) =>
       call { 
-        controllers_MainController_grade9_invoker.call(MainController_0.grade)
+        controllers_MainController_calendarMonth9_invoker.call(MainController_0.calendarMonth)
       }
   
     // @LINE:18
-    case controllers_MainController_calendar10_route(params@_) =>
+    case controllers_MainController_calendarDay10_route(params@_) =>
       call { 
-        controllers_MainController_calendar10_invoker.call(MainController_0.calendar)
+        controllers_MainController_calendarDay10_invoker.call(MainController_0.calendarDay)
       }
   
     // @LINE:21

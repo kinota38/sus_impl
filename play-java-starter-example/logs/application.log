@@ -1,883 +1,370 @@
-2018-12-18 10:58:44,646 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
-2018-12-18 10:58:44,862 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:mem:play
-2018-12-18 10:58:45,699 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2018-12-18T01:58:45.699Z
-2018-12-18 10:58:45,930 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-10 00:11:31,994 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2019-01-10 00:11:32,299 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:11:33,290 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2019-01-09T15:11:33.290Z
+2019-01-10 00:11:33,559 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.gzip.GzipFilter
     filters.sample.LoggingFilter
 
-2018-12-18 10:58:46,070 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
-2018-12-18 10:58:46,213 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 10:58:46,556 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:58:46,556 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:58:46,557 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 10:58:46,558 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:58:46,558 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 10:58:46,932 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 10:58:46,989 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
-2018-12-18 10:58:47,195 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 10:58:47,250 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /apple-touch-icon-precomposed.png
-2018-12-18 10:58:47,301 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /apple-touch-icon.png
-2018-12-18 10:58:48,453 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 10:58:48,475 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:58:48,478 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 10:58:48,481 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:58:48,541 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 10:58:52,198 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 10:58:52,292 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:58:52,295 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 10:58:52,295 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:58:54,376 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 10:58:54,393 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:58:54,393 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 10:58:54,393 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:58:54,393 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:58:54,395 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 10:58:54,425 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
-2018-12-18 10:58:54,426 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 10:58:54,452 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 10:59:00,602 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /database/users
-2018-12-18 10:59:00,634 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /signup/register
-2018-12-18 10:59:07,568 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 10:59:07,568 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 10:59:07,569 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 10:59:07,570 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:07,587 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:07,587 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 10:59:09,647 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 10:59:09,679 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /helper/s
-2018-12-18 10:59:09,707 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:09,708 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:09,708 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
-2018-12-18 10:59:09,709 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:09,709 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
-2018-12-18 10:59:09,818 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 10:59:09,823 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 10:59:09,824 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
-2018-12-18 10:59:09,824 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 10:59:11,081 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /grades
-2018-12-18 10:59:11,120 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grades.css
-2018-12-18 10:59:11,121 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grades.js
-2018-12-18 10:59:11,124 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:11,124 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
-2018-12-18 10:59:11,126 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:11,137 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:11,349 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 10:59:14,717 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /grades
-2018-12-18 10:59:14,736 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grades.css
-2018-12-18 10:59:14,739 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:14,739 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grades.js
-2018-12-18 10:59:14,739 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
-2018-12-18 10:59:14,740 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:14,743 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:15,635 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:15,635 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 10:59:15,653 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 10:59:15,653 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 10:59:15,655 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:15,653 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:15,868 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 10:59:15,897 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 10:59:15,898 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:15,901 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 10:59:15,902 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:15,904 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 10:59:16,056 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 10:59:16,433 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 10:59:16,450 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 10:59:16,451 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 10:59:16,451 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 10:59:16,453 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 10:59:16,455 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:00:35,462 [INFO] from application in application-akka.actor.default-dispatcher-52 - ApplicationTimer demo: Stopping application at 2018-12-18T02:00:35.462Z after 110s.
-2018-12-18 11:00:35,464 [INFO] from application in application-akka.actor.default-dispatcher-52 - Shutting down connection pool.
-2018-12-18 11:00:35,662 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2018-12-18 11:00:35,663 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:h2:mem:play
-2018-12-18 11:00:35,704 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2018-12-18T02:00:35.704Z
-2018-12-18 11:00:35,757 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-10 00:11:33,749 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev)
+2019-01-10 00:11:33,999 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /
+2019-01-10 00:11:34,224 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:11:34,224 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:11:34,224 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-01-10 00:11:34,357 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:11:34,362 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-01-10 00:11:34,471 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:11:34,552 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:11:34,696 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-01-10 00:11:48,123 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:11:48,207 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendarMini.css
+2019-01-10 00:11:48,207 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/navBar.css
+2019-01-10 00:11:48,210 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendar.css
+2019-01-10 00:11:48,231 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:11:48,243 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:11:48,243 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:11:48,244 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:11:48,262 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:11:48,310 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:11:48,323 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:11:48,344 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/images/favicon.png
+2019-01-10 00:11:56,682 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:11:56,730 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/style.css
+2019-01-10 00:11:56,744 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/miniCalendar.js
+2019-01-10 00:11:56,744 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:11:56,751 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:11:56,760 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/leftMenu.css
+2019-01-10 00:11:56,760 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:11:56,780 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:11:56,792 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/miniCalendar.js
+2019-01-10 00:11:56,814 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:14:45,284 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-01-10 00:16:59,628 [INFO] from application in application-akka.actor.default-dispatcher-32 - ApplicationTimer demo: Stopping application at 2019-01-09T15:16:59.628Z after 326s.
+2019-01-10 00:16:59,630 [INFO] from application in application-akka.actor.default-dispatcher-32 - Shutting down connection pool.
+2019-01-10 00:16:59,887 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-30 - Creating Pool for datasource 'default'
+2019-01-10 00:16:59,890 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-30 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:16:59,935 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-30 - ApplicationTimer demo: Starting application at 2019-01-09T15:16:59.935Z
+2019-01-10 00:17:00,152 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-30 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.gzip.GzipFilter
     filters.sample.LoggingFilter
 
-2018-12-18 11:00:35,762 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev)
-2018-12-18 11:00:35,773 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:00:35,773 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:00:35,773 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:00:35,805 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:00:35,818 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:00:35,821 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:00:35,827 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:00:35,831 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:07:57,063 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:07:57,063 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:07:57,063 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:07:57,095 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:07:57,096 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:07:57,098 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:07:57,105 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:07:57,108 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:10:27,111 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:10:27,111 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:10:27,111 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:10:27,136 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:10:27,136 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:10:27,136 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:10:27,152 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:10:27,154 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:12:39,262 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:12:39,262 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:12:39,262 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:12:39,290 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:12:39,290 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:12:39,299 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:12:39,301 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:12:39,311 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:14:08,346 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:14:08,347 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:08,351 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:14:08,373 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:08,373 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:14:08,374 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:14:08,384 [INFO] from application in application-akka.actor.default-dispatcher-49 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:14:08,389 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:14:18,889 [INFO] from application in application-akka.actor.default-dispatcher-49 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:14:20,433 [INFO] from application in application-akka.actor.default-dispatcher-50 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:20,435 [INFO] from application in application-akka.actor.default-dispatcher-48 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:14:20,435 [INFO] from application in application-akka.actor.default-dispatcher-49 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:14:20,435 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:14:20,433 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:14:20,437 [INFO] from application in application-akka.actor.default-dispatcher-51 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:20,448 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:14:35,921 [INFO] from application in application-akka.actor.default-dispatcher-48 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:14:35,921 [INFO] from application in application-akka.actor.default-dispatcher-53 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:14:35,921 [INFO] from application in application-akka.actor.default-dispatcher-51 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:35,944 [INFO] from application in application-akka.actor.default-dispatcher-53 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:14:35,944 [INFO] from application in application-akka.actor.default-dispatcher-49 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:14:35,945 [INFO] from application in application-akka.actor.default-dispatcher-63 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:14:35,944 [INFO] from application in application-akka.actor.default-dispatcher-51 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:14:35,945 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:16:10,773 [INFO] from application in application-akka.actor.default-dispatcher-48 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:16:12,213 [INFO] from application in application-akka.actor.default-dispatcher-66 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:16:12,213 [INFO] from application in application-akka.actor.default-dispatcher-68 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:16:12,214 [INFO] from application in application-akka.actor.default-dispatcher-65 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:16:12,215 [INFO] from application in application-akka.actor.default-dispatcher-69 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:16:12,218 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:16:12,218 [INFO] from application in application-akka.actor.default-dispatcher-48 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:16:12,226 [INFO] from application in application-akka.actor.default-dispatcher-70 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:17:07,004 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:17:07,005 [INFO] from application in application-akka.actor.default-dispatcher-71 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:17:07,006 [INFO] from application in application-akka.actor.default-dispatcher-70 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:17:07,032 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:17:07,032 [INFO] from application in application-akka.actor.default-dispatcher-71 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:17:07,032 [INFO] from application in application-akka.actor.default-dispatcher-81 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:17:07,034 [INFO] from application in application-akka.actor.default-dispatcher-81 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:17:07,043 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:17:36,524 [INFO] from application in application-akka.actor.default-dispatcher-81 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:17:36,524 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:17:36,525 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:17:36,548 [INFO] from application in application-akka.actor.default-dispatcher-93 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:17:36,555 [INFO] from application in application-akka.actor.default-dispatcher-83 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:17:36,556 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:17:36,557 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:17:36,558 [INFO] from application in application-akka.actor.default-dispatcher-81 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:18:09,983 [INFO] from application in application-akka.actor.default-dispatcher-100 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:18:09,983 [INFO] from application in application-akka.actor.default-dispatcher-92 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:09,983 [INFO] from application in application-akka.actor.default-dispatcher-101 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:18:10,006 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:18:10,006 [INFO] from application in application-akka.actor.default-dispatcher-92 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:10,006 [INFO] from application in application-akka.actor.default-dispatcher-103 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:18:10,008 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:18:10,024 [INFO] from application in application-akka.actor.default-dispatcher-103 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:18:20,589 [INFO] from application in application-akka.actor.default-dispatcher-100 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:20,589 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:18:20,589 [INFO] from application in application-akka.actor.default-dispatcher-104 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:18:20,611 [INFO] from application in application-akka.actor.default-dispatcher-113 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:20,611 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:18:20,612 [INFO] from application in application-akka.actor.default-dispatcher-100 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:18:20,615 [INFO] from application in application-akka.actor.default-dispatcher-104 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:18:20,623 [INFO] from application in application-akka.actor.default-dispatcher-113 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:18:50,862 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:50,862 [INFO] from application in application-akka.actor.default-dispatcher-113 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:18:50,863 [INFO] from application in application-akka.actor.default-dispatcher-92 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:18:50,888 [INFO] from application in application-akka.actor.default-dispatcher-121 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:18:50,888 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:18:50,889 [INFO] from application in application-akka.actor.default-dispatcher-92 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:18:50,889 [INFO] from application in application-akka.actor.default-dispatcher-113 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:18:50,892 [INFO] from application in application-akka.actor.default-dispatcher-124 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:20:51,961 [INFO] from application in application-akka.actor.default-dispatcher-120 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:20:51,961 [INFO] from application in application-akka.actor.default-dispatcher-125 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:20:51,961 [INFO] from application in application-akka.actor.default-dispatcher-126 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:20:51,986 [INFO] from application in application-akka.actor.default-dispatcher-130 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:20:51,986 [INFO] from application in application-akka.actor.default-dispatcher-120 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:20:51,988 [INFO] from application in application-akka.actor.default-dispatcher-129 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:20:51,993 [INFO] from application in application-akka.actor.default-dispatcher-130 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:20:52,001 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:21:51,451 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:21:51,454 [INFO] from application in application-akka.actor.default-dispatcher-138 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:21:51,459 [INFO] from application in application-akka.actor.default-dispatcher-139 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:21:51,482 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:21:51,483 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:21:51,484 [INFO] from application in application-akka.actor.default-dispatcher-138 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:21:51,494 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:21:51,498 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:22:12,299 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:22:13,980 [INFO] from application in application-akka.actor.default-dispatcher-143 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:22:13,980 [INFO] from application in application-akka.actor.default-dispatcher-139 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:22:13,980 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:22:13,980 [INFO] from application in application-akka.actor.default-dispatcher-142 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:22:13,982 [INFO] from application in application-akka.actor.default-dispatcher-142 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:22:13,985 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:22:13,989 [INFO] from application in application-akka.actor.default-dispatcher-146 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:23:10,304 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:23:10,308 [INFO] from application in application-akka.actor.default-dispatcher-155 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:10,310 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:23:10,335 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:10,335 [INFO] from application in application-akka.actor.default-dispatcher-156 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:23:10,336 [INFO] from application in application-akka.actor.default-dispatcher-155 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:23:10,354 [INFO] from application in application-akka.actor.default-dispatcher-161 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:23:10,356 [INFO] from application in application-akka.actor.default-dispatcher-141 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:23:37,060 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:23:38,521 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:23:38,521 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:38,521 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:23:38,522 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:38,529 [INFO] from application in application-akka.actor.default-dispatcher-164 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:23:38,530 [INFO] from application in application-akka.actor.default-dispatcher-163 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:23:38,536 [INFO] from application in application-akka.actor.default-dispatcher-162 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:23:50,889 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:50,889 [INFO] from application in application-akka.actor.default-dispatcher-164 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:23:50,889 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:23:50,908 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:23:50,908 [INFO] from application in application-akka.actor.default-dispatcher-164 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:23:50,909 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:23:50,908 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:23:50,908 [INFO] from application in application-akka.actor.default-dispatcher-174 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:24:25,174 [INFO] from application in application-akka.actor.default-dispatcher-173 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:24:26,587 [INFO] from application in application-akka.actor.default-dispatcher-176 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:24:26,587 [INFO] from application in application-akka.actor.default-dispatcher-173 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:24:26,588 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:24:26,588 [INFO] from application in application-akka.actor.default-dispatcher-174 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:24:26,589 [INFO] from application in application-akka.actor.default-dispatcher-177 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:24:26,589 [INFO] from application in application-akka.actor.default-dispatcher-178 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:24:26,598 [INFO] from application in application-akka.actor.default-dispatcher-174 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:25:04,757 [INFO] from application in application-akka.actor.default-dispatcher-178 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:04,757 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:04,758 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:25:04,778 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:04,778 [INFO] from application in application-akka.actor.default-dispatcher-188 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:25:04,778 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:04,778 [INFO] from application in application-akka.actor.default-dispatcher-178 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:25:04,779 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:25:24,192 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:25:24,192 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:24,194 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:24,218 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:25:24,226 [INFO] from application in application-akka.actor.default-dispatcher-189 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:24,230 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:25:24,231 [INFO] from application in application-akka.actor.default-dispatcher-159 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:24,238 [INFO] from application in application-akka.actor.default-dispatcher-199 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:25:50,558 [INFO] from application in application-akka.actor.default-dispatcher-199 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:50,558 [INFO] from application in application-akka.actor.default-dispatcher-194 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:50,558 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:25:50,580 [INFO] from application in application-akka.actor.default-dispatcher-199 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:25:50,581 [INFO] from application in application-akka.actor.default-dispatcher-208 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:25:50,582 [INFO] from application in application-akka.actor.default-dispatcher-194 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:25:50,582 [INFO] from application in application-akka.actor.default-dispatcher-207 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:25:50,583 [INFO] from application in application-akka.actor.default-dispatcher-180 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:26:56,251 [INFO] from application in application-akka.actor.default-dispatcher-212 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:26:56,251 [INFO] from application in application-akka.actor.default-dispatcher-211 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:26:56,251 [INFO] from application in application-akka.actor.default-dispatcher-210 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:26:56,272 [INFO] from application in application-akka.actor.default-dispatcher-214 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:26:56,272 [INFO] from application in application-akka.actor.default-dispatcher-210 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:26:56,275 [INFO] from application in application-akka.actor.default-dispatcher-216 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:26:56,288 [INFO] from application in application-akka.actor.default-dispatcher-216 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:26:56,291 [INFO] from application in application-akka.actor.default-dispatcher-214 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:27:05,081 [INFO] from application in application-akka.actor.default-dispatcher-216 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:27:05,081 [INFO] from application in application-akka.actor.default-dispatcher-215 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:27:05,081 [INFO] from application in application-akka.actor.default-dispatcher-220 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:27:05,108 [INFO] from application in application-akka.actor.default-dispatcher-215 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:27:05,109 [INFO] from application in application-akka.actor.default-dispatcher-213 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:27:05,110 [INFO] from application in application-akka.actor.default-dispatcher-212 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:27:05,111 [INFO] from application in application-akka.actor.default-dispatcher-220 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:27:05,126 [INFO] from application in application-akka.actor.default-dispatcher-224 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:27:56,954 [INFO] from application in application-akka.actor.default-dispatcher-232 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:27:56,954 [INFO] from application in application-akka.actor.default-dispatcher-220 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:27:56,954 [INFO] from application in application-akka.actor.default-dispatcher-210 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:27:56,978 [INFO] from application in application-akka.actor.default-dispatcher-235 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:27:56,978 [INFO] from application in application-akka.actor.default-dispatcher-234 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:27:56,987 [INFO] from application in application-akka.actor.default-dispatcher-234 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:27:56,988 [INFO] from application in application-akka.actor.default-dispatcher-232 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:27:57,001 [INFO] from application in application-akka.actor.default-dispatcher-242 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:28:36,411 [INFO] from application in application-akka.actor.default-dispatcher-242 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:28:36,411 [INFO] from application in application-akka.actor.default-dispatcher-220 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:28:36,411 [INFO] from application in application-akka.actor.default-dispatcher-233 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:28:36,435 [INFO] from application in application-akka.actor.default-dispatcher-248 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:28:36,437 [INFO] from application in application-akka.actor.default-dispatcher-247 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:28:36,438 [INFO] from application in application-akka.actor.default-dispatcher-220 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:28:36,439 [INFO] from application in application-akka.actor.default-dispatcher-242 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:28:36,453 [INFO] from application in application-akka.actor.default-dispatcher-242 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:28:53,095 [INFO] from application in application-akka.actor.default-dispatcher-247 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:28:54,746 [INFO] from application in application-akka.actor.default-dispatcher-246 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:28:54,746 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:28:54,747 [INFO] from application in application-akka.actor.default-dispatcher-247 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:28:54,747 [INFO] from application in application-akka.actor.default-dispatcher-248 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:28:54,748 [INFO] from application in application-akka.actor.default-dispatcher-245 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:28:54,749 [INFO] from application in application-akka.actor.default-dispatcher-249 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:28:54,759 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:32:35,253 [INFO] from application in application-akka.actor.default-dispatcher-250 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:32:35,253 [INFO] from application in application-akka.actor.default-dispatcher-260 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:32:35,253 [INFO] from application in application-akka.actor.default-dispatcher-259 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:32:35,276 [INFO] from application in application-akka.actor.default-dispatcher-259 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:32:35,276 [INFO] from application in application-akka.actor.default-dispatcher-260 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:32:35,276 [INFO] from application in application-akka.actor.default-dispatcher-263 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:32:35,288 [INFO] from application in application-akka.actor.default-dispatcher-262 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:32:35,290 [INFO] from application in application-akka.actor.default-dispatcher-263 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:33:08,760 [INFO] from application in application-akka.actor.default-dispatcher-267 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:08,760 [INFO] from application in application-akka.actor.default-dispatcher-250 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:33:08,761 [INFO] from application in application-akka.actor.default-dispatcher-259 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:08,779 [INFO] from application in application-akka.actor.default-dispatcher-267 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:08,779 [INFO] from application in application-akka.actor.default-dispatcher-273 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:33:08,780 [INFO] from application in application-akka.actor.default-dispatcher-259 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:08,780 [INFO] from application in application-akka.actor.default-dispatcher-250 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:33:08,781 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:33:30,676 [INFO] from application in application-akka.actor.default-dispatcher-272 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:30,676 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:30,676 [INFO] from application in application-akka.actor.default-dispatcher-250 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:33:30,693 [INFO] from application in application-akka.actor.default-dispatcher-284 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:33:30,693 [INFO] from application in application-akka.actor.default-dispatcher-267 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:33:30,693 [INFO] from application in application-akka.actor.default-dispatcher-272 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:30,694 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:33:30,694 [INFO] from application in application-akka.actor.default-dispatcher-250 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:48,936 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:33:48,937 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:48,937 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:48,956 [INFO] from application in application-akka.actor.default-dispatcher-284 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:33:48,956 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:33:48,956 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:33:48,956 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:33:48,966 [INFO] from application in application-akka.actor.default-dispatcher-284 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:34:05,978 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:34:05,979 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:34:05,979 [INFO] from application in application-akka.actor.default-dispatcher-288 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:34:05,994 [INFO] from application in application-akka.actor.default-dispatcher-288 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:34:05,994 [INFO] from application in application-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:34:05,994 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:34:05,996 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:34:06,001 [INFO] from application in application-akka.actor.default-dispatcher-271 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:34:12,221 [INFO] from application in application-akka.actor.default-dispatcher-288 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:34:12,221 [INFO] from application in application-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:34:12,221 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:34:12,239 [INFO] from application in application-akka.actor.default-dispatcher-288 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:34:12,239 [INFO] from application in application-akka.actor.default-dispatcher-304 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:34:12,239 [INFO] from application in application-akka.actor.default-dispatcher-302 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:34:12,240 [INFO] from application in application-akka.actor.default-dispatcher-283 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:34:12,240 [INFO] from application in application-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:35:11,767 [INFO] from application in application-akka.actor.default-dispatcher-313 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:35:11,767 [INFO] from application in application-akka.actor.default-dispatcher-301 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:35:11,767 [INFO] from application in application-akka.actor.default-dispatcher-312 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:35:11,790 [INFO] from application in application-akka.actor.default-dispatcher-316 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:35:11,790 [INFO] from application in application-akka.actor.default-dispatcher-301 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:35:11,794 [INFO] from application in application-akka.actor.default-dispatcher-315 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:35:11,800 [INFO] from application in application-akka.actor.default-dispatcher-316 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:35:11,803 [INFO] from application in application-akka.actor.default-dispatcher-317 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:35:41,606 [INFO] from application in application-akka.actor.default-dispatcher-313 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:35:43,165 [INFO] from application in application-akka.actor.default-dispatcher-312 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:35:43,165 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:35:43,165 [INFO] from application in application-akka.actor.default-dispatcher-313 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:35:43,166 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:35:43,174 [INFO] from application in application-akka.actor.default-dispatcher-312 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:35:43,180 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:35:43,187 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:36:21,934 [INFO] from application in application-akka.actor.default-dispatcher-325 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:21,934 [INFO] from application in application-akka.actor.default-dispatcher-327 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:21,934 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:36:21,953 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:21,954 [INFO] from application in application-akka.actor.default-dispatcher-343 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:21,957 [INFO] from application in application-akka.actor.default-dispatcher-341 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:36:21,957 [INFO] from application in application-akka.actor.default-dispatcher-314 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:36:21,957 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:36:28,435 [INFO] from application in application-akka.actor.default-dispatcher-343 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:28,435 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:36:28,435 [INFO] from application in application-akka.actor.default-dispatcher-342 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:28,456 [INFO] from application in application-akka.actor.default-dispatcher-342 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:36:28,456 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:28,456 [INFO] from application in application-akka.actor.default-dispatcher-343 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:28,457 [INFO] from application in application-akka.actor.default-dispatcher-361 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:36:28,459 [INFO] from application in application-akka.actor.default-dispatcher-327 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:36:43,236 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:43,236 [INFO] from application in application-akka.actor.default-dispatcher-365 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:36:43,236 [INFO] from application in application-akka.actor.default-dispatcher-343 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:43,255 [INFO] from application in application-akka.actor.default-dispatcher-365 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:36:43,255 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:36:43,255 [INFO] from application in application-akka.actor.default-dispatcher-353 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:36:43,256 [INFO] from application in application-akka.actor.default-dispatcher-342 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:36:44,809 [INFO] from application in application-akka.actor.default-dispatcher-343 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:37:07,383 [INFO] from application in application-akka.actor.default-dispatcher-342 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:37:07,383 [INFO] from application in application-akka.actor.default-dispatcher-352 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:37:07,384 [INFO] from application in application-akka.actor.default-dispatcher-353 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:37:07,411 [INFO] from application in application-akka.actor.default-dispatcher-353 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:37:07,411 [INFO] from application in application-akka.actor.default-dispatcher-375 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:37:07,412 [INFO] from application in application-akka.actor.default-dispatcher-342 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:37:07,412 [INFO] from application in application-akka.actor.default-dispatcher-374 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:37:07,411 [INFO] from application in application-akka.actor.default-dispatcher-372 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:42:00,032 [INFO] from application in application-akka.actor.default-dispatcher-383 - ApplicationTimer demo: Stopping application at 2018-12-18T02:42:00.032Z after 2485s.
-2018-12-18 11:42:00,032 [INFO] from application in application-akka.actor.default-dispatcher-383 - Shutting down connection pool.
-2018-12-18 11:42:00,204 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-114 - Creating Pool for datasource 'default'
-2018-12-18 11:42:00,205 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-114 - Database [default] connected at jdbc:h2:mem:play
-2018-12-18 11:42:00,249 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-114 - ApplicationTimer demo: Starting application at 2018-12-18T02:42:00.249Z
-2018-12-18 11:42:00,364 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-114 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-10 00:17:00,163 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-30 - Application started (Dev)
+2019-01-10 00:17:00,178 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:17:00,232 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/leftMenu.css
+2019-01-10 00:17:00,234 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/style.css
+2019-01-10 00:17:00,242 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:17:00,252 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:17:00,253 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:17:00,254 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/miniCalendar.js
+2019-01-10 00:17:00,267 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/miniCalendar.js
+2019-01-10 00:17:00,267 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:17:00,281 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:17:36,183 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-01-10 00:17:43,792 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /database/users
+2019-01-10 00:17:43,952 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /signup/register
+2019-01-10 00:17:49,512 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /signin
+2019-01-10 00:17:49,564 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
+2019-01-10 00:17:49,567 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:17:49,571 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:17:53,071 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /signin
+2019-01-10 00:17:53,108 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /helper/a
+2019-01-10 00:17:53,142 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
+2019-01-10 00:17:53,145 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
+2019-01-10 00:17:53,157 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:17:53,161 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:17:53,172 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:17:53,229 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 00:17:53,229 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
+2019-01-10 00:17:53,231 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:17:54,745 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:17:54,803 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendar.css
+2019-01-10 00:17:54,804 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/navBar.css
+2019-01-10 00:17:54,806 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:17:54,808 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendarMini.css
+2019-01-10 00:17:54,806 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:17:54,836 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:17:54,843 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:17:54,847 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:17:54,862 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:17:59,256 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /grades
+2019-01-10 00:17:59,304 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grades.css
+2019-01-10 00:17:59,311 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:17:59,311 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:17:59,311 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
+2019-01-10 00:17:59,316 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grades.js
+2019-01-10 00:17:59,327 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:18:01,382 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 00:18:01,382 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:18:01,383 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
+2019-01-10 00:18:02,079 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:18:02,110 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendar.css
+2019-01-10 00:18:02,115 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendarMini.css
+2019-01-10 00:18:02,116 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:18:02,116 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:18:02,118 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:18:02,122 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/navBar.css
+2019-01-10 00:18:02,136 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:18:02,136 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:18:02,136 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:18:02,153 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:24:44,711 [INFO] from application in application-akka.actor.default-dispatcher-30 - ApplicationTimer demo: Stopping application at 2019-01-09T15:24:44.711Z after 465s.
+2019-01-10 00:24:44,713 [INFO] from application in application-akka.actor.default-dispatcher-30 - Shutting down connection pool.
+2019-01-10 00:24:44,960 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-73 - Creating Pool for datasource 'default'
+2019-01-10 00:24:44,964 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-73 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:24:45,006 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-73 - ApplicationTimer demo: Starting application at 2019-01-09T15:24:45.006Z
+2019-01-10 00:24:45,169 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-73 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.gzip.GzipFilter
     filters.sample.LoggingFilter
 
-2018-12-18 11:42:00,368 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-114 - Application started (Dev)
-2018-12-18 11:42:00,379 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:42:00,379 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:42:00,380 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:42:00,430 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:42:00,440 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:42:00,440 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:42:00,453 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:42:00,455 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:43:07,454 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:07,454 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:07,454 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:43:07,476 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:07,480 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:43:07,481 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:43:07,481 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:43:07,488 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:30,097 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:43:30,097 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:30,098 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:30,119 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:30,120 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:30,120 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:43:30,121 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:43:30,121 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:43:45,132 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:43:45,132 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:45,132 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:45,153 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:45,153 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:43:45,153 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:43:45,156 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:45,157 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:43:54,037 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:43:54,037 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:54,038 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:54,060 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:43:54,060 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:43:54,062 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:43:54,062 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:43:54,077 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:17,159 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:17,161 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:17,185 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:17,185 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:17,185 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:17,187 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:17,189 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:17,225 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 11:44:17,228 [INFO] from application in application-akka.actor.default-dispatcher-51 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
-2018-12-18 11:44:17,239 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 11:44:40,628 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:40,842 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:40,848 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:40,850 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:40,851 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:40,854 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:41,083 [INFO] from application in application-akka.actor.default-dispatcher-57 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 11:44:41,216 [INFO] from application in application-akka.actor.default-dispatcher-57 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:44:44,682 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:44,714 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:44,716 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:44,717 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:44,720 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:44,722 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:44,773 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:44:44,774 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:44:44,851 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:44:45,242 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:45,262 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:45,262 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:45,264 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:45,264 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:45,264 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:45,308 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:44:45,359 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:44:45,466 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:45,485 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:45,485 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:45,489 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:45,490 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:45,490 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:45,537 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:44:45,599 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:44:45,649 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:44:45,669 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:44:45,671 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:44:45,673 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:44:45,681 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:44:45,682 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:44:45,739 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:44:45,801 [INFO] from application in application-akka.actor.default-dispatcher-52 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:45:06,745 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:45:06,771 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:45:06,771 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:45:06,771 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:45:06,774 [INFO] from application in application-akka.actor.default-dispatcher-76 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:45:06,778 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:45:06,828 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:45:06,885 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:45:07,425 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:45:07,442 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:45:07,442 [INFO] from application in application-akka.actor.default-dispatcher-78 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:45:07,443 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:45:07,444 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:45:07,445 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:45:07,493 [INFO] from application in application-akka.actor.default-dispatcher-76 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:45:07,544 [INFO] from application in application-akka.actor.default-dispatcher-76 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:45:10,839 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:45:10,859 [INFO] from application in application-akka.actor.default-dispatcher-77 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:45:10,860 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:45:10,861 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:45:10,861 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:45:10,866 [INFO] from application in application-akka.actor.default-dispatcher-78 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:45:10,905 [INFO] from application in application-akka.actor.default-dispatcher-78 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:45:11,020 [INFO] from application in application-akka.actor.default-dispatcher-75 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:46:01,406 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:46:01,430 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:46:01,430 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:46:01,438 [INFO] from application in application-akka.actor.default-dispatcher-56 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:46:01,441 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:46:01,447 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:46:01,563 [INFO] from application in application-akka.actor.default-dispatcher-86 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:48:20,658 [INFO] from application in application-akka.actor.default-dispatcher-88 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 11:48:20,728 [INFO] from application in application-akka.actor.default-dispatcher-88 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 11:48:20,731 [INFO] from application in application-akka.actor.default-dispatcher-93 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:48:20,732 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:48:20,831 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:48:20,831 [INFO] from application in application-akka.actor.default-dispatcher-88 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:48:22,399 [INFO] from application in application-akka.actor.default-dispatcher-93 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 11:48:22,418 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 11:48:22,418 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:48:22,427 [INFO] from application in application-akka.actor.default-dispatcher-88 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:48:22,427 [INFO] from application in application-akka.actor.default-dispatcher-104 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:48:22,429 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 11:48:22,476 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:48:22,523 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:50:25,689 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 11:50:25,718 [INFO] from application in application-akka.actor.default-dispatcher-107 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 11:50:25,724 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:50:25,726 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:50:25,793 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:50:25,793 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:50:25,846 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:50:28,411 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-149 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 11:50:28,457 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /helper/s
-2018-12-18 11:50:28,512 [INFO] from application in application-akka.actor.default-dispatcher-107 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
-2018-12-18 11:50:28,512 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:50:28,512 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:50:28,519 [INFO] from application in application-akka.actor.default-dispatcher-111 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:50:28,521 [INFO] from application in application-akka.actor.default-dispatcher-108 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
-2018-12-18 11:50:28,553 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 11:50:28,553 [INFO] from application in application-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
-2018-12-18 11:50:28,600 [INFO] from application in application-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:50:28,600 [INFO] from application in application-akka.actor.default-dispatcher-107 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:50:32,025 [INFO] from application in application-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /grades
-2018-12-18 11:50:32,056 [INFO] from application in application-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grades.css
-2018-12-18 11:50:32,057 [INFO] from application in application-akka.actor.default-dispatcher-111 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:50:32,057 [INFO] from application in application-akka.actor.default-dispatcher-108 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:50:32,057 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:50:32,059 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
-2018-12-18 11:50:32,064 [INFO] from application in application-akka.actor.default-dispatcher-94 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grades.js
-2018-12-18 11:50:32,195 [INFO] from application in application-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:50:33,819 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:50:33,916 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:50:34,292 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:50:34,393 [INFO] from application in application-akka.actor.default-dispatcher-109 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:52:18,447 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:52:18,449 [INFO] from application in application-akka.actor.default-dispatcher-123 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:52:18,450 [INFO] from application in application-akka.actor.default-dispatcher-124 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:52:18,468 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:52:18,469 [INFO] from application in application-akka.actor.default-dispatcher-126 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:52:18,477 [INFO] from application in application-akka.actor.default-dispatcher-125 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:52:18,477 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:52:18,487 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:52:25,041 [INFO] from application in application-akka.actor.default-dispatcher-106 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:52:25,041 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:52:25,041 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:52:25,059 [INFO] from application in application-akka.actor.default-dispatcher-129 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:52:25,059 [INFO] from application in application-akka.actor.default-dispatcher-124 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:52:25,059 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:52:25,060 [INFO] from application in application-akka.actor.default-dispatcher-126 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:52:25,073 [INFO] from application in application-akka.actor.default-dispatcher-128 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:52:56,400 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
-2018-12-18 11:52:56,400 [INFO] from application in application-akka.actor.default-dispatcher-129 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 11:54:26,051 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:54:26,051 [INFO] from application in application-akka.actor.default-dispatcher-132 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:54:26,051 [INFO] from application in application-akka.actor.default-dispatcher-133 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:54:26,072 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:54:26,072 [INFO] from application in application-akka.actor.default-dispatcher-133 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:54:26,072 [INFO] from application in application-akka.actor.default-dispatcher-137 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:54:26,082 [INFO] from application in application-akka.actor.default-dispatcher-137 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 11:54:26,083 [INFO] from application in application-akka.actor.default-dispatcher-132 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:56:06,880 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:56:06,880 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 11:56:06,880 [INFO] from application in application-akka.actor.default-dispatcher-144 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:56:06,899 [INFO] from application in application-akka.actor.default-dispatcher-144 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 11:56:06,901 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 11:56:06,901 [INFO] from application in application-akka.actor.default-dispatcher-146 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 11:56:06,904 [INFO] from application in application-akka.actor.default-dispatcher-146 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 11:56:06,908 [INFO] from application in application-akka.actor.default-dispatcher-127 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:00:13,914 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:00:13,914 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:00:13,914 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:00:13,933 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:00:13,933 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:00:13,934 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:00:13,944 [INFO] from application in application-akka.actor.default-dispatcher-157 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:00:13,947 [INFO] from application in application-akka.actor.default-dispatcher-169 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:00:38,231 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:00:38,231 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:00:38,231 [INFO] from application in application-akka.actor.default-dispatcher-165 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:00:38,248 [INFO] from application in application-akka.actor.default-dispatcher-145 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:00:38,248 [INFO] from application in application-akka.actor.default-dispatcher-171 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:00:38,249 [INFO] from application in application-akka.actor.default-dispatcher-170 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:00:38,249 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:00:38,256 [INFO] from application in application-akka.actor.default-dispatcher-165 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:01:14,603 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:01:15,973 [INFO] from application in application-akka.actor.default-dispatcher-174 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:01:15,973 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:01:15,973 [INFO] from application in application-akka.actor.default-dispatcher-158 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:01:15,974 [INFO] from application in application-akka.actor.default-dispatcher-160 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:01:15,976 [INFO] from application in application-akka.actor.default-dispatcher-175 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:01:15,979 [INFO] from application in application-akka.actor.default-dispatcher-170 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:01:15,983 [INFO] from application in application-akka.actor.default-dispatcher-170 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:02:39,468 [INFO] from application in application-akka.actor.default-dispatcher-175 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:02:39,468 [INFO] from application in application-akka.actor.default-dispatcher-185 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:02:39,470 [INFO] from application in application-akka.actor.default-dispatcher-186 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:02:39,495 [INFO] from application in application-akka.actor.default-dispatcher-187 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:02:39,496 [INFO] from application in application-akka.actor.default-dispatcher-188 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:02:39,502 [INFO] from application in application-akka.actor.default-dispatcher-185 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:02:39,506 [INFO] from application in application-akka.actor.default-dispatcher-194 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:02:39,508 [INFO] from application in application-akka.actor.default-dispatcher-188 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:02:52,975 [INFO] from application in application-akka.actor.default-dispatcher-189 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:02:52,976 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:02:52,976 [INFO] from application in application-akka.actor.default-dispatcher-186 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:02:52,996 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:02:52,996 [INFO] from application in application-akka.actor.default-dispatcher-186 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:02:52,996 [INFO] from application in application-akka.actor.default-dispatcher-200 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:02:53,004 [INFO] from application in application-akka.actor.default-dispatcher-186 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:02:53,005 [INFO] from application in application-akka.actor.default-dispatcher-200 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:19,501 [INFO] from application in application-akka.actor.default-dispatcher-198 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:19,502 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:03:19,501 [INFO] from application in application-akka.actor.default-dispatcher-175 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:19,525 [INFO] from application in application-akka.actor.default-dispatcher-187 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:03:19,526 [INFO] from application in application-akka.actor.default-dispatcher-175 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:19,531 [INFO] from application in application-akka.actor.default-dispatcher-198 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:19,535 [INFO] from application in application-akka.actor.default-dispatcher-190 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:03:19,536 [INFO] from application in application-akka.actor.default-dispatcher-198 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:03:31,223 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:31,223 [INFO] from application in application-akka.actor.default-dispatcher-206 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:03:31,224 [INFO] from application in application-akka.actor.default-dispatcher-202 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:31,251 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:03:31,253 [INFO] from application in application-akka.actor.default-dispatcher-202 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:31,256 [INFO] from application in application-akka.actor.default-dispatcher-187 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:03:31,262 [INFO] from application in application-akka.actor.default-dispatcher-212 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:03:31,264 [INFO] from application in application-akka.actor.default-dispatcher-175 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:57,257 [INFO] from application in application-akka.actor.default-dispatcher-201 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:03:57,260 [INFO] from application in application-akka.actor.default-dispatcher-206 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:57,260 [INFO] from application in application-akka.actor.default-dispatcher-211 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:57,277 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:03:57,277 [INFO] from application in application-akka.actor.default-dispatcher-221 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:03:57,278 [INFO] from application in application-akka.actor.default-dispatcher-201 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:03:57,279 [INFO] from application in application-akka.actor.default-dispatcher-206 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:03:57,283 [INFO] from application in application-akka.actor.default-dispatcher-206 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:04:08,381 [INFO] from application in application-akka.actor.default-dispatcher-222 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:04:08,381 [INFO] from application in application-akka.actor.default-dispatcher-211 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:04:08,381 [INFO] from application in application-akka.actor.default-dispatcher-201 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:04:08,397 [INFO] from application in application-akka.actor.default-dispatcher-211 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:04:08,400 [INFO] from application in application-akka.actor.default-dispatcher-223 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:04:08,400 [INFO] from application in application-akka.actor.default-dispatcher-224 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:04:08,400 [INFO] from application in application-akka.actor.default-dispatcher-201 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:04:08,401 [INFO] from application in application-akka.actor.default-dispatcher-222 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:05:53,488 [INFO] from application in application-akka.actor.default-dispatcher-231 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:05:53,488 [INFO] from application in application-akka.actor.default-dispatcher-232 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:05:53,488 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:05:53,505 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:05:53,506 [INFO] from application in application-akka.actor.default-dispatcher-231 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:05:53,506 [INFO] from application in application-akka.actor.default-dispatcher-234 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:05:53,511 [INFO] from application in application-akka.actor.default-dispatcher-239 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:05:53,518 [INFO] from application in application-akka.actor.default-dispatcher-234 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:06:34,145 [INFO] from application in application-akka.actor.default-dispatcher-233 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:34,146 [INFO] from application in application-akka.actor.default-dispatcher-238 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:34,146 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:06:34,166 [INFO] from application in application-akka.actor.default-dispatcher-245 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:34,166 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:34,167 [INFO] from application in application-akka.actor.default-dispatcher-233 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:06:34,168 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:06:34,170 [INFO] from application in application-akka.actor.default-dispatcher-246 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:06:56,501 [INFO] from application in application-akka.actor.default-dispatcher-238 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:56,501 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:56,501 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:06:56,518 [INFO] from application in application-akka.actor.default-dispatcher-256 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:56,519 [INFO] from application in application-akka.actor.default-dispatcher-238 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:06:56,520 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:56,521 [INFO] from application in application-akka.actor.default-dispatcher-245 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:06:56,523 [INFO] from application in application-akka.actor.default-dispatcher-255 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:06:59,456 [INFO] from application in application-akka.actor.default-dispatcher-255 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:59,456 [INFO] from application in application-akka.actor.default-dispatcher-256 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:06:59,456 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:59,475 [INFO] from application in application-akka.actor.default-dispatcher-256 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:06:59,475 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:06:59,486 [INFO] from application in application-akka.actor.default-dispatcher-256 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:06:59,487 [INFO] from application in application-akka.actor.default-dispatcher-203 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:06:59,487 [INFO] from application in application-akka.actor.default-dispatcher-238 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:07:27,142 [INFO] from application in application-akka.actor.default-dispatcher-258 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:07:27,142 [INFO] from application in application-akka.actor.default-dispatcher-266 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:07:27,142 [INFO] from application in application-akka.actor.default-dispatcher-244 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:07:27,169 [INFO] from application in application-akka.actor.default-dispatcher-269 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:07:27,169 [INFO] from application in application-akka.actor.default-dispatcher-258 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:07:27,172 [INFO] from application in application-akka.actor.default-dispatcher-266 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:07:27,173 [INFO] from application in application-akka.actor.default-dispatcher-258 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:07:27,178 [INFO] from application in application-akka.actor.default-dispatcher-268 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:08:43,843 [INFO] from application in application-akka.actor.default-dispatcher-258 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:08:45,267 [INFO] from application in application-akka.actor.default-dispatcher-258 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:08:45,267 [INFO] from application in application-akka.actor.default-dispatcher-277 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:08:45,267 [INFO] from application in application-akka.actor.default-dispatcher-279 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:08:45,268 [INFO] from application in application-akka.actor.default-dispatcher-280 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:08:45,269 [INFO] from application in application-akka.actor.default-dispatcher-280 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:08:45,272 [INFO] from application in application-akka.actor.default-dispatcher-278 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:08:45,278 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:05,187 [INFO] from application in application-akka.actor.default-dispatcher-278 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:09:05,187 [INFO] from application in application-akka.actor.default-dispatcher-279 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:05,187 [INFO] from application in application-akka.actor.default-dispatcher-277 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:05,203 [INFO] from application in application-akka.actor.default-dispatcher-277 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:05,203 [INFO] from application in application-akka.actor.default-dispatcher-292 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:05,203 [INFO] from application in application-akka.actor.default-dispatcher-279 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:09:05,205 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:09:05,205 [INFO] from application in application-akka.actor.default-dispatcher-292 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:09:09,662 [INFO] from application in application-akka.actor.default-dispatcher-281 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:09,662 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:09,662 [INFO] from application in application-akka.actor.default-dispatcher-292 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:09:09,674 [INFO] from application in application-akka.actor.default-dispatcher-278 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:09,674 [INFO] from application in application-akka.actor.default-dispatcher-281 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:09,682 [INFO] from application in application-akka.actor.default-dispatcher-281 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:09:09,683 [INFO] from application in application-akka.actor.default-dispatcher-292 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:09:09,684 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:09:12,803 [INFO] from application in application-akka.actor.default-dispatcher-292 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:09:12,803 [INFO] from application in application-akka.actor.default-dispatcher-291 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:12,804 [INFO] from application in application-akka.actor.default-dispatcher-277 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:09:12,819 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:09:12,820 [INFO] from application in application-akka.actor.default-dispatcher-277 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:09:12,821 [INFO] from application in application-akka.actor.default-dispatcher-301 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:09:12,822 [INFO] from application in application-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:09:12,822 [INFO] from application in application-akka.actor.default-dispatcher-282 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:12:47,763 [INFO] from application in application-akka.actor.default-dispatcher-302 - ApplicationTimer demo: Stopping application at 2018-12-18T03:12:47.763Z after 1847s.
-2018-12-18 12:12:47,764 [INFO] from application in application-akka.actor.default-dispatcher-302 - Shutting down connection pool.
-2018-12-18 12:12:47,908 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-211 - Creating Pool for datasource 'default'
-2018-12-18 12:12:47,909 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-211 - Database [default] connected at jdbc:h2:mem:play
-2018-12-18 12:12:47,947 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-211 - ApplicationTimer demo: Starting application at 2018-12-18T03:12:47.947Z
-2018-12-18 12:12:48,067 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-211 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-01-10 00:24:45,177 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-73 - Application started (Dev)
+2019-01-10 00:24:45,189 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:24:45,246 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendar.css
+2019-01-10 00:24:45,251 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/calendar/calendarMini.css
+2019-01-10 00:24:45,255 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:24:45,258 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/jquery/jquery.js
+2019-01-10 00:24:45,258 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:24:45,262 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:24:45,263 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:24:45,269 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/navBar.css
+2019-01-10 00:24:45,289 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.js
+2019-01-10 00:24:45,299 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/calendar/calendar.mini.js
+2019-01-10 00:24:45,307 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /public/javascripts/fetch/fetch.js
+2019-01-10 00:24:48,080 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:24:48,130 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:24:48,132 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:24:48,133 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:24:48,133 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:24:48,133 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:24:48,158 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:24:48,200 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:26:34,160 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2019-01-09T15:26:34.160Z after 109s.
+2019-01-10 00:26:34,161 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-01-10 00:26:34,491 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-78 - Creating Pool for datasource 'default'
+2019-01-10 00:26:34,494 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-78 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:26:34,540 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-78 - ApplicationTimer demo: Starting application at 2019-01-09T15:26:34.540Z
+2019-01-10 00:26:35,084 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-78 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.gzip.GzipFilter
     filters.sample.LoggingFilter
 
-2018-12-18 12:12:48,070 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-211 - Application started (Dev)
-2018-12-18 12:12:48,076 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /section
-2018-12-18 12:12:48,119 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /favicon.ico
-2018-12-18 12:12:56,268 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /
-2018-12-18 12:12:56,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:12:56,303 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:12:56,303 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
-2018-12-18 12:12:56,312 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:12:56,315 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:12:56,317 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
-2018-12-18 12:12:56,353 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
-2018-12-18 12:12:56,355 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 12:12:56,370 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 12:12:58,269 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:12:58,270 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 12:12:58,288 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:12:58,289 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
-2018-12-18 12:12:58,289 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:13:01,289 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-221 - access from 0:0:0:0:0:0:0:1 to /signin
-2018-12-18 12:13:01,318 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /helper/s
-2018-12-18 12:13:01,341 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:13:01,342 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:13:01,342 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
-2018-12-18 12:13:01,342 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:13:01,345 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
-2018-12-18 12:13:01,404 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
-2018-12-18 12:13:01,404 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
-2018-12-18 12:13:01,406 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-brands-400.woff2
-2018-12-18 12:13:02,997 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:13:02,998 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:13:02,999 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:13:03,024 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:13:03,024 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:13:03,025 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:13:03,026 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:13:03,024 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:22,379 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:22,380 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:22,381 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:22,404 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:22,404 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:22,405 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:22,411 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:22,412 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:27,913 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:27,913 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:27,913 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:27,929 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:27,930 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:27,931 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:27,931 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:27,929 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:36,522 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:36,522 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:36,522 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:36,539 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:36,539 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:36,546 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:36,547 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:36,547 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:39,976 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:39,976 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:39,976 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:39,995 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:39,996 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:39,997 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:39,999 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:40,005 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:53,754 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:53,754 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:53,754 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:53,772 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:53,772 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:53,772 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:53,774 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:53,775 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:54,734 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:54,734 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:54,734 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:54,746 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:54,746 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:54,748 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:54,748 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:54,749 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:57,005 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
-2018-12-18 12:15:57,005 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /calendar
-2018-12-18 12:15:57,005 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:57,028 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
-2018-12-18 12:15:57,028 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
-2018-12-18 12:15:57,029 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
-2018-12-18 12:15:57,029 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar.css
-2018-12-18 12:15:57,035 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar.js
+2019-01-10 00:26:35,092 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-78 - Application started (Dev)
+2019-01-10 00:26:35,103 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:26:35,159 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:26:35,159 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:26:35,165 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:26:35,173 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:26:35,176 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:26:35,179 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:26:35,186 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:26:35,220 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:27:34,523 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:27:34,602 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:27:34,615 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:27:34,623 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:27:34,649 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:27:34,656 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:27:34,671 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:27:34,692 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:27:34,875 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:28:19,550 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:28:21,732 [INFO] from application in application-akka.actor.default-dispatcher-19 - ApplicationTimer demo: Stopping application at 2019-01-09T15:28:21.732Z after 107s.
+2019-01-10 00:28:21,733 [INFO] from application in application-akka.actor.default-dispatcher-19 - Shutting down connection pool.
+2019-01-10 00:28:21,986 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-77 - Creating Pool for datasource 'default'
+2019-01-10 00:28:21,988 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-77 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:28:22,025 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-77 - ApplicationTimer demo: Starting application at 2019-01-09T15:28:22.025Z
+2019-01-10 00:28:22,211 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-77 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-10 00:28:22,219 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-77 - Application started (Dev)
+2019-01-10 00:28:22,231 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /public/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:28:22,232 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:28:22,233 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:28:22,233 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:28:22,233 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:28:22,248 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:28:22,249 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:28:22,302 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:28:41,308 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:28:41,359 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:28:41,361 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:28:41,366 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:28:41,361 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:28:41,383 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:28:41,409 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:28:41,420 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:28:41,471 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:28:41,471 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 00:28:41,623 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:31:11,018 [INFO] from application in application-akka.actor.default-dispatcher-26 - ApplicationTimer demo: Stopping application at 2019-01-09T15:31:11.018Z after 169s.
+2019-01-10 00:31:11,019 [INFO] from application in application-akka.actor.default-dispatcher-26 - Shutting down connection pool.
+2019-01-10 00:31:11,178 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-107 - Creating Pool for datasource 'default'
+2019-01-10 00:31:11,180 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-107 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:31:11,215 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-107 - ApplicationTimer demo: Starting application at 2019-01-09T15:31:11.215Z
+2019-01-10 00:31:11,297 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-107 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-10 00:31:11,323 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-107 - Application started (Dev)
+2019-01-10 00:31:11,420 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 00:31:11,498 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:31:11,498 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 00:31:11,513 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 00:31:11,518 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:31:11,518 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:31:11,530 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 00:31:11,532 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:31:11,564 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 00:31:11,573 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:31:11,613 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-10 00:31:22,024 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:31:22,081 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-01-10 00:31:22,093 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-10 00:31:22,107 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.mini.js
+2019-01-10 00:31:22,117 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-01-10 00:31:22,118 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendarMini.css
+2019-01-10 00:31:22,124 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:31:22,138 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:31:22,155 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:31:22,177 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:38:54,121 [INFO] from application in application-akka.actor.default-dispatcher-30 - ApplicationTimer demo: Stopping application at 2019-01-09T15:38:54.120Z after 463s.
+2019-01-10 00:38:54,121 [INFO] from application in application-akka.actor.default-dispatcher-30 - Shutting down connection pool.
+2019-01-10 00:38:54,328 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-119 - Creating Pool for datasource 'default'
+2019-01-10 00:38:54,330 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-119 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:38:54,372 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-119 - ApplicationTimer demo: Starting application at 2019-01-09T15:38:54.372Z
+2019-01-10 00:38:54,535 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-119 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-10 00:38:54,541 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-119 - Application started (Dev)
+2019-01-10 00:38:54,552 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:38:54,608 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-01-10 00:38:54,608 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-10 00:38:54,610 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:38:54,621 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:38:54,623 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendarMini.css
+2019-01-10 00:38:54,629 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.mini.js
+2019-01-10 00:38:54,630 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:38:54,638 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:38:54,638 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-01-10 00:38:54,673 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:38:54,673 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 00:39:41,883 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2019-01-09T15:39:41.882Z after 47s.
+2019-01-10 00:39:41,883 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-01-10 00:39:42,066 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-121 - Creating Pool for datasource 'default'
+2019-01-10 00:39:42,070 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-121 - Database [default] connected at jdbc:h2:mem:play
+2019-01-10 00:39:42,111 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-121 - ApplicationTimer demo: Starting application at 2019-01-09T15:39:42.111Z
+2019-01-10 00:39:42,182 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-121 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-10 00:39:42,188 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-121 - Application started (Dev)
+2019-01-10 00:39:42,199 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 00:39:42,255 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendarMini.css
+2019-01-10 00:39:42,255 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 00:39:42,257 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 00:39:42,257 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-01-10 00:39:42,260 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 00:39:42,271 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-10 00:39:42,279 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-01-10 00:39:42,282 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.mini.js
+2019-01-10 00:39:42,292 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 00:39:42,305 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 00:39:42,305 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 01:21:15,333 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=35m33s109ms).
+2019-01-10 01:28:15,411 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=7m83ms).
+2019-01-10 01:28:33,615 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 01:28:33,764 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-01-10 01:28:33,764 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-10 01:28:33,794 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 01:28:33,819 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 01:28:33,837 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 01:28:33,845 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendarMini.css
+2019-01-10 01:28:33,897 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-01-10 01:28:33,907 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 01:28:33,907 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.mini.js
+2019-01-10 01:28:33,930 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 01:28:33,930 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 01:28:39,266 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 01:28:39,340 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 01:28:39,341 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 01:28:39,341 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 01:28:39,341 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 01:28:39,344 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 01:28:39,349 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 01:28:39,382 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 01:28:39,416 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 01:28:39,420 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 01:36:45,442 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-01-10 01:36:45,517 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-10 01:36:45,517 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-01-10 01:36:45,522 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 01:36:45,533 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 01:36:45,576 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 01:36:45,584 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendarMini.css
+2019-01-10 01:36:45,614 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-01-10 01:36:45,616 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 01:36:45,621 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.mini.js
+2019-01-10 01:36:45,650 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 01:36:45,650 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 01:37:45,679 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 01:37:45,973 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 01:37:45,973 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 01:37:45,975 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 01:37:45,977 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 01:37:45,981 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 01:37:45,983 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 01:37:46,013 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 01:37:46,040 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 01:37:46,040 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 01:45:44,870 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 01:45:44,871 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 01:45:44,870 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 01:45:44,871 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 02:41:15,196 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=30m28s535ms).
+2019-01-10 03:17:58,245 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=36m43s53ms).
+2019-01-10 05:18:55,265 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h27s6ms).
+2019-01-10 07:19:51,801 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h26s528ms).
+2019-01-10 09:19:22,784 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h59m960ms).
+2019-01-10 10:30:25,775 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h10m32s984ms).
+2019-01-10 13:30:23,617 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h27s9ms).
+2019-01-10 13:38:46,640 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=7m53s20ms).
+2019-01-10 14:37:51,180 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=30m4s217ms).
+2019-01-10 14:46:53,659 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=9m2s481ms).
+2019-01-10 14:52:19,632 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=4m55s969ms).
+2019-01-10 15:09:36,596 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=4m46s889ms).
+2019-01-10 15:15:13,557 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s955ms).
+2019-01-10 15:20:51,495 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m7s929ms).
+2019-01-10 15:26:52,424 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s928ms).
+2019-01-10 15:32:58,364 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m35s936ms).
+2019-01-10 15:38:36,004 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m7s634ms).
+2019-01-10 15:45:06,955 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s938ms).
+2019-01-10 15:50:43,891 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s934ms).
+2019-01-10 15:56:20,833 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s934ms).
+2019-01-10 16:02:21,790 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s949ms).
+2019-01-10 16:08:23,748 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m31s951ms).
+2019-01-10 16:14:00,715 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s963ms).
+2019-01-10 16:19:37,670 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s949ms).
+2019-01-10 16:25:14,606 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m6s935ms).
+2019-01-10 16:31:20,556 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m35s941ms).
+2019-01-10 16:37:21,515 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s953ms).
+2019-01-10 16:56:41,476 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=18m49s951ms).
+2019-01-10 18:02:14,004 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h5m32s528ms).
+2019-01-10 19:30:13,590 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=19m28s564ms).
+2019-01-10 21:22:01,784 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h51m18s188ms).
+2019-01-10 21:28:02,333 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s541ms).
+2019-01-10 23:08:17,581 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2m44s704ms).

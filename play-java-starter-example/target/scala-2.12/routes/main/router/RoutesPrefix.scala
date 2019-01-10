@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @SOURCE:/Users/shibainu/Documents2/sus_impl/play-java-starter-example/conf/routes
+// @DATE:Thu Jan 10 00:09:19 JST 2019
 
 
 package router {
