@@ -368,3 +368,25 @@
 2019-01-10 21:22:01,784 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h51m18s188ms).
 2019-01-10 21:28:02,333 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=5m30s541ms).
 2019-01-10 23:08:17,581 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2m44s704ms).
+2019-01-10 23:29:49,288 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /calendar/day
+2019-01-10 23:29:49,662 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-01-10 23:29:49,675 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-01-10 23:29:49,677 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-01-10 23:29:49,708 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/miniCalendar.js
+2019-01-10 23:29:49,724 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-10 23:29:49,796 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-10 23:29:49,823 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-10 23:29:49,832 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-10 23:29:49,878 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-10 23:29:50,131 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-11 00:02:15,726 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=31m58s8ms).
+2019-01-11 01:02:44,659 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=37m58s784ms).
+2019-01-11 03:03:41,685 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h27s12ms).
+2019-01-11 05:04:08,737 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h27s54ms).
+2019-01-11 07:05:05,732 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h26s985ms).
+2019-01-11 09:06:02,619 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2h26s882ms).
+2019-01-11 10:50:35,758 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1h44m3s117ms).
+2019-01-11 11:02:15,004 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=11m39s246ms).
+2019-01-11 11:10:11,898 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=2m18s794ms).
+2019-01-11 11:35:51,398 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=25m39s505ms).
+2019-01-11 11:38:26,503 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-8 housekeeper - HikariPool-8 - Thread starvation or clock leap detected (housekeeper delta=1m4s994ms).
