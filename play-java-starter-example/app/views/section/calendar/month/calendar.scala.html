@@ -1,0 +1,34 @@
+@main("カレンダー"){
+
+    <!--　<button id="tmonth" onclick='setCalendar()'>今月</button>
+    <button id="bmonth" onclick='backmm(this);return false;'><<</button>
+    <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
+
+    <span id="year"></span>年<span id="month"></span>月<br />-->
+
+    <span hidden id="all_start"><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span><br />
+    <span hidden id="all_end"><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
+    <span id="x_page"></span>~<span id="y_page"></span>
+<div id="calendar-result"></div>
+
+<div id="register_task" class="main-window">
+    <h2>新規登録</h2>
+    <span id="error-field" class="error"></span>
+    <form id="registration-form">
+        <dl>
+            <dt>タスク名</dt>
+
+            <dd>
+                <input type="text" name="title" autocomplete="on" required>
+            </dd>
+            <dt>日時</dt>
+            <dd>
+                <input type="date" id="start_date">〜<input type="date" id="end_date">
+            </dd>
+        </dl>
+        @helper.CSRF.formField
+    </form>
+    <!--<button onclick="register_new(); return false;">送信</button>
+    <button onclick="close_registration_form(); return false;">キャンセル</button>-->
+</div>
+}
