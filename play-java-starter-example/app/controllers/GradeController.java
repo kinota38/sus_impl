@@ -43,20 +43,25 @@ public class GradeController extends Controller {
     }
 
     public Result registerGrade(String username) {
+        Ebean.beginTransaction();
         try {
             final Map<String, String[]> request = request().body().asFormUrlEncoded();
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
             String subject = request.get("register-subject")[0];
             int now = Integer.parseInt(request.get("register-now")[0]);
-            //String tag = request.get("register-tag")[0];
-            final Grade entry = new Grade(username,subject,now,"tag");
+            String tag = request.get("tag-radio")[0];
+            final Grade entry = new Grade(username,subject,now,tag);
             entry.user = user;
             entry.save();
-            return gradeList(username);
+            Ebean.commitTransaction();
+            return gradesList(username);
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();
+        }finally {
+            Ebean.endTransaction();
         }
+
     }
 
     public Result editGrade() {
@@ -64,31 +69,40 @@ public class GradeController extends Controller {
             final Map<String, String[]> request = request().body().asFormUrlEncoded();
             // モデル更新
             String username = request.get("username")[0];
-            User user = Ebean.find(User.class).where().eq("username",username).findOne();
-            int index = Integer.parseInt(request.get("index")[0]);
+            String tag = request.get("tag")[0];
+            String subject = request.get("subject")[0];
             int new_grade = Integer.parseInt(request.get("new-grade")[0]);
-            user.grade.get(index).nowGrade = new_grade;
-            user.save();
-            return gradeList(username);
+            Grade grade = Ebean.find(Grade.class).where().eq("username",username)
+                                                 .where().eq("tag",tag)
+                                                 .where().eq("subject",subject).findOne();
+            grade.nowGrade = new_grade;
+            grade.save();
+            return gradesList(username);
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();
+        }finally {
+            Ebean.endTransaction();
         }
     }
 
     public Result removeGrade(){
+        Ebean.beginTransaction();
         try {
             final Map<String, String[]> request = request().body().asFormUrlEncoded();
             // モデル削除
             String username = request.get("username")[0];
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
-            int index = Integer.parseInt(request.get("index")[0]);
-            Grade grade = Ebean.find(Grade.class).where().eq("id",user.grade.get(index).id).findOne();
-            //userでリストから削除したのちgrade自体を削除
-            user.grade.remove(index);
+            String tag = request.get("tag")[0];
+            String subject = request.get("subject")[0];
+            Grade grade = Ebean.find(Grade.class).where().eq("username",username)
+                                                 .where().eq("tag",tag)
+                                                 .where().eq("subject",subject).findOne();
+            user.grade.remove(grade);
             grade.delete();
             user.save();
-            return gradeList(username);
+            Ebean.commitTransaction();
+            return gradesList(username);
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();
@@ -101,10 +115,10 @@ public class GradeController extends Controller {
             final Map<String, String[]> request = request().body().asFormUrlEncoded();
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
             Date date = new Date();
-//            String tag = request.get("tag")[0];
+            String tag = request.get("tag")[0];
             for (String key : request.keySet()) {
-                if(!key.equals("csrfToken")) {
-                    final AccGrade entry = new AccGrade(username, key, Integer.parseInt(request.get(key)[0]),"tag",date.getTime());
+                if(!key.equals("csrfToken") && !key.equals("tag")){
+                    final AccGrade entry = new AccGrade(username, key, Integer.parseInt(request.get(key)[0]),tag,date.getTime());
                     entry.user = user;
                     entry.save();
 

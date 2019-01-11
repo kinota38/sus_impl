@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Sat Dec 22 16:39:15 JST 2018
+// @DATE:Sat Jan 05 13:40:05 JST 2019
 
 package router
 
@@ -63,7 +63,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/gradeslist/""" + "$" + """username<[^/]+>""", """controllers.GradeController.gradesList(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/gradelist/""" + "$" + """username<[^/]+>""", """controllers.GradeController.gradeList(username:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/accgradelist/""" + "$" + """username<[^/]+>""", """controllers.GradeController.accGradeList(username:String)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/register""" + "$" + """username<[^/]+>""", """controllers.GradeController.registerGrade(username:String)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/register/""" + "$" + """username<[^/]+>""", """controllers.GradeController.registerGrade(username:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/registeracc/""" + "$" + """username<[^/]+>""", """controllers.GradeController.registerAccGrade(username:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/edit""", """controllers.GradeController.editGrade"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """grades/remove""", """controllers.GradeController.removeGrade"""),
@@ -295,7 +295,7 @@ class Routes(
 
   // @LINE:22
   private[this] lazy val controllers_GradeController_registerGrade12_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades/register"), DynamicPart("username", """[^/]+""",true)))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("grades/register/"), DynamicPart("username", """[^/]+""",true)))
   )
   private[this] lazy val controllers_GradeController_registerGrade12_invoker = createInvoker(
     GradeController_1.registerGrade(fakeValue[String]),
@@ -305,7 +305,7 @@ class Routes(
       "registerGrade",
       Seq(classOf[String]),
       "POST",
-      this.prefix + """grades/register""" + "$" + """username<[^/]+>""",
+      this.prefix + """grades/register/""" + "$" + """username<[^/]+>""",
       """""",
       Seq()
     )

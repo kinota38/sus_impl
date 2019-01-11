@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Sat Dec 22 16:39:15 JST 2018
+// @DATE:Sat Jan 05 13:40:05 JST 2019
 
 import play.api.mvc.Call
 
@@ -60,7 +60,7 @@ package controllers {
     // @LINE:22
     def registerGrade(username:String): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "grades/register" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
+      Call("POST", _prefix + { _defaultPrefix } + "grades/register/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
     // @LINE:19

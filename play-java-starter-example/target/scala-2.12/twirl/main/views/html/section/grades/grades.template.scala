@@ -37,39 +37,90 @@ Seq[Any](_display_(/*1.2*/main("成績")/*1.12*/ {_display_(Seq[Any](format.raw/
         """),_display_(/*5.10*/helper/*5.16*/.CSRF.formField),format.raw/*5.31*/("""
     """),format.raw/*6.5*/("""</form>
 
-    <div  id="first-section">
-        <div  class="first-element" id="first-chart">
-            <div id="first-radio">
-                <input type="radio" name="first-radio" value="ave_grades" checked>平均点
-                <input type="radio" name="first-radio" value="max_grades">最高点
+    <div class="side-menu"></div>
+    <div class="this-radio" id="tag-radio1">
+        <input type="radio" name="tag-radio" id="on1" value="center" checked="">
+        <label for="on1" class="switch-on">センター</label>
+        <input type="radio" name="tag-radio" id="off1" value="niji">
+        <label for="off1" class="switch-off">二次</label>
+    </div>
+    <div class="center">
+        <div  class="first-section">
+            <div  class="first-element" >
+                <div class="plus-icon" >
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="this-radio" id="chart1-radio-center">
+                    <input type="radio" name="first-radio-center" id="on2" value="ave_grades" checked="">
+                    <label for="on2" class="switch-on">平均点</label>
+                    <input type="radio" name="first-radio-center" id="off2" value="max_grades">
+                    <label for="off2" class="switch-off">最高点</label>
+                </div>
+                <canvas  id="myChart1-center" ></canvas>
+                <div class="no-grade" id="no-grade-center">成績が登録されてません</div>
+                <div class="add-acc-button"><a onclick="add_to_acc();">推移に追加する</a></div>
+
             </div>
-            <canvas  id="myChart1" ></canvas>
-            <button class="button" id="acc-register-button" onclick="add_to_acc();">累積に追加する</button>
         </div>
-        <div class="first-element" id="register-grade">
-            <form id="register-form">
-                科目名<br><input type="text" class="register-input" name="register-subject"><br>
-                得点<br><input type="text" class="register-input" name="register-now"><br>
-                タグ<br><input type="text" class="register-input" name="register-tag"><br>
-                """),_display_(/*22.18*/helper/*22.24*/.CSRF.formField),format.raw/*22.39*/("""
-            """),format.raw/*23.13*/("""</form>
-            <button  onclick="register(); return false;">追加</button>
 
+        <div class="chart-area2">
+            <select class="chart2-select" id="chart2-select-center">
+
+            </select>
+            <canvas id="myChart2-center" ></canvas>
+            <div class="no-grade" id="no-acc-center">成績推移が登録されてません</div>
         </div>
     </div>
+    <div class="niji">
+        <div  class="first-section">
+            <div  class="first-element" >
+                <div class="plus-icon" >
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="this-radio" id="chart1-radio-niji">
+                    <input type="radio" name="first-radio-niji" id="on3" value="ave_grades" checked="">
+                    <label for="on3" class="switch-on">平均点</label>
+                    <input type="radio" name="first-radio-niji" id="off3" value="max_grades">
+                    <label for="off3" class="switch-off">最高点</label>
+                </div>
+                <canvas  id="myChart1-niji" ></canvas>
+                <div class="no-grade" id="no-grade-niji">成績が登録されてません</div>
+                <div class="add-acc-button"><a onclick="add_to_acc();">推移に追加する</a></div>
+            </div>
+        </div>
+        <div class="chart-area2">
+            <select class="chart2-select" id="chart2-select-niji">
+
+            </select>
+            <canvas id="myChart2-niji" ></canvas>
+            <div class="no-grade" id="no-acc-niji">成績推移が登録されてません</div>
+        </div>
+    </div>
+
     <div class ="layer" id="edit-layer"></div>
-    <div class="popup" id="edit-popup">
-        <div>popup</div>
-        <form id="edit-form">
-            <span id="input-type"></span>:<input type="text" name="new-grade" class="input-number" id="edit-grade"><br>
-            """),_display_(/*33.14*/helper/*33.20*/.CSRF.formField),format.raw/*33.35*/("""
-        """),format.raw/*34.9*/("""</form>
-        <span id="edit_button-field"></span>
+    <div class="off" id="register-grade">
+        <div class="slide-inner">
+            <div id="register">
+                <form id="register-form">
+                    <br>
+                    科目名<br><input type="text" class="txtb" name="register-subject">
+                    得点<br><input type="text" class="txtb" name="register-now">
+                    """),_display_(/*76.22*/helper/*76.28*/.CSRF.formField),format.raw/*76.43*/("""
+                """),format.raw/*77.17*/("""</form>
+                <br>
+                <br>
+                <button class="button" onclick="register(); return false;">追加</button>
+            </div>
+        </div>
     </div>
-
-    <div id="chart-area2">
-        <select name="sources" id="chart2-select" class="custom-select sources" placeholder="科目選択"></select>
-        <canvas id="myChart2" ></canvas>
+    <div class="popup" id="edit-popup">
+        <form id="edit-form">
+            <br>
+            自分の得点<br>
+            <input type="text" name="new-grade" class="txtb" id="edit-grade"><br>
+            """),_display_(/*89.14*/helper/*89.20*/.CSRF.formField),format.raw/*89.35*/("""
+        """),format.raw/*90.9*/("""</form>
+        <span id="edit_button-field"></span>
     </div>
 </div>
 """)))}))
@@ -88,11 +139,11 @@ Seq[Any](_display_(/*1.2*/main("成績")/*1.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 25 12:01:39 JST 2018
+                  DATE: Tue Jan 08 12:00:11 JST 2019
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
-                  HASH: d814281b15a029a031bf3ecfcd3c783df10255d3
-                  MATRIX: 1046->1|1064->11|1103->13|1131->15|1212->70|1226->76|1261->91|1292->96|2175->952|2190->958|2226->973|2267->986|2673->1365|2688->1371|2724->1386|2760->1395
-                  LINES: 33->1|33->1|33->1|35->3|37->5|37->5|37->5|38->6|54->22|54->22|54->22|55->23|65->33|65->33|65->33|66->34
+                  HASH: 8761f995dfd99d7aecabc59c4e9f5625da5dbb9c
+                  MATRIX: 1046->1|1064->11|1103->13|1131->15|1212->70|1226->76|1261->91|1292->96|4423->3200|4438->3206|4474->3221|4519->3238|4932->3624|4947->3630|4983->3645|5019->3654
+                  LINES: 33->1|33->1|33->1|35->3|37->5|37->5|37->5|38->6|108->76|108->76|108->76|109->77|121->89|121->89|121->89|122->90
                   -- GENERATED --
               */
           

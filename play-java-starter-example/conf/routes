@@ -19,7 +19,7 @@ GET      /calendar                   controllers.MainController.calendar
 GET      /grades/gradeslist/:username controllers.GradeController.gradesList(username: String)
 GET      /grades/gradelist/:username  controllers.GradeController.gradeList(username: String)
 GET      /grades/accgradelist/:username  controllers.GradeController.accGradeList(username: String)
-POST     /grades/register:username     controllers.GradeController.registerGrade(username: String)
+POST     /grades/register/:username     controllers.GradeController.registerGrade(username: String)
 POST     /grades/registeracc/:username  controllers.GradeController.registerAccGrade(username: String)
 POST     /grades/edit                 controllers.GradeController.editGrade
 POST     /grades/remove               controllers.GradeController.removeGrade

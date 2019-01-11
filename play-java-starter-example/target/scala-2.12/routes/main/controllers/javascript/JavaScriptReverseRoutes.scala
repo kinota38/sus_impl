@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Sat Dec 22 16:39:15 JST 2018
+// @DATE:Sat Jan 05 13:40:05 JST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -84,7 +84,7 @@ package controllers.javascript {
       "controllers.GradeController.registerGrade",
       """
         function(username0) {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/register" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "grades/register/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("username", username0))})
         }
       """
     )

@@ -70,7 +70,7 @@ Seq[Any](_display_(/*14.2*/main("helpertop")/*14.19*/ {_display_(Seq[Any](format
                 <select class="txtb" id="uni_area" name="uni_area"></select>
                 <select class="txtb" id="university" name="university"></select>
                 学部名(正式名称)
-                <input class="txtb" type="text" id="signup_major" name="major" placeholder="例)情報工学部">
+                <input class="txtb" type="text" id="signup_major" name="major" placeholder="例)情報工学科">
             </div>
 
             <br>
@@ -101,9 +101,9 @@ Seq[Any](_display_(/*14.2*/main("helpertop")/*14.19*/ {_display_(Seq[Any](format
 
               /*
                   -- GENERATED --
-                  DATE: Wed Dec 19 16:25:16 JST 2018
+                  DATE: Tue Jan 01 14:30:38 JST 2019
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/helpertop.scala.html
-                  HASH: 9bcfd016d90e0c23dde4593fdddfcd19429780d7
+                  HASH: 1bc0c27f5d373997346a79da3fd2b869b28f46b7
                   MATRIX: 1225->294|1251->311|1291->313|1324->442|1357->448|3104->2168|3119->2174|3155->2189|3191->2198|3241->2218
                   LINES: 37->14|37->14|37->14|39->19|41->21|82->62|82->62|82->62|83->63|85->65
                   -- GENERATED --
