@@ -2,8 +2,12 @@ const $ = jQuery;
 var $window = $(window);
 window.onload = function() {
   setCalendar();
+  setMiniCalendar();
 };
 
+var clientX;
+var clientY;
+var miniWindowSize = 200;
 var pushing_flag=0;
 var row_start = 0;
 var yy_start = 0;
@@ -22,23 +26,30 @@ $window.resize(function (){
     function mousedown(e){
 
           var row_start = e.getAttribute('row');
-
+          clientX = e.clientX;
+          clientY = e.clientY;
           $("#year_start").text(e.getAttribute('yy'));
           $("#month_start").text(e.getAttribute('mm'));
           $("#date_start").text(e.getAttribute('dd'));
+          $("#x_page").text(clientX);
+          $("#y_page").text(clientY);
        }
     function mouseup(e){
         var row_end = e.getAttribute('row');
         $("#year_end").text(e.getAttribute('yy'));
         $("#month_end").text(e.getAttribute('mm'));
-         $("#date_end").text(e.getAttribute('dd'));
+        $("#date_end").text(e.getAttribute('dd'));
+        if(e.className=="date"){
+            open_register_task(e);
+        }
+
     }
 //$window.onmouseup = function(){
 //alert(yy_start+'/'+mm_start+'/'+dd_start+'\n' + yy_end+'/'+mm_end+'/'+dd_end);
 //}
 
 // カレンダー生成（引数は前月や翌月移動に備えてのもの）
-function setCalendar(yy, mm) {
+function makeCalendar(yy, mm) {
   var yy, mm;
   // yy,mmが未定義なら（つまり一番最初にページを開いたときに）そのときの年月を変数yy,mmに付与する
   if (!yy && !mm) {
@@ -108,7 +119,7 @@ function setCalendar(yy, mm) {
   }*/
   out += "<div class='week_base'>"
   for(var i in youbi){
-    out += "<div class='date_base' style='width:"+ (windowWidth/8)+"px; height"+20+"px;'>" + youbi[i] + "</div>";
+    out += "<div class='date_base'>" + youbi[i] + "</div>";
   }
   out += "</div>"
 
@@ -126,17 +137,28 @@ function setCalendar(yy, mm) {
     m_now = 12;
     y_now = yy - 1;
   }
+  var m_flag = 0;
   for(var i=1; i<=row; i++) {
     out += "<div class='week'>"
 
     for(var j=7*i-6; j<=7*i; j++){
+
+        var output_str = days[j-1]+"";
+
         if(days[j-1] == 1){
             y_now = (m_now + 1 > 12)? y_now + 1 : y_now;
             m_now = (m_now + 1 > 12)? 1 : m_now + 1;
+            m_flag++;
+            output_str = m_now + "/1";
         }
+        var color_day = (m_flag==1)? "000000" : "CCCCCC" ;
+        /*out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
+        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px; color:#"+ color_day +";' >"
+                                        +output_str+"</div>";
+                                        */
         out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
-        +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px;' >"
-                                        +days[j-1]+"</div>";
+       +" style='color:#"+ color_day +";' >"
+                                                +output_str+"</div>";
     }
 
     out += "</div>"
@@ -144,9 +166,19 @@ function setCalendar(yy, mm) {
 
   out += "</div>";
 
+  return out;
+
   // 最後にhtmlへどかっと渡す
   document.getElementById("calendar-result").innerHTML = out;
   document.getElementById("calendar-result").style.width = (windowWidth/8*7+9)  + 'px';
+}
+
+function setCalendar(yy,mm){
+    var out = makeCalendar(yy,mm);
+    var windowWidth = $window.width();
+    var windowHeight = $window.height();
+    document.getElementById("calendar-result").innerHTML = out;
+    document.getElementById("calendar-result").style.width = ((windowWidth-miniWindowSize)+9)  + 'px';
 }
 
 // 前月へ移動（年度をまたぐときはyyを調整する必要がある点に留意）
@@ -162,6 +194,7 @@ function backmm(e) {
     yy = yy - 1;
   }
   setCalendar(yy, mm);
+  setMiniCalendar(yy,mm);
 }
 
 // 翌月へ移動
@@ -176,7 +209,9 @@ function nextmm(e) {
     mm = 1;
     yy = parseInt(yy) + 1;
   }
+
   setCalendar(yy, mm);
+  setMiniCalendar(yy,mm);
 }
 
 // 日付をクリックしたときに日付をアラートさせる（年と月の拾い方、年またぎに注意）
@@ -205,4 +240,67 @@ if (row == 1 && dd > 7) {
   }
   // とりあえず叫ぶ
     //alert(yy+'/'+mm+'/'+dd);
+}
+
+function open_register_task(e){
+    var yy_start = $("#year_start").text();
+    var mm_start = $("#month_start").text();
+    var dd_start = $("#date_start").text();
+    var yy_end = $("#year_end").text();
+    var mm_end = $("#month_end").text();
+    var dd_end = $("#date_end").text();
+    var time_start = yy_start;
+    var time_end   = yy_end
+
+    //スタートの書式調整
+    if(parseInt(mm_start)<10) {
+        time_start = time_start +'-0' + mm_start;
+    }else{
+         time_start = time_start +'-' + mm_start;
+    }
+    if(parseInt(dd_start)<10) {
+        time_start = time_start +'-0' + dd_start;
+    }else{
+        time_start = time_start +'-' + dd_start;
+    }
+
+    //エンドの書式調整
+    if(parseInt(mm_end)<10) {
+        time_end = time_end +'-0' + mm_end;
+    }else{
+        time_end = time_end +'-' + mm_end;
+    }
+    if(parseInt(dd_end)<10) {
+        time_end = time_end +'-0' + dd_end;
+    }else{
+        time_end = time_end +'-' + dd_end;
+    }
+
+    if(time_start>time_end){
+        var temp = time_start;
+        time_start = time_end;
+        time_end = temp;
+    }
+
+    var dateControl = document.querySelector('#start_date');
+    dateControl.value = time_start;
+
+    var dateControl = document.querySelector('#end_date');
+    dateControl.value = time_end;
+
+     //$(".overlay").fadeIn("slow");
+     var w = $window.width();
+     var h = $window.height();
+     $(".overlay").height(h);
+     $(".overlay").width(w);
+     $(".overlay").fadeIn();
+     $(".main-window").fadeIn();
+
+
+}
+
+function close_register_task(){
+    $(".overlay").fadeOut("slow");
+    $(".main-window").fadeOut("slow");
+
 }
