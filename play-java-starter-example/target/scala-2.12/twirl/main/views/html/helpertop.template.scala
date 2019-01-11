@@ -92,7 +92,7 @@ Seq[Any](_display_(/*14.2*/main("helpertop")/*14.19*/ {_display_(Seq[Any](format
 
               /*
                   -- GENERATED --
-                  DATE: Fri Dec 14 12:23:20 JST 2018
+                  DATE: Fri Jan 11 11:50:40 JST 2019
                   SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/helpertop.scala.html
                   HASH: e0998bd610bc39811759ada7437391606f676ad0
                   MATRIX: 1225->294|1251->311|1291->313|1324->442|1357->448|2714->1778|2729->1784|2765->1799|2801->1808|2851->1828

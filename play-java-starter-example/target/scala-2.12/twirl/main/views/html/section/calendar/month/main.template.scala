@@ -34,9 +34,9 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>"""),_display_(/*5.13*/title),format.raw/*5.18*/("""</title>
-    <link rel="stylesheet" href=""""),_display_(/*6.35*/routes/*6.41*/.Assets.versioned("stylesheets/calendar.css")),format.raw/*6.86*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*6.35*/routes/*6.41*/.Assets.versioned("stylesheets/calendar/calendar.css")),format.raw/*6.95*/("""">
     <link rel="stylesheet" href=""""),_display_(/*7.35*/routes/*7.41*/.Assets.versioned("stylesheets/navBar.css")),format.raw/*7.84*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.versioned("stylesheets/calendarMini.css")),format.raw/*8.90*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.versioned("stylesheets/calendar/calendarMini.css")),format.raw/*8.99*/("""">
     <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.55*/routes/*9.61*/.Assets.versioned("images/favicon.png")),format.raw/*9.100*/("""">
     <link rel="stylesheet" href=""""),_display_(/*10.35*/routes/*10.41*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*10.112*/("""">
 </head>
@@ -94,8 +94,8 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
     </main>
 
     <script src=""""),_display_(/*66.19*/routes/*66.25*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*66.75*/(""""></script>
-    <script src=""""),_display_(/*67.19*/routes/*67.25*/.Assets.versioned("/javascripts/calendar.js")),format.raw/*67.70*/(""""></script>
-    <script src=""""),_display_(/*68.19*/routes/*68.25*/.Assets.versioned("/javascripts/calendar.mini.js")),format.raw/*68.75*/(""""></script>
+    <script src=""""),_display_(/*67.19*/routes/*67.25*/.Assets.versioned("/javascripts/calendar/calendar.js")),format.raw/*67.79*/(""""></script>
+    <script src=""""),_display_(/*68.19*/routes/*68.25*/.Assets.versioned("/javascripts/calendar/calendar.mini.js")),format.raw/*68.84*/(""""></script>
     <script src=""""),_display_(/*69.19*/routes/*69.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*69.73*/(""""></script>
 
 </body>
@@ -115,10 +115,10 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Tue Jan 08 11:26:48 JST 2019
+                  DATE: Fri Jan 11 11:50:40 JST 2019
                   SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html
-                  HASH: da24a672fc575f594df935040531445fefbabc25
-                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1350->183|1413->220|1427->226|1490->269|1553->306|1567->312|1636->361|1719->418|1733->424|1793->463|1857->500|1872->506|1965->577|3760->2437|3801->2451|3829->2458|3865->2467|3932->2507|3947->2513|4018->2563|4075->2593|4090->2599|4156->2644|4213->2674|4228->2680|4299->2730|4356->2760|4371->2766|4440->2814
+                  HASH: f9431aebf8c733bcfec17f4ede5ea3321ee89122
+                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1359->192|1422->229|1436->235|1499->278|1562->315|1576->321|1654->379|1737->436|1751->442|1811->481|1875->518|1890->524|1983->595|3778->2455|3819->2469|3847->2476|3883->2485|3950->2525|3965->2531|4036->2581|4093->2611|4108->2617|4183->2671|4240->2701|4255->2707|4335->2766|4392->2796|4407->2802|4476->2850
                   LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|89->59|90->60|90->60|91->61|96->66|96->66|96->66|97->67|97->67|97->67|98->68|98->68|98->68|99->69|99->69|99->69
                   -- GENERATED --
               */

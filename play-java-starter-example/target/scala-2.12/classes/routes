@@ -5,17 +5,17 @@
 # signup and signin controller
 GET     /                           controllers.SignUpandInController.helperTop
 GET     /signup                     controllers.SignUpandInController.signupForm
-GET     /                           controllers.SignUpandInController.helperTop
 GET     /database/users             controllers.SignUpandInController.userList
 POST    /signup/register            controllers.SignUpandInController.registerUser
 GET     /signin                     controllers.SignUpandInController.signinForm
-POST     /signin              controllers.SignUpandInController.signIn
-GET      /helper/:username          controllers.MainController.mypageForm(username: String)
+POST    /signin                     controllers.SignUpandInController.signIn
+GET     /helper/:username           controllers.MainController.mypageForm(username: String)
 
 # mypage controller
-GET      /signout                    controllers.MainController.signOut
-GET      /grades                      controllers.MainController.grade
-GET      /calendar                   controllers.MainController.calendar
+GET     /signout                    controllers.MainController.signOut
+GET     /grades                     controllers.MainController.grade
+GET     /calendar/month             controllers.MainController.calendarMonth
+GET     /calendar/day               controllers.MainController.calendarDay
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

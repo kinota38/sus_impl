@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes
-// @DATE:Fri Dec 14 12:23:20 JST 2018
+// @DATE:Fri Jan 11 11:50:40 JST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -24,11 +24,7 @@ package controllers.javascript {
       "controllers.SignUpandInController.helperTop",
       """
         function() {
-        
-          if (true) {
-            return _wA({method:"GET", url:"""" + _prefix + """"})
-          }
-        
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )
@@ -43,7 +39,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:9
     def registerUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SignUpandInController.registerUser",
       """
@@ -53,7 +49,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:10
     def signinForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SignUpandInController.signinForm",
       """
@@ -63,7 +59,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:8
     def userList: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SignUpandInController.userList",
       """
@@ -73,7 +69,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:11
     def signIn: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SignUpandInController.signIn",
       """
@@ -85,7 +81,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:13
+  // @LINE:12
   class ReverseMainController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -93,7 +89,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:16
     def grade: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.grade",
       """
@@ -103,7 +99,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:12
     def mypageForm: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.mypageForm",
       """
@@ -113,22 +109,32 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
-    def calendar: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.MainController.calendar",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "calendar"})
-        }
-      """
-    )
-  
-    // @LINE:16
+    // @LINE:15
     def signOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.signOut",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signout"})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def calendarDay: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.calendarDay",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "calendar/day"})
+        }
+      """
+    )
+  
+    // @LINE:17
+    def calendarMonth: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.MainController.calendarMonth",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "calendar/month"})
         }
       """
     )

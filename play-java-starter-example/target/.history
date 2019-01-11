@@ -1,3 +1,9 @@
 run
+<<<<<<< HEAD
 るん
+=======
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo /private/var/folders/l1/kmb4gz3x3618p6nrz8xdjpph0000gn/T/sbt-structure.xml; session clear-all
+run
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo /private/var/folders/l1/kmb4gz3x3618p6nrz8xdjpph0000gn/T/sbt-structure.xml; session clear-all
+>>>>>>> origin/master
 run

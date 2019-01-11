@@ -48,7 +48,7 @@ Seq[Any](format.raw/*2.1*/("""
         <div class="services">
             <h1>"""),_display_(/*18.18*/name),format.raw/*18.22*/("""</h1>
             <div class="cen">
-                <a class="fixed" href="/calendar">
+                <a class="fixed" href="/calendar/month">
                 <div class="service">
                     <i class="far fa-calendar-alt"></i>
                     <h2>Calendar</h2>
@@ -107,9 +107,9 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 18 12:12:45 JST 2018
+                  DATE: Fri Jan 11 11:50:40 JST 2019
                   SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 076773ef435c5d2add0b5fb6bd979d6a2cff5362
+                  HASH: 30c295c66918cdc4787461cc51093dd627ee7399
                   MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1185->39|1666->493|1691->497
                   LINES: 28->1|33->2|34->3|34->3|34->3|35->4|49->18|49->18
                   -- GENERATED --

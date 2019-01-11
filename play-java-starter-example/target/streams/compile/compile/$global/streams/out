@@ -1,3 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:13:1: value mypageForm is not a member of controllers.SignUpandInController[0m
-[0m[[0m[31merror[0m] [0m[0mGET      /helper/:username          controllers.SignUpandInController.mypageForm(username: String)[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes:17:1: value calendarMonth is not a member of controllers.MainController[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /calendar/month             controllers.MainController.calendarMonth[0m
+[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/conf/routes:18:1: value calendarDay is not a member of controllers.MainController[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /calendar/day               controllers.MainController.calendarDay[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

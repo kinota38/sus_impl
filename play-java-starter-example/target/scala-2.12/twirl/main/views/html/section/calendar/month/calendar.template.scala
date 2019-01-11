@@ -36,13 +36,13 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
     <button id="bmonth" onclick='backmm(this);return false;'><<</button>
     <button id="nmonth" onclick='nextmm(this);return false;'> >> </button>
 
-    <span id="year"></span>年<span id="month"></span>月<br />-->
+    <span id="year"></span>年<span id="month"></span>月<br />
 
-    <span hidden id="all_start"><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span><br />
-    <span hidden id="all_end"><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
-    <span id="x_page"></span>~<span id="y_page"></span>
-<div id="calendar-result"></div>
-
+    <span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span><br />
+    <span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>-->
+    <div id="calendar-result" ></div>
+<span hidden><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span>
+<span hidden><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
 <div id="register_task" class="main-window">
     <h2>新規登録</h2>
     <span id="error-field" class="error"></span>
@@ -63,6 +63,7 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
     <!--<button onclick="register_new(); return false;">送信</button>
     <button onclick="close_registration_form(); return false;">キャンセル</button>-->
 </div>
+
 """)))}))
       }
     }
@@ -79,10 +80,10 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 11 11:09:38 JST 2019
+                  DATE: Fri Jan 11 11:58:01 JST 2019
                   SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/month/calendar.scala.html
-                  HASH: 8eff31e98262363fe95ac3cbb1b3a1c671e472df
-                  MATRIX: 1056->1|1077->14|1115->15|1147->21|2261->1108|2276->1114|2312->1129|2344->1134
+                  HASH: 1d033115540ff49a23abcf614ea5d81430f6c359
+                  MATRIX: 1056->1|1077->14|1115->15|1147->21|2357->1204|2372->1210|2408->1225|2440->1230
                   LINES: 33->1|33->1|33->1|35->3|61->29|61->29|61->29|62->30
                   -- GENERATED --
               */
