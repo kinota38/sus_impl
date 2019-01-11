@@ -310,7 +310,6 @@ function create_data2(grades){
         var cdate = 0;
         var ndate = 0;
         for (const grade of grades) {
-            console.log(grade);
             if(grade['tag']=='center'){
                 if(cdate !== grade["registeredAt"]){
                     if(cdate!=0){
@@ -319,6 +318,7 @@ function create_data2(grades){
                             t: new Date(cdate) // like 'new Data('2018/4/12 03:21')'
                         });
                     }
+
                     csum = grade["accGrade"];
                     cdate = grade["registeredAt"];
                 }else{
@@ -529,6 +529,8 @@ function add_to_acc(){
                 myChart2_data = create_data2(entries);
                 config2[tag].data.datasets[0].data = myChart2_data[tag]["合計"];
                 myChart2[tag].update();
+                $("#myChart2-"+tag).show();
+                $("#no-acc-"+tag).hide();
                 addoption(myChart2_data);
                 $('select').niceSelect('update');
             }, error => {

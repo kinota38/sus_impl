@@ -2,40 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="857fd75f-8fd4-4fc2-bd82-b9a1821755e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/javascripts/grade/jquery.nice-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/grade/grades.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/grade/nice-select.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/GradeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/GradeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/helpertop.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/helpertop.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/section/grades/grades.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/section/grades/grades.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/section/grades/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/section/grades/main.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/grades.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/grade/grades.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/grades.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/navBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/helpertop$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/helpertop$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/section/grades/grades$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/section/grades/grades$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/section/grades/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/section/grades/main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/helpertop.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/helpertop.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/section/grades/grades.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/section/grades/grades.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/section/grades/main.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/section/grades/main.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/grade/grades.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/grade/grades.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/sus_impl/1.0-SNAPSHOT/javascripts/grades.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/grades.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -65,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/grade/grades.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="312" column="31" selection-start-line="312" selection-start-column="31" selection-end-line="312" selection-end-column="31" />
+            <state relative-caret-position="496">
+              <caret line="438" lean-forward="true" selection-start-line="438" selection-end-line="438" />
             </state>
           </provider>
         </entry>
@@ -146,7 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>moment</find>
       <find>format</find>
       <find>first-section</find>
       <find>create_config1</find>
@@ -176,6 +147,7 @@
       <find>chart-area</find>
       <find>myChart1_data</find>
       <find>where</find>
+      <find>myChart2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -440,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545707184523</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="成績画面ver0.1">
+      <created>1547173361162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547173361162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -900,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/grade/grades.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="312" column="31" selection-start-line="312" selection-start-column="31" selection-end-line="312" selection-end-column="31" />
+        <state relative-caret-position="496">
+          <caret line="438" lean-forward="true" selection-start-line="438" selection-end-line="438" />
         </state>
       </provider>
     </entry>
