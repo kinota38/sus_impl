@@ -4,18 +4,27 @@
 
 # signup and signin controller
 GET     /                           controllers.SignUpandInController.helperTop
-GET     /signup                     controllers.SignUpandInController.signupForm
 GET     /database/users             controllers.SignUpandInController.userList
 POST    /signup/register            controllers.SignUpandInController.registerUser
 GET     /signin                     controllers.SignUpandInController.signinForm
-POST    /signin                     controllers.SignUpandInController.signIn
-GET     /helper/:username           controllers.MainController.mypageForm(username: String)
+POST     /signin                    controllers.SignUpandInController.signIn
+GET      /helper/:username          controllers.MainController.mypageForm(username: String)
 
 # mypage controller
 GET     /signout                    controllers.MainController.signOut
-GET     /grades                     controllers.MainController.grade
+GET      /grades/:username           controllers.MainController.grade(username: String)
 GET     /calendar/month             controllers.MainController.calendarMonth
 GET     /calendar/day               controllers.MainController.calendarDay
+
+
+# grade controller
+GET      /grades/gradeslist/:username controllers.GradeController.gradesList(username: String)
+GET      /grades/gradelist/:username  controllers.GradeController.gradeList(username: String)
+GET      /grades/accgradelist/:username  controllers.GradeController.accGradeList(username: String)
+POST     /grades/register/:username     controllers.GradeController.registerGrade(username: String)
+POST     /grades/registeracc/:username  controllers.GradeController.registerAccGrade(username: String)
+POST     /grades/edit                 controllers.GradeController.editGrade
+POST     /grades/remove               controllers.GradeController.removeGrade
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

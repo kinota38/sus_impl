@@ -2,22 +2,29 @@
     // ページロード完了時に行う操作
     $(document).ready(() => {
         const $ = jQuery;
-        var option = '';
+        var high_option = '';
+        var uni_option = '';
         import('./areaandschool.js')
           .then(ah => {
               return new ah.areaList();
             }).then(area => {
                 for (var i=0;i<area.length;i++) {
                     if (area === $('#highschool_area').val()){
-                            option += '<option value="' + i + '" selected="selected">' + area[i] + '</option>\n';
+                            high_option += '<option value="' + i + '" selected="selected">' + area[i] + '</option>\n';
                     }else{
-                        option += '<option value="' + i + '">' + area[i] + '</option>\n';
+                        high_option += '<option value="' + i + '">' + area[i] + '</option>\n';
+                    }
+                    if (area === $('#uni_area').val()){
+                        uni_option += '<option value="' + i + '" selected="selected">' + area[i] + '</option>\n';
+                    }else{
+                        uni_option += '<option value="' + i + '">' + area[i] + '</option>\n';
                     }
                 }
 
-                $('#highschool_area').html(option);
+                $('#highschool_area').html(high_option);
+                $('#uni_area').html(uni_option);
                 setHighSchool();
-
+                setUniversity();
             });
 
 
@@ -87,16 +94,15 @@ function get_form(tag) {
 function setHighSchool(){
     const $ = jQuery;
     var option = '';
-    var highschool
     import('./areaandschool.js')
       .then(ah => {
           return new ah.highschoolList(Number($('#highschool_area').val()));
         }).then(highschool => {
-              for (var i=0;i<highschool.length;i++) {
-                     if (highschool[i] === $('#highschool').val()){
-                             option += '<option value="' + i + '" selected="selected">' + highschool[i] + '</option>\n';
+              for (const i of highschool) {
+                     if (i === $('#highschool').val()){
+                             option += '<option value="' + i + '" selected="selected">' + i + '</option>\n';
                      }else{
-                         option += '<option value="' + i + '">' + highschool[i]+ '</option>\n';
+                         option += '<option value="' + i + '">' + i + '</option>\n';
                      }
                  }
                  option += '<option value="' + "その他" + '">' + "その他" + '</option>\n';
@@ -106,8 +112,33 @@ function setHighSchool(){
 
   }
 
+//新規登録時に地域によってセレクトボックス内の志望校を変える
+function setUniversity(){
+    const $ = jQuery;
+    var option = '';
+    import('./areaandschool.js')
+      .then(ah => {
+          return new ah.universityList(Number($('#uni_area').val()));
+        }).then(university => {
+              for (const i of university) {
+                     if (i === $('#university').val()){
+                             option += '<option value="' + i + '" selected="selected">' + i + '</option>\n';
+                     }else{
+                         option += '<option value="' + i + '">' + i + '</option>\n';
+                     }
+                 }
+                 option += '<option value="' + "その他" + '">' + "その他" + '</option>\n';
+                 $('#university').html(option);
+        });
+
+
+  }
+
 $('#highschool_area').change(function(){
 setHighSchool();
+});
+$('#uni_area').change(function(){
+setUniversity();
 });
 
 

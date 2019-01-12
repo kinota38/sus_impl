@@ -461,8 +461,8 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 11 11:50:40 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
+                  DATE: Sat Jan 12 03:23:31 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
                   HASH: c0bae01454439215fe898592e55bcbe4cc929654
                   MATRIX: 1049->1|1070->14|1108->15|1139->20
                   LINES: 33->1|33->1|33->1|34->2

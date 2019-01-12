@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sus_impl.iml" filepath="$PROJECT_DIR$/.idea/modules/sus_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sus_impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sus_impl-build.iml" />
     </modules>
   </component>
 </project>

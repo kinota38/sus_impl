@@ -32,65 +32,54 @@ object section extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Ht
 
 Seq[Any](format.raw/*2.1*/("""
 """),_display_(/*3.2*/main("Mypage")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
-    """),format.raw/*4.5*/("""<div class="header">
-        <nav class="globalMenuSp">
-            <ul>
-                <li><a href="#">MypageTop</a></li>
-                <li><a href="#">AccountSetting</a></li>
-                <li><a href="/signout">LogOut</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="navToggle">
-        <span></span><span></span><span></span><span>menu</span>
-    </div>
-    <div class="main">
-        <div class="services">
-            <h1>"""),_display_(/*18.18*/name),format.raw/*18.22*/("""</h1>
-            <div class="cen">
-                <a class="fixed" href="/calendar/month">
+
+"""),format.raw/*5.1*/("""<div class="main">
+    <div class="services">
+        <h1>"""),_display_(/*7.14*/name),format.raw/*7.18*/(""" """),format.raw/*7.19*/("""さん</h1>
+        <div class="cen">
+            <a class="fixed" href="/calendar/month">
                 <div class="service">
                     <i class="far fa-calendar-alt"></i>
                     <h2>Calendar</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </div>
-                </a>
+            </a>
 
-                <a class="fixed" href="/grades">
+            <a class="fixed" href="/grades/"""),_display_(/*17.45*/name),format.raw/*17.49*/("""">
                 <div class="service">
                     <i class="fas fa-user-graduate"></i>
                     <h2>grades</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </div>
-                </a>
+            </a>
 
-                <div class="service">
-                    <i class="fab fa-android"></i>
-                    <h2>Service Name</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-
-                <div class="service">
-                    <i class="fab fa-apple-pay"></i>
-                    <h2>Service Name</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-
-                <div class="service">
-                    <i class="fas fa-taxi"></i>
-                    <h2>Service Name</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-
-                <div class="service">
-                    <i class="fab fa-youtube"></i>
-                    <h2>Service Name</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
+            <div class="service">
+                <i class="fab fa-android"></i>
+                <h2>Service Name</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
 
+            <div class="service">
+                <i class="fab fa-apple-pay"></i>
+                <h2>Service Name</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+
+            <div class="service">
+                <i class="fas fa-taxi"></i>
+                <h2>Service Name</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+
+            <div class="service">
+                <i class="fab fa-youtube"></i>
+                <h2>Service Name</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
         </div>
+
     </div>
+</div>
 """)))}))
       }
     }
@@ -107,11 +96,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 11 11:50:40 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 30c295c66918cdc4787461cc51093dd627ee7399
-                  MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1185->39|1666->493|1691->497
-                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|49->18|49->18
+                  DATE: Sat Jan 12 12:37:07 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
+                  HASH: 1b369b77b5e69a19e0366455d9c9d9e4bb7ef2fe
+                  MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1182->36|1267->95|1291->99|1319->100|1753->507|1778->511
+                  LINES: 28->1|33->2|34->3|34->3|34->3|36->5|38->7|38->7|38->7|48->17|48->17
                   -- GENERATED --
               */
           

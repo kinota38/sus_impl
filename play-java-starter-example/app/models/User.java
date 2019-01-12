@@ -3,10 +3,13 @@ package models;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.*;
 import play.data.validation.Constraints;
 import play.data.format.Formats;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -59,37 +62,71 @@ public class User extends Model{
     public String sessionid;
 
     /**
-     * 高校の地域(インデックス)
+     * 高校の地域
      */
     @Constraints.Required
     @Constraints.MaxLength(255)
     @Formats.NonEmpty
-    @Column(nullable = true)
-    public int highscool_area;
+    @Column(nullable = false)
+    public String highscool_area;
 
     /**
-     * 高校名(インデックス)
+     * 高校名
      */
     @Constraints.Required
     @Constraints.MaxLength(255)
     @Formats.NonEmpty
-    @Column(nullable = true)
-    public int highscool;
+    @Column(nullable = false)
+    public String highscool;
+
+    /**
+     * 志望校の地域
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = false)
+    public String uni_area;
+
+    /**
+     * 志望校名
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = false)
+    public String university;
+
+    /**
+     * 学部名
+     */
+    @Constraints.Required
+    @Constraints.MaxLength(255)
+    @Formats.NonEmpty
+    @Column(nullable = false)
+    public String major;
+
+    @JsonBackReference
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<Grade> grade;
+
+    @JsonBackReference
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<AccGrade> acc_grade;
 
 
-
-    @OneToMany
-    public List<sample> ss;
-
-
-    public User(final String name, final String password, final String salt, final int highscool_area, final int highscool ) {
+    public User(final String name, final String password, final String salt,
+                final String highscool_area, final String highscool ,
+                final String uni_area,final String university,
+                final String major) {
         this.username = name;
         this.password = password;
         this.salt = salt;
         this.highscool = highscool;
         this.highscool_area = highscool_area;
-
-
+        this.university = university;
+        this.uni_area = uni_area;
+        this.major = major;
     }
 
     /**

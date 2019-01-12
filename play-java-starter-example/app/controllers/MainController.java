@@ -20,9 +20,7 @@ public class MainController extends Controller {
 
 
     public Result mypageForm(String username){
-        String name = username + "さん";
-        String sessionid = request().cookies().get("sessionid").value();
-        return ok(section.render(name));
+        return ok(section.render(username));
     }
 
     public Result signOut(){
@@ -36,7 +34,7 @@ public class MainController extends Controller {
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
-    public Result grade(){
+    public Result grade(String username){
         return ok(grades.render());
     }
 

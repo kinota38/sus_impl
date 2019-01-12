@@ -1,58 +1,64 @@
+@*
+* This template takes a single argument, a String containing a
+* message to display.
+*@
 
 @*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
 
 
 @main("helpertop") {
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
+@*
+* Get an `Html` object by calling the built-in Play welcome
+* template and passing a `String` message.
+*@
 
-    <div class="header">StudyHelper</div>
+<div class="header">StudyHelper</div>
 
-    <div class="show-btn">
-        <div class="show-login-btn" onClick="location.href='/signin'">
-            <i class="fas fa-sign-in-alt"></i>
-            Log In
-        </div>
-        <div class="show-sign-up-btn" >
-            <i class="fas fa-sign-in-alt"></i>
-            Sign Up
-        </div>
+<div class="show-btn">
+    <div class="show-login-btn" onClick="location.href='/signin'">
+        <i class="fas fa-sign-in-alt"></i>
+        Log In
     </div>
-
-    <div class="sign-up-box">
-        <div class="hide-sign-up-btn"></div>
-        <form class="sign-up-form">
-            <h1>Sign up</h1>
-            <span style="color:#ff0000;" id="error-field" class="error"></span><br>
-            ユーザー名
-            <input class="txtb" type="text" id="signup_name" name="name" placeholder="Username">
-            <div class="high-select-box">
-                <br>
-                高校選択
-                <select class="txtb" id="highschool_area" name="highschool_area"></select>
-                <select class="txtb" id="highschool" name="highschool"></select>
-            </div>
-            <br>
-            パスワード
-            <input class="txtb" type="password" id="signup_pass1" name="pass1" placeholder="Password">
-            <input class="txtb" type="password" id="signup_pass2" name="pass2" placeholder="Comfirm Password">
-            <br>
-            <button class="sign-up-btn" onclick="check(); return false;">登録</button>
-            @helper.CSRF.formField
-        </form>
+    <div class="show-sign-up-btn" >
+        <i class="fas fa-sign-in-alt"></i>
+        Sign Up
     </div>
+</div>
+
+<div class="sign-up-box">
+    <div class="hide-sign-up-btn"></div>
+    <form class="sign-up-form">
+        <h1>Sign up</h1>
+        <span style="color:#ff0000;" id="error-field" class="error"></span><br>
+        ユーザー名
+        <input class="txtb" type="text" id="signup_name" name="name" placeholder="Username">
+        <div class="high-select-box">
+            <br>
+            高校選択
+            <select class="txtb" id="highschool_area" name="highschool_area"></select>
+            <select class="txtb" id="highschool" name="highschool"></select>
+        </div>
+        <div class="uni-select-box">
+            <br>
+            志望校選択
+            <select class="txtb" id="uni_area" name="uni_area"></select>
+            <select class="txtb" id="university" name="university"></select>
+            学部名(正式名称)
+            <input class="txtb" type="text" id="signup_major" name="major" placeholder="例)情報工学科">
+        </div>
+
+        <br>
+        パスワード
+        <input class="txtb" type="password" id="signup_pass1" name="pass1" placeholder="Password">
+        <input class="txtb" type="password" id="signup_pass2" name="pass2" placeholder="Comfirm Password">
+        <br>
+        <button class="sign-up-btn" onclick="check(); return false;">登録</button>
+        @helper.CSRF.formField
+    </form>
+</div>
 }
-
-
