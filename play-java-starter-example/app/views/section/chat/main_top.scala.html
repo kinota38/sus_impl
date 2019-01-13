@@ -1,0 +1,55 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @* Here's where we render the page title `String`. *@
+    <title>@title</title>
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/chat/chat_top.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">
+
+</head>
+<body>
+<main>
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content-left">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li style="float:right" class="dropdown">
+                <a class="active" href="#about"><i class="fas fa-user"></i></a>
+                <div class="dropdown-content-right">
+                    <a href="#">Account Info</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <br>
+    @* And here's where we render the `Html` object containing
+    * the page content. *@
+    @content
+</main>
+<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>
+        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>
+<script src="@routes.Assets.versioned("/javascripts/chat/chat_top.js")"></script>
+    </body>
+</html>

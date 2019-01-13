@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:15:1: missing argument list for method grade in class MainController[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `grade _` or `grade(_)` instead of `grade`.[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /grades                     controllers.MainController.grade[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/controllers/ChatController.java:9:8: object section is not a member of package views[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.section.chat.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

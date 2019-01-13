@@ -14,6 +14,16 @@ create table accgrade (
   constraint pk_accgrade primary key (id)
 );
 
+create table comment (
+  id                            bigint auto_increment not null,
+  threadid                      bigint not null,
+  comment                       varchar(255) not null,
+  registered_at                 bigint not null,
+  username                      varchar(255) not null,
+  thread_id                     bigint,
+  constraint pk_comment primary key (id)
+);
+
 create table grade (
   id                            bigint auto_increment not null,
   username                      varchar(255) not null,
@@ -22,6 +32,14 @@ create table grade (
   tag                           varchar(255) not null,
   user_id                       bigint,
   constraint pk_grade primary key (id)
+);
+
+create table thread (
+  id                            bigint auto_increment not null,
+  username                      varchar(255) not null,
+  threadname                    varchar(255) not null,
+  updated_at                    bigint not null,
+  constraint pk_thread primary key (id)
 );
 
 create table user (
@@ -48,6 +66,9 @@ create table sample (
 alter table accgrade add constraint fk_accgrade_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
 create index ix_accgrade_user_id on accgrade (user_id);
 
+alter table comment add constraint fk_comment_thread_id foreign key (thread_id) references thread (id) on delete restrict on update restrict;
+create index ix_comment_thread_id on comment (thread_id);
+
 alter table grade add constraint fk_grade_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
 create index ix_grade_user_id on grade (user_id);
 
@@ -60,6 +81,9 @@ create index ix_sample_user_id on sample (user_id);
 alter table accgrade drop constraint if exists fk_accgrade_user_id;
 drop index if exists ix_accgrade_user_id;
 
+alter table comment drop constraint if exists fk_comment_thread_id;
+drop index if exists ix_comment_thread_id;
+
 alter table grade drop constraint if exists fk_grade_user_id;
 drop index if exists ix_grade_user_id;
 
@@ -68,7 +92,11 @@ drop index if exists ix_sample_user_id;
 
 drop table if exists accgrade;
 
+drop table if exists comment;
+
 drop table if exists grade;
+
+drop table if exists thread;
 
 drop table if exists user;
 

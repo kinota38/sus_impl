@@ -1,0 +1,24 @@
+@(name: String)
+
+@main_top("Chat") {
+<br>
+<br>
+<br>
+<br>
+<button onclick="show_thread_form()">登録</button>
+
+<div id="field"></div>
+
+<div class="popup" id="create-thread">
+    <form id="create-thread-form">
+        <br>
+        タイトル<br>
+        <textarea cols="30" rows="3" name="threadname" class="txtb" id="input-thread-title"></textarea><br>
+        <input type="hidden" id="username" name="username" value="@name">
+        @helper.CSRF.formField
+    </form>
+    <button class="button" onclick="create_thread();">作成する</button>
+</div>
+<div class ="layer" id="layer"></div>
+
+}

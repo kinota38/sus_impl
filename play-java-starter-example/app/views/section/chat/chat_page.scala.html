@@ -1,0 +1,51 @@
+@(threadid: Long, comments: List[Comment], username:String)
+
+@main_page("chat"){
+
+<br>
+<br>
+<br>
+<br>
+<button onclick="show_thread_form()">登録</button>
+<div class="chat-display">
+
+    <div id="field">
+        @for(comment <- comments) {
+        @if(comment.username==username) {
+        <div class="kaiwa">
+            <div class="kaiwa-text-left">
+                <p class="kaiwa-text">
+                    @comment.comment
+                </p>
+            </div>
+        </div>
+        } else {
+        <div class="kaiwa">
+            <div class="kaiwa-text-right">
+                <p class="kaiwa-text">
+                    @comment.comment
+                </p>
+            </div>
+        </div>
+        }
+
+        }
+    </div>
+</div>
+
+<div class="popup" id="create-thread">
+    <form id="add-comment-form">
+        <br>
+        <textarea cols="30" rows="3" name="comment" class="txtb" id="input-comment"></textarea><br>
+        <input type="hidden" id="username" name="username" value="@username">
+        <input type="hidden" id="threadid" name="threadid" value="@threadid">
+        @helper.CSRF.formField
+    </form>
+    <button class="button" onclick="add_comment();">作成する</button>
+</div>
+<div class ="layer" id="layer"></div>
+
+
+
+
+}
