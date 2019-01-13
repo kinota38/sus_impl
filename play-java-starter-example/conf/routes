@@ -26,6 +26,12 @@ POST     /grades/registeracc/:username  controllers.GradeController.registerAccG
 POST     /grades/edit                 controllers.GradeController.editGrade
 POST     /grades/remove               controllers.GradeController.removeGrade
 
+# chat controller
+GET     /chat/:username               controllers.ChatController.chattopForm(username: String)
+GET     /chat/top/threadlistrecent        controllers.ChatController.threadListRecent
+POST    /chat/top/createthread            controllers.ChatController.createThread
+GET     /chat/page/:threadid            controllers.ChatController.chatpageForm(threadid: Long)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
