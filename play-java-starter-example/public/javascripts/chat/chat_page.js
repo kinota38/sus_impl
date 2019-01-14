@@ -1,6 +1,3 @@
-$('.layer').click(function(e) {//popup時に枠外をクリックすると閉じる
-    $('.popup, .layer').hide();
-});
 
 !function($) {
     // ページロード完了時に行う操作
@@ -8,10 +5,6 @@ $('.layer').click(function(e) {//popup時に枠外をクリックすると閉じ
 
           });
 }(jQuery);
-
-function show_thread_form(){
-    $('.layer,.popup').show();
-}
 
 function add_comment(){
     var body = get_form("#add-comment-form");
@@ -24,11 +17,7 @@ function add_comment(){
                 }
 
             }).then(entry => {
-                $('.popup, .layer').hide();
-                const sharetask = $("<p>")
-                            .text(entry["comment"])
-                            .addClass("comment");
-                $("#field").append(sharetask).append($("<br>"));
+                $("#field").append('<div class="kaiwa"><div class="kaiwa-text-left"><p class="kaiwa-text">'+entry["comment"]+'</p></div></div>');
             }, error => {
                    alert("登録できませんでした");
                });

@@ -1,12 +1,7 @@
 @(threadid: Long, comments: List[Comment], username:String)
 
 @main_page("chat"){
-
-<br>
-<br>
-<br>
-<br>
-<button onclick="show_thread_form()">登録</button>
+<div class="chat-bg"></div>
 <div class="chat-display">
 
     <div id="field">
@@ -33,7 +28,7 @@
     </div>
 </div>
 
-<div class="popup" id="create-thread">
+<div class="create-thread" id="create-thread">
     <form id="add-comment-form">
         <br>
         <textarea cols="30" rows="3" name="comment" class="txtb" id="input-comment"></textarea><br>
@@ -43,9 +38,6 @@
     </form>
     <button class="button" onclick="add_comment();">作成する</button>
 </div>
-<div class ="layer" id="layer"></div>
-
-
 
 
 }
