@@ -1,7 +1,6 @@
 body{
     background: #f1f1f1;
     font-family:'Helvetica Neue';
-    text-align:center;
 }
 
 
@@ -20,9 +19,11 @@ body{
 
 .create-thread {
     position:fixed;
-    background-color:#f1f1f1;
-    top:600px;
-    left:400px;
+    top:550px;
+    width:600px;
+    margin-left:10%;
+    margin-right:10%;
+    text-align:right;
 }
 
 /*——————–
@@ -97,4 +98,9 @@ p.kaiwa-text:last-child {
   clear: both;
   content: "";
   display: block;
+}
+
+.username-label{
+    font-size:60%;
+    border-bottom:thin solid #000;
 }

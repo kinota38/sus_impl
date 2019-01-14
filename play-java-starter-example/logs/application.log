@@ -815,3 +815,685 @@
 2019-01-14 14:31:58,188 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
 2019-01-14 14:32:02,380 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-112 - access from 0:0:0:0:0:0:0:1 to /chat/page/addcomment
 2019-01-14 14:32:06,121 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-103 - access from 0:0:0:0:0:0:0:1 to /chat/page/addcomment
+2019-01-14 14:34:32,174 [INFO] from application in application-akka.actor.default-dispatcher-49 - ApplicationTimer demo: Stopping application at 2019-01-14T05:34:32.174Z after 323s.
+2019-01-14 14:34:32,175 [INFO] from application in application-akka.actor.default-dispatcher-49 - Shutting down connection pool.
+2019-01-14 14:34:32,325 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-120 - Creating Pool for datasource 'default'
+2019-01-14 14:34:32,327 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-120 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:34:32,395 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-120 - ApplicationTimer demo: Starting application at 2019-01-14T05:34:32.395Z
+2019-01-14 14:34:32,547 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-120 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:34:32,550 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-120 - Application started (Dev)
+2019-01-14 14:34:32,570 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:34:32,570 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:34:32,570 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:34:32,608 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:34:32,608 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:34:32,608 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:34:32,619 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:34:32,619 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:34:32,621 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:34:32,683 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:34:32,707 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:37:05,498 [INFO] from application in application-akka.actor.default-dispatcher-10 - ApplicationTimer demo: Stopping application at 2019-01-14T05:37:05.498Z after 153s.
+2019-01-14 14:37:05,500 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2019-01-14 14:37:05,626 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-124 - Creating Pool for datasource 'default'
+2019-01-14 14:37:05,629 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-124 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:37:05,684 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-124 - ApplicationTimer demo: Starting application at 2019-01-14T05:37:05.684Z
+2019-01-14 14:37:05,825 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-124 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:37:05,828 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-124 - Application started (Dev)
+2019-01-14 14:37:05,843 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:37:05,843 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:05,843 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:05,894 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:05,894 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:05,894 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:37:05,916 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:37:05,924 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:37:05,929 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:37:05,969 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:37:06,002 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:37:14,219 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:14,219 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:37:14,220 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:14,240 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:37:14,240 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:37:14,240 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:14,241 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:37:14,240 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:14,244 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:37:14,279 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:37:14,308 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:37:39,721 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:39,721 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:37:39,721 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:39,742 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:37:39,749 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:37:39,750 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:37:39,750 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:37:39,751 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:37:39,760 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:37:39,790 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:37:39,810 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:38:07,205 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:07,205 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:07,205 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:38:07,233 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:07,233 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:38:07,233 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:07,233 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:38:07,239 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:38:07,242 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:38:07,259 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:38:07,300 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:38:21,815 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:21,815 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:38:21,815 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:21,835 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:38:21,835 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:21,835 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:38:21,837 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:21,840 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:38:21,840 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:38:21,868 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:38:21,892 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:38:50,393 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:50,393 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:50,393 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:38:50,412 [INFO] from application in application-akka.actor.default-dispatcher-55 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:38:50,413 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:38:50,414 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:38:50,415 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:38:50,416 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:38:50,417 [INFO] from application in application-akka.actor.default-dispatcher-54 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:38:50,456 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:38:50,478 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:39:25,463 [INFO] from application in application-akka.actor.default-dispatcher-54 - ApplicationTimer demo: Stopping application at 2019-01-14T05:39:25.463Z after 140s.
+2019-01-14 14:39:25,464 [INFO] from application in application-akka.actor.default-dispatcher-54 - Shutting down connection pool.
+2019-01-14 14:39:25,588 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-125 - Creating Pool for datasource 'default'
+2019-01-14 14:39:25,590 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-125 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:39:25,636 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-125 - ApplicationTimer demo: Starting application at 2019-01-14T05:39:25.636Z
+2019-01-14 14:39:25,774 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-125 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:39:25,777 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-125 - Application started (Dev)
+2019-01-14 14:39:25,791 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:39:25,791 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:39:25,794 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:39:25,828 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:39:25,828 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:39:25,831 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:39:25,833 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:39:25,834 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:39:25,838 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:39:25,875 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:39:25,907 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:39:34,647 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-127 - 
+
+! @7ah74ecob - Internal server error, for (GET) [/chat/page/d/1] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value usernameさん is not a member of models.Comment]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$26.onPush(Ops.scala:1304)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-01-14 14:39:35,316 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-128 - 
+
+! @7ah74eea7 - Internal server error, for (GET) [/assets//javascripts/chat/chat_page.js] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value usernameさん is not a member of models.Comment]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$26.onPush(Ops.scala:1304)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-01-14 14:39:36,160 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-129 - 
+
+! @7ah74efgk - Internal server error, for (GET) [/assets/stylesheets/chat/chat_page.css] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value usernameさん is not a member of models.Comment]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$26.onPush(Ops.scala:1304)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-01-14 14:39:37,076 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-123 - 
+
+! @7ah74eh00 - Internal server error, for (GET) [/favicon.ico] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value usernameさん is not a member of models.Comment]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$26.onPush(Ops.scala:1304)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-01-14 14:39:41,883 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2019-01-14T05:39:41.883Z after 16s.
+2019-01-14 14:39:41,883 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-01-14 14:39:42,043 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - Creating Pool for datasource 'default'
+2019-01-14 14:39:42,045 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-123 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:39:42,086 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - ApplicationTimer demo: Starting application at 2019-01-14T05:39:42.086Z
+2019-01-14 14:39:42,143 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-123 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:39:42,145 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-123 - Application started (Dev)
+2019-01-14 14:39:42,161 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:39:42,205 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:39:42,205 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:39:42,205 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:39:42,206 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:39:42,207 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:39:42,214 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:39:42,272 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:39:42,296 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:39:51,066 [INFO] from application in application-akka.actor.default-dispatcher-9 - ApplicationTimer demo: Stopping application at 2019-01-14T05:39:51.066Z after 9s.
+2019-01-14 14:39:51,067 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-01-14 14:39:51,290 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-129 - Creating Pool for datasource 'default'
+2019-01-14 14:39:51,292 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-129 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:39:51,347 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-129 - ApplicationTimer demo: Starting application at 2019-01-14T05:39:51.347Z
+2019-01-14 14:39:51,406 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-129 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:39:51,410 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-129 - Application started (Dev)
+2019-01-14 14:39:51,420 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:39:51,462 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:39:51,462 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:39:51,463 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:39:51,463 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:39:51,464 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:39:51,466 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:39:51,526 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:39:51,559 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:40:37,483 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2019-01-14T05:40:37.483Z after 46s.
+2019-01-14 14:40:37,483 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-01-14 14:40:37,611 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - Creating Pool for datasource 'default'
+2019-01-14 14:40:37,613 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-123 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:40:37,682 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - ApplicationTimer demo: Starting application at 2019-01-14T05:40:37.682Z
+2019-01-14 14:40:37,835 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-123 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:40:37,838 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-123 - Application started (Dev)
+2019-01-14 14:40:37,847 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:40:37,882 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:40:37,885 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:40:37,887 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:40:37,898 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:40:37,899 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:40:37,904 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:40:37,929 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:40:37,951 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:41:39,733 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2019-01-14T05:41:39.733Z after 62s.
+2019-01-14 14:41:39,734 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-01-14 14:41:39,896 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-122 - Creating Pool for datasource 'default'
+2019-01-14 14:41:39,897 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-122 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:41:39,943 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-122 - ApplicationTimer demo: Starting application at 2019-01-14T05:41:39.943Z
+2019-01-14 14:41:40,060 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-122 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:41:40,062 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-122 - Application started (Dev)
+2019-01-14 14:41:40,070 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:41:40,106 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:41:40,115 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:41:40,123 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:41:40,124 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:41:40,129 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:41:40,139 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:41:40,176 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:41:40,211 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:41:56,290 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:41:56,311 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:41:56,311 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:41:56,312 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:41:56,312 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:41:56,312 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:41:56,317 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:41:56,541 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:41:56,563 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:42:28,530 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2019-01-14T05:42:28.530Z after 49s.
+2019-01-14 14:42:28,530 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-01-14 14:42:28,647 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - Creating Pool for datasource 'default'
+2019-01-14 14:42:28,648 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-123 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:42:28,693 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-123 - ApplicationTimer demo: Starting application at 2019-01-14T05:42:28.693Z
+2019-01-14 14:42:28,769 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-123 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:42:28,773 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-123 - Application started (Dev)
+2019-01-14 14:42:28,782 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:42:28,832 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:42:28,832 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:42:28,836 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:42:28,837 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:42:28,837 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:42:28,838 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:42:28,888 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:42:28,917 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:42:41,430 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2019-01-14T05:42:41.430Z after 13s.
+2019-01-14 14:42:41,431 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2019-01-14 14:42:41,544 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-122 - Creating Pool for datasource 'default'
+2019-01-14 14:42:41,546 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-122 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:42:41,595 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-122 - ApplicationTimer demo: Starting application at 2019-01-14T05:42:41.595Z
+2019-01-14 14:42:41,784 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-122 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:42:41,787 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-122 - Application started (Dev)
+2019-01-14 14:42:41,795 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:42:41,835 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:42:41,835 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:42:41,835 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:42:41,835 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:42:41,836 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:42:41,843 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:42:41,869 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:42:41,896 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:43:00,980 [INFO] from application in application-akka.actor.default-dispatcher-11 - ApplicationTimer demo: Stopping application at 2019-01-14T05:43:00.980Z after 19s.
+2019-01-14 14:43:00,980 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2019-01-14 14:43:01,169 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-128 - Creating Pool for datasource 'default'
+2019-01-14 14:43:01,171 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-128 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:43:01,219 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-128 - ApplicationTimer demo: Starting application at 2019-01-14T05:43:01.219Z
+2019-01-14 14:43:01,272 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-128 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:43:01,275 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-128 - Application started (Dev)
+2019-01-14 14:43:01,282 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:43:01,327 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:43:01,327 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:43:01,327 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:43:01,328 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:43:01,328 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:43:01,329 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:43:01,366 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:43:01,401 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:43:23,543 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2019-01-14T05:43:23.543Z after 22s.
+2019-01-14 14:43:23,543 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-01-14 14:43:23,709 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-126 - Creating Pool for datasource 'default'
+2019-01-14 14:43:23,710 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-126 - Database [default] connected at jdbc:h2:mem:play
+2019-01-14 14:43:23,765 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-126 - ApplicationTimer demo: Starting application at 2019-01-14T05:43:23.764Z
+2019-01-14 14:43:23,811 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-126 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-01-14 14:43:23,814 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-126 - Application started (Dev)
+2019-01-14 14:43:23,826 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:43:23,863 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:43:23,863 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:43:23,863 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:43:23,865 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:43:23,865 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:43:23,879 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:43:23,898 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:43:23,932 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:43:58,189 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:43:58,220 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:43:58,223 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:43:58,220 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:43:58,227 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:43:58,227 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:43:58,232 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:43:58,261 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:43:58,282 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:44:21,308 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:44:21,326 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:44:21,327 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:44:21,328 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:44:21,328 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:44:21,330 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:44:21,330 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:44:21,362 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:44:21,384 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:44:24,579 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:44:24,593 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:44:24,593 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:44:24,593 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:44:24,595 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:44:24,596 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:44:24,596 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:44:24,619 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:44:24,640 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:45:09,504 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:45:09,532 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:45:09,532 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:45:09,532 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:45:09,537 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:45:09,538 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:45:09,545 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:45:09,592 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:45:09,624 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:45:31,403 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:45:31,425 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:45:31,425 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:45:31,425 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:45:31,427 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:45:31,427 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:45:31,436 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:45:33,033 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:45:33,054 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:45:34,551 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:45:34,569 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:45:34,571 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:45:34,571 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:45:34,573 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:45:34,575 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:45:34,579 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:45:34,612 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:45:34,625 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:45:36,793 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:45:36,807 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:45:36,808 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:45:36,808 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:45:36,808 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:45:36,808 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:45:36,808 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:45:36,839 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:45:36,859 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:46:07,002 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:46:07,018 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:46:07,018 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:46:07,019 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:46:07,020 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:46:07,020 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:46:07,032 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:46:07,057 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:46:07,074 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:46:35,476 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:46:35,497 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:46:35,497 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:46:35,499 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:46:35,500 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:46:35,512 [INFO] from application in application-akka.actor.default-dispatcher-53 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:46:35,513 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:46:35,541 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:46:35,563 [INFO] from application in application-akka.actor.default-dispatcher-53 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:47:19,116 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:47:19,143 [INFO] from application in application-akka.actor.default-dispatcher-59 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:47:19,174 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:47:19,177 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:47:19,182 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:47:19,197 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:47:19,208 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:47:19,253 [INFO] from application in application-akka.actor.default-dispatcher-59 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:47:19,309 [INFO] from application in application-akka.actor.default-dispatcher-59 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:47:21,271 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:47:21,283 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:47:21,283 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:47:21,283 [INFO] from application in application-akka.actor.default-dispatcher-59 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:47:21,287 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:47:21,288 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:47:21,290 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:47:21,312 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:47:21,332 [INFO] from application in application-akka.actor.default-dispatcher-60 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:47:46,545 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:47:46,565 [INFO] from application in application-akka.actor.default-dispatcher-58 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:47:46,565 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:47:46,566 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:47:46,574 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:47:46,574 [INFO] from application in application-akka.actor.default-dispatcher-66 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:47:46,576 [INFO] from application in application-akka.actor.default-dispatcher-68 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:47:46,604 [INFO] from application in application-akka.actor.default-dispatcher-72 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:47:46,621 [INFO] from application in application-akka.actor.default-dispatcher-72 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:02,450 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:48:02,471 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:02,473 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:02,473 [INFO] from application in application-akka.actor.default-dispatcher-68 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:02,473 [INFO] from application in application-akka.actor.default-dispatcher-65 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:02,476 [INFO] from application in application-akka.actor.default-dispatcher-68 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:02,483 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:02,636 [INFO] from application in application-akka.actor.default-dispatcher-74 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:02,661 [INFO] from application in application-akka.actor.default-dispatcher-74 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:09,570 [INFO] from application in application-akka.actor.default-dispatcher-73 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:48:09,589 [INFO] from application in application-akka.actor.default-dispatcher-68 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:09,591 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:09,591 [INFO] from application in application-akka.actor.default-dispatcher-73 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:09,592 [INFO] from application in application-akka.actor.default-dispatcher-65 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:09,592 [INFO] from application in application-akka.actor.default-dispatcher-73 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:09,594 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:09,636 [INFO] from application in application-akka.actor.default-dispatcher-73 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:09,654 [INFO] from application in application-akka.actor.default-dispatcher-73 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:20,935 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:48:20,952 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:20,953 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:20,953 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:20,954 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:20,956 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:20,957 [INFO] from application in application-akka.actor.default-dispatcher-61 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:20,989 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:21,010 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:37,203 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:48:37,223 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:37,223 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:37,225 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:37,225 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:37,235 [INFO] from application in application-akka.actor.default-dispatcher-85 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:37,235 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:37,314 [INFO] from application in application-akka.actor.default-dispatcher-90 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:37,338 [INFO] from application in application-akka.actor.default-dispatcher-90 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:53,396 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:48:53,416 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:53,417 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:53,418 [INFO] from application in application-akka.actor.default-dispatcher-85 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:53,418 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:53,419 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:53,426 [INFO] from application in application-akka.actor.default-dispatcher-95 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:53,458 [INFO] from application in application-akka.actor.default-dispatcher-85 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:53,476 [INFO] from application in application-akka.actor.default-dispatcher-85 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:56,988 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/2
+2019-01-14 14:48:56,988 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:57,012 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:57,014 [INFO] from application in application-akka.actor.default-dispatcher-95 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:57,015 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:57,015 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:57,020 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:57,022 [INFO] from application in application-akka.actor.default-dispatcher-95 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:57,056 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:57,075 [INFO] from application in application-akka.actor.default-dispatcher-79 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:48:59,865 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-01-14 14:48:59,865 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/3
+2019-01-14 14:48:59,891 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:48:59,892 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:48:59,892 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:48:59,896 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:48:59,896 [INFO] from application in application-akka.actor.default-dispatcher-99 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:48:59,897 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:48:59,918 [INFO] from application in application-akka.actor.default-dispatcher-99 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:48:59,941 [INFO] from application in application-akka.actor.default-dispatcher-99 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:49:02,269 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/4
+2019-01-14 14:49:02,297 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:49:02,297 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:49:02,298 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:49:02,298 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:49:02,299 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:49:02,301 [INFO] from application in application-akka.actor.default-dispatcher-67 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:49:02,321 [INFO] from application in application-akka.actor.default-dispatcher-95 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:49:02,347 [INFO] from application in application-akka.actor.default-dispatcher-95 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:49:05,525 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-129 - access from 0:0:0:0:0:0:0:1 to /chat/page/addcomment
+2019-01-14 14:49:09,771 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/5
+2019-01-14 14:49:09,793 [INFO] from application in application-akka.actor.default-dispatcher-84 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:49:09,794 [INFO] from application in application-akka.actor.default-dispatcher-100 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:49:09,796 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:49:09,796 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:49:09,798 [INFO] from application in application-akka.actor.default-dispatcher-98 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:49:09,803 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:49:09,834 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:49:09,852 [INFO] from application in application-akka.actor.default-dispatcher-80 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-01-14 14:49:16,463 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /chat/page/d/1
+2019-01-14 14:49:16,484 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/navBar.css
+2019-01-14 14:49:16,485 [INFO] from application in application-akka.actor.default-dispatcher-96 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-01-14 14:49:16,486 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-01-14 14:49:16,488 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-01-14 14:49:16,491 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-01-14 14:49:16,491 [INFO] from application in application-akka.actor.default-dispatcher-97 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-01-14 14:49:16,516 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-01-14 14:49:16,543 [INFO] from application in application-akka.actor.default-dispatcher-102 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2

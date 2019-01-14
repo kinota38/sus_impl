@@ -9,6 +9,7 @@
         @if(comment.username==username) {
         <div class="kaiwa">
             <div class="kaiwa-text-left">
+                <div class="username-label">@comment.username さん</div>
                 <p class="kaiwa-text">
                     @comment.comment
                 </p>
@@ -17,6 +18,7 @@
         } else {
         <div class="kaiwa">
             <div class="kaiwa-text-right">
+                <div class="username-label">@comment.username さん</div>
                 <p class="kaiwa-text">
                     @comment.comment
                 </p>
