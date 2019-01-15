@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:13:54: value usernameさん is not a member of models.Comment[0m
-[0m[[0m[31merror[0m] [0m[0m                <div class="username-label">@comment.usernameさん</div>さん<br>[0m
-[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:12:74: not found: type SimpleDateFormat[0m
+[0m[[0m[31merror[0m] [0m[0m                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd").format(comment.registeredAt)) </div>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

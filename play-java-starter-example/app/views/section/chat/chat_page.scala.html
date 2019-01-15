@@ -1,3 +1,4 @@
+@import java.text.SimpleDateFormat
 @(threadid: Long, comments: List[Comment], username:String)
 
 @main_page("chat"){
@@ -8,8 +9,9 @@
         @for(comment <- comments) {
         @if(comment.username==username) {
         <div class="kaiwa">
+
             <div class="kaiwa-text-left">
-                <div class="username-label">@comment.username さん</div>
+                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
                 <p class="kaiwa-text">
                     @comment.comment
                 </p>
@@ -18,7 +20,7 @@
         } else {
         <div class="kaiwa">
             <div class="kaiwa-text-right">
-                <div class="username-label">@comment.username さん</div>
+                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
                 <p class="kaiwa-text">
                     @comment.comment
                 </p>
@@ -29,7 +31,7 @@
         }
     </div>
 </div>
-
+<div class="scroll-to-bottom"><div class="sankaku"></div></div>
 <div class="create-thread" id="create-thread">
     <form id="add-comment-form">
         <br>

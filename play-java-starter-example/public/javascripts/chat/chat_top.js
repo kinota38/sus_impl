@@ -28,6 +28,9 @@ function create_thread_list(entries) {
         $("#field")
             .empty()
             .append(create_thread_link(entries));
+        $('.thread').click(function() {
+                location.href = jQuery(this).attr('data-url');
+            });
 
     }
 }
@@ -38,10 +41,12 @@ function create_thread_link(entries) {
     const $ = jQuery;
     const list = $("<div>");
     for(const entry of entries) {
-        const sharetask = $("<a>")
-                    .text(entry["threadname"])
-                    .attr("href", "/chat/page/"+$("#username").val()+"/"+entry["id"])
-                    .addClass("thread");
+        var a = entry["username"]+"さん  "+dateformat(new Date(entry["updatedAt"]),'YYYY-MM-DD-HH:MM:SS')
+        const sharetask = "<div "+"data-url=/chat/page/"+$("#username").val()+"/"+entry["id"]
+                        +" class="+'"thread" '+">"
+                        +'<div class="threadname-label">'+entry["threadname"]+'</div>'
+                        +'<div class="thread-info-label">'+a+'</div>'
+                    +"</div>";
 
         list.append(sharetask).append($("<br>"));
 
@@ -74,7 +79,16 @@ function create_thread(){
 }
 
 
+function dateformat(date, format) {
+    format = format.replace(/YYYY/, date.getFullYear());
+    format = format.replace(/MM/, date.getMonth() + 1);
+    format = format.replace(/DD/, date.getDate());
+    format = format.replace(/HH/, date.getHours());
+    format = format.replace(/MM/, date.getMinutes());
+    format = format.replace(/SS/, date.getSeconds());
 
+    return format;
+}
 
 // フォーム情報を取得する
 function get_form(tag) {

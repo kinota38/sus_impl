@@ -35,3 +35,20 @@ body{
 textarea{
     resize:none;
 }
+
+.thread{
+    position:relative;
+    margin:auto;
+    width:300px;
+    background-color:white;
+    border:thin solid #E6E6FA;
+    cursor:pointer;
+}
+
+.threadname-label{
+    font-size:120%;
+}
+
+.thread-info-label{
+    font-size:60%;
+}
