@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/conf/routes
-// @DATE:Tue Dec 25 11:31:16 JST 2018
+// @DATE:Sun Jan 13 11:40:19 JST 2019
 
 package controllers;
 

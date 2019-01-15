@@ -1,0 +1,93 @@
+/*ulとliが他のcssと衝突しているためheader内部のみ適応されるよう手を加える*/
+header ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: #333;
+}
+
+header li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+header li:last-child#navbar {
+    border-right: none;
+}
+
+header li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover, .dropdown:hover .dropbtn #navbar {
+    background-color: #636e72;
+}
+
+header li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content-left {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-right {
+    display: none;
+    position: absolute;
+    background-color: #f5f6fa;
+    top: 60px;
+    min-width: 160px;
+    box-shadow: 0px -2px 30px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-content-left a, .dropdown-content-right a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content-left a:hover, .dropdown-content-right a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content-left {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content-right {
+    display: block;
+    left:auto;
+    right: 18px;
+    margin-right:-10px;
+}
+
+/* beforeで三角の枠を表現 */
+.dropdown-content-right::before{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f5f6fa;
+    border-left: 10px solid transparent;
+}
