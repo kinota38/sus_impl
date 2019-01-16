@@ -10,10 +10,53 @@ $('.layer').click(function(e) {//popup時に枠外をクリックすると閉じ
         fetch("/chat/top/threadlistrecent").then(response => {
                        return response.json();
                    }).then(entries => {
+                   console.log(entries);
                        create_thread_list(entries);
                    });
           });
 }(jQuery);
+
+function show_mythread_list(){
+    fetch("/chat/top/mythreadlist/"+$("#username").val())
+                .then(res => {
+                    if(!res.ok){
+                        throw new Error("取得できませんでした");
+                    }else{
+                        return res.json();
+                    }
+
+                }).then(entries => {
+                    create_thread_list(entries);
+                }, error => {
+                       alert("取得できませんでした");
+                   });
+
+}
+
+function show_allthread_list(){
+    fetch("/chat/top/threadlistrecent").then(response => {
+                           return response.json();
+                       }).then(entries => {
+                           create_thread_list(entries);
+                       });
+
+}
+
+function show_favthread_list(){
+    fetch("/chat/top/favthreadlist/"+$("#username").val())
+        .then(res => {
+            if(!res.ok){
+                throw new Error("取得できませんでした");
+            }else{
+                return res.json();
+            }
+
+        }).then(entries => {
+            create_thread_list(entries);
+        }, error => {
+               alert("取得できませんでした");
+           });
+}
 
 function create_thread_list(entries) {
     const $ = jQuery;

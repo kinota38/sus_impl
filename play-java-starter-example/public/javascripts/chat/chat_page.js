@@ -5,8 +5,22 @@ $('.scroll-to-bottom').click(function(e) {
 !function($) {
     // ページロード完了時に行う操作
     $(document).ready(() => {
+         fetch("/chat/threadinfo/"+$("#threadid").val())
+            .then(res => {
+                if(!res.ok){
+                    throw new Error("情報を取得できませんでした");
+                }else{
+                    return res.json();
+                }
 
-          });
+            }).then(entry => {;
+                  $('.chat-title').text(entry["threadname"]);
+
+              }, error => {
+                     alert("情報を取得できませんでした");
+                 });
+
+     });
 }(jQuery);
 
 function add_comment(){
@@ -32,7 +46,22 @@ function add_comment(){
 
 }
 
+function add_to_fav(){
+    fetch("/chat/addtofav/"+$("#username").val()+"/"+$("#threadid").val(),{method:'post',body:get_form("#dummy-form")})
+            .then(res => {
+                if(!res.ok){
+                    throw new Error("情報を取得できませんでした");
+                }else{
+                    return res.json();
+                }
 
+            }).then(entry => {;
+                console.log(entry);
+              }, error => {
+                     alert("情報を取得できませんでした");
+                 });
+
+}
 
 
 

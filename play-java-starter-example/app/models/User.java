@@ -114,6 +114,9 @@ public class User extends Model{
     @OneToMany(cascade = CascadeType.ALL)
     public List<AccGrade> acc_grade;
 
+    @JsonBackReference
+    @ManyToMany(mappedBy="user", cascade = CascadeType.ALL)
+    public List<Thread> favthread;
 
     public User(final String name, final String password, final String salt,
                 final String highscool_area, final String highscool ,

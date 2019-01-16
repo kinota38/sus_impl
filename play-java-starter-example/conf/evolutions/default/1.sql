@@ -42,6 +42,12 @@ create table thread (
   constraint pk_thread primary key (id)
 );
 
+create table thread_user (
+  thread_id                     bigint not null,
+  user_id                       bigint not null,
+  constraint pk_thread_user primary key (thread_id,user_id)
+);
+
 create table user (
   id                            bigint auto_increment not null,
   username                      varchar(255) not null,
@@ -72,6 +78,12 @@ create index ix_comment_thread_id on comment (thread_id);
 alter table grade add constraint fk_grade_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
 create index ix_grade_user_id on grade (user_id);
 
+alter table thread_user add constraint fk_thread_user_thread foreign key (thread_id) references thread (id) on delete restrict on update restrict;
+create index ix_thread_user_thread on thread_user (thread_id);
+
+alter table thread_user add constraint fk_thread_user_user foreign key (user_id) references user (id) on delete restrict on update restrict;
+create index ix_thread_user_user on thread_user (user_id);
+
 alter table sample add constraint fk_sample_user_id foreign key (user_id) references user (id) on delete restrict on update restrict;
 create index ix_sample_user_id on sample (user_id);
 
@@ -87,6 +99,12 @@ drop index if exists ix_comment_thread_id;
 alter table grade drop constraint if exists fk_grade_user_id;
 drop index if exists ix_grade_user_id;
 
+alter table thread_user drop constraint if exists fk_thread_user_thread;
+drop index if exists ix_thread_user_thread;
+
+alter table thread_user drop constraint if exists fk_thread_user_user;
+drop index if exists ix_thread_user_user;
+
 alter table sample drop constraint if exists fk_sample_user_id;
 drop index if exists ix_sample_user_id;
 
@@ -97,6 +115,8 @@ drop table if exists comment;
 drop table if exists grade;
 
 drop table if exists thread;
+
+drop table if exists thread_user;
 
 drop table if exists user;
 

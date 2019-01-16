@@ -1,6 +1,7 @@
 package controllers;
 
 import io.ebean.Ebean;
+import models.User;
 import models.Comment;
 import models.Thread;
 import play.libs.Json;
@@ -20,8 +21,22 @@ public class ChatController extends Controller {
         return ok(Json.toJson(thread));
     }
 
-    public Result chattopForm(String username){
+    public Result threadInfo(Long threadid){
+        Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
+        return ok(Json.toJson(thread));
+    }
 
+    public Result myThreadList(String username){
+        List<Thread> thread = Ebean.find(Thread.class).where().eq("username",username).findList();
+        return ok(Json.toJson(thread));
+    }
+
+    public Result favThreadList(String username){
+        User user = Ebean.find(User.class).where().eq("username",username).findOne();
+        return ok(Json.toJson(user.favthread));
+    }
+
+    public Result chattopForm(String username){
         return ok(chat_top.render(username));
     }
 
@@ -41,6 +56,7 @@ public class ChatController extends Controller {
             final Map<String, String[]> request = request().body().asFormUrlEncoded();
             String threadname = request.get("threadname")[0];
             String username = request.get("username")[0];
+            User user = Ebean.find(User.class).where().eq("username",username).findOne();
             Date date = new Date();
             final Thread thread = new Thread(username,threadname,date.getTime());
             thread.save();
@@ -69,6 +85,26 @@ public class ChatController extends Controller {
             entry.save();
             Ebean.commitTransaction();
             return ok(Json.toJson(entry));
+        } catch (Exception e) {
+            System.out.println(e);
+            return badRequest();
+        }finally {
+            Ebean.endTransaction();
+        }
+    }
+
+    public Result addToFav(String name){
+        String[] value = name.split("/");
+        String username = value[0];
+        long threadid = Long.parseLong(value[1]);
+        Ebean.beginTransaction();
+        try {
+            User user = Ebean.find(User.class).where().eq("username",username).findOne();
+            Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
+            thread.user.add(user);
+            thread.save();
+            Ebean.commitTransaction();
+            return ok(Json.toJson(thread));
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();

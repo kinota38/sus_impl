@@ -2,7 +2,10 @@
 @(threadid: Long, comments: List[Comment], username:String)
 
 @main_page("chat"){
-<div class="chat-bg"></div>
+<form id="dummy-form">
+    @helper.CSRF.formField
+</form>
+<div class="chat-title"></div>
 <div class="chat-display">
 
     <div id="field">
@@ -32,6 +35,7 @@
     </div>
 </div>
 <div class="scroll-to-bottom"><div class="sankaku"></div></div>
+<button id="fav-button" onclick="add_to_fav()"></button>
 <div class="create-thread" id="create-thread">
     <form id="add-comment-form">
         <br>
@@ -40,7 +44,7 @@
         <input type="hidden" id="threadid" name="threadid" value="@threadid">
         @helper.CSRF.formField
     </form>
-    <button class="button" onclick="add_comment();">作成する</button>
+    <button class="button" onclick="add_comment();">しゃべる</button>
 </div>
 
 

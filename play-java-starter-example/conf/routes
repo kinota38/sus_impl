@@ -29,9 +29,13 @@ POST     /grades/remove               controllers.GradeController.removeGrade
 # chat controller
 GET     /chat/:username               controllers.ChatController.chattopForm(username: String)
 GET     /chat/top/threadlistrecent        controllers.ChatController.threadListRecent
+GET     /chat/top/mythreadlist/:username  controllers.ChatController.myThreadList(username: String)
+GET     /chat/top/favthreadlist/:username  controllers.ChatController.favThreadList(username: String)
 POST    /chat/top/createthread            controllers.ChatController.createThread
 GET     /chat/page/*name            controllers.ChatController.chatpageForm(name)
+GET     /chat/threadinfo/:threadid    controllers.ChatController.threadInfo(threadid: Long)
 POST    /chat/page/addcomment           controllers.ChatController.addComment
+POST    /chat/addtofav/*name       controllers.ChatController.addToFav(name)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

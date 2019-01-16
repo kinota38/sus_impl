@@ -2,6 +2,7 @@ package models;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Model;
 import play.data.format.Formats;
 import play.data.validation.Constraints;
@@ -41,6 +42,10 @@ public class Thread extends Model{
     @JsonBackReference
     @OneToMany(cascade = CascadeType.ALL)
     public List<Comment> comment;
+
+    @JsonBackReference
+    @ManyToMany(cascade = CascadeType.ALL)
+    public List<User> user;
 
     /**
      * 最終更新日時(ソートしやすくするためミリ秒で保存)

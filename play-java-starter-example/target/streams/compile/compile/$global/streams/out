@@ -1,4 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:12:74: not found: type SimpleDateFormat[0m
-[0m[[0m[31merror[0m] [0m[0m                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd").format(comment.registeredAt)) </div>[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
