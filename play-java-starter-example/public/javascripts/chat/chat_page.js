@@ -1,5 +1,5 @@
 $('.scroll-to-bottom').click(function(e) {
-                    $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
+       $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
   });
 
 !function($) {
@@ -19,6 +19,7 @@ $('.scroll-to-bottom').click(function(e) {
               }, error => {
                      alert("情報を取得できませんでした");
                  });
+
 
      });
 }(jQuery);
@@ -48,15 +49,15 @@ function add_comment(){
 
 function add_to_fav(){
     fetch("/chat/addtofav/"+$("#username").val()+"/"+$("#threadid").val(),{method:'post',body:get_form("#dummy-form")})
-            .then(res => {
-                if(!res.ok){
-                    throw new Error("情報を取得できませんでした");
+            .then(entry => {
+                if($("#fav-button").css("background-color")=="rgb(255, 255, 0)"){
+                    $("#fav-button").val("false");
+                    $("#fav-button").css("background-color","#f1f1f1");
                 }else{
-                    return res.json();
+                    $("#fav-button").val("true");
+                    $("#fav-button").css("background-color","yellow");
                 }
 
-            }).then(entry => {;
-                console.log(entry);
               }, error => {
                      alert("情報を取得できませんでした");
                  });

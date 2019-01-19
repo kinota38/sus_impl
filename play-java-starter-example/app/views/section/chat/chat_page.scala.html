@@ -1,5 +1,5 @@
 @import java.text.SimpleDateFormat
-@(threadid: Long, comments: List[Comment], username:String)
+@(threadid: Long, comments: List[Comment], username:String,isfav:Int)
 
 @main_page("chat"){
 <form id="dummy-form">
@@ -35,7 +35,16 @@
     </div>
 </div>
 <div class="scroll-to-bottom"><div class="sankaku"></div></div>
-<button id="fav-button" onclick="add_to_fav()"></button>
+@if(isfav==0) {
+    <div id="fav-button" style="background-color:#f1f1f1;" onclick="add_to_fav()">
+        <i class="far fa-star"></i>
+    </div>
+} else {
+    <div id="fav-button" style="background-color:yellow;" onclick="add_to_fav()">
+        <i class="far fa-star"></i>
+    </div>
+}
+
 <div class="create-thread" id="create-thread">
     <form id="add-comment-form">
         <br>
@@ -44,7 +53,11 @@
         <input type="hidden" id="threadid" name="threadid" value="@threadid">
         @helper.CSRF.formField
     </form>
-    <button class="button" onclick="add_comment();">しゃべる</button>
+    <div id="add-comment-button" class="button" onclick="add_comment();">
+        <i class="far fa-comment fa-flip-horizontal"></i>
+    </div>
+
+
 </div>
 
 

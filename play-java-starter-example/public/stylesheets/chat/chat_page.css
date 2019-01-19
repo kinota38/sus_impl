@@ -24,6 +24,7 @@ body{
     height:20px;
     margin-top:500px;
     background-color:white;
+    z-index:2;
     border-top:thin solid #000;
     text-align:center;
     transition: .3s;
@@ -47,7 +48,7 @@ body{
 
 .create-thread {
     position:fixed;
-    top:550px;
+    top:530px;
     width:600px;
     margin-left:10%;
     margin-right:10%;
@@ -154,5 +155,28 @@ p.kaiwa-text:last-child {
 
 #fav-button{
     position:fixed;
-    top:70px;
+    top:550px;
+    margin-left:10%;
+    width:40px;
+    height:40px;
+    z-index:2;
+    border:thin solid #000;
+    border-radius:20px;
+    text-align:center;
+    line-height: 40px;
+    cursor:pointer;
+}
+
+#add-comment-button{
+    width:100px;
+    height:20px;
+    margin-left:500px;
+    cursor:pointer;
+    border-radius:4px;
+    text-align:center;
+    transition: .3s;
+}
+
+#add-comment-button:hover{
+    background-color: #9cd6e7;
 }

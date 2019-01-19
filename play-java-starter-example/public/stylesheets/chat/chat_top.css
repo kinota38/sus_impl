@@ -29,11 +29,12 @@ body{
     border-radius: 5px;
     border:thin solid #6495ED;
     z-index:2;
+    text-align:center;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 #input-thread-title{
-
+    resize:none;
 }
 
 .thread{
@@ -54,4 +55,44 @@ body{
 
 .thread-info-label{
     font-size:60%;
+}
+
+#create-thread-button{
+    width:100px;
+    height:25px;
+    margin-left:100px;
+    cursor:pointer;
+    border-radius:4px;
+    transition: .3s;
+}
+
+#create-thread-button:hover{
+    background-color: #6495ED;
+}
+
+.menu-box{
+    position:fixed;
+    top:100px;
+    width:150px;
+    height:120px;
+    border:thin solid #000;
+}
+
+.menu{
+    height:30px;
+    color:white;
+    line-height: 30px;
+    background-color:#333333;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.menu:hover{
+    color:black;
+    background-color:#E6E6FA;
+}
+
+#field{
+    position:fixed;
+    margin-left:200px;
 }

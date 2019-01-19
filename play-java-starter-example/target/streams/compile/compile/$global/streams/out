@@ -1,13 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/conf/routes:35:1: not found: type long[0m
-[0m[[0m[31merror[0m] [0m[0mGET     /chat/page/threadinfo/:threadid  controllers.ChatController.threadInfo(threadid: long)[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:12:33: not found: type int[0m
+[0m[[0m[31merror[0m] [0m[0m        @for(comment <- comments) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:2:66: not found: type int[0m
+[0m[[0m[31merror[0m] [0m[0m@(threadid: Long, comments: List[Comment], username:String,isfav:int)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:53:2: not found: type int[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

@@ -55,7 +55,7 @@ Seq[Any](format.raw/*2.1*/("""
 
             <a class="fixed" href="/chat/"""),_display_(/*25.43*/name),format.raw/*25.47*/("""">
                 <div class="service">
-                    <i class="fab fa-android"></i>
+                    <i class="far fa-comments"></i>
                     <h2>Service Name</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </div>
@@ -97,9 +97,9 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 13 18:33:03 JST 2019
+                  DATE: Sat Jan 19 13:02:51 JST 2019
                   SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 66ca745d1d0876b1c59246ed3508f9e4f2a27667
+                  HASH: 1fac23bb44aa288581a697e7246f61fac319e5c6
                   MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1182->36|1267->95|1291->99|1319->100|1753->507|1778->511|2125->831|2150->835
                   LINES: 28->1|33->2|34->3|34->3|34->3|36->5|38->7|38->7|38->7|48->17|48->17|56->25|56->25
                   -- GENERATED --

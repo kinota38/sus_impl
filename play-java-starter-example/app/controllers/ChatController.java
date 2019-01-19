@@ -46,7 +46,14 @@ public class ChatController extends Controller {
         long threadid = Long.parseLong(value[1]);
         Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
         List<Comment> comments = thread.comment;
-        return ok(chat_page.render(thread.id,comments,username));
+        User user = Ebean.find(User.class).where().eq("username",username).findOne();
+        for(Thread t:user.favthread){
+            if(t.id==threadid){
+                return ok(chat_page.render(thread.id,comments,username,1));
+            }
+        }
+
+        return ok(chat_page.render(thread.id,comments,username,0));
     }
 
 
@@ -100,11 +107,21 @@ public class ChatController extends Controller {
         Ebean.beginTransaction();
         try {
             User user = Ebean.find(User.class).where().eq("username",username).findOne();
+            for(int t=0;t<user.favthread.size();t++){
+                if(user.favthread.get(t).id==threadid){
+                    user.favthread.get(t).user.remove(user);
+                    user.favthread.get(t).save();
+                    user.favthread.remove(t);
+                    user.save();
+                    Ebean.commitTransaction();
+                    return ok();
+                }
+            }
             Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
             thread.user.add(user);
             thread.save();
             Ebean.commitTransaction();
-            return ok(Json.toJson(thread));
+            return ok();
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();

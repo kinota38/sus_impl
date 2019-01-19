@@ -5,10 +5,13 @@
 <br>
 <br>
 <br>
-<button onclick="show_thread_form()">登録</button>
-<button onclick="show_mythread_list()">my</button>
-<button onclick="show_allthread_list()">all</button>
-<button onclick="show_favthread_list()">fav</button>
+
+<div class="menu-box">
+    <div class="menu" onclick="show_thread_form()">チャット作成</div>
+    <div class="menu" onclick="show_allthread_list()">全て</div>
+    <div class="menu" onclick="show_mythread_list()">自分のチャット</div>
+    <div class="menu" onclick="show_favthread_list()">お気に入り</div>
+</div>
 <div id="field"></div>
 
 <div class="popup" id="create-thread">
@@ -19,7 +22,7 @@
         <input type="hidden" id="username" name="username" value="@name">
         @helper.CSRF.formField
     </form>
-    <button class="button" onclick="create_thread();">作成する</button>
+    <div id="create-thread-button" class="button" onclick="create_thread();">作成する</div>
 </div>
 <div class ="layer" id="layer"></div>
 
