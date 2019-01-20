@@ -36,8 +36,10 @@ GET     /chat/page/*name            controllers.ChatController.chatpageForm(name
 GET     /chat/threadinfo/:threadid    controllers.ChatController.threadInfo(threadid: Long)
 POST    /chat/page/addcomment           controllers.ChatController.addComment
 POST    /chat/addtofav/*name       controllers.ChatController.addToFav(name)
+POST    /chat/photo/add             controllers.ChatController.addpicture
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
 GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
+

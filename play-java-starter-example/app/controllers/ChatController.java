@@ -7,11 +7,14 @@ import models.Thread;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Http;
 import views.html.section.chat.*;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
+import java.io.File;
 
 public class ChatController extends Controller {
 
@@ -86,7 +89,7 @@ public class ChatController extends Controller {
             String username = request.get("username")[0];
             String comment = request.get("comment")[0];
             Date date = new Date();
-            final Comment entry = new Comment(threadid,comment, date.getTime(),username);
+            final Comment entry = new Comment(threadid,comment, date.getTime(),username,"なし");
             Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
             entry.thread = thread;
             entry.save();
@@ -131,4 +134,42 @@ public class ChatController extends Controller {
     }
 
 
+    public Result addpicture(){
+        Http.MultipartFormData<File> body = request().body().asMultipartFormData();
+        Http.MultipartFormData.FilePart<File> picture = body.getFile("picture");
+        final Map<String, String[]> data = body.asFormUrlEncoded();
+        String username = data.get("username")[0];
+        Long threadid = Long.parseLong(data.get("threadid")[0]);
+        Ebean.beginTransaction();
+        if (picture != null) {
+
+            String fileName = picture.getFilename();
+            String contentType = picture.getContentType();
+            try {
+                String path = "images/thread/"+threadid;
+                File file = picture.getFile();
+                File dir = new File("./public/"+path);
+                dir.mkdir();
+                File file2 = new File("./public/"+path+"/"+fileName);
+                file2.createNewFile();
+                file.renameTo(file2);
+
+                Date date = new Date();
+                final Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets/"+path+"/"+fileName);
+                Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
+                entry.thread = thread;
+                entry.save();
+                Ebean.commitTransaction();
+                return ok(Json.toJson(entry));
+            }catch (Exception e){
+                System.out.println(e);
+            }finally {
+                Ebean.endTransaction();
+            }
+        } else {
+            flash("error", "Missing file");
+            return badRequest();
+        }
+        return badRequest();
+    }
 }

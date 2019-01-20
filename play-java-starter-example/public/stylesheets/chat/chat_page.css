@@ -43,6 +43,7 @@ body{
 	top:3px;
 	border: 8px solid transparent;
 	border-top: 8px solid #000;
+
 }
 
 
@@ -179,4 +180,32 @@ p.kaiwa-text:last-child {
 
 #add-comment-button:hover{
     background-color: #9cd6e7;
+}
+
+.pictureform{
+    position:fixed;
+    top:550px;
+    margin-left:20%;
+    width:200px;
+    z-index:6;
+    text-align:left;
+    font-size:100%;
+}
+
+label{
+    left:100px;
+    text-align:center;
+    border:thin solid #000;
+    border-right:thin solid #000;
+    transition: .3s;
+}
+
+label:hover{
+    background-color: #9cd6e7;
+}
+
+
+
+label input{
+    display:none;
 }

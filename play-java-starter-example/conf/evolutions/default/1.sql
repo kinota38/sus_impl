@@ -18,6 +18,7 @@ create table comment (
   id                            bigint auto_increment not null,
   threadid                      bigint not null,
   comment                       varchar(255) not null,
+  imagepath                     varchar(255) not null,
   registered_at                 bigint not null,
   username                      varchar(255) not null,
   thread_id                     bigint,

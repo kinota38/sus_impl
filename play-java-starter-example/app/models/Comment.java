@@ -30,6 +30,11 @@ public class Comment extends Model{
     @Constraints.Required
     @Formats.NonEmpty
     @Column(nullable = false)
+    public String imagepath;
+
+    @Constraints.Required
+    @Formats.NonEmpty
+    @Column(nullable = false)
     public long registeredAt;
 
     @Constraints.Required
@@ -42,11 +47,12 @@ public class Comment extends Model{
     @ManyToOne
     public Thread thread;
 
-    public Comment(long threadid, String comment, long registeredAt, String username){
+    public Comment(long threadid, String comment, long registeredAt, String username, String path){
         this.threadid = threadid;
         this.comment = comment;
         this.registeredAt = registeredAt;
         this.username = username;
+        this.imagepath = path;
     }
 
 

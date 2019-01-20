@@ -1,5 +1,8 @@
 @import java.text.SimpleDateFormat
+@import helper._
+
 @(threadid: Long, comments: List[Comment], username:String,isfav:Int)
+
 
 @main_page("chat"){
 <form id="dummy-form">
@@ -10,27 +13,49 @@
 
     <div id="field">
         @for(comment <- comments) {
-        @if(comment.username==username) {
-        <div class="kaiwa">
+            @if(comment.imagepath=="なし"){
+                @if(comment.username==username) {
+                <div class="kaiwa">
 
-            <div class="kaiwa-text-left">
-                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
-                <p class="kaiwa-text">
-                    @comment.comment
-                </p>
-            </div>
-        </div>
-        } else {
-        <div class="kaiwa">
-            <div class="kaiwa-text-right">
-                <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
-                <p class="kaiwa-text">
-                    @comment.comment
-                </p>
-            </div>
-        </div>
-        }
+                    <div class="kaiwa-text-left">
+                        <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
+                        <p class="kaiwa-text">
+                            @comment.comment
+                        </p>
+                    </div>
+                </div>
+                } else {
+                <div class="kaiwa">
+                    <div class="kaiwa-text-right">
+                        <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
+                        <p class="kaiwa-text">
+                            @comment.comment
+                        </p>
+                    </div>
+                </div>
+                }
+            }else{
+                @if(comment.username==username) {
+                <div class="kaiwa">
 
+                    <div class="kaiwa-text-left">
+                        <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
+                        <p class="kaiwa-text">
+                            <img src="@comment.imagepath">
+                        </p>
+                    </div>
+                </div>
+                } else {
+                <div class="kaiwa">
+                    <div class="kaiwa-text-right">
+                        <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
+                        <p class="kaiwa-text">
+                            <img src="@comment.imagepath">
+                        </p>
+                    </div>
+                </div>
+                }
+            }
         }
     </div>
 </div>
@@ -56,6 +81,27 @@
     <div id="add-comment-button" class="button" onclick="add_comment();">
         <i class="far fa-comment fa-flip-horizontal"></i>
     </div>
+
+    <form action="/chat/photo/add" method="post" id="pictureform" class="pictureform" enctype="multipart/form-data" target="sendData">
+        @helper.CSRF.formField
+        <label for="file_upload"><i class="far fa-image"></i>
+            <input type="file" id="file" name="picture" onchange="$('#file-name').val($(this).val())">
+            <input type="text" id="file_upload" onClick="$('#file').click();">
+            <input type="hidden" name="username" value="@username">
+            <input type="hidden" name="threadid" value="@threadid">
+
+        </label>
+        <label for="image-submit" ><i class="far fa-arrow-right"></i>
+            <input type="submit" id="image-submit">
+        </label>
+        <br>
+        <input type="text" id="file-name" size="20" readonly>
+    </form>
+
+    <iframe name="sendData" style="width:0px;height:0px;border:0px;"></iframe>
+
+
+
 
 
 </div>
