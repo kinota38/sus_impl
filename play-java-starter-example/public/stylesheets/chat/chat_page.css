@@ -204,8 +204,22 @@ label:hover{
     background-color: #9cd6e7;
 }
 
-
-
 label input{
     display:none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.back{
+    position:fixed;
+    top:100px;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+#advice{
+    font-size:30%;
 }

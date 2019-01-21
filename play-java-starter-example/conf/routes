@@ -37,6 +37,7 @@ GET     /chat/threadinfo/:threadid    controllers.ChatController.threadInfo(thre
 POST    /chat/page/addcomment           controllers.ChatController.addComment
 POST    /chat/addtofav/*name       controllers.ChatController.addToFav(name)
 POST    /chat/photo/add             controllers.ChatController.addpicture
+GET     /chat/top/search/:key       controllers.ChatController.search(key: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound

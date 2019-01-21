@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/chat_page.scala.html:84:42: value addpicture is not a member of controllers.ReverseChatController[0m
-[0m[[0m[31merror[0m] [0m[0m    @form(action = routes.ChatController.addpicture, 'enctype -> "multipart/form-data") {[0m
-[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/controllers/ChatController.java:20:1: シンボルを見つけられません[0m
+[0m[[0m[31merror[0m] [0m[0m  シンボル:   クラス Files[0m
+[0m[[0m[31merror[0m] [0m[0m  場所: パッケージ java.io[0m
+[0m[[0m[31merror[0m] [0m[0mimport java.io.Files;[0m

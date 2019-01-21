@@ -8,10 +8,14 @@
 
 <div class="menu-box">
     <div class="menu" onclick="show_thread_form()">チャット作成</div>
-    <div class="menu" onclick="show_allthread_list()">全て</div>
-    <div class="menu" onclick="show_mythread_list()">自分のチャット</div>
-    <div class="menu" onclick="show_favthread_list()">お気に入り</div>
+    <div id="allthread" class="menu menu1" onclick="show_allthread_list()">全て</div>
+    <div class="menu menu1" onclick="show_mythread_list()">自分のチャット</div>
+    <div class="menu menu1" onclick="show_favthread_list()">お気に入り</div>
 </div>
+<form class="search">
+    <input type="search" class="input-search" placeholder="キーワードを入力">
+    <input type="button" onclick="search();" value="検索">
+</form>
 <div id="field"></div>
 
 <div class="popup" id="create-thread">

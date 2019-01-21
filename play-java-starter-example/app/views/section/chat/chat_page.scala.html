@@ -8,6 +8,7 @@
 <form id="dummy-form">
     @helper.CSRF.formField
 </form>
+<div class="back" onclick='location.href="/chat/@username"'><i class="far fa-arrow-left"></i>戻る</div>
 <div class="chat-title"></div>
 <div class="chat-display">
 
@@ -96,6 +97,8 @@
         </label>
         <br>
         <input type="text" id="file-name" size="20" readonly>
+        <br>
+        <span id="advice">画像が表示されない場合はページを更新してみてください.</span>
     </form>
 
     <iframe name="sendData" style="width:0px;height:0px;border:0px;"></iframe>

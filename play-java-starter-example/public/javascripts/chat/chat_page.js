@@ -2,6 +2,8 @@ $('.scroll-to-bottom').click(function(e) {
        $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
   });
 
+
+
 var form = $('#pictureform'),
       trigger = $('#image-submit'),
       iframe = $('iframe[name="sendData"]');
@@ -9,24 +11,33 @@ var form = $('#pictureform'),
 trigger.click(function() {
     form.submit();
     form[0].reset();
-
+    iframe.unbind().bind('load', function() {
+              var response = iframe.contents();
+              var obj = JSON.parse(response.find("pre").text());
+              $("#field").append('<div class="kaiwa"><div class="kaiwa-text-left">'+
+              '<div class="username-label">'+obj["username"]+' さん   ' +dateformat(new Date(obj["registeredAt"]),'YYYY-MM-DD-HH:MM:SS')+' </div>'+
+              '<p class="kaiwa-text">'+
+              '<img src="'+obj["imagepath"]+'">'
+              +'</p></div></div>');
+               $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
+      });
 
     return false;
 });
 
-form.submit(function() {
-  iframe.unbind().bind('load', function() {
-          var response = iframe.contents();
-          var obj = JSON.parse(response.find("pre").text());
-          $("#field").append('<div class="kaiwa"><div class="kaiwa-text-left">'+
-          '<div class="username-label">'+obj["username"]+' さん   ' +dateformat(new Date(obj["registeredAt"]),'YYYY-MM-DD-HH:MM:SS')+' </div>'+
-          '<p class="kaiwa-text">'+
-          '<img src="'+obj["imagepath"]+'">'
-          +'</p></div></div>');
-           $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
-
-  });
-});
+//form.submit(function() {
+//  iframe.unbind().bind('load', function() {
+//          var response = iframe.contents();
+//          var obj = JSON.parse(response.find("pre").text());
+//          $("#field").append('<div class="kaiwa"><div class="kaiwa-text-left">'+
+//          '<div class="username-label">'+obj["username"]+' さん   ' +dateformat(new Date(obj["registeredAt"]),'YYYY-MM-DD-HH:MM:SS')+' </div>'+
+//          '<p class="kaiwa-text">'+
+//          '<img src="'+obj["imagepath"]+'">'
+//          +'</p></div></div>');
+//           $('.chat-display').animate({scrollTop: $('.chat-display')[0].scrollHeight}, 'fast');
+//
+//  });
+//});
 
 
 

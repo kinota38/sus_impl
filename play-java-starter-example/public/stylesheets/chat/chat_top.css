@@ -92,7 +92,17 @@ body{
     background-color:#E6E6FA;
 }
 
+.menu1.active {
+    border-left:medium double #E6E6FA;
+}
+
 #field{
     position:fixed;
     margin-left:200px;
+}
+
+.search{
+    position:fixed;
+    top:70px;
+    left:10px;
 }

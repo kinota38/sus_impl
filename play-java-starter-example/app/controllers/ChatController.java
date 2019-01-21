@@ -1,5 +1,6 @@
 package controllers;
 
+import com.google.common.io.Files;
 import io.ebean.Ebean;
 import models.User;
 import models.Comment;
@@ -10,11 +11,13 @@ import play.mvc.Result;
 import play.mvc.Http;
 import views.html.section.chat.*;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 import java.io.File;
+import java.util.regex.Pattern;
 
 public class ChatController extends Controller {
 
@@ -79,6 +82,25 @@ public class ChatController extends Controller {
             Ebean.endTransaction();
         }
     }
+
+    public Result search(String keyword){
+        Pattern p = Pattern.compile("[\\s]+");
+        String[] keys = p.split(keyword);
+        List<Thread> entry = new ArrayList<>();
+        List<Thread> threads = Ebean.find(Thread.class).findList();
+        for(Thread thread:threads){
+            for(String key:keys){
+                if(thread.threadname.contains(key)){
+                    entry.add(thread);
+                    break;
+                }
+            }
+        }
+        return ok(Json.toJson(entry));
+    }
+
+
+
 
 
     public Result addComment(){
@@ -151,15 +173,16 @@ public class ChatController extends Controller {
                 File dir = new File("./public/"+path);
                 dir.mkdir();
                 File file2 = new File("./public/"+path+"/"+fileName);
-                file2.createNewFile();
-                file.renameTo(file2);
-
+                if(file2.createNewFile()) {
+                    Files.copy(file,file2);
+                }
                 Date date = new Date();
-                final Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets/"+path+"/"+fileName);
+                Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets/"+path+"/"+fileName);
                 Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
                 entry.thread = thread;
                 entry.save();
                 Ebean.commitTransaction();
+
                 return ok(Json.toJson(entry));
             }catch (Exception e){
                 System.out.println(e);

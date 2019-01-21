@@ -2,6 +2,17 @@ $('.layer').click(function(e) {//popup時に枠外をクリックすると閉じ
     $('.popup, .layer').hide();
 });
 
+$(function(){
+    $('.menu1').on('click', function(event){
+		event.preventDefault();
+        $(".menu1").each(function(i, elem) {
+            if($(elem).hasClass("active")){
+                $(elem).toggleClass('active')
+            }
+        });
+        $(this).toggleClass('active');
+    });
+});
 
 
 !function($) {
@@ -120,6 +131,21 @@ function create_thread(){
                });
 
 }
+
+function search(){
+    fetch("/chat/top/search/"+$(".input-search").val()).then(response => {
+       return response.json();
+   }).then(entries => {
+       create_thread_list(entries);
+        $(".menu1").each(function(i, elem) {
+            if($(elem).hasClass("active")){
+                $(elem).toggleClass('active')
+            }
+        });
+        $("#allthread").toggleClass('active');
+   });
+}
+
 
 
 function dateformat(date, format) {
