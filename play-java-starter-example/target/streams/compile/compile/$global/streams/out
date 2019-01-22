@@ -1,4 +1,233 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/controllers/ChatController.java:20:1: シンボルを見つけられません[0m
-[0m[[0m[31merror[0m] [0m[0m  シンボル:   クラス Files[0m
-[0m[[0m[31merror[0m] [0m[0m  場所: パッケージ java.io[0m
-[0m[[0m[31merror[0m] [0m[0mimport java.io.Files;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:14:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/top.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:15:82: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:16:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:25:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:26:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html:27:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("javascripts/signupandin/signup.js")" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:6:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar/style.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:7:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar/leftMenu.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:8:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar/dayScheduler.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:9:82: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:10:62: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <link rel="stylesheet" href="@routes.Assets.versioned("/stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:17:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:18:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/calendar/miniCalendar.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html:19:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:6:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar/calendar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:7:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:8:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/calendar/calendarMini.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:9:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:10:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:66:42: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:67:42: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <script src="@routes.Assets.versioned("/javascripts/calendar/calendar.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:68:42: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <script src="@routes.Assets.versioned("/javascripts/calendar/calendar.mini.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html:69:42: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:14:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/chat/chat_page.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:15:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:16:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:17:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:51:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:52:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_page.scala.html:53:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/chat/chat_page.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:14:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/chat/chat_top.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:15:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:16:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:17:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:51:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:52:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/chat/main_top.scala.html:53:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/chat/chat_top.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:14:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/grade/grades.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:15:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/grade/nice-select.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:16:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:17:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:18:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:50:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:51:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:52:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("javascripts/Chart.bundle.js")" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:53:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("javascripts/grade/grades.js")" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html:54:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("javascripts/grade/jquery.nice-select.js")" type="text/javascript"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:14:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/section.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:15:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/navBar.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:16:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:17:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:51:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:52:46: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m        <script src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/main.scala.html:53:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/mypage.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/signin.scala.html:8:78: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/signin.scala.html:10:58: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/login.css")">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/signin.scala.html:31:38: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script src="@routes.Assets.versioned("/javascripts/jquery/jquery.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/signin.scala.html:32:52: not enough arguments for method versioned: (path: String, file: controllers.Assets.Asset)play.api.mvc.Call.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter file.[0m
+[0m[[0m[31merror[0m] [0m[0m<script type="module" src="@routes.Assets.versioned("/javascripts/fetch/fetch.js")"></script>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m58 errors found[0m

@@ -43,4 +43,5 @@ GET     /chat/top/search/:key       controllers.ChatController.search(key: Strin
 GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
 GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets2/*file                         controllers.ExtAssets.at(path="./private/",file)
 

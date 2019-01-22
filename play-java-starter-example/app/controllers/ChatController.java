@@ -168,16 +168,16 @@ public class ChatController extends Controller {
             String fileName = picture.getFilename();
             String contentType = picture.getContentType();
             try {
-                String path = "images/thread/"+threadid;
+                String path = "thread/"+threadid;
                 File file = picture.getFile();
-                File dir = new File("./public/"+path);
+                File dir = new File("./private/"+path);
                 dir.mkdir();
-                File file2 = new File("./public/"+path+"/"+fileName);
+                File file2 = new File("./private/"+path+"/"+fileName);
                 if(file2.createNewFile()) {
                     Files.copy(file,file2);
                 }
                 Date date = new Date();
-                Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets/"+path+"/"+fileName);
+                Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets2/"+path+"/"+fileName);
                 Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
                 entry.thread = thread;
                 entry.save();
@@ -194,5 +194,9 @@ public class ChatController extends Controller {
             return badRequest();
         }
         return badRequest();
+    }
+
+    public Result dummy(){
+        return ok();
     }
 }
