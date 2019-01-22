@@ -249,44 +249,86 @@ function open_register_task(e){
     var yy_end = $("#year_end").text();
     var mm_end = $("#month_end").text();
     var dd_end = $("#date_end").text();
+    var HH_start = $("#HH_start").text();
+    var MM_start = $("#mm_start").text();
+    var HH_end = $("#HH_end").text();
+    var MM_end = $("#mm_end").text();
     var time_start = yy_start;
     var time_end   = yy_end
 
+    var time_hh_start = "";
+    var time_hh_end = "";
     //スタートの書式調整
     if(parseInt(mm_start)<10) {
-        time_start = time_start +'-0' + mm_start;
+        time_start = time_start +'/0' + mm_start;
     }else{
-         time_start = time_start +'-' + mm_start;
+         time_start = time_start +'/' + mm_start;
     }
     if(parseInt(dd_start)<10) {
-        time_start = time_start +'-0' + dd_start;
+        time_start = time_start +'/0' + dd_start;
     }else{
-        time_start = time_start +'-' + dd_start;
+        time_start = time_start +'/' + dd_start;
     }
 
     //エンドの書式調整
     if(parseInt(mm_end)<10) {
-        time_end = time_end +'-0' + mm_end;
+        time_end = time_end +'/0' + mm_end;
     }else{
-        time_end = time_end +'-' + mm_end;
+        time_end = time_end +'/' + mm_end;
     }
     if(parseInt(dd_end)<10) {
-        time_end = time_end +'-0' + dd_end;
+        time_end = time_end +'/0' + dd_end;
     }else{
-        time_end = time_end +'-' + dd_end;
+        time_end = time_end +'/' + dd_end;
     }
+
+    if(parseInt(HH_start)<10){
+        time_hh_start = '0' + HH_start + ':';
+    }else{
+        time_hh_start = HH_start + ':';
+    }
+    if(parseInt(HH_end)<10){
+        time_hh_end = '0' + HH_end + ':';
+    }else{
+        time_hh_end = HH_end + ':';
+    }
+
+    if(parseInt(MM_start)<10){
+        time_hh_start = time_hh_start +'0' + MM_start;
+    }else{
+        time_hh_start = time_hh_start + MM_start ;
+    }
+    if(parseInt(MM_end)<10){
+        time_hh_end = time_hh_end + '0' + MM_end ;
+    }else{
+        time_hh_end = time_hh_end + MM_end ;
+    }
+
 
     if(time_start>time_end){
         var temp = time_start;
         time_start = time_end;
         time_end = temp;
+
+        temp = time_hh_start;
+        time_hh_start = time_hh_end;
+        time_hh_end = temp;
+    }else if(time_start == time_end && time_hh_start > time_hh_end){
+        var temp = time_hh_start;
+        time_hh_start = time_hh_end;
+        time_hh_end = temp;
     }
+
 
     var dateControl = document.querySelector('#start_date');
     dateControl.value = time_start;
 
     var dateControl = document.querySelector('#end_date');
     dateControl.value = time_end;
+    var dateControl = document.querySelector('#start_time');
+    dateControl.value = time_hh_start;
+    var dateControl = document.querySelector('#end_time');
+    dateControl.value = time_hh_end;
 
      //$(".overlay").fadeIn("slow");
      var w = $window.width();
@@ -294,13 +336,12 @@ function open_register_task(e){
      $(".overlay").height(h);
      $(".overlay").width(w);
      $(".overlay").fadeIn();
-     $(".main-window").fadeIn();
-
-
+     $(".main-window").fadeIn("fast");
 }
 
 function close_register_task(){
-    $(".overlay").fadeOut("slow");
-    $(".main-window").fadeOut("slow");
-
+    $(".overlay").fadeOut("fast");
+    $(".main-window").fadeOut("fast");
+    document.getElementById( "title" ).value = "" ;
+    $("#error-field").empty();
 }

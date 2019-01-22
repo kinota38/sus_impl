@@ -6,9 +6,13 @@ import play.data.validation.Constraints;
 
 import io.ebean.*;
 import javax.persistence.Column;
-import java.util.Calendar;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Entity
+@Table(name="task")
 public class Task extends Model{
     @Constraints.Required
     @Constraints.MaxLength(255)
@@ -16,16 +20,24 @@ public class Task extends Model{
     @Column(name = "title",nullable = false)
     public String title;
 
-    @Formats.DateTime(pattern="yyyy/MM/dd")
+    @Constraints.Required
+    @Formats.DateTime(pattern="yyyy/MM/dd HH:mm")
     @Formats.NonEmpty
-    @Column(name = "startDate", nullable = false)
-    public Date startDate ;
+    @Column(name = "start_date", nullable = false)
+    public Date start_date ;
 
-    @Formats.DateTime(pattern="yyyy/MM/dd")
+    @Constraints.Required
+    @Formats.DateTime(pattern="yyyy/MM/dd HH:mm")
     @Formats.NonEmpty
-    @Column(name = "endDate", nullable = false)
-    public Date endDate ;
+    @Column(name = "end_date", nullable = false)
+    public Date end_date ;
 
+
+    //-----------jsonでdayを取得する際に面倒なので文字列型に置き換えたものを保持しておく
+    //-----------なのでこれは使用しなくても良いです。
+    public String start_date_string;
+    public String end_date_string;
+    //----------------------------------------
     /**
      * タスクの製作者
      */
@@ -35,14 +47,19 @@ public class Task extends Model{
     @Column(name = "username",nullable = false)
     public String username;
 
-    public Task(String username,String title,int []startDate,int []endDate){
+    public Task(String username,String title){
         this.title = title;
         this.username = username;
-        Calendar carlendar = Calendar.getInstance();
-        carlendar.set(startDate[0],startDate[1]-1,startDate[2]);
-        this.startDate = carlendar.getTime();
-        carlendar.set(endDate[0],endDate[1]-1,endDate[2]);
-        this.endDate = carlendar.getTime();
+        start_date = new Date();
+        end_date = new Date();
+
     }
 
+    @Override
+    public void save() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+        start_date_string = sdf.format(start_date);
+        end_date_string = sdf.format(end_date);
+        super.save();
+    }
 }

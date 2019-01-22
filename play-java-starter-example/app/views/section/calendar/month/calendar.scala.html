@@ -1,3 +1,4 @@
+@(name :String)
 @main("カレンダー"){
 
     <!--　<button id="tmonth" onclick='setCalendar()'>今月</button>
@@ -9,25 +10,33 @@
     <span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span><br />
     <span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span>-->
     <div id="calendar-result" ></div>
+
+<span hidden ><span id="HH_start">0</span>:<span id="mm_start">0</span></span>
+<span hidden ><span id="HH_end">0</span>:<span id="mm_end">0</span></span>
 <span hidden><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span>
 <span hidden><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
 <div id="register_task" class="main-window">
     <h2>新規登録</h2>
     <span id="error-field" class="error"></span>
     <form id="registration-form">
+        <input type="hidden" name="username" value="@name">
         <dl>
             <dt>タスク名</dt>
 
             <dd>
-                <input type="text" name="title" autocomplete="on" required>
+                <input type="text" id="title" name="title" autocomplete="on" required>
             </dd>
             <dt>日時</dt>
             <dd>
-                <input type="date" id="start_date">〜<input type="date" id="end_date">
+                <input type="date" id="start_date" name="start_date">:<input type="time" id="start_time" name="start_time">
+                <input type="date" id="end_date" name="end_date">:<input type="time" id="end_time" name="end_time">
+
             </dd>
         </dl>
         @helper.CSRF.formField
     </form>
+    <button onclick="register_new(); return false;">送信</button>
+    <button onclick="close_register_task(); return false;">キャンセル</button>
     <!--<button onclick="register_new(); return false;">送信</button>
     <button onclick="close_registration_form(); return false;">キャンセル</button>-->
 </div>

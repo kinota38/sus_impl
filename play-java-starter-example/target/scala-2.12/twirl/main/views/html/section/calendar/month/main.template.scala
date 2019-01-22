@@ -96,7 +96,8 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
     <script src=""""),_display_(/*66.19*/routes/*66.25*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*66.75*/(""""></script>
     <script src=""""),_display_(/*67.19*/routes/*67.25*/.Assets.versioned("/javascripts/calendar/calendar.js")),format.raw/*67.79*/(""""></script>
     <script src=""""),_display_(/*68.19*/routes/*68.25*/.Assets.versioned("/javascripts/calendar/calendar.mini.js")),format.raw/*68.84*/(""""></script>
-    <script src=""""),_display_(/*69.19*/routes/*69.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*69.73*/(""""></script>
+    <script src=""""),_display_(/*69.19*/routes/*69.25*/.Assets.versioned("/javascripts/calendar/calendarEvent.js")),format.raw/*69.84*/(""""></script>
+    <script src=""""),_display_(/*70.19*/routes/*70.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*70.73*/(""""></script>
 
 </body>
 </html>"""))
@@ -115,11 +116,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 12 03:23:31 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html
-                  HASH: f9431aebf8c733bcfec17f4ede5ea3321ee89122
-                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1359->192|1422->229|1436->235|1499->278|1562->315|1576->321|1654->379|1737->436|1751->442|1811->481|1875->518|1890->524|1983->595|3778->2455|3819->2469|3847->2476|3883->2485|3950->2525|3965->2531|4036->2581|4093->2611|4108->2617|4183->2671|4240->2701|4255->2707|4335->2766|4392->2796|4407->2802|4476->2850
-                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|89->59|90->60|90->60|91->61|96->66|96->66|96->66|97->67|97->67|97->67|98->68|98->68|98->68|99->69|99->69|99->69
+                  DATE: Tue Jan 22 19:37:32 JST 2019
+                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html
+                  HASH: b6771d12311dde383a9a16ce7e6ad02883a215ad
+                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1359->192|1422->229|1436->235|1499->278|1562->315|1576->321|1654->379|1737->436|1751->442|1811->481|1875->518|1890->524|1983->595|3778->2455|3819->2469|3847->2476|3883->2485|3950->2525|3965->2531|4036->2581|4093->2611|4108->2617|4183->2671|4240->2701|4255->2707|4335->2766|4392->2796|4407->2802|4487->2861|4544->2891|4559->2897|4628->2945
+                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|89->59|90->60|90->60|91->61|96->66|96->66|96->66|97->67|97->67|97->67|98->68|98->68|98->68|99->69|99->69|99->69|100->70|100->70|100->70
                   -- GENERATED --
               */
           

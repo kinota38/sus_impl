@@ -15,6 +15,7 @@ import views.html.section.grades.grades;
 import views.html.section.section;
 
 import java.util.UUID;
+import java.util.Optional;
 
 public class MainController extends Controller {
 
@@ -39,7 +40,17 @@ public class MainController extends Controller {
     }
 
     public Result calendarMonth(){
-        return ok(calendar.render());
+        String sessionid;
+        try {
+            sessionid = request().cookies().get("sessionid").value();
+        } catch (Exception e) {
+            return redirect("/");
+        }
+        Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
+        if(user.isPresent()){
+            return ok(calendar.render(user.get().username));
+        }
+        return redirect("/");
     }
 
     public Result calendarDay(){
