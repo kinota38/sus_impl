@@ -195,5 +195,5 @@ public class ChatController extends Controller {
         }
         return badRequest();
     }
-    
+
 }

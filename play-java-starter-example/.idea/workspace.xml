@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a472014-60bb-4259-8aaa-e1f1aa8720bf" name="Default Changelist" comment="">
+    <list default="true" id="5a472014-60bb-4259-8aaa-e1f1aa8720bf" name="Default Changelist" comment="privateディレクトリの追加(チャットの画像保存用)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ChatController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -23,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="184" selection-start-line="184" selection-end-line="184" />
+            <state relative-caret-position="271">
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="293">
@@ -64,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
@@ -137,9 +138,9 @@
         <option value="$PROJECT_DIR$/public/stylesheets/chat/chat_page.css" />
         <option value="$PROJECT_DIR$/public/javascripts/chat/chat_page.js" />
         <option value="$PROJECT_DIR$/app/views/section/chat/chat_page.scala.html" />
-        <option value="$PROJECT_DIR$/app/controllers/ChatController.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/ExtAssets.java" />
+        <option value="$PROJECT_DIR$/app/controllers/ChatController.java" />
       </list>
     </option>
   </component>
@@ -176,7 +177,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548139389090" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548139805646" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -338,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548139276361</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="privateディレクトリの追加(チャットの画像保存用)">
+      <created>1548139427692</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548139427692</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -359,9 +367,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" sideWeight="0.49912587" visible="true" weight="0.32924962" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" sideWeight="0.49806577" visible="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008741" side_tool="true" weight="0.32924962" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50193423" side_tool="true" weight="0.32924962" />
       <window_info anchor="bottom" id="Build" order="11" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="12" weight="0.32924962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -610,16 +618,6 @@
     <entry file="file://$PROJECT_DIR$/private/thread/1/スクリーンショット 2018-12-15 12.27.55.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/scala-2.12/classes/controllers/ExtAssets.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -651,17 +649,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="45" column="79" selection-start-line="45" selection-start-column="79" selection-end-line="45" selection-end-column="79" />
         </state>
       </provider>
     </entry>
