@@ -195,8 +195,5 @@ public class ChatController extends Controller {
         }
         return badRequest();
     }
-
-    public Result dummy(){
-        return ok();
-    }
+    
 }
