@@ -39,16 +39,18 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
         <link rel="stylesheet" href=""""),_display_(/*8.39*/routes/*8.45*/.Assets.versioned("stylesheets/calendar/dayScheduler.css")),format.raw/*8.103*/("""">
         <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.59*/routes/*9.65*/.Assets.versioned("images/favicon.png")),format.raw/*9.104*/("""">
         <link rel="stylesheet" href=""""),_display_(/*10.39*/routes/*10.45*/.Assets.versioned("/stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*10.117*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*11.39*/routes/*11.45*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*11.95*/("""">
     </head>
     <body>
 
         <main>
-            """),_display_(/*15.14*/content),format.raw/*15.21*/("""
-        """),format.raw/*16.9*/("""</main>
-        <script src=""""),_display_(/*17.23*/routes/*17.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*17.79*/(""""></script>
-        <script src=""""),_display_(/*18.23*/routes/*18.29*/.Assets.versioned("/javascripts/calendar/miniCalendar.js")),format.raw/*18.87*/(""""></script>
+            """),_display_(/*16.14*/content),format.raw/*16.21*/("""
+        """),format.raw/*17.9*/("""</main>
+        <script src=""""),_display_(/*18.23*/routes/*18.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*18.79*/(""""></script>
         <script src=""""),_display_(/*19.23*/routes/*19.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*19.77*/(""""></script>
-
+        <script src=""""),_display_(/*20.23*/routes/*20.29*/.Assets.versioned("/javascripts/popper.js")),format.raw/*20.72*/(""""></script>
+        <script src=""""),_display_(/*21.23*/routes/*21.29*/.Assets.versioned("/javascripts/bootstrap.min.js")),format.raw/*21.79*/(""""></script>
+        <script src=""""),_display_(/*22.23*/routes/*22.29*/.Assets.versioned("/javascripts/calendar/miniCalendar.js")),format.raw/*22.87*/(""""></script>
     </body>
 </html>"""))
       }
@@ -66,11 +68,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Tue Jan 22 19:37:32 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html
-                  HASH: 13e54d81d82c956f13335db415e0ece11b97c241
-                  MATRIX: 973->1|1097->32|1183->92|1208->97|1281->144|1295->150|1366->201|1433->242|1447->248|1521->302|1588->343|1602->349|1681->407|1768->468|1782->474|1842->513|1910->554|1925->560|2019->632|2101->687|2129->694|2165->703|2222->733|2237->739|2308->789|2369->823|2384->829|2463->887|2524->921|2539->927|2608->975
-                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|46->15|46->15|47->16|48->17|48->17|48->17|49->18|49->18|49->18|50->19|50->19|50->19
+                  DATE: Thu Jan 24 00:17:37 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/main.scala.html
+                  HASH: f40a60b3f2194f4ad8d73b0c2dc484eabc87a5aa
+                  MATRIX: 973->1|1097->32|1183->92|1208->97|1281->144|1295->150|1366->201|1433->242|1447->248|1521->302|1588->343|1602->349|1681->407|1768->468|1782->474|1842->513|1910->554|1925->560|2019->632|2087->673|2102->679|2173->729|2255->784|2283->791|2319->800|2376->830|2391->836|2462->886|2523->920|2538->926|2607->974|2668->1008|2683->1014|2747->1057|2808->1091|2823->1097|2894->1147|2955->1181|2970->1187|3049->1245
+                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|42->11|42->11|42->11|47->16|47->16|48->17|49->18|49->18|49->18|50->19|50->19|50->19|51->20|51->20|51->20|52->21|52->21|52->21|53->22|53->22|53->22
                   -- GENERATED --
               */
           

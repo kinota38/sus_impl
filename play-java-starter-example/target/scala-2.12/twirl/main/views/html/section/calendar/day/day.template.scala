@@ -22,131 +22,93 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object day extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object day extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(name :String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](format.raw/*1.16*/("""
-    """),format.raw/*2.5*/("""<div class="main">
-        <header>
-            <div class="header-all" style="background-color: #fff">
-                <div class="header-left">
-                    <div class="humberger" aria-expanded="true">
-                        <svg focusable="false" viewBox="0 0 24 24">
-                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                        </svg>
-                    </div>
-                    <div class="calendar-icon">
-                        <div class="calendar-icon-inner">
-                            <a class="icon-all" aria-label="カレンダー" tabindex="-1" aria-hidden="true">
-                                <img class="icon-img" alt="" aria-hidden="true" src="https://www.gstatic.com/images/branding/product/1x/calendar_48dp.png" srcset="https://www.gstatic.com/images/branding/product/1x/calendar_48dp.png 1x, https://www.gstatic.com/images/branding/product/2x/calendar_48dp.png 2x " style="width:40px;height:40px">
-                                <span class="icon-moji" style="text-decoration: none;">カレンダー</span>
+Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](format.raw/*2.16*/("""
+    """),format.raw/*3.5*/("""<div class="main">
+        """),format.raw/*119.20*/("""
+        """),format.raw/*120.9*/("""<header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/helper/"""),_display_(/*122.56*/name),format.raw/*122.60*/("""" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
+                    <i class="fas fa-braille"></i>
+                    Study Helper
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/helper/"""),_display_(/*133.64*/name),format.raw/*133.68*/("""">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">リンク</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                他の機能(この名称微妙なんで誰か考案ヨロピク)
                             </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header-center">
-                    <div class="date-op-all">
-                        <div class="date-op-inner">
-                            <div class="date-op-core">
-                                <div class="date-op">
-                                    <div class="date-op-real">
-                                        <div class="today-op">
-                                            <div class="Vwe4Vb MbhUzd" jsname="ksKsZd" style="top: 23px; left: 27px; width: 53px; height: 53px;"></div>
-                                            <div class="ZFr60d CeoRYc"></div>
-                                            <content class="CwaK9"><span class="RveJvd snByac">今日</span></content>
-                                        </div>
-                                        <div class="pre-month">
-                                            <div class="VTBa7b MbhUzd" jsname="ksKsZd"></div>
-                                            <content class="xjKiLb">
-                                                <span style="top: -12px">
-                                                    <span class="DPvwYc sm8sCf NhjcAb" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-                                                </span>
-                                            </content>
-                                        </div>
-                                        <div class="next-month">
-                                            <div class="VTBa7b MbhUzd" jsname="ksKsZd" style="top: 19px; left: 11.5px; width: 32px; height: 32px;"></div>
-                                            <content class="xjKiLb">
-                                                <span style="top: -12px">
-                                                    <span class="DPvwYc sm8sCf NhjcAb" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
-                                                </span>
-                                            </content>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="display-month">
-                                    <div class="display-month-core">
-                                        <span class="ynRLnc">2019年 1月</span>
-                                        <div aria-hidden="true" class="bQnbhf">
-                                            <div class="zR2Wpe">
-                                                <div class="KaL5Wc">
-                                                    <div class="rSoRzd">2019年 1月</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item active" href="/calendar/month">カレンダー<span class="sr-only">(current)</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/grades/"""),_display_(/*145.73*/name),format.raw/*145.77*/("""">成績</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/chat/"""),_display_(/*147.71*/name),format.raw/*147.75*/("""">掲示板</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">TO DO リスト</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="other-op-all">
-                        <div class="other-op-inner">
-                            <div class="other-op-core">
-                                <div class="search-icon-wrapper">
-                                    <div class="search-icon">
-                                        <div class="VTBa7b MbhUzd" jsname="ksKsZd"></div>
-                                        <content class="xjKiLb">
-                                            <span style="top: -12px">
-                                                <span class="DPvwYc NhjcAb" aria-hidden="true"><i class="fas fa-search"></i></span>
-                                            </span>
-                                        </content>
-                                    </div>
-                                </div>
-                                <div class="settings-icon-wrapper">
-                                    <div class="settings-icon">
-                                        <div class="NWlf3e MbhUzd" jsname="ksKsZd"></div>
-                                        <content class="MhXXcc oJeWuf">
-                                            <span class="Lw7GHd snByac">
-                                                <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                                    <path d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"></path>
-                                                    <circle cx="12" cy="12" r="3.5"></circle>
-                                                </svg>
-                                            </span>
-                                        </content>
-                                    </div>
-                                </div>
-                                <div class="field-selecter-wrapper">
-                                    <div class="field-selecter">
-                                        <div class="selected-field">
-                                            <div class="lVYxmb MbhUzd" jsname="ksKsZd" style="top: 16px; left: 49.25px; width: 54px; height: 54px;"></div>
-                                            <div class="g4jUVc" aria-hidden="true"></div>
-                                            <content class="I3EnF oJeWuf"><span class="NlWrkb snByac">日</span></content>
-                                        </div>
-                                        <span class="DPvwYc xmVoP SGNdae" aria-hidden="true"><i class="fas fa-sort-down"></i></span>
-                                    </div>
-                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" id="tmonth" onclick='setCalendar()' style="cursor: pointer">今日</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" id="bmonth" onclick='backdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" id="nmonth" onclick='nextdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                        </li>
+                        <li class="nav-item active">
+                            <div class="nav-link"><span id="year"></span>年<span id="month"></span>月</div>
+                        </li>
+                        <li class="nav-item dropdown active " style="background-color: white; color: black; margin-left: 10px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+                                日
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">年(作成未定)</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/calendar/month">月</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">週(作成未定)</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item active" href="/calendar/day">日<span class="sr-only">(current)</span></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header-right">
-                    <div class="account-icon-all">
-                        <div class="account-icon-wrapper">
-                            <div class="account-icon">
-                                <a class="gb_b gb_hb gb_R" href="https://accounts.google.com/SignOutOptions?hl=ja&amp;continue=https://calendar.google.com/calendar/r%3Ftab%3Dmc%26pli%3D1%26t%3DAKUaPmYff2C7oqO150U6LqR_21sHiQPFwpE8_cliogdFzFz7-oNG3c5se_QhAwQ-yQBTMACMB_nyz4ZWt0hA80QHIaUIrkg1Hg%253D%253D&amp;service=cl" role="button" tabindex="0" aria-expanded="false">
-                                    <span class="gb_cb gbii"><i class="far fa-user"></i></span>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user"></i>
                                 </a>
-                            </div>
-                        </div>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <div class="event-create-button-wrapper">
             <button class="event-create-button-button" type="button" name="button">
@@ -276,8 +238,7 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
                                                 <div class="lmNFmc pCoqfc">GMT+09</div>
                                                 <div class="lmNFmc MANBAf">午前12時</div>
                                                 <div class="lmNFmc MANBAf">午前1時</div>
-                              """),
-format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
+                                                <div class="lmNFmc MANBAf">午前2時</div>
                                                 <div class="lmNFmc MANBAf">午前3時</div>
                                                 <div class="lmNFmc MANBAf">午前4時</div>
                                                 <div class="lmNFmc MANBAf">午前5時</div>
@@ -319,8 +280,8 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
                                                 <div class="C5Jlgc"></div>
                                                 <div aria-hidden="true" class="fimTmc">
                                                     <h2 class="rpCPrc">
-                                                        <div class="MmhHI qAeuG N4XV7d" aria-hidden="true">木</div>
-                                                        <div class="MmhHI KSxb4d N4XV7d" aria-label="1月 3日 (木曜日)" tabindex="0">3</div>
+                                                        <div class="MmhHI qAeuG N4XV7d" aria-hidden="true"><span class="display-date"></span></div>
+                                                        <div class="MmhHI KSxb4d N4XV7d" aria-label="1月 3日 (木曜日)" tabindex="0"><span class="display-day" style="color: white"></span></div>
                                                     </h2>
                                                 </div>
                                             </div>
@@ -343,7 +304,8 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="date-scheduler-main">
+                            <div class="da"""),
+format.raw("""te-scheduler-main">
                                 <div class="date-scheduler-main-core">
                                     <div class="left-time">
                                         <div class="GENA3c">
@@ -430,10 +392,20 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
                                             </div>
                                             <div class="EdAri"></div>
                                             <div role="gridcell" tabindex="-1" aria-labelledby="tsc-0" jsname="RjPD4e" key="25123eW9zaGlha2kyMDE2NDE0QGdtYWlsLmNvbQ" data-column-index="0" data-datekey="25123" data-principal-ids="eW9zaGlha2kyMDE2NDE0QGdtYWlsLmNvbQ" class="YvjgZe Qbfsob">
-                                                <h2 id="tsc-0" class="ynRLnc">予定なし、natade cocoa さん</h2>
+                                                <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
                                                 <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
                                                 <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
-                                                <div role="presentation" class="WJVfWe A3o4Oe"></div>
+                                                <div role="presentation" class="WJVfWe A3o4Oe">
+                                                    <div role="button" tabindex="0" data-eventid="NTQyaDd2bzY1bXEzNjE0YmJraWYxdGo1bzJfMjAxOTAxMzBUMDAwMDAwWiB5b3NoaWFraTIwMTY0MTRAbQ" data-eventchip="" data-opens-details="true" data-keyboardactiontype="0;1" jscontroller="Bo3nHd" jsaction="click:cOuCgd; contextmenu:mg9Pef; dblclick:Reio8; mouseenter:tfO1Yc; mouseleave:JywGue;" jslog="35463; track:click,dblclick" class="NlL62b EfQccc elYzab-cXXICe-Hjleke  EiZ8Dd jKgTF" style=" top:359px; height:58px;left:0%; width:100%;z-index:4;background-color: #039BE5;border-color: #039BE5;">
+                                                        <div class="ynRLnc">午前9時～午前10:30、英語第九、場所: W934、2019年 1月 30日</div>
+                                                        <div aria-hidden="true" class="lFe10c ">
+                                                            <div class="Jmftzc RIOtYe EiZ8Dd TuM9nf" style="max-height:15px"><span class="FAxxKc">英語第九</span></div>
+                                                            <div class="Jmftzc gVNoLb  EiZ8Dd TuM9nf">午前9時～10:30</div>
+                                                            <div class="Jmftzc K9QN7e  EiZ8Dd TuM9nf">W934</div>
+                                                        </div>
+                                                        <div aria-hidden="true" class="leOeGd elYzab-cXXICe-Hjleke" data-eventid="NTQyaDd2bzY1bXEzNjE0YmJraWYxdGo1bzJfMjAxOTAxMzBUMDAwMDAwWiB5b3NoaWFraTIwMTY0MTRAbQ" data-dragsource-type="3"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -450,9 +422,9 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(name:String): play.twirl.api.HtmlFormat.Appendable = apply(name)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (name) => apply(name)
 
   def ref: this.type = this
 
@@ -461,11 +433,11 @@ format.raw("""                  <div class="lmNFmc MANBAf">午前2時</div>
 
               /*
                   -- GENERATED --
-                  DATE: Tue Jan 22 19:37:32 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: c0bae01454439215fe898592e55bcbe4cc929654
-                  MATRIX: 1049->1|1070->14|1108->15|1139->20
-                  LINES: 33->1|33->1|33->1|34->2
+                  DATE: Thu Jan 24 00:16:57 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
+                  HASH: 0c6099073cabddae8012d775cb7590c90a89c70a
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3125->10622|3151->10626|3327->10774|3353->10778
+                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147
                   -- GENERATED --
               */
           

@@ -38,49 +38,27 @@ object main extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 Seq[Any](format.raw/*8.1*/("""
 """),format.raw/*9.1*/("""<!DOCTYPE html>
 <html lang="en">
-<head>
-    """),format.raw/*12.58*/("""
-    """),format.raw/*13.5*/("""<title>"""),_display_(/*13.13*/title),format.raw/*13.18*/("""</title>
-    <link rel="stylesheet" href=""""),_display_(/*14.35*/routes/*14.41*/.Assets.versioned("stylesheets/grade/grades.css")),format.raw/*14.90*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*15.35*/routes/*15.41*/.Assets.versioned("stylesheets/grade/nice-select.css")),format.raw/*15.95*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*16.35*/routes/*16.41*/.Assets.versioned("stylesheets/navBar.css")),format.raw/*16.84*/("""">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*17.55*/routes/*17.61*/.Assets.versioned("images/favicon.png")),format.raw/*17.100*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*18.35*/routes/*18.41*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*18.112*/("""">
-</head>
-<body>
-<main>
-    <header>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-                <div class="dropdown-content-left">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right" class="dropdown">
-                <a class="active" href="#about"><i class="fas fa-user"></i></a>
-                <div class="dropdown-content-right">
-                    <a href="#">Account Info</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Logout</a>
-                </div>
-            </li>
-        </ul>
-    </header>
-    """),format.raw/*47.27*/("""
-    """),_display_(/*48.6*/content),format.raw/*48.13*/("""
-"""),format.raw/*49.1*/("""</main>
-<script src=""""),_display_(/*50.15*/routes/*50.21*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*50.71*/(""""></script>
-        <script src=""""),_display_(/*51.23*/routes/*51.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*51.77*/(""""></script>
-<script src=""""),_display_(/*52.15*/routes/*52.21*/.Assets.versioned("javascripts/Chart.bundle.js")),format.raw/*52.69*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*53.23*/routes/*53.29*/.Assets.versioned("javascripts/grade/grades.js")),format.raw/*53.77*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*54.15*/routes/*54.21*/.Assets.versioned("javascripts/grade/jquery.nice-select.js")),format.raw/*54.81*/("""" type="text/javascript"></script>
+    <head>
+        """),format.raw/*12.62*/("""
+        """),format.raw/*13.9*/("""<title>"""),_display_(/*13.17*/title),format.raw/*13.22*/("""</title>
+        <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*14.95*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*15.39*/routes/*15.45*/.Assets.versioned("stylesheets/grade/grades.css")),format.raw/*15.94*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("stylesheets/grade/nice-select.css")),format.raw/*16.99*/("""">
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*17.59*/routes/*17.65*/.Assets.versioned("images/favicon.png")),format.raw/*17.104*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*18.39*/routes/*18.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*18.116*/("""">
+    </head>
+    <body>
+        <main>
+            """),format.raw/*23.35*/("""
+            """),_display_(/*24.14*/content),format.raw/*24.21*/("""
+        """),format.raw/*25.9*/("""</main>
+        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*26.79*/(""""></script>
+        <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*27.77*/(""""></script>
+        <script src=""""),_display_(/*28.23*/routes/*28.29*/.Assets.versioned("/javascripts/popper.js")),format.raw/*28.72*/(""""></script>
+        <script src=""""),_display_(/*29.23*/routes/*29.29*/.Assets.versioned("/javascripts/bootstrap.min.js")),format.raw/*29.79*/(""""></script>
+        <script src=""""),_display_(/*30.23*/routes/*30.29*/.Assets.versioned("javascripts/Chart.bundle.js")),format.raw/*30.77*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*31.23*/routes/*31.29*/.Assets.versioned("javascripts/grade/grades.js")),format.raw/*31.77*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*32.23*/routes/*32.29*/.Assets.versioned("javascripts/grade/jquery.nice-select.js")),format.raw/*32.89*/("""" type="text/javascript"></script>
     </body>
 </html>"""))
       }
@@ -98,11 +76,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Jan 22 19:37:32 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html
-                  HASH: e1821b56c88d49be2b312b2a32215c436135a355
-                  MATRIX: 1216->255|1340->286|1367->287|1439->384|1471->389|1506->397|1532->402|1602->445|1617->451|1687->500|1751->537|1766->543|1841->597|1905->634|1920->640|1984->683|2068->740|2083->746|2144->785|2208->822|2223->828|2316->899|3265->1905|3297->1911|3325->1918|3353->1919|3402->1941|3417->1947|3488->1997|3549->2031|3564->2037|3633->2085|3686->2111|3701->2117|3770->2165|3854->2222|3869->2228|3938->2276|4014->2325|4029->2331|4110->2391
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|76->47|77->48|77->48|78->49|79->50|79->50|79->50|80->51|80->51|80->51|81->52|81->52|81->52|82->53|82->53|82->53|83->54|83->54|83->54
+                  DATE: Wed Jan 23 23:25:27 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/grades/main.scala.html
+                  HASH: d19667294afd76c862509f02d72746aea8e0406c
+                  MATRIX: 1216->255|1340->286|1367->287|1447->392|1483->401|1518->409|1544->414|1618->461|1633->467|1704->517|1772->558|1787->564|1857->613|1925->654|1940->660|2015->714|2103->775|2118->781|2179->820|2247->861|2262->867|2355->938|2436->1084|2477->1098|2505->1105|2541->1114|2598->1144|2613->1150|2684->1200|2745->1234|2760->1240|2829->1288|2890->1322|2905->1328|2969->1371|3030->1405|3045->1411|3116->1461|3177->1495|3192->1501|3261->1549|3345->1606|3360->1612|3429->1660|3513->1717|3528->1723|3609->1783
+                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|52->23|53->24|53->24|54->25|55->26|55->26|55->26|56->27|56->27|56->27|57->28|57->28|57->28|58->29|58->29|58->29|59->30|59->30|59->30|60->31|60->31|60->31|61->32|61->32|61->32
                   -- GENERATED --
               */
           

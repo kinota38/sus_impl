@@ -38,48 +38,27 @@ object main extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 Seq[Any](format.raw/*8.1*/("""
 """),format.raw/*9.1*/("""<!DOCTYPE html>
 <html lang="en">
-<head>
-    """),format.raw/*12.58*/("""
-    """),format.raw/*13.5*/("""<title>"""),_display_(/*13.13*/title),format.raw/*13.18*/("""</title>
-    <link rel="stylesheet" href=""""),_display_(/*14.35*/routes/*14.41*/.Assets.versioned("stylesheets/section.css")),format.raw/*14.85*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*15.35*/routes/*15.41*/.Assets.versioned("stylesheets/navBar.css")),format.raw/*15.84*/("""">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*16.55*/routes/*16.61*/.Assets.versioned("images/favicon.png")),format.raw/*16.100*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*17.35*/routes/*17.41*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*17.112*/("""">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        """),format.raw/*14.62*/("""
+        """),format.raw/*15.9*/("""<title>"""),_display_(/*15.17*/title),format.raw/*15.22*/("""</title>
+        <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("stylesheets/section.css")),format.raw/*16.89*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*17.39*/routes/*17.45*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*17.95*/("""">
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*18.59*/routes/*18.65*/.Assets.versioned("images/favicon.png")),format.raw/*18.104*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*19.39*/routes/*19.45*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*19.116*/("""">
 
-</head>
-<body>
-<main>
-    <header>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-                <div class="dropdown-content-left">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right" class="dropdown">
-                <a class="active" href="#about"><i class="fas fa-user"></i></a>
-                <div class="dropdown-content-right">
-                    <a href="#">Account Info</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Logout</a>
-                </div>
-            </li>
-        </ul>
-    </header>
-    <br>
-    """),format.raw/*48.27*/("""
-    """),_display_(/*49.6*/content),format.raw/*49.13*/("""
-"""),format.raw/*50.1*/("""</main>
-<script src=""""),_display_(/*51.15*/routes/*51.21*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*51.71*/(""""></script>
-        <script src=""""),_display_(/*52.23*/routes/*52.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*52.77*/(""""></script>
-<script src=""""),_display_(/*53.15*/routes/*53.21*/.Assets.versioned("/javascripts/mypage.js")),format.raw/*53.64*/(""""></script>
+    </head>
+    <body>
+        <main>
+            """),format.raw/*25.35*/("""
+            """),_display_(/*26.14*/content),format.raw/*26.21*/("""
+        """),format.raw/*27.9*/("""</main>
+        <script src=""""),_display_(/*28.23*/routes/*28.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*28.79*/(""""></script>
+        <script src=""""),_display_(/*29.23*/routes/*29.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*29.77*/(""""></script>
+        <script src=""""),_display_(/*30.23*/routes/*30.29*/.Assets.versioned("/javascripts/popper.js")),format.raw/*30.72*/(""""></script>
+        <script src=""""),_display_(/*31.23*/routes/*31.29*/.Assets.versioned("/javascripts/bootstrap.min.js")),format.raw/*31.79*/(""""></script>
+        <script src=""""),_display_(/*32.23*/routes/*32.29*/.Assets.versioned("/javascripts/mypage.js")),format.raw/*32.72*/(""""></script>
     </body>
 </html>"""))
       }
@@ -97,11 +76,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Jan 22 19:37:32 JST 2019
-                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/main.scala.html
-                  HASH: 3e7711abfc1871344d39c787f3116ec250076c2c
-                  MATRIX: 1209->255|1333->286|1360->287|1432->384|1464->389|1499->397|1525->402|1595->445|1610->451|1675->495|1739->532|1754->538|1818->581|1902->638|1917->644|1978->683|2042->720|2057->726|2150->797|3109->1813|3141->1819|3169->1826|3197->1827|3246->1849|3261->1855|3332->1905|3393->1939|3408->1945|3477->1993|3530->2019|3545->2025|3609->2068
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|77->48|78->49|78->49|79->50|80->51|80->51|80->51|81->52|81->52|81->52|82->53|82->53|82->53
+                  DATE: Wed Jan 23 23:20:11 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/main.scala.html
+                  HASH: d8cdc29cf00611d142cd435381a38da47f067b25
+                  MATRIX: 1209->255|1333->286|1360->287|1566->518|1602->527|1637->535|1663->540|1737->587|1752->593|1817->637|1885->678|1900->684|1971->734|2059->795|2074->801|2135->840|2203->881|2218->887|2311->958|2393->1105|2434->1119|2462->1126|2498->1135|2555->1165|2570->1171|2641->1221|2702->1255|2717->1261|2786->1309|2847->1343|2862->1349|2926->1392|2987->1426|3002->1432|3073->1482|3134->1516|3149->1522|3213->1565
+                  LINES: 33->7|38->8|39->9|44->14|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|49->19|49->19|49->19|54->25|55->26|55->26|56->27|57->28|57->28|57->28|58->29|58->29|58->29|59->30|59->30|59->30|60->31|60->31|60->31|61->32|61->32|61->32
                   -- GENERATED --
               */
           

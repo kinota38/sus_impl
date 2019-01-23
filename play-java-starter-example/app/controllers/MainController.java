@@ -36,7 +36,7 @@ public class MainController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result grade(String username){
-        return ok(grades.render());
+        return ok(grades.render(username));
     }
 
     public Result calendarMonth(){
@@ -54,7 +54,17 @@ public class MainController extends Controller {
     }
 
     public Result calendarDay(){
-        return ok(day.render());
+        String sessionid;
+        try {
+            sessionid = request().cookies().get("sessionid").value();
+        } catch (Exception e) {
+            return redirect("/");
+        }
+        Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
+        if(user.isPresent()){
+            return ok(day.render(user.get().username));
+        }
+        return redirect("/");
     }
 
 

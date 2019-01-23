@@ -288,3 +288,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.date[selected="true"] {
+    background-color: #7ed6df;
+    color: white;
+}

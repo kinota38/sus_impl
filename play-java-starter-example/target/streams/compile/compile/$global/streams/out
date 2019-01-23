@@ -1,5 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/controllers/MainController.java:42:1: クラス views.html.section.calendar.month.calendarのメソッド renderは指定された型に適用できません。[0m
-[0m[[0m[31merror[0m] [0m[0m  期待値: java.lang.String[0m
-[0m[[0m[31merror[0m] [0m[0m  検出値: 引数がありません[0m
-[0m[[0m[31merror[0m] [0m[0m  理由: 実引数リストと仮引数リストの長さが異なります[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok(calendar.render());[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html:122:40: not found: value name[0m
+[0m[[0m[31merror[0m] [0m[0m                <a class="navbar-brand" href="/helper/@name" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html:133:48: not found: value name[0m
+[0m[[0m[31merror[0m] [0m[0m                            <a class="nav-link" href="/helper/@name">Home</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html:145:57: not found: value name[0m
+[0m[[0m[31merror[0m] [0m[0m                                <a class="dropdown-item" href="/grades/@name">成績</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html:147:55: not found: value name[0m
+[0m[[0m[31merror[0m] [0m[0m                                <a class="dropdown-item" href="/chat/@name">掲示板</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
