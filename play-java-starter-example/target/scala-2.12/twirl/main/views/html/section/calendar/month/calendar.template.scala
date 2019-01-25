@@ -94,7 +94,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*66.125*/name),format.raw/*66.129*/(""" """),format.raw/*66.130*/("""さん"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
@@ -109,8 +109,72 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
         </nav>
     </header>
     <div class="wrapper">
-        <div class="menu">
-            <div id="mini-calendar-result"></div>
+        <div class="left-menu-wrapper">
+            <div class="left-menu">
+                <div class="htpigd"></div>
+                <div class="leftmenu-bottom">
+                    <h1 tabindex="-1" class="ynRLnc">ドロワー</h1>
+                    <div class="nav-calendar-all">
+                        <h2 tabindex="-1" class="ynRLnc">ナビゲーション カレンダー</h2>
+                        <div class="nav-calendar">
+                            <div class="nav-calendar-op">
+                                <span jsname="B1A7Xe" class="r4nke "><span id="year"></span>年 <span id="month"></span>月</span>
+                                <div class="nav-calendar-display-pre" onclick="backmm()">
+                                    <div class="VTBa7b MbhUzd" jsname="ksKsZd" style="top: 12px; left: 12px; width: 24px; height: 24px;"></div>
+                                    <content class="xjKiLb">
+                                        <span style="top: -9px">
+                                            <span class="DPvwYc sm8sCf NhjcAb" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                                        </span>
+                                    </content>
+                                </div>
+                                <div class="nav-calendar-display-next" onclick="nextmm()">
+                                    <div class="VTBa7b MbhUzd" jsname="ksKsZd" style="top: 12px; left: 12px; width: 24px; height: 24px;"></div>
+                                    <content class="xjKiLb">
+                                        <span style="top: -9px">
+                                            <span class="DPvwYc sm8sCf NhjcAb" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                                        </span>
+                                    </content>
+                                </div>
+                            </div>
+                            <div role="grid" aria-readonly="true" aria-label="2019年 1月" class="mini-calendar">
+                                <div role="row" class="day-of-week">
+                                    <span role="columnheader" aria-readonly="true" aria-label="日曜日" class="SoBqBf " data-toggle="tooltip" title="日曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">日</span>
+                                        <span class="ynRLnc">日曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="月曜日" class="SoBqBf " data-toggle="tooltip" title="月曜日" data-togg data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">月</span>
+                                        <span class="ynRLnc">月曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="火曜日" class="SoBqBf " data-toggle="tooltip" title="火曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">火</span>
+                                        <span class="ynRLnc">火曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="水曜日" class="SoBqBf " data-toggle="tooltip" title="水曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">水</span>
+                                        <span class="ynRLnc">水曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="木曜日" class="SoBqBf " data-toggle="tooltip" title="木曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">木</span>
+                                        <span class="ynRLnc">木曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="金曜日" class="SoBqBf " data-toggle="tooltip" title="金曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">金</span>
+                                        <span class="ynRLnc">金曜日</span>
+                                    </span>
+                                    <span role="columnheader" aria-readonly="true" aria-label="土曜日" class="SoBqBf " data-toggle="tooltip" title="土曜日" data-tooltip-position="bottom" data-tooltip-vertical-offset="0" data-tooltip-horizontal-offset="0" data-tooltip-only-if-necessary="false">
+                                        <span aria-hidden="true">土</span>
+                                        <span class="ynRLnc">土曜日</span>
+                                    </span>
+                                </div>
+                                <div role="rowgroup" class="week-group" id="mini-calendar-result">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="calendar-result" ></div>
 
@@ -122,7 +186,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
             <h2>新規登録</h2>
             <span id="error-field" class="error"></span>
             <form id="registration-form">
-                <input type="hidden" name="username" value=""""),_display_(/*94.62*/name),format.raw/*94.66*/("""">
+                <input type="hidden" name="username" value=""""),_display_(/*158.62*/name),format.raw/*158.66*/("""">
                 <dl>
                     <dt>タスク名</dt>
 
@@ -136,8 +200,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
                     </dd>
                 </dl>
-                """),_display_(/*108.18*/helper/*108.24*/.CSRF.formField),format.raw/*108.39*/("""
-            """),format.raw/*109.13*/("""</form>
+                """),_display_(/*172.18*/helper/*172.24*/.CSRF.formField),format.raw/*172.39*/("""
+            """),format.raw/*173.13*/("""</form>
             <button onclick="register_new(); return false;">送信</button>
             <button onclick="close_register_task(); return false;">キャンセル</button>
             <!--<button onclick="register_new(); return false;">送信</button>
@@ -161,11 +225,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Thu Jan 24 00:15:44 JST 2019
+                  DATE: Thu Jan 24 12:47:41 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/month/calendar.scala.html
-                  HASH: 343dcbc1ea84735fe73ec347bd33f89040d677c5
-                  MATRIX: 974->1|1082->17|1103->30|1141->31|1172->36|1324->162|1348->166|2064->855|2089->859|2940->1683|2965->1687|3132->1827|3157->1831|7259->5906|7284->5910|7896->6494|7912->6500|7949->6515|7991->6528
-                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|125->94|125->94|139->108|139->108|139->108|140->109
+                  HASH: d1be8e9cf0acf92400f769d3493e37c2d1f74583
+                  MATRIX: 974->1|1082->17|1103->30|1141->31|1172->36|1324->162|1348->166|2064->855|2089->859|2940->1683|2965->1687|3132->1827|3157->1831|5797->4443|5823->4447|5853->4448|13094->11661|13120->11665|13732->12249|13748->12255|13785->12270|13827->12283
+                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|97->66|97->66|97->66|189->158|189->158|203->172|203->172|203->172|204->173
                   -- GENERATED --
               */
           

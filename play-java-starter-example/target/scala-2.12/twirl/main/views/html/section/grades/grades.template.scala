@@ -68,7 +68,7 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"　data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*40.125*/name),format.raw/*40.129*/(""" """),format.raw/*40.130*/("""さん"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
@@ -190,11 +190,11 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jan 23 23:20:11 JST 2019
+                  DATE: Thu Jan 24 12:43:08 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
-                  HASH: d14f7c4352cbfecf4952e49be03c868b3666b6bd
-                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2893->1646|2918->1650|3124->1829|3149->1833|4635->3292|4650->3298|4686->3313|4722->3322|8110->6682|8126->6688|8163->6703|8213->6724|8675->7158|8691->7164|8728->7179|8770->7192
-                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|88->57|88->57|88->57|89->58|159->128|159->128|159->128|160->129|172->141|172->141|172->141|173->142
+                  HASH: d339e6cb24afc487bdd42235d3989fe9801b88a5
+                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2893->1646|2918->1650|3124->1829|3149->1833|3907->2563|3933->2567|3963->2568|4792->3370|4807->3376|4843->3391|4879->3400|8267->6760|8283->6766|8320->6781|8370->6802|8832->7236|8848->7242|8885->7257|8927->7270
+                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|71->40|71->40|71->40|88->57|88->57|88->57|89->58|159->128|159->128|159->128|160->129|172->141|172->141|172->141|173->142
                   -- GENERATED --
               */
           
