@@ -54,7 +54,8 @@ Seq[Any](_display_(/*13.2*/main("helpertop")/*13.19*/ {_display_(Seq[Any](format
 <div class="sign-up-box">
     <div class="hide-sign-up-btn"></div>
     <form class="sign-up-form">
-        <h1>Sign up</h1>
+        """),_display_(/*36.10*/helper/*36.16*/.CSRF.formField),format.raw/*36.31*/("""
+        """),format.raw/*37.9*/("""<h1>Sign up</h1>
         <span style="color:#ff0000;" id="error-field" class="error"></span><br>
         ユーザー名
         <input class="txtb" type="text" id="signup_name" name="name" placeholder="Username">
@@ -79,8 +80,7 @@ Seq[Any](_display_(/*13.2*/main("helpertop")/*13.19*/ {_display_(Seq[Any](format
         <input class="txtb" type="password" id="signup_pass2" name="pass2" placeholder="Comfirm Password">
         <br>
         <button class="sign-up-btn" onclick="check(); return false;">登録</button>
-        """),_display_(/*61.10*/helper/*61.16*/.CSRF.formField),format.raw/*61.31*/("""
-    """),format.raw/*62.5*/("""</form>
+    </form>
 </div>
 """)))}),format.raw/*64.2*/("""
 """))
@@ -99,11 +99,11 @@ Seq[Any](_display_(/*13.2*/main("helpertop")/*13.19*/ {_display_(Seq[Any](format
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jan 23 20:01:47 JST 2019
-                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/helpertop.scala.html
-                  HASH: 797fac54a296fe772704de245a828a79d1b8b1a5
-                  MATRIX: 1221->286|1247->303|1287->305|1316->415|1345->417|2940->1985|2955->1991|2991->2006|3023->2011|3069->2027
-                  LINES: 37->13|37->13|37->13|39->18|41->20|82->61|82->61|82->61|83->62|85->64
+                  DATE: Fri Jan 25 11:03:44 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/helpertop.scala.html
+                  HASH: 0e9def906dfdbfe0e5ab37684a7e02b7565f0cda
+                  MATRIX: 1221->286|1247->303|1287->305|1316->415|1345->417|1792->837|1807->843|1843->858|1879->867|3069->2027
+                  LINES: 37->13|37->13|37->13|39->18|41->20|57->36|57->36|57->36|58->37|85->64
                   -- GENERATED --
               */
           

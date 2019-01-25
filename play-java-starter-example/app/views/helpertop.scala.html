@@ -33,6 +33,7 @@
 <div class="sign-up-box">
     <div class="hide-sign-up-btn"></div>
     <form class="sign-up-form">
+        @helper.CSRF.formField
         <h1>Sign up</h1>
         <span style="color:#ff0000;" id="error-field" class="error"></span><br>
         ユーザー名
@@ -58,7 +59,6 @@
         <input class="txtb" type="password" id="signup_pass2" name="pass2" placeholder="Comfirm Password">
         <br>
         <button class="sign-up-btn" onclick="check(); return false;">登録</button>
-        @helper.CSRF.formField
     </form>
 </div>
 }

@@ -74,7 +74,7 @@ public class ChatController extends Controller {
             final Thread thread = new Thread(username,threadname,date.getTime());
             thread.save();
             Ebean.commitTransaction();
-            return threadListRecent();
+            return myThreadList(username);
         } catch (Exception e) {
             System.out.println(e);
             return badRequest();
@@ -110,8 +110,9 @@ public class ChatController extends Controller {
             Long threadid = Long.parseLong(request.get("threadid")[0]);
             String username = request.get("username")[0];
             String comment = request.get("comment")[0];
+            Long anchor = Long.parseLong(request.get("anchor")[0]);
             Date date = new Date();
-            final Comment entry = new Comment(threadid,comment, date.getTime(),username,"なし");
+            final Comment entry = new Comment(threadid,comment, date.getTime(),username,"なし",anchor);
             Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
             entry.thread = thread;
             entry.save();
@@ -162,6 +163,7 @@ public class ChatController extends Controller {
         final Map<String, String[]> data = body.asFormUrlEncoded();
         String username = data.get("username")[0];
         Long threadid = Long.parseLong(data.get("threadid")[0]);
+        Long anchor = Long.parseLong(data.get("anchor")[0]);
         Ebean.beginTransaction();
         if (picture != null) {
 
@@ -177,7 +179,7 @@ public class ChatController extends Controller {
                     Files.copy(file,file2);
                 }
                 Date date = new Date();
-                Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets2/"+path+"/"+fileName);
+                Comment entry = new Comment(threadid,"", date.getTime(),username,"/assets2/"+path+"/"+fileName,anchor);
                 Thread thread = Ebean.find(Thread.class).where().eq("id",threadid).findOne();
                 entry.thread = thread;
                 entry.save();
@@ -195,5 +197,6 @@ public class ChatController extends Controller {
         }
         return badRequest();
     }
+
 
 }

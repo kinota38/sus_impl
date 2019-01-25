@@ -21,10 +21,10 @@ $(function(){
         fetch("/chat/top/threadlistrecent").then(response => {
                        return response.json();
                    }).then(entries => {
-                   console.log(entries);
                        create_thread_list(entries);
                    });
           });
+          $("#allthread").addClass("active");
 }(jQuery);
 
 function show_mythread_list(){
@@ -126,6 +126,12 @@ function create_thread(){
             }).then(entries => {
                 $('.popup, .layer').hide();
                 create_thread_list(entries);
+                $(".menu1").each(function(i, elem) {
+                    if($(elem).hasClass("active")){
+                        $(elem).toggleClass('active')
+                    }
+                });
+                $("#mythread").toggleClass('active');
             }, error => {
                    alert("登録できませんでした");
                });

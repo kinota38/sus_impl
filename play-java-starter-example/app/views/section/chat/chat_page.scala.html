@@ -5,160 +5,185 @@
 
 
 @main_page("chat"){
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/helper/@username" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
-                <i class="fas fa-braille"></i>
-                Study Helper
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/helper/@username" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
+            <i class="fas fa-braille"></i>
+            Study Helper
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/helper/@username">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">リンク</a>
-                    </li>
-                    <li class="nav-item dropdown active">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/helper/@username">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">リンク</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        他の機能(この名称微妙なんで誰か考案ヨロピク)
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/calendar/month">カレンダー</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/grades/@username">成績</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/chat/@username">掲示板</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">TO DO リスト</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            他の機能(この名称微妙なんで誰か考案ヨロピク)
+                            <i class="fas fa-user"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/calendar/month">カレンダー</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/grades/@username">成績</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item active" href="/chat/@username">掲示板<span class="sr-only">(current)</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TO DO リスト</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                         </div>
                     </li>
                 </ul>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
-    <form id="dummy-form">
-        @helper.CSRF.formField
-    </form>
-    <div class="back" onclick='location.href="/chat/@username"'><i class="far fa-arrow-left"></i>戻る</div>
-    <div class="chat-title"></div>
-    <div class="chat-display">
+        </div>
+    </nav>
+</header>
+<form id="dummy-form">
+    @helper.CSRF.formField
+</form>
+<div class="back" onclick='location.href="/chat/@username"'><i class="far fa-arrow-left"></i>戻る</div>
+<div class="chat-title"></div>
+<div class="chat-display">
 
-        <div id="field">
-            @for(comment <- comments) {
-            @if(comment.imagepath=="なし"){
+    <div id="field">
+        @for((comment,i) <- comments.zipWithIndex){
+        @if(comment.imagepath=="なし"){
+        <div class="kaiwa" id="kaiwa@(i+1)">
             @if(comment.username==username) {
-            <div class="kaiwa">
-
-                <div class="kaiwa-text-left">
-                    <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
-                    <p class="kaiwa-text">
-                        @comment.comment
-                    </p>
-                </div>
-            </div>
-            } else {
-            <div class="kaiwa">
+            <div class="kaiwa-text-left">
+                } else {
                 <div class="kaiwa-text-right">
-                    <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
+                    }
+                    <div class="username-label"><span class="num">@(i+1)</span> @comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) <span class="reply-button" onclick='reply("kaiwa@(i+1)");'>返信</span>
+                    </div>
                     <p class="kaiwa-text">
+                        @if(comment.anchor>0){
+                        <a href="#" onclick="goto(@comment.anchor); return false;">>>@comment.anchor</a><br>
+                        }
                         @comment.comment
                     </p>
                 </div>
             </div>
-            }
             }else{
-            @if(comment.username==username) {
-            <div class="kaiwa">
-
+            <div class="kaiwa" id="kaiwa@(i+1)">
+                @if(comment.username==username) {
                 <div class="kaiwa-text-left">
-                    <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
-                    <p class="kaiwa-text">
-                        <img src="@comment.imagepath">
-                    </p>
+                    } else {
+                    <div class="kaiwa-text-right">
+                        }
+                        <div class="username-label"><span class="num">@(i+1)</span> @comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) <span class="reply-button" onclick='reply("kaiwa@(i+1)");'>返信</span>
+                        </div>
+                        <p class="kaiwa-text">
+                            @if(comment.anchor>0){
+                            <a href="#" onclick="goto(@comment.anchor);return false;">>>@comment.anchor</a><br>
+                            }
+                            <img src="@comment.imagepath">
+                        </p>
+                    </div>
                 </div>
+                }
+                }
             </div>
-            } else {
-            <div class="kaiwa">
-                <div class="kaiwa-text-right">
-                    <div class="username-label">@comment.username さん   @(new SimpleDateFormat("yyyy-MM-dd-hh:mm:ss").format(comment.registeredAt)) </div>
-                    <p class="kaiwa-text">
-                        <img src="@comment.imagepath">
-                    </p>
-                </div>
-            </div>
-            }
-            }
-            }
         </div>
-    </div>
-    <div class="scroll-to-bottom"><div class="sankaku"></div></div>
-    @if(isfav==0) {
-    <div id="fav-button" style="background-color:#f1f1f1;" onclick="add_to_fav()">
-        <i class="far fa-star"></i>
-    </div>
-    } else {
-    <div id="fav-button" style="background-color:yellow;" onclick="add_to_fav()">
-        <i class="far fa-star"></i>
-    </div>
-    }
-
-    <div class="create-thread" id="create-thread">
-        <form id="add-comment-form">
-            <br>
-            <textarea cols="30" rows="3" name="comment" class="txtb" id="input-comment"></textarea><br>
-            <input type="hidden" id="username" name="username" value="@username">
-            <input type="hidden" id="threadid" name="threadid" value="@threadid">
-            @helper.CSRF.formField
-        </form>
-        <div id="add-comment-button" class="button" onclick="add_comment();">
-            <i class="far fa-comment fa-flip-horizontal"></i>
+        <div class="scroll-to-bottom"><div class="sankaku"></div></div>
+        @if(isfav==0) {
+        <div id="fav-button" style="background-color:#f1f1f1;" onclick="add_to_fav()">
+            <i class="far fa-star"></i>
         </div>
+        } else {
+        <div id="fav-button" style="background-color:yellow;" onclick="add_to_fav()">
+            <i class="far fa-star"></i>
+        </div>
+        }
+        <div class="popup" id="create-reply">
+            <form action="/chat/photo/add" method="post" id="pictureform2" class="pictureform2" enctype="multipart/form-data" target="sendData">
+                @helper.CSRF.formField
+                <label for="file_upload2"><i class="far fa-image"></i>
+                    <input type="file" id="file2" name="picture" onchange="$('#filename2').val($(this).val())">
+                    <input type="text" id="file_upload2" onClick="$('#file2').click();">
+                    <input type="hidden" name="username" value="@username">
+                    <input type="hidden" name="threadid" value="@threadid">
+                    <input type="hidden" name="anchor" value="">
 
-        <form action="/chat/photo/add" method="post" id="pictureform" class="pictureform" enctype="multipart/form-data" target="sendData">
-            @helper.CSRF.formField
-            <label for="file_upload"><i class="far fa-image"></i>
-                <input type="file" id="file" name="picture" onchange="$('#file-name').val($(this).val())">
-                <input type="text" id="file_upload" onClick="$('#file').click();">
+                </label>
+                <label for="image-submit2" ><i class="far fa-arrow-right"></i>
+                    <input type="submit" id="image-submit2">
+                </label>
+                <br>
+                <input type="text" id="filename2" size="20" readonly>
+                <br>
+                <span id="advice2">画像が表示されない場合はページを更新してみてください.</span>
+            </form>
+            <form id="create-reply-form">
+                @helper.CSRF.formField
+                <br>
+                <textarea cols="30" rows="3" name="comment" id="input-comment2" class="txtb"></textarea><br>
                 <input type="hidden" name="username" value="@username">
                 <input type="hidden" name="threadid" value="@threadid">
-
-            </label>
-            <label for="image-submit" ><i class="far fa-arrow-right"></i>
-                <input type="submit" id="image-submit">
-            </label>
-            <br>
-            <input type="text" id="file-name" size="20" readonly>
-            <br>
-            <span id="advice">画像が表示されない場合はページを更新してみてください.</span>
-        </form>
-
-        <iframe name="sendData" style="width:0px;height:0px;border:0px;"></iframe>
+                <input type="hidden" name="anchor" >
+            </form>
+            <div id="create-reply-button" class="button" onclick="create_reply();">返信する</div>
+        </div>
+        <div class ="layer" id="layer"></div>
 
 
 
+        <div class="create-thread" id="create-thread">
+            <form id="add-comment-form">
+                @helper.CSRF.formField
+                <br>
+                <textarea cols="30" rows="3" name="comment" class="txtb" id="input-comment"></textarea><br>
+                <input type="hidden" id="username" name="username" value="@username">
+                <input type="hidden" id="threadid" name="threadid" value="@threadid">
+                <input type="hidden" name="anchor" value="0">
+            </form>
+            <div id="add-comment-button" class="button" onclick="add_comment();">
+                <i class="far fa-comment fa-flip-horizontal"></i>
+            </div>
+
+            <form action="/chat/photo/add" method="post" id="pictureform" class="pictureform" enctype="multipart/form-data" target="sendData">
+                @helper.CSRF.formField
+                <label for="file_upload"><i class="far fa-image"></i>
+                    <input type="file" id="file" name="picture" onchange="$('#file-name').val($(this).val())">
+                    <input type="text" id="file_upload" onClick="$('#file').click();">
+                    <input type="hidden" name="username" value="@username">
+                    <input type="hidden" name="threadid" value="@threadid">
+                    <input type="hidden" name="anchor" value="0">
+
+                </label>
+                <label for="image-submit" ><i class="far fa-arrow-right"></i>
+                    <input type="submit" id="image-submit">
+                </label>
+                <br>
+                <input type="text" id="file-name" size="20" readonly>
+                <br>
+                <span id="advice">画像が表示されない場合はページを更新してみてください.</span>
+            </form>
+
+            <iframe name="sendData" style="width:0px;height:0px;border:0px;"></iframe>
 
 
-    </div>
 
 
-}
+        </div>
+
+
+        }

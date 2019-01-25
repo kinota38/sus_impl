@@ -43,16 +43,22 @@ public class Comment extends Model{
     @Column(nullable = false)
     public String username;
 
+    @Constraints.Required
+    @Formats.NonEmpty
+    @Column(nullable = false)
+    public long anchor;
+
     @JsonManagedReference
     @ManyToOne
     public Thread thread;
 
-    public Comment(long threadid, String comment, long registeredAt, String username, String path){
+    public Comment(long threadid, String comment, long registeredAt, String username, String path,long anchor){
         this.threadid = threadid;
         this.comment = comment;
         this.registeredAt = registeredAt;
         this.username = username;
         this.imagepath = path;
+        this.anchor = anchor;
     }
 
 

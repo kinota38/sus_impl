@@ -65,9 +65,3 @@ public class Thread extends Model{
     }
 
 }
-
-
-
-
-
-

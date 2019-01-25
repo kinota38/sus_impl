@@ -1,85 +1,81 @@
 @(name: String)
 
 @main_top("Chat") {
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/helper/@name" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
-                <i class="fas fa-braille"></i>
-                Study Helper
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/helper/@name" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
+            <i class="fas fa-braille"></i>
+            Study Helper
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/helper/@name">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">リンク</a>
-                    </li>
-                    <li class="nav-item dropdown active">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/helper/@name">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">リンク</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        他の機能(この名称微妙なんで誰か考案ヨロピク)
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/calendar/month">カレンダー</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/grades/@name">成績</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/chat/@name">掲示板</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">TO DO リスト</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            他の機能(この名称微妙なんで誰か考案ヨロピク)
+                            <i class="fas fa-user"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/calendar/month">カレンダー</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/grades/@name">成績</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item active" href="/chat/@name">掲示板<span class="sr-only">(current)</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TO DO リスト</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                         </div>
                     </li>
                 </ul>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
+        </div>
+    </nav>
+</header>
+<form class="search">
+    <input type="search" class="input-search" placeholder="キーワードを入力">
+    <input type="button" onclick="search();" value="検索">
+</form>
+<div class="menu-box">
+    <div class="menu" onclick="show_thread_form()">チャット作成</div>
+    <div id="allthread" class="menu menu1" onclick="show_allthread_list()">全て</div>
+    <div id="mythread" class="menu menu1" onclick="show_mythread_list()">自分のチャット</div>
+    <div class="menu menu1" onclick="show_favthread_list()">お気に入り</div>
+</div>
 
-    <div class="menu-box">
-        <div class="menu" onclick="show_thread_form()">チャット作成</div>
-        <div id="allthread" class="menu menu1" onclick="show_allthread_list()">全て</div>
-        <div class="menu menu1" onclick="show_mythread_list()">自分のチャット</div>
-        <div class="menu menu1" onclick="show_favthread_list()">お気に入り</div>
-    </div>
-    <form class="search">
-        <input type="search" class="input-search" placeholder="キーワードを入力">
-        <input type="button" onclick="search();" value="検索">
+<div id="field"></div>
+
+<div class="popup" id="create-thread">
+    <form id="create-thread-form">
+        <br>
+        タイトル(30文字まで)<br>
+        <textarea cols="30" rows="3" name="threadname"  id="input-thread-title" maxlength="30" placeholder="今何してる？"></textarea><br>
+        <input type="hidden" id="username" name="username" value="@name">
+        @helper.CSRF.formField
     </form>
-    <div id="field"></div>
-
-    <div class="popup" id="create-thread">
-        <form id="create-thread-form">
-            <br>
-            タイトル(30文字まで)<br>
-            <textarea cols="30" rows="3" name="threadname"  id="input-thread-title" maxlength="30" placeholder="今何してる？"></textarea><br>
-            <input type="hidden" id="username" name="username" value="@name">
-            @helper.CSRF.formField
-        </form>
-        <div id="create-thread-button" class="button" onclick="create_thread();">作成する</div>
-    </div>
-    <div class ="layer" id="layer"></div>
+    <div id="create-thread-button" class="button" onclick="create_thread();">作成する</div>
+</div>
+<div class ="layer" id="layer"></div>
 
 
 

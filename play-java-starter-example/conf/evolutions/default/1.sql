@@ -21,6 +21,7 @@ create table comment (
   imagepath                     varchar(255) not null,
   registered_at                 bigint not null,
   username                      varchar(255) not null,
+  anchor                        bigint not null,
   thread_id                     bigint,
   constraint pk_comment primary key (id)
 );

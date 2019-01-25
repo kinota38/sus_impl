@@ -158,8 +158,6 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
                         得点<br><input type="text" class="txtb" name="register-now">
                         """),_display_(/*128.26*/helper/*128.32*/.CSRF.formField),format.raw/*128.47*/("""
                     """),format.raw/*129.21*/("""</form>
-                    <br>
-                    <br>
                     <button class="button" onclick="register(); return false;">追加</button>
                 </div>
             </div>
@@ -169,8 +167,8 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
                 <br>
                 自分の得点<br>
                 <input type="text" name="new-grade" class="txtb" id="edit-grade"><br>
-                """),_display_(/*141.18*/helper/*141.24*/.CSRF.formField),format.raw/*141.39*/("""
-            """),format.raw/*142.13*/("""</form>
+                """),_display_(/*139.18*/helper/*139.24*/.CSRF.formField),format.raw/*139.39*/("""
+            """),format.raw/*140.13*/("""</form>
             <span id="edit_button-field"></span>
         </div>
     </div>
@@ -190,11 +188,11 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jan 23 23:20:11 JST 2019
-                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
-                  HASH: d14f7c4352cbfecf4952e49be03c868b3666b6bd
-                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2893->1646|2918->1650|3124->1829|3149->1833|4635->3292|4650->3298|4686->3313|4722->3322|8110->6682|8126->6688|8163->6703|8213->6724|8675->7158|8691->7164|8728->7179|8770->7192
-                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|88->57|88->57|88->57|89->58|159->128|159->128|159->128|160->129|172->141|172->141|172->141|173->142
+                  DATE: Fri Jan 25 11:34:44 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
+                  HASH: bd28e23a0f9562900e0c4b09bc914b2ed437887a
+                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2893->1646|2918->1650|3124->1829|3149->1833|4635->3292|4650->3298|4686->3313|4722->3322|8110->6682|8126->6688|8163->6703|8213->6724|8625->7108|8641->7114|8678->7129|8720->7142
+                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|88->57|88->57|88->57|89->58|159->128|159->128|159->128|160->129|170->139|170->139|170->139|171->140
                   -- GENERATED --
               */
           
