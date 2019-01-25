@@ -31,7 +31,7 @@ object section extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Ht
 
 
 Seq[Any](format.raw/*2.1*/("""
-"""),_display_(/*3.2*/main("Mypage")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
+"""),_display_(/*3.2*/main("さあ、始めよう")/*3.17*/ {_display_(Seq[Any](format.raw/*3.19*/("""
     """),format.raw/*4.5*/("""<header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/helper/"""),_display_(/*6.52*/name),format.raw/*6.56*/("""" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
@@ -69,7 +69,7 @@ Seq[Any](format.raw/*2.1*/("""
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*41.125*/name),format.raw/*41.129*/(""" """),format.raw/*41.130*/("""さん"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
@@ -172,11 +172,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 25 11:02:10 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 2fbf6eec0af838bd4648e6e83470add92c8257c7
-                  MATRIX: 958->1|1066->16|1093->18|1115->32|1154->34|1185->39|1337->165|1361->169|2084->865|2109->869|2947->1680|2972->1684|3139->1824|3164->1828|5859->4496|5884->4500|6483->5071|6509->5075
-                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|124->93|124->93|138->107|138->107
+                  DATE: Thu Jan 24 12:47:41 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/section.scala.html
+                  HASH: 3be971a66738ac0405e3644e2988d42cf352b53e
+                  MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2948->1681|2973->1685|3140->1825|3165->1829|3923->2559|3949->2563|3979->2564|6017->4575|6042->4579|6641->5150|6667->5154
+                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|124->93|124->93|138->107|138->107
                   -- GENERATED --
               */
           
