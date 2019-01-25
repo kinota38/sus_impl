@@ -214,8 +214,8 @@ p.kaiwa-text:last-child {
 
 .pictureform{
     position:fixed;
+    left:20%;
     top:550px;
-    margin-left:20%;
     width:200px;
     z-index:6;
     text-align:left;
