@@ -48,3 +48,12 @@ GET     /assets2/*file                         controllers.ExtAssets.at(path="./
 # calendar controller
 
 POST    /calendar/create             controllers.TaskController.eventRegister
+
+# todoapllication controller
+
+GET     /todoApplication                        controllers.TodoController.todoApplication
+POST    /todoApplication/newtask                controllers.TodoController.newTask
+POST    /database/task                          controllers.TodoController.taskList
+POST    /database/analyze                       controllers.TodoController.analyzeList
+POST    /todoApplication/taskdone               controllers.TodoController.taskDone
+POST    /todoApplication/taskdelete             controllers.TodoController.taskDelete
