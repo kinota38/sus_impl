@@ -39,7 +39,8 @@ $window.resize(function (){
         $("#year_end").text(e.getAttribute('yy'));
         $("#month_end").text(e.getAttribute('mm'));
         $("#date_end").text(e.getAttribute('dd'));
-        if(e.className=="date"){
+        if(e.className=="day"){
+            $("#exampleModal").modal();
             open_register_task(e);
         }
 
@@ -156,7 +157,7 @@ function makeCalendar(yy, mm) {
         +" style='width:"+ (windowWidth/8)+"px; height:"+ windowHeight/7 +"px; color:#"+ color_day +";' >"
                                         +output_str+"</div>";
                                         */
-        out += "<div class='date' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
+        out += "<div class='day' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
        +" style='color:#"+ color_day +";' >"
                                                 +output_str+"</div>";
     }
@@ -260,26 +261,26 @@ function open_register_task(e){
     var time_hh_end = "";
     //スタートの書式調整
     if(parseInt(mm_start)<10) {
-        time_start = time_start +'/0' + mm_start;
+        time_start = time_start +'-0' + mm_start;
     }else{
-         time_start = time_start +'/' + mm_start;
+         time_start = time_start +'-' + mm_start;
     }
     if(parseInt(dd_start)<10) {
-        time_start = time_start +'/0' + dd_start;
+        time_start = time_start +'-0' + dd_start;
     }else{
-        time_start = time_start +'/' + dd_start;
+        time_start = time_start +'-' + dd_start;
     }
 
     //エンドの書式調整
     if(parseInt(mm_end)<10) {
-        time_end = time_end +'/0' + mm_end;
+        time_end = time_end +'-0' + mm_end;
     }else{
-        time_end = time_end +'/' + mm_end;
+        time_end = time_end +'-' + mm_end;
     }
     if(parseInt(dd_end)<10) {
-        time_end = time_end +'/0' + dd_end;
+        time_end = time_end +'-0' + dd_end;
     }else{
-        time_end = time_end +'/' + dd_end;
+        time_end = time_end +'-' + dd_end;
     }
 
     if(parseInt(HH_start)<10){
@@ -320,7 +321,7 @@ function open_register_task(e){
     }
 
 
-    var dateControl = document.querySelector('#start_date');
+    /*var dateControl = document.querySelector('#start_date');
     dateControl.value = time_start;
 
     var dateControl = document.querySelector('#end_date');
@@ -329,21 +330,28 @@ function open_register_task(e){
     dateControl.value = time_hh_start;
     var dateControl = document.querySelector('#end_time');
     dateControl.value = time_hh_end;
-
+    */
+    var start_time_local = time_start + "T" + time_hh_start;
+    var end_time_local = time_end + "T" + time_hh_end;
+    var dateControl = document.querySelector('#start_date');
+    dateControl.value = start_time_local;
+    var dateControl = document.querySelector('#end_date');
+    dateControl.value = end_time_local;
      //$(".overlay").fadeIn("slow");
-     var w = $window.width();
-     var h = $window.height();
-     $(".overlay").height(h);
+     //var w = $window.width();
+     //var h = $window.height();
+     /*$(".overlay").height(h);
      $(".overlay").width(w);
      $(".overlay").fadeIn();
-     $(".main-window").fadeIn("fast");
+     $(".main-window").fadeIn("fast");*/
 }
 
 function close_register_task(){
-    $(".overlay").fadeOut("fast");
+    /*$(".overlay").fadeOut("fast");
     $(".main-window").fadeOut("fast");
     document.getElementById( "title" ).value = "" ;
-    $("#error-field").empty();
+    $("#error-field").empty();*/
+    $("#exampleModal").modal("hide");
 }
 
 function makeMiniCalendar(yy,mm) {
@@ -432,4 +440,17 @@ function makeMiniCalendar(yy,mm) {
 function setMiniCalendar(yy,mm){
     var out = makeMiniCalendar(yy,mm);
     document.getElementById("mini-calendar-result").innerHTML = out;
+}
+function jumpDay(element){
+    $("[selected = 'true']").removeAttr("selected");
+    element.setAttribute("selected", "true");
+    const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
+    const year = element.getAttribute("yy");
+    const month = element.getAttribute("mm");
+    const day = element.getAttribute("dd");
+    const col = element.getAttribute("col");
+    $(".year-num").text(year);
+    $(".month-num").text(month);
+    $(".display-day").text(day);
+    $(".display-date").text(day_of_week[col]);
 }

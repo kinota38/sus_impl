@@ -151,7 +151,7 @@
         <span hidden ><span id="HH_end">0</span>:<span id="mm_end">0</span></span>
         <span hidden><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span>
         <span hidden><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
-        <div id="register_task" class="main-window">
+        <!--<div id="register_task" class="main-window">
             <h2>新規登録</h2>
             <span id="error-field" class="error"></span>
             <form id="registration-form">
@@ -173,8 +173,52 @@
             </form>
             <button onclick="register_new(); return false;">送信</button>
             <button onclick="close_register_task(); return false;">キャンセル</button>
-            <!--<button onclick="register_new(); return false;">送信</button>
-            <button onclick="close_registration_form(); return false;">キャンセル</button>-->
+            <button onclick="register_new(); return false;">送信</button>
+            <button onclick="close_registration_form(); return false;">キャンセル</button>
+        </div>-->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenteredLabel">新規作成</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registration-form">
+                            <input type="hidden" name="username" value="@name">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="title" id="title" placeholder="タイトルを入力">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group date" id="datetimepicker1">
+                                    <label for="datetimepicker1" class="pt-2 pr-2">開始:</label>
+                                    <input type="datetime-local" name="start_date" id="start_date" class="form-control" />
+                                    <span class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group date" id="datetimepicker2">
+                                    <label for="datetimepicker2" class="pt-2 pr-2">終了:</label>
+                                    <input type="datetime-local" name="end_date" id="end_date" class="form-control" />
+                                    <span class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-clock"></i></span>
+                                </span>
+                                </div>
+                            </div>
+                            @helper.CSRF.formField
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                        <button type="button" class="btn btn-primary" onclick="register_new(); return false;">保存</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -21,18 +21,22 @@ public class TaskController extends Controller {
             String username = request.get("username")[0];
             String startDate = request.get("start_date")[0];
             String endDate = request.get("end_date")[0];
-            String startTime = request.get("start_time")[0];
-            String endTime = request.get("end_time")[0];
+            startDate = startDate.replaceAll("-","/");
+            startDate = startDate.replaceAll("T"," ");
+            endDate = endDate.replaceAll("-","/");
+            endDate = endDate.replaceAll("T"," ");
 
             final Task newTask = new Task(username, title);
 
+            newTask.start_date = sdf.parse(startDate, new ParsePosition(0));
+            newTask.end_date = sdf.parse(endDate, new ParsePosition(0));
 
-            newTask.start_date = sdf.parse(startDate + " "+startTime, new ParsePosition(0));
-            newTask.end_date = sdf.parse(endDate + " " + endTime, new ParsePosition(0));
-
-            //newTask.save();
+            newTask.save();
+            System.out.println(newTask.start_date_string);
             return ok(Json.toJson(newTask));
+
         } catch(Exception e) {
+
             return badRequest();
         }
     }

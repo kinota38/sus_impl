@@ -191,3 +191,106 @@ function jumpDay(element){
     $(".display-day").text(day);
     $(".display-date").text(day_of_week[col]);
 }
+
+function open_register_task(e){
+    var yy_start = $("#year_start").text();
+    var mm_start = $("#month_start").text();
+    var dd_start = $("#date_start").text();
+    var yy_end = $("#year_end").text();
+    var mm_end = $("#month_end").text();
+    var dd_end = $("#date_end").text();
+    var HH_start = $("#HH_start").text();
+    var MM_start = $("#mm_start").text();
+    var HH_end = $("#HH_end").text();
+    var MM_end = $("#mm_end").text();
+    var time_start = yy_start;
+    var time_end   = yy_end
+
+    var time_hh_start = "";
+    var time_hh_end = "";
+    //スタートの書式調整
+    if(parseInt(mm_start)<10) {
+        time_start = time_start +'-0' + mm_start;
+    }else{
+         time_start = time_start +'-' + mm_start;
+    }
+    if(parseInt(dd_start)<10) {
+        time_start = time_start +'-0' + dd_start;
+    }else{
+        time_start = time_start +'-' + dd_start;
+    }
+
+    //エンドの書式調整
+    if(parseInt(mm_end)<10) {
+        time_end = time_end +'-0' + mm_end;
+    }else{
+        time_end = time_end +'-' + mm_end;
+    }
+    if(parseInt(dd_end)<10) {
+        time_end = time_end +'-0' + dd_end;
+    }else{
+        time_end = time_end +'-' + dd_end;
+    }
+
+    if(parseInt(HH_start)<10){
+        time_hh_start = '0' + HH_start + ':';
+    }else{
+        time_hh_start = HH_start + ':';
+    }
+    if(parseInt(HH_end)<10){
+        time_hh_end = '0' + HH_end + ':';
+    }else{
+        time_hh_end = HH_end + ':';
+    }
+
+    if(parseInt(MM_start)<10){
+        time_hh_start = time_hh_start +'0' + MM_start;
+    }else{
+        time_hh_start = time_hh_start + MM_start ;
+    }
+    if(parseInt(MM_end)<10){
+        time_hh_end = time_hh_end + '0' + MM_end ;
+    }else{
+        time_hh_end = time_hh_end + MM_end ;
+    }
+
+
+    if(time_start>time_end){
+        var temp = time_start;
+        time_start = time_end;
+        time_end = temp;
+
+        temp = time_hh_start;
+        time_hh_start = time_hh_end;
+        time_hh_end = temp;
+    }else if(time_start == time_end && time_hh_start > time_hh_end){
+        var temp = time_hh_start;
+        time_hh_start = time_hh_end;
+        time_hh_end = temp;
+    }
+
+
+    /*var dateControl = document.querySelector('#start_date');
+    dateControl.value = time_start;
+
+    var dateControl = document.querySelector('#end_date');
+    dateControl.value = time_end;
+    var dateControl = document.querySelector('#start_time');
+    dateControl.value = time_hh_start;
+    var dateControl = document.querySelector('#end_time');
+    dateControl.value = time_hh_end;
+    */
+    var start_time_local = time_start + "T" + time_hh_start;
+    var end_time_local = time_end + "T" + time_hh_end;
+    var dateControl = document.querySelector('#start_date');
+    dateControl.value = start_time_local;
+    var dateControl = document.querySelector('#end_date');
+    dateControl.value = end_time_local;
+     //$(".overlay").fadeIn("slow");
+     //var w = $window.width();
+     //var h = $window.height();
+     /*$(".overlay").height(h);
+     $(".overlay").width(w);
+     $(".overlay").fadeIn();
+     $(".main-window").fadeIn("fast");*/
+}
