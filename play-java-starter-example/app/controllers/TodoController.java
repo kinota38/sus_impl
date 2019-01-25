@@ -6,6 +6,7 @@ import views.html.section.todo.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import io.ebean.Ebean;
 import play.libs.Json;
@@ -17,7 +18,19 @@ import models.todoTask;
 
 public class TodoController extends Controller{
     public Result todoApplication(){
-        return ok(todo.render());
+        String sessionid;
+        try {
+            sessionid = request().cookies().get("sessionid").value();
+        } catch (Exception e) {
+            flash("error_msg", "ログインしてください");
+            return redirect("/");
+        }
+        Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
+        if(user.isPresent()){
+            return ok(todo.render(user.get().username));
+        }
+        flash("error_msg", "ログインしてください");
+        return redirect("/");
     }
 
     public Result taskList() {

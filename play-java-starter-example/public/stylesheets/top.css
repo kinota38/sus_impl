@@ -107,3 +107,39 @@ position:absolute;
     font-size:100px;
     color:white;
 }
+
+.error-msg:before {
+  content: "\f057 ";
+  font-family: "Font Awesome 5 Free";
+  color: red;
+  /*font-weight: 900;*/
+  font-size: 25px;
+}
+.error-msg {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.success-msg:before {
+  content: "\f058 ";
+  font-family: "Font Awesome 5 Free";
+  color: #32ff7e;
+  /*font-weight: 900;*/
+  font-size: 25px;
+}
+.success-msg {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}

@@ -52,7 +52,7 @@ Seq[Any](format.raw/*2.1*/("""
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            他の機能(この名称微妙なんで誰か考案ヨロピク)
+                            アプリ
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/calendar/month">カレンダー</a>
@@ -61,7 +61,7 @@ Seq[Any](format.raw/*2.1*/("""
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/chat/"""),_display_(/*31.67*/name),format.raw/*31.71*/("""">掲示板</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">TO DO リスト</a>
+                            <a class="dropdown-item" href="/todoApplication">TO DO リスト</a>
                         </div>
                     </li>
                 </ul>
@@ -75,7 +75,7 @@ Seq[Any](format.raw/*2.1*/("""
                                 <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
+                                <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                             </div>
                         </li>
                     </ul>
@@ -149,7 +149,7 @@ Seq[Any](format.raw/*2.1*/("""
                             something....<br>
                             something....
                         </p>
-                        <a href="" class="read-more">今すぐ始める</a>
+                        <a href="/todoApplication" class="read-more">今すぐ始める</a>
                     </div>
                 </div>
 
@@ -172,10 +172,10 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 25 11:46:04 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 3be971a66738ac0405e3644e2988d42cf352b53e
-                  MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2948->1681|2973->1685|3140->1825|3165->1829|3923->2559|3949->2563|3979->2564|6017->4575|6042->4579|6641->5150|6667->5154
+                  DATE: Sat Jan 26 00:04:43 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/section.scala.html
+                  HASH: 22d38c44aa0a05e27249e910f8a219fef7435a5c
+                  MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2928->1661|2953->1665|3120->1805|3145->1809|3918->2554|3944->2558|3974->2559|6018->4576|6043->4580|6642->5151|6668->5155
                   LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|124->93|124->93|138->107|138->107
                   -- GENERATED --
               */

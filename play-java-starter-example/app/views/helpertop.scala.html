@@ -29,6 +29,15 @@
         Sign Up
     </div>
 </div>
+@if(flash.get("error_msg") == "ログインしてください") {
+    <p class="error-msg">@flash.get("error_msg")</p>
+}
+@if(flash.get("success_msg") == "ログアウトしました") {
+    <p class="success-msg">@flash.get("success_msg")</p>
+}
+@if(flash.get("success_msg") == "退会手続きが完了しました バイバイ") {
+    <p class="success-msg">@flash.get("success_msg")</p>
+}
 
 <div class="sign-up-box">
     <div class="hide-sign-up-btn"></div>

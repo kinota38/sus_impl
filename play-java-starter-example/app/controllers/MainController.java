@@ -24,11 +24,6 @@ public class MainController extends Controller {
         return ok(section.render(username));
     }
 
-    public Result signOut(){
-        response().discardCookie("sessionid");
-
-        return redirect("/");
-    }
     /**
      * An action that renders an HTML page with a welcome message.
      * The configuration in the <code>routes</code> file means that
@@ -44,12 +39,14 @@ public class MainController extends Controller {
         try {
             sessionid = request().cookies().get("sessionid").value();
         } catch (Exception e) {
+            flash("error_msg", "ログインしてください");
             return redirect("/");
         }
         Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
         if(user.isPresent()){
             return ok(calendar.render(user.get().username));
         }
+        flash("error_msg", "ログインしてください");
         return redirect("/");
     }
 
@@ -58,12 +55,14 @@ public class MainController extends Controller {
         try {
             sessionid = request().cookies().get("sessionid").value();
         } catch (Exception e) {
+            flash("error_msg", "ログインしてください");
             return redirect("/");
         }
         Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
         if(user.isPresent()){
             return ok(day.render(user.get().username));
         }
+        flash("error_msg", "ログインしてください");
         return redirect("/");
     }
 

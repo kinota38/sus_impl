@@ -3,51 +3,51 @@
 # ~~~~
 
 # signup and signin controller
-GET     /                           controllers.SignUpandInController.helperTop
-GET     /database/users             controllers.SignUpandInController.userList
-POST    /signup/register            controllers.SignUpandInController.registerUser
-GET     /signin                     controllers.SignUpandInController.signinForm
-POST     /signin                    controllers.SignUpandInController.signIn
-GET      /helper/:username          controllers.MainController.mypageForm(username: String)
+GET     /                                       controllers.UserController.helperTop
+GET     /database/users                         controllers.UserController.userList
+POST    /signup/register                        controllers.UserController.registerUser
+GET     /signin                                 controllers.UserController.signinForm
+POST    /signin                                 controllers.UserController.signIn
+GET     /logout                                 controllers.UserController.logout
+GET     /helper/:username                       controllers.MainController.mypageForm(username: String)
 
 # mypage controller
-GET     /signout                    controllers.MainController.signOut
-GET      /grades/:username           controllers.MainController.grade(username: String)
-GET     /calendar/month             controllers.MainController.calendarMonth
-GET     /calendar/day               controllers.MainController.calendarDay
+GET     /grades/:username                       controllers.MainController.grade(username: String)
+GET     /calendar/month                         controllers.MainController.calendarMonth
+GET     /calendar/day                           controllers.MainController.calendarDay
 
 
 # grade controller
-GET      /grades/gradeslist/:username controllers.GradeController.gradesList(username: String)
-GET      /grades/gradelist/:username  controllers.GradeController.gradeList(username: String)
-GET      /grades/accgradelist/:username  controllers.GradeController.accGradeList(username: String)
-POST     /grades/register/:username     controllers.GradeController.registerGrade(username: String)
-POST     /grades/registeracc/:username  controllers.GradeController.registerAccGrade(username: String)
-POST     /grades/edit                 controllers.GradeController.editGrade
-POST     /grades/remove               controllers.GradeController.removeGrade
+GET     /grades/gradeslist/:username            controllers.GradeController.gradesList(username: String)
+GET     /grades/gradelist/:username             controllers.GradeController.gradeList(username: String)
+GET     /grades/accgradelist/:username          controllers.GradeController.accGradeList(username: String)
+POST    /grades/register/:username              controllers.GradeController.registerGrade(username: String)
+POST    /grades/registeracc/:username           controllers.GradeController.registerAccGrade(username: String)
+POST    /grades/edit                            controllers.GradeController.editGrade
+POST    /grades/remove                          controllers.GradeController.removeGrade
 
 # chat controller
-GET     /chat/:username               controllers.ChatController.chattopForm(username: String)
-GET     /chat/top/threadlistrecent        controllers.ChatController.threadListRecent
-GET     /chat/top/mythreadlist/:username  controllers.ChatController.myThreadList(username: String)
-GET     /chat/top/favthreadlist/:username  controllers.ChatController.favThreadList(username: String)
-POST    /chat/top/createthread            controllers.ChatController.createThread
-GET     /chat/page/*name            controllers.ChatController.chatpageForm(name)
-GET     /chat/threadinfo/:threadid    controllers.ChatController.threadInfo(threadid: Long)
-POST    /chat/page/addcomment           controllers.ChatController.addComment
-POST    /chat/addtofav/*name       controllers.ChatController.addToFav(name)
-POST    /chat/photo/add             controllers.ChatController.addpicture
-GET     /chat/top/search/:key       controllers.ChatController.search(key: String)
+GET     /chat/:username                         controllers.ChatController.chattopForm(username: String)
+GET     /chat/top/threadlistrecent              controllers.ChatController.threadListRecent
+GET     /chat/top/mythreadlist/:username        controllers.ChatController.myThreadList(username: String)
+GET     /chat/top/favthreadlist/:username       controllers.ChatController.favThreadList(username: String)
+POST    /chat/top/createthread                  controllers.ChatController.createThread
+GET     /chat/page/*name                        controllers.ChatController.chatpageForm(name)
+GET     /chat/threadinfo/:threadid              controllers.ChatController.threadInfo(threadid: Long)
+POST    /chat/page/addcomment                   controllers.ChatController.addComment
+POST    /chat/addtofav/*name                    controllers.ChatController.addToFav(name)
+POST    /chat/photo/add                         controllers.ChatController.addpicture
+GET     /chat/top/search/:key                   controllers.ChatController.search(key: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
 GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
-GET     /assets2/*file                         controllers.ExtAssets.at(path="./private/",file)
+GET     /assets2/*file                          controllers.ExtAssets.at(path="./private/",file)
 
 # calendar controller
 
-POST    /calendar/create             controllers.TaskController.eventRegister
+POST    /calendar/create                        controllers.TaskController.eventRegister
 
 # todoapllication controller
 

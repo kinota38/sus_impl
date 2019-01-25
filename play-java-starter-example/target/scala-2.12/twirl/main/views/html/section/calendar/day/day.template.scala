@@ -53,7 +53,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                         </li>
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                他の機能(この名称微妙なんで誰か考案ヨロピク)
+                                アプリ
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item active" href="/calendar/month">カレンダー<span class="sr-only">(current)</span></a>
@@ -62,7 +62,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/chat/"""),_display_(/*147.71*/name),format.raw/*147.75*/("""">掲示板</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">TO DO リスト</a>
+                                <a class="dropdown-item" href="/todoApplication">TO DO リスト</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -102,7 +102,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                     <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
                                     <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
+                                    <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                                 </div>
                             </li>
                         </ul>
@@ -407,14 +407,15 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="registration-form">
+                        <input type="hidden" name="username" value=""""),_display_(/*499.70*/name),format.raw/*499.74*/("""">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="タイトルを入力">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="title" id="title" placeholder="タイトルを入力">
                         </div>
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker1">
                                 <label for="datetimepicker1" class="pt-2 pr-2">開始:</label>
-                                <input type="datetime-local" class="form-control" />
+                                <input type="datetime-local" name="start_date" id="start_date" class="form-control" />
                                 <span class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                 </span>
@@ -423,18 +424,18 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker2">
                                 <label for="datetimepicker2" class="pt-2 pr-2">終了:</label>
-                                <input type="datetime-local" value="2019-01-22T12:12" class="form-control" />
+                                <input type="datetime-local" name="end_date" id="end_date"" class="form-control" />
                                 <span class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-clock"></i></span>
                                 </span>
                             </div>
                         </div>
-                        """),_display_(/*520.26*/helper/*520.32*/.CSRF.formField),format.raw/*520.47*/("""
-                    """),format.raw/*521.21*/("""</form>
+                        """),_display_(/*521.26*/helper/*521.32*/.CSRF.formField),format.raw/*521.47*/("""
+                    """),format.raw/*522.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                    <button type="button" class="btn btn-primary">保存</button>
+                    <button type="button" class="btn btn-primary" onclick="register_new(); return false;">保存</button>
                 </div>
             </div>
         </div>
@@ -455,11 +456,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 25 11:46:04 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 587b87d088f7a6de44bcd5b062ad3c9584434170
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3125->10622|3151->10626|3327->10774|3353->10778|6213->13609|6240->13613|6271->13614|20819->28588|20889->28629|33342->41054|33358->41060|33395->41075|33445->41096
-                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147|99->183|99->183|99->183|280->368|281->369|432->520|432->520|432->520|433->521
+                  DATE: Fri Jan 25 23:56:46 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
+                  HASH: 1790b4d45db95b037f706d020281d38f0b4c18c1
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3105->10602|3131->10606|3307->10754|3333->10758|6208->13604|6235->13608|6266->13609|20820->28589|20890->28630|32026->39738|32052->39742|33556->41218|33572->41224|33609->41239|33659->41260
+                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147|99->183|99->183|99->183|280->368|281->369|411->499|411->499|433->521|433->521|433->521|434->522
                   -- GENERATED --
               */
           
