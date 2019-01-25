@@ -113,9 +113,22 @@
     animation-delay: 5.2s; }
 
 .chart__label {
+  white-space: nowrap;
   padding-left: 10px;
   line-height: 30px;
   color: white; }
+
+.analysis-circle{
+  position: fixed;
+  top: 100px;
+  left: 500px;
+  z-index: 1;
+}
+
+.circle-chart{
+  width:600px;
+  position: relative;
+}
 
 @keyframes anim-lightspeed-in {
   0% {

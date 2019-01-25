@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/app/controllers/TodoController.java:23:1: シンボルを見つけられません[0m
-[0m[[0m[31merror[0m] [0m[0m  シンボル:   メソッド ok()[0m
-[0m[[0m[31merror[0m] [0m[0m  場所: クラス controllers.TodoController[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok();[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/app/models/todoTask.java:83:1: 無効なメソッド宣言です。戻り値の型が必要です。[0m
+[0m[[0m[31merror[0m] [0m[0m    public Task(String title,String deadline,String sessionid,String subject) {[0m

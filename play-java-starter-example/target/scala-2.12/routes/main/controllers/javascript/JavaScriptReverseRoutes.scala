@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/conf/routes
-// @DATE:Tue Dec 25 11:31:16 JST 2018
+// @DATE:Fri Jan 25 06:45:12 JST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:25
+  // @LINE:29
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
+    // @LINE:29
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:30
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -41,7 +41,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:24
+  // @LINE:28
   class ReverseDefault(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -49,7 +49,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:24
+    // @LINE:28
     def notFound: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Default.notFound",
       """
@@ -69,7 +69,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
+    // @LINE:24
     def grade: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.grade",
       """
@@ -89,7 +89,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:25
     def calendar: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.calendar",
       """
@@ -99,7 +99,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:23
     def signOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.MainController.signOut",
       """
@@ -111,7 +111,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:16
+  // @LINE:15
   class ReverseTodoController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -119,12 +119,62 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
-    def todoTop: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.TodoController.todoTop",
+    // @LINE:18
+    def analyzeList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.analyzeList",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "database/analyze"})
+        }
+      """
+    )
+  
+    // @LINE:15
+    def todoApplication: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.todoApplication",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "todoApplication"})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def taskDone: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.taskDone",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "todoApplication/taskdone"})
+        }
+      """
+    )
+  
+    // @LINE:17
+    def taskList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.taskList",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "database/task"})
+        }
+      """
+    )
+  
+    // @LINE:20
+    def taskDelete: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.taskDelete",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "todoApplication/taskdelete"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def newTask: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoController.newTask",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "todoApplication/newtask"})
         }
       """
     )

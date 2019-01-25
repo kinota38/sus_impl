@@ -13,7 +13,7 @@ import play.mvc.*;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import models.User;
-import models.Task;
+import models.todoTask;
 
 public class TodoController extends Controller{
     public Result todoApplication(){
@@ -24,19 +24,27 @@ public class TodoController extends Controller{
         Map<String, String[]> form = request().body().asFormUrlEncoded();
         final String sessionid = form.get("sessionid")[0];
         final int done_active = Integer.parseInt(form.get("done-active")[0]);
-        List<Task> tasks;
+        List<todoTask> tasks;
         if(done_active==1){
-            tasks = Ebean.find(Task.class).where().eq("sessionid", sessionid).eq("done", false).findList();
+            tasks = Ebean.find(todoTask.class).where().eq("sessionid", sessionid).eq("done", false).findList();
         }else {
-            tasks = Ebean.find(Task.class).where().eq("sessionid", sessionid).findList();
+            tasks = Ebean.find(todoTask.class).where().eq("sessionid", sessionid).findList();
         }
+        return ok(Json.toJson(tasks));
+    }
+
+    public Result analyzeList() {
+        Map<String, String[]> form = request().body().asFormUrlEncoded();
+        final String sessionid = form.get("sessionid")[0];
+        List<todoTask> tasks;
+        tasks = Ebean.find(todoTask.class).where().eq("sessionid", sessionid).eq("done", true).findList();
         return ok(Json.toJson(tasks));
     }
 
     public Result taskDone() {
         Map<String, String[]> form = request().body().asFormUrlEncoded();
         final int id = Integer.parseInt(form.get("id")[0]);
-        Task task=Ebean.find(Task.class).setId(id).findOne();
+        todoTask task=Ebean.find(todoTask.class).setId(id).findOne();
         task.setDone();
         task.save();
         return taskList();
@@ -46,15 +54,13 @@ public class TodoController extends Controller{
         try {
             Map<String, String[]> form = request().body().asFormUrlEncoded();
             final String title = form.get("title")[0];
-            System.out.println(title);
             final String sessionid = form.get("sessionid")[0];
-            System.out.println(sessionid);
             if (title.isEmpty()) {
                 return notAcceptable("タスク名を入力してください。");
             }
             final String deadline = form.get("deadline")[0];
-            System.out.println(deadline);
-            final Task newtask = new Task(title, deadline, sessionid);
+            final String subject = form.get("subject")[0];
+            final todoTask newtask = new todoTask(title, deadline, sessionid,subject);
             newtask.save();
             return taskList();
         } catch (Exception e) {
@@ -65,7 +71,7 @@ public class TodoController extends Controller{
     public Result taskDelete() {
         Map<String, String[]> form = request().body().asFormUrlEncoded();
         final int id = Integer.parseInt(form.get("id")[0]);
-        Ebean.find(Task.class).setId(id).findOneOrEmpty().map(entry -> entry.delete());
+        Ebean.find(todoTask.class).setId(id).findOneOrEmpty().map(entry -> entry.delete());
         return taskList();
     }
 }

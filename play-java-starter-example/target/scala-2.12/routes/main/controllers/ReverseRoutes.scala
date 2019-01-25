@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/daikichi/Desktop/sus_impl2/play-java-starter-example/conf/routes
-// @DATE:Tue Dec 25 11:31:16 JST 2018
+// @DATE:Fri Jan 25 06:45:12 JST 2019
 
 import play.api.mvc.Call
 
@@ -11,20 +11,20 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:25
+  // @LINE:29
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:25
+    // @LINE:29
     def at(): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public/images"), ("file", "favicon.png"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "favicon.ico")
     }
   
-    // @LINE:26
+    // @LINE:30
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -32,14 +32,14 @@ package controllers {
   
   }
 
-  // @LINE:24
+  // @LINE:28
   class ReverseDefault(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:24
+    // @LINE:28
     def notFound(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "robot.txt")
@@ -54,7 +54,7 @@ package controllers {
     }
 
   
-    // @LINE:20
+    // @LINE:24
     def grade(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "grades")
@@ -66,13 +66,13 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "helper/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("username", username)))
     }
   
-    // @LINE:21
+    // @LINE:25
     def calendar(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "calendar")
     }
   
-    // @LINE:19
+    // @LINE:23
     def signOut(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "signout")
@@ -80,17 +80,47 @@ package controllers {
   
   }
 
-  // @LINE:16
+  // @LINE:15
   class ReverseTodoController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:16
-    def todoTop(): Call = {
+    // @LINE:18
+    def analyzeList(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "database/analyze")
+    }
+  
+    // @LINE:15
+    def todoApplication(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "todoApplication")
+    }
+  
+    // @LINE:19
+    def taskDone(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "todoApplication/taskdone")
+    }
+  
+    // @LINE:17
+    def taskList(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "database/task")
+    }
+  
+    // @LINE:20
+    def taskDelete(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "todoApplication/taskdelete")
+    }
+  
+    // @LINE:16
+    def newTask(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "todoApplication/newtask")
     }
   
   }

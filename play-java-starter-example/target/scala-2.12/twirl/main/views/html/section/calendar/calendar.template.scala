@@ -57,7 +57,7 @@ Seq[Any](_display_(/*1.2*/main("カレンダー")/*1.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 25 10:28:57 JST 2018
+                  DATE: Sun Jan 13 11:40:20 JST 2019
                   SOURCE: /Users/daikichi/Desktop/sus_impl2/play-java-starter-example/app/views/section/calendar/calendar.scala.html
                   HASH: 6fd71d4a9e6e5ab53e91e3a8f05956094fb72f1f
                   MATRIX: 1050->1|1071->14|1109->15|1141->21

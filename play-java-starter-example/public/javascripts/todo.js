@@ -3,8 +3,109 @@
     $(document).ready(() => {
         // ページロード完了時に投稿済みアンケート一覧表をアップデートする
         update_todo_list();
+        update_done_list();
+        today();
     });
 }(jQuery);
+
+function create_analyze(lists) {
+    const $ = jQuery;
+    const horiz =$("<ul>").addClass("chart--horiz");
+    var num=new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+    for(const list of lists) {
+        if(list["subject"]=="英語")　num[0]++;
+        if(list["subject"]=="リスニング")　num[1]++;
+        if(list["subject"]=="現代文")　num[2]++;
+        if(list["subject"]=="古典")　num[3]++;
+        if(list["subject"]=="数学1A")　num[4]++;
+        if(list["subject"]=="数学2B")　num[5]++;
+        if(list["subject"]=="数学3")　num[6]++;
+        if(list["subject"]=="化学")　num[7]++;
+        if(list["subject"]=="物理")　num[8]++;
+        if(list["subject"]=="生物")　num[9]++;
+        if(list["subject"]=="地学")　num[10]++;
+        if(list["subject"]=="世界史")　num[11]++;
+        if(list["subject"]=="日本史")　num[12]++;
+        if(list["subject"]=="地理")　num[13]++;
+        if(list["subject"]=="倫理・政治経済")　num[14]++;
+        if(list["subject"]=="現代社会")　num[15]++;
+    }
+
+    for(var i=0;i<16;i++){
+        if(num[i]>0){
+            var subject
+            if(i==0)　subject="英語";
+            if(i==1)　subject="リスニング";
+            if(i==2)　subject="現代文";
+            if(i==3)　subject="古典";
+            if(i==4)　subject="数学1A";
+            if(i==5)　subject="数学2B";
+            if(i==6)　subject="数学3";
+            if(i==7)　subject="化学";
+            if(i==8)　subject="物理";
+            if(i==9)　subject="生物";
+            if(i==10)　subject="地学";
+            if(i==11)　subject="世界史";
+            if(i==12)　subject="日本史";
+            if(i==13)　subject="地理";
+            if(i==14)　subject="倫理・政治経済";
+            if(i==15)　subject="現代社会";
+            const bar =$("<li class=\"chart__bar\" style=\"width: "+num[i]*10+"px;\">");
+            const title = $("<span>").text(num[i]+" "+subject).addClass("chart__label");
+            horiz.append(bar);
+            bar.append(title);
+        }
+    }
+
+    new Chart(document.getElementById("myChart"), {
+    type: "doughnut",
+    data: {
+        labels: ["英語","国語", "数学", "理科","社会"],
+        datasets: [
+        {
+            data: [num[0]+num[1], num[2]+num[3], num[4]+num[5]+num[6], num[7]+num[8]+num[9]+num[10], num[11]+num[12]+num[13]+num[14]+num[15]],
+            backgroundColor: [
+            "rgb(255, 99, 132)",
+            "rgb(255, 205, 86)",
+            "rgb(54, 162, 235)",
+            "rgb(0, 255, 153)",
+            "rgb(153,51,255)",
+            ]
+        }]
+        }
+    })
+    return horiz;
+}
+
+// 達成TODOリストのテーブル表示を更新する
+function update_done_table(list) {
+    const $ = jQuery;
+    if(list.length === 0) {
+        $("#chart-table")
+            .empty()
+    } else {
+        $("#chart-table")
+            .empty()
+            .append(create_analyze(list));
+    }
+}
+
+// 達成TODOリストの更新
+function update_done_list() {
+    // サーバにアンケートリストを問い合わせる
+    var sessionid=$.cookie('sessionid');
+    $('#todo-form').append(' <input type="hidden" name="sessionid" value='+sessionid+'">');
+    fetch("/database/analyze",{
+            method: 'post',
+            body: get_form("#todo-form"),
+    }).then(response => {
+        // 結果をJSONとして受け取る
+        return response.json();
+    }).then(lists => {
+        update_done_table(lists);
+    });
+}
+
 
 // TODOリストのテーブルを構築する
 function create_todo_table(todolists) {
@@ -24,9 +125,11 @@ function create_todo_table(todolists) {
         const deadline = $("<td>").text(fdate(todolist["deadline"],"YYYY-MM-DD")).addClass("todo__deadline");
         const delete_task =$("<td><input type=\"button\" value=\"×\" onclick=\"task_delete("+todolist["id"]+")\">");
         const diff=$("<td>").text("残り"+getDiff(fdate(new Date(),"YYYY/MM/DD"),fdate(todolist["deadline"],"YYYY/MM/DD"))+"日").addClass("todo__deadline");
+        const subject = $("<td>").text(todolist["subject"]).addClass("todo__deadline");
         done.append(svg)
         done.append(title);
         row.append(done);
+        row.append(subject);
         row.append(deadline);
         row.append(diff);
         row.append(delete_task);
@@ -78,7 +181,6 @@ function task_new() {
         body: get_form("#todo-form"),
     }).then(res => {
         if(!res.ok) {
-            console.log("error");
             return res.text().then(text => {
                 throw new Error(text);
             });
@@ -139,6 +241,7 @@ function task_done(id) {
     }).then(json => {
         // 正常な応答が返ってきたら，テーブルを更新する
         update_todo_table(json);
+        update_done_list();
     }, error => {
         alert(error.message);
     });
@@ -184,9 +287,9 @@ function search_done() {
 }
 
 //入力のキャンセル
-function cancel_login() {
+function cancel_todo() {
     const $ = jQuery;
-    $("#login-form").trigger("reset");
+    $("#todo-form").trigger("reset");
     $("#checked").prop("checked",false);
 }
 

@@ -9,15 +9,19 @@ GET     /                           controllers.SignUpandInController.helperTop
 GET     /database/users             controllers.SignUpandInController.userList
 POST    /signup/register            controllers.SignUpandInController.registerUser
 GET     /signin                     controllers.SignUpandInController.signinForm
-POST     /signin              controllers.SignUpandInController.signIn
-GET      /helper/:username          controllers.MainController.mypageForm(username: String)
+POST    /signin                     controllers.SignUpandInController.signIn
+GET     /helper/:username           controllers.MainController.mypageForm(username: String)
 
-
-GET     /todoApplication            controllers.TodoController.todoTop
+GET     /todoApplication                        controllers.TodoController.todoApplication
+POST    /todoApplication/newtask                controllers.TodoController.newTask
+POST    /database/task                          controllers.TodoController.taskList
+POST    /database/analyze                       controllers.TodoController.analyzeList
+POST    /todoApplication/taskdone               controllers.TodoController.taskDone
+POST    /todoApplication/taskdelete             controllers.TodoController.taskDelete
 
 # mypage controller
 GET      /signout                    controllers.MainController.signOut
-GET      /grades                      controllers.MainController.grade
+GET      /grades                     controllers.MainController.grade
 GET      /calendar                   controllers.MainController.calendar
 
 # Map static resources from the /public folder to the /assets URL path

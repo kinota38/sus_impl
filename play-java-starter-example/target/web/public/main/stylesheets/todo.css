@@ -67,12 +67,8 @@ td.id {
 }
 
 .analysis-contents {
-    width: 80%;
     max-width: 960px;
     height: 780px;
-    margin: auto;
-    position: relative;
-    display: table;
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-delay: .3s;
