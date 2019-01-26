@@ -218,8 +218,9 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                         </button>
                     </div>
                     <div class="modal-body">
+                        <span id="error-field"></span>
                         <form id="registration-form">
-                            <input type="hidden" name="username" value=""""),_display_(/*191.74*/name),format.raw/*191.78*/("""">
+                            <input type="hidden" name="username" value=""""),_display_(/*192.74*/name),format.raw/*192.78*/("""">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="title" id="title" placeholder="タイトルを入力">
                             </div>
@@ -241,8 +242,18 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 </span>
                                 </div>
                             </div>
-                            """),_display_(/*213.30*/helper/*213.36*/.CSRF.formField),format.raw/*213.51*/("""
-                        """),format.raw/*214.25*/("""</form>
+                            <div class="form-group">
+                                <select id="colorselector" name="color">
+                                    <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                    <option value="#be2edd" data-color="#be2edd">紫</option>
+                                    <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
+                                    <option value="#EA2027" data-color="#EA2027">赤</option>
+                                    <option value="#2ecc71" data-color="#2ecc71">緑</option>
+                                    <option value="#cd6133" data-color="#cd6133">茶</option>
+                                </select>
+                            </div>
+                            """),_display_(/*224.30*/helper/*224.36*/.CSRF.formField),format.raw/*224.51*/("""
+                        """),format.raw/*225.25*/("""</form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -269,11 +280,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 26 00:04:43 JST 2019
+                  DATE: Sat Jan 26 17:21:29 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/month/calendar.scala.html
-                  HASH: 793b23c5642e09ddced620062fa6664b77173278
-                  MATRIX: 974->1|1082->17|1103->30|1141->31|1172->36|1324->162|1348->166|2064->855|2089->859|2920->1663|2945->1667|3112->1807|3137->1811|5792->4438|5818->4442|5848->4443|13099->11666|13125->11670|13737->12254|13753->12260|13790->12275|13832->12288|15000->13428|15026->13432|16574->14952|16590->14958|16627->14973|16681->14998
-                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|97->66|97->66|97->66|189->158|189->158|203->172|203->172|203->172|204->173|222->191|222->191|244->213|244->213|244->213|245->214
+                  HASH: fceb21ca2c3ff73759d35c4dca08837d6edd1510
+                  MATRIX: 974->1|1082->17|1103->30|1141->31|1172->36|1324->162|1348->166|2064->855|2089->859|2920->1663|2945->1667|3112->1807|3137->1811|5792->4438|5818->4442|5848->4443|13099->11666|13125->11670|13737->12254|13753->12260|13790->12275|13832->12288|15055->13483|15081->13487|17407->15785|17423->15791|17460->15806|17514->15831
+                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|97->66|97->66|97->66|189->158|189->158|203->172|203->172|203->172|204->173|223->192|223->192|255->224|255->224|255->224|256->225
                   -- GENERATED --
               */
           

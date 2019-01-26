@@ -178,20 +178,6 @@ function nextdd(e) {
     showDate(yy, mm);*/
 }
 
-function jumpDay(element){
-    $("[selected = 'true']").removeAttr("selected");
-    element.setAttribute("selected", "true");
-    const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
-    const year = element.getAttribute("yy");
-    const month = element.getAttribute("mm");
-    const day = element.getAttribute("dd");
-    const col = element.getAttribute("col");
-    $(".year-num").text(year);
-    $(".month-num").text(month);
-    $(".display-day").text(day);
-    $(".display-date").text(day_of_week[col]);
-}
-
 function open_register_task(e){
     var yy_start = $("#year_start").text();
     var mm_start = $("#month_start").text();

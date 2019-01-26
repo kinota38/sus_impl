@@ -187,6 +187,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <span id="error-field"></span>
                         <form id="registration-form">
                             <input type="hidden" name="username" value="@name">
                             <div class="form-group">
@@ -209,6 +210,16 @@
                                     <span class="input-group-text"><i class="fa fa-clock"></i></span>
                                 </span>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <select id="colorselector" name="color">
+                                    <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                    <option value="#be2edd" data-color="#be2edd">紫</option>
+                                    <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
+                                    <option value="#EA2027" data-color="#EA2027">赤</option>
+                                    <option value="#2ecc71" data-color="#2ecc71">緑</option>
+                                    <option value="#cd6133" data-color="#cd6133">茶</option>
+                                </select>
                             </div>
                             @helper.CSRF.formField
                         </form>

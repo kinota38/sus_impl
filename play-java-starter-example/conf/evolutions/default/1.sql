@@ -40,6 +40,7 @@ create table task (
   title                         varchar(255) not null,
   start_date                    timestamp not null,
   end_date                      timestamp not null,
+  color                         varchar(255),
   start_date_string             varchar(255),
   end_date_string               varchar(255),
   username                      varchar(255) not null

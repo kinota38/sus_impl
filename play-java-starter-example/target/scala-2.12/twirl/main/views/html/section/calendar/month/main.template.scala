@@ -42,25 +42,27 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
     <link rel="stylesheet" href=""""),_display_(/*11.35*/routes/*11.41*/.Assets.versioned("stylesheets/fontawesome-free-5.5.0-web/css/all.css")),format.raw/*11.112*/("""">
     <link rel="stylesheet" href=""""),_display_(/*12.35*/routes/*12.41*/.Assets.versioned("stylesheets/bootstrap.min.css")),format.raw/*12.91*/("""">
     <link rel="stylesheet" href=""""),_display_(/*13.35*/routes/*13.41*/.Assets.versioned("tempusdominus-bootstrap-4.css")),format.raw/*13.91*/("""">
+    <link rel="stylesheet" href=""""),_display_(/*14.35*/routes/*14.41*/.Assets.versioned("stylesheets/calendar/bootstrap-colorselector.css")),format.raw/*14.110*/("""">
 </head>
 <body>
     <div class="overlay" onclick="close_register_task(); return false;"></div>
     <main>
-        """),format.raw/*19.32*/("""
-        """),_display_(/*20.10*/content),format.raw/*20.17*/("""
-    """),format.raw/*21.5*/("""</main>
+        """),format.raw/*20.32*/("""
+        """),_display_(/*21.10*/content),format.raw/*21.17*/("""
+    """),format.raw/*22.5*/("""</main>
 
-    <script src=""""),_display_(/*23.19*/routes/*23.25*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*23.75*/(""""></script>
-    <script src=""""),_display_(/*24.19*/routes/*24.25*/.Assets.versioned("/javascripts/calendar/calendar.js")),format.raw/*24.79*/(""""></script>
-    """),format.raw/*25.99*/("""
-    """),format.raw/*26.5*/("""<script src=""""),_display_(/*26.19*/routes/*26.25*/.Assets.versioned("/javascripts/calendar/calendarEvent.js")),format.raw/*26.84*/(""""></script>
-    <script src=""""),_display_(/*27.19*/routes/*27.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*27.73*/(""""></script>
-    <script src=""""),_display_(/*28.19*/routes/*28.25*/.Assets.versioned("/javascripts/popper.js")),format.raw/*28.68*/(""""></script>
-    <script src=""""),_display_(/*29.19*/routes/*29.25*/.Assets.versioned("/javascripts/bootstrap.min.js")),format.raw/*29.75*/(""""></script>
-    <script src=""""),_display_(/*30.19*/routes/*30.25*/.Assets.versioned("/javascripts/tempusdominus-bootstrap-4.js")),format.raw/*30.87*/(""""></script>
-    <script src=""""),_display_(/*31.19*/routes/*31.25*/.Assets.versioned("/javascripts/calendar/miniCalendar.js")),format.raw/*31.83*/(""""></script>
-    <script src=""""),_display_(/*32.19*/routes/*32.25*/.Assets.versioned("/javascripts/calendar/datetime.js")),format.raw/*32.79*/(""""></script>
-    <script src=""""),_display_(/*33.19*/routes/*33.25*/.Assets.versioned("/javascripts/navBar.js")),format.raw/*33.68*/(""""></script>
+    <script src=""""),_display_(/*24.19*/routes/*24.25*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*24.75*/(""""></script>
+    <script src=""""),_display_(/*25.19*/routes/*25.25*/.Assets.versioned("/javascripts/calendar/calendar.js")),format.raw/*25.79*/(""""></script>
+    """),format.raw/*26.99*/("""
+    """),format.raw/*27.5*/("""<script src=""""),_display_(/*27.19*/routes/*27.25*/.Assets.versioned("/javascripts/calendar/calendarEvent.js")),format.raw/*27.84*/(""""></script>
+    <script src=""""),_display_(/*28.19*/routes/*28.25*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*28.73*/(""""></script>
+    <script src=""""),_display_(/*29.19*/routes/*29.25*/.Assets.versioned("/javascripts/popper.js")),format.raw/*29.68*/(""""></script>
+    <script src=""""),_display_(/*30.19*/routes/*30.25*/.Assets.versioned("/javascripts/bootstrap.min.js")),format.raw/*30.75*/(""""></script>
+    <script src=""""),_display_(/*31.19*/routes/*31.25*/.Assets.versioned("/javascripts/calendar/bootstrap-colorselector.js")),format.raw/*31.94*/(""""></script>
+    """),format.raw/*32.102*/("""
+    """),format.raw/*33.5*/("""<script src=""""),_display_(/*33.19*/routes/*33.25*/.Assets.versioned("/javascripts/calendar/miniCalendar.js")),format.raw/*33.83*/(""""></script>
+    """),format.raw/*34.94*/("""
+    """),format.raw/*35.5*/("""<script src=""""),_display_(/*35.19*/routes/*35.25*/.Assets.versioned("/javascripts/navBar.js")),format.raw/*35.68*/(""""></script>
 </body>
 </html>"""))
       }
@@ -78,11 +80,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 25 22:53:55 JST 2019
+                  DATE: Sat Jan 26 17:20:27 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/month/main.scala.html
-                  HASH: 9b3a6764aaebd39ffac2568ddf7d4846211c05a8
-                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1359->192|1422->229|1436->235|1510->289|1545->396|1576->401|1632->431|1646->437|1720->491|1804->548|1819->554|1880->593|1944->630|1959->636|2052->707|2116->744|2131->750|2202->800|2266->837|2281->843|2352->893|2496->1099|2533->1109|2561->1116|2593->1121|2647->1148|2662->1154|2733->1204|2790->1234|2805->1240|2880->1294|2924->1404|2956->1409|2997->1423|3012->1429|3092->1488|3149->1518|3164->1524|3233->1572|3290->1602|3305->1608|3369->1651|3426->1681|3441->1687|3512->1737|3569->1767|3584->1773|3667->1835|3724->1865|3739->1871|3818->1929|3875->1959|3890->1965|3965->2019|4022->2049|4037->2055|4101->2098
-                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|40->9|40->9|40->9|40->9|41->10|41->10|41->10|42->11|42->11|42->11|43->12|43->12|43->12|44->13|44->13|44->13|49->19|50->20|50->20|51->21|53->23|53->23|53->23|54->24|54->24|54->24|55->25|56->26|56->26|56->26|56->26|57->27|57->27|57->27|58->28|58->28|58->28|59->29|59->29|59->29|60->30|60->30|60->30|61->31|61->31|61->31|62->32|62->32|62->32|63->33|63->33|63->33
+                  HASH: efd714376aaf87ac0931612faab19c2aac329caf
+                  MATRIX: 975->1|1099->32|1177->84|1202->89|1271->132|1285->138|1359->192|1422->229|1436->235|1510->289|1545->396|1576->401|1632->431|1646->437|1720->491|1804->548|1819->554|1880->593|1944->630|1959->636|2052->707|2116->744|2131->750|2202->800|2266->837|2281->843|2352->893|2416->930|2431->936|2522->1005|2666->1211|2703->1221|2731->1228|2763->1233|2817->1260|2832->1266|2903->1316|2960->1346|2975->1352|3050->1406|3094->1516|3126->1521|3167->1535|3182->1541|3262->1600|3319->1630|3334->1636|3403->1684|3460->1714|3475->1720|3539->1763|3596->1793|3611->1799|3682->1849|3739->1879|3754->1885|3844->1954|3889->2067|3921->2072|3962->2086|3977->2092|4056->2150|4100->2255|4132->2260|4173->2274|4188->2280|4252->2323
+                  LINES: 28->1|33->2|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|39->8|40->9|40->9|40->9|40->9|41->10|41->10|41->10|42->11|42->11|42->11|43->12|43->12|43->12|44->13|44->13|44->13|45->14|45->14|45->14|50->20|51->21|51->21|52->22|54->24|54->24|54->24|55->25|55->25|55->25|56->26|57->27|57->27|57->27|57->27|58->28|58->28|58->28|59->29|59->29|59->29|60->30|60->30|60->30|61->31|61->31|61->31|62->32|63->33|63->33|63->33|63->33|64->34|65->35|65->35|65->35|65->35
                   -- GENERATED --
               */
           

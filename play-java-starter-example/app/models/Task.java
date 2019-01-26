@@ -24,13 +24,16 @@ public class Task extends Model{
     @Formats.DateTime(pattern="yyyy/MM/dd HH:mm")
     @Formats.NonEmpty
     @Column(name = "start_date", nullable = false)
-    public Date start_date ;
+    public Date start_date;
 
     @Constraints.Required
     @Formats.DateTime(pattern="yyyy/MM/dd HH:mm")
     @Formats.NonEmpty
     @Column(name = "end_date", nullable = false)
-    public Date end_date ;
+    public Date end_date;
+
+    // 色(デフォルトは青)
+    public String color = "#039BE5";
 
 
     //-----------jsonでdayを取得する際に面倒なので文字列型に置き換えたものを保持しておく

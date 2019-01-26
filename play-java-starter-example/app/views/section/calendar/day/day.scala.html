@@ -457,19 +457,19 @@
                                                 <div class="mmsF1c"></div>
                                             </div>
                                             <div class="EdAri"></div>
-                                            <div role="gridcell" tabindex="-1" data-toggle="modal" data-target="#exampleModal" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob">
+                                            <div role="gridcell" tabindex="-1" data-toggle="modal" data-target="#exampleModal" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
                                                 <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
                                                 <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
                                                 <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
-                                                <div role="presentation" class="WJVfWe A3o4Oe">
-                                                    <div role="button" tabindex="0" data-eventid="NTQyaDd2bzY1bXEzNjE0YmJraWYxdGo1bzJfMjAxOTAxMzBUMDAwMDAwWiB5b3NoaWFraTIwMTY0MTRAbQ" data-eventchip="" data-opens-details="true" data-keyboardactiontype="0;1" jscontroller="Bo3nHd" jsaction="click:cOuCgd; contextmenu:mg9Pef; dblclick:Reio8; mouseenter:tfO1Yc; mouseleave:JywGue;" jslog="35463; track:click,dblclick" class="NlL62b EfQccc elYzab-cXXICe-Hjleke  EiZ8Dd jKgTF" style=" top:359px; height:58px;left:0%; width:100%;z-index:4;background-color: #039BE5;border-color: #039BE5;">
+                                                <div role="presentation" class="WJVfWe A3o4Oe event-field">
+                                                    <div role="button" tabindex="0" data-keyboardactiontype="0;1" class="NlL62b EfQccc elYzab-cXXICe-Hjleke  EiZ8Dd jKgTF" style=" top:359px; height:58px;left:0%; width:100%;z-index:4;background-color: #039BE5;border-color: #039BE5;">
                                                         <div class="ynRLnc">午前9時～午前10:30、英語第九、場所: W934、2019年 1月 30日</div>
                                                         <div aria-hidden="true" class="lFe10c ">
                                                             <div class="Jmftzc RIOtYe EiZ8Dd TuM9nf" style="max-height:15px"><span class="FAxxKc">英語第九</span></div>
                                                             <div class="Jmftzc gVNoLb  EiZ8Dd TuM9nf">午前9時～10:30</div>
                                                             <div class="Jmftzc K9QN7e  EiZ8Dd TuM9nf">W934</div>
                                                         </div>
-                                                        <div aria-hidden="true" class="leOeGd elYzab-cXXICe-Hjleke" data-eventid="NTQyaDd2bzY1bXEzNjE0YmJraWYxdGo1bzJfMjAxOTAxMzBUMDAwMDAwWiB5b3NoaWFraTIwMTY0MTRAbQ" data-dragsource-type="3"></div>
+                                                        <div aria-hidden="true" class="leOeGd elYzab-cXXICe-Hjleke" data-dragsource-type="3"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -495,6 +495,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <span id="error-field"></span>
                     <form id="registration-form">
                         <input type="hidden" name="username" value="@name">
                         <div class="form-group">
@@ -512,11 +513,21 @@
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker2">
                                 <label for="datetimepicker2" class="pt-2 pr-2">終了:</label>
-                                <input type="datetime-local" name="end_date" id="end_date"" class="form-control" />
+                                <input type="datetime-local" name="end_date" id="end_date" class="form-control" />
                                 <span class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-clock"></i></span>
                                 </span>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="colorselector" name="color">
+                                <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                <option value="#be2edd" data-color="#be2edd">紫</option>
+                                <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
+                                <option value="#EA2027" data-color="#EA2027">赤</option>
+                                <option value="#2ecc71" data-color="#2ecc71">緑</option>
+                                <option value="#cd6133" data-color="#cd6133">茶</option>
+                            </select>
                         </div>
                         @helper.CSRF.formField
                     </form>

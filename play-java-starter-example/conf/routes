@@ -2,7 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# signup and signin controller
+# user controller
 GET     /                                       controllers.UserController.helperTop
 GET     /database/users                         controllers.UserController.userList
 POST    /signup/register                        controllers.UserController.registerUser
@@ -11,13 +11,14 @@ POST    /signin                                 controllers.UserController.signI
 GET     /logout                                 controllers.UserController.logout
 GET     /helper/:username                       controllers.MainController.mypageForm(username: String)
 
-# mypage controller
-GET     /grades/:username                       controllers.MainController.grade(username: String)
+# calendar & event controller
 GET     /calendar/month                         controllers.MainController.calendarMonth
 GET     /calendar/day                           controllers.MainController.calendarDay
-
+GET     /event/entries                          controllers.EventController.list
+POST    /calendar/create                        controllers.EventController.eventRegister
 
 # grade controller
+GET     /grades/:username                       controllers.MainController.grade(username: String)
 GET     /grades/gradeslist/:username            controllers.GradeController.gradesList(username: String)
 GET     /grades/gradelist/:username             controllers.GradeController.gradeList(username: String)
 GET     /grades/accgradelist/:username          controllers.GradeController.accGradeList(username: String)
@@ -44,10 +45,6 @@ GET     /robot.txt                              controllers.Default.notFound
 GET     /favicon.ico                            controllers.Assets.at(path="/public/images", file="favicon.png")
 GET     /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
 GET     /assets2/*file                          controllers.ExtAssets.at(path="./private/",file)
-
-# calendar controller
-
-POST    /calendar/create                        controllers.TaskController.eventRegister
 
 # todoapllication controller
 
