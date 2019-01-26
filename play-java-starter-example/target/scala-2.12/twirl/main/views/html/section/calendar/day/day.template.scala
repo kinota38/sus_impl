@@ -263,6 +263,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                                 <div class="C5Jlgc"></div>
                                                 <div aria-hidden="true" class="fimTmc">
                                                     <h2 class="rpCPrc">
+                                                        <span hidden class="date-num"></span>
                                                         <div class="MmhHI qAeuG N4XV7d" aria-hidden="true"><span class="display-date"></span></div>
                                                         <div class="MmhHI KSxb4d N4XV7d" tabindex="0"><span class="display-day" style="color: white"></span></div>
                                                     </h2>
@@ -277,8 +278,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             <ul aria-hidden="true" class="ZHdPfd" jsname="GkYald">
                                                 <li class="yEkOpe" jsname="LF4U9b"></li>
                                             </ul>
-                                            """),format.raw/*368.53*/("""
-                                        """),format.raw/*369.41*/("""</div>
+                                            """),format.raw/*369.53*/("""
+                                        """),format.raw/*370.41*/("""</div>
                                         <div aria-hidden="true" class="Xk5jT"></div>
                                     </div>
                                 </div>
@@ -341,7 +342,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                         </div>
                                     </div>
                                     <div class="right-time-space">
-                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" jsname="ff2wFe" data-dragsource-type="4">
+                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" style="z-index: 1" onclick="open_register_task(); return false;" data-dragsource-type="4">
                                             <div aria-hidden="true" class="wyrRZc">
                                                 <div class="mmsF1c"></div>
                                                 <div class="mmsF1c"></div>
@@ -369,7 +370,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                                 <div class="mmsF1c"></div>
                                             </div>
                                             <div class="EdAri"></div>
-                                            <div role="gridcell" tabindex="-1" data-toggle="modal" data-target="#exampleModal" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
+                                            <div role="gridcell" tabindex="-1" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
                                                 <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
                                                 <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
                                                 <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
@@ -396,7 +397,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
         </div>
     </div>
 
-        <!-- Modal -->
+        <!-- Create Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -409,7 +410,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                 <div class="modal-body">
                     <span id="error-field"></span>
                     <form id="registration-form">
-                        <input type="hidden" name="username" value=""""),_display_(/*500.70*/name),format.raw/*500.74*/("""">
+                        <input type="hidden" name="username" value=""""),_display_(/*501.70*/name),format.raw/*501.74*/("""">
                         <div class="form-group">
                             <input type="text" class="form-control" id="formGroupExampleInput" name="title" id="title" placeholder="タイトルを入力">
                         </div>
@@ -432,7 +433,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                             </div>
                         </div>
                         <div class="form-group">
-                            <select id="colorselector" name="color">
+                            <select class="colorselector" name="color">
                                 <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
                                 <option value="#be2edd" data-color="#be2edd">紫</option>
                                 <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
@@ -441,12 +442,72 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 <option value="#cd6133" data-color="#cd6133">茶</option>
                             </select>
                         </div>
-                        """),_display_(/*532.26*/helper/*532.32*/.CSRF.formField),format.raw/*532.47*/("""
-                    """),format.raw/*533.21*/("""</form>
+                        """),_display_(/*533.26*/helper/*533.32*/.CSRF.formField),format.raw/*533.47*/("""
+                    """),format.raw/*534.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
                     <button type="button" class="btn btn-primary" onclick="register_new(); return false;">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalCenteredLabel">編集</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span hidden id="edit-id"></span>
+                    <span id="error-field"></span>
+                    <form id="edit-form">
+                        <input type="hidden" name="username" value=""""),_display_(/*558.70*/name),format.raw/*558.74*/("""">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="title" id="edit-title" placeholder="タイトルを入力">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker1">
+                                <label for="datetimepicker1" class="pt-2 pr-2">開始:</label>
+                                <input type="datetime-local" name="start_date" id="edit-start_date" class="form-control" />
+                                <span class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimepicker2">
+                                <label for="datetimepicker2" class="pt-2 pr-2">終了:</label>
+                                <input type="datetime-local" name="end_date" id="edit-end_date" class="form-control" />
+                                <span class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-clock"></i></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="colorselector" name="color">
+                                <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                <option value="#be2edd" data-color="#be2edd">紫</option>
+                                <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
+                                <option value="#EA2027" data-color="#EA2027">赤</option>
+                                <option value="#2ecc71" data-color="#2ecc71">緑</option>
+                                <option value="#cd6133" data-color="#cd6133">茶</option>
+                            </select>
+                        </div>
+                        """),_display_(/*590.26*/helper/*590.32*/.CSRF.formField),format.raw/*590.47*/("""
+                    """),format.raw/*591.21*/("""</form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-primary" onclick="edit_entry(); return false;">変更</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" title="削除" onclick="delete_entry(); return false;">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -467,11 +528,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 26 17:42:50 JST 2019
+                  DATE: Sun Jan 27 02:04:47 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 30c20c4cda899238cbd2875f220393edf15c1ac8
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3105->10602|3131->10606|3307->10754|3333->10758|6208->13604|6235->13608|6266->13609|20820->28589|20890->28630|31704->39416|31730->39420|33971->41633|33987->41639|34024->41654|34074->41675
-                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147|99->183|99->183|99->183|280->368|281->369|412->500|412->500|444->532|444->532|444->532|445->533
+                  HASH: 72f3aae590dbfe4f41367e7cddd6aad4242a5789
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3105->10602|3131->10606|3307->10754|3333->10758|6208->13604|6235->13608|6266->13609|20914->28683|20984->28724|31806->39518|31832->39522|34076->41738|34092->41744|34129->41759|34179->41780|35440->43013|35466->43017|37698->45221|37714->45227|37751->45242|37801->45263
+                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147|99->183|99->183|99->183|281->369|282->370|413->501|413->501|445->533|445->533|445->533|446->534|470->558|470->558|502->590|502->590|502->590|503->591
                   -- GENERATED --
               */
           

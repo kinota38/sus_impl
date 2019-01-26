@@ -15,7 +15,10 @@ GET     /helper/:username                       controllers.MainController.mypag
 GET     /calendar/month                         controllers.MainController.calendarMonth
 GET     /calendar/day                           controllers.MainController.calendarDay
 GET     /event/entries                          controllers.EventController.list
-POST    /calendar/create                        controllers.EventController.eventRegister
+POST    /event/create                           controllers.EventController.eventRegister
+POST    /event/edit/:id                         controllers.EventController.edit(id: Long)
+GET     /event/entry/:id                        controllers.EventController.fetch(id: Long)
+GET     /event/delete/:id                       controllers.EventController.delete(id: Long)
 
 # grade controller
 GET     /grades/:username                       controllers.MainController.grade(username: String)

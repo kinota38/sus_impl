@@ -5,15 +5,23 @@ import play.data.format.Formats;
 import play.data.validation.Constraints;
 
 import io.ebean.*;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+
+import javax.persistence.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
-@Table(name="task")
-public class Task extends Model{
+@Table(name="event")
+public class Event extends Model{
+
+    /**
+     * イベントのID
+     * 自動生成される
+     */
+    @Id
+    @GeneratedValue
+    public long id;
+
     @Constraints.Required
     @Constraints.MaxLength(255)
     @Formats.NonEmpty
@@ -50,7 +58,7 @@ public class Task extends Model{
     @Column(name = "username",nullable = false)
     public String username;
 
-    public Task(String username,String title){
+    public Event(String username, String title){
         this.title = title;
         this.username = username;
         start_date = new Date();

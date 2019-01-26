@@ -1,14 +1,14 @@
 !function ($) {
     // ページロード完了時に行う操作
     $(document).ready(() => {
-        // ページロード完了時に作成済みタスク一覧表をアップデートする
+        // ページロード完了時に作成済みイベント一覧表をアップデートする
         update_event_list();
     });
 }(jQuery);
 
 function register_new() {
     // サーバにフォーム情報を送信する
-    fetch("/calendar/create", {
+    fetch("/event/create", {
         method: 'post',
         body: get_form("#registration-form"),
     }).then(res => {
@@ -62,6 +62,10 @@ function update_calendar_day(entries){
         $(".event-field")
             .empty()
             .append(create_label(entries));
+    } else {
+        // タスクが一件もないときはフィールドをクリアしてメッセージを表示
+        $(".event-field")
+            .empty();
     }
 }
 
@@ -138,22 +142,118 @@ function create_label(entries) {
         }
         const oneEvent = $("<div>").attr({
                 role: "button",
-                tabindex: "0"
+                tabindex: "0",
+                "data-toggle": "tooltip",
+                title: entry["title"]
             }).addClass("NlL62b EfQccc elYzab-cXXICe-Hjleke EiZ8Dd jKgTF")
                 .css({
                     'top': String(Number(startTime[0]) * 40 - 1)+"px",
                     'height': String(height)+"px",
                     "left": "0%",
                     "width": "100%",
-                    "z-index": "4",
+                    "z-index": "100",
                     "background-color": entry["color"],
-                    "border-color": entry["color"]
-                }).append(hiddenInfo).append(display);
+                    "border-color": entry["color"],
+                    "pointer-events": "auto"
+                }).append(hiddenInfo).append(display).on("click", function(){
+                    open_edit_event(entry["id"]);
+            });
         labels.append(oneEvent);
     }
     return labels;
 }
 
+// 削除
+function delete_entry() {
+    const $ = jQuery;
+    const id = $("#edit-id").text();
+    // 確認画面を表示
+    if (id.length /*&& confirm("このイベントを削除してよろしいですか？")*/) {
+        // サーバに削除を問い合わせ
+        fetch("/event/delete/" + id).then(res => {
+            if(!res.ok) {
+                throw new Error("削除できませんでした");
+            } else {
+                return res.json();
+            }
+        }).then(json => {
+            // 正常な応答が返ってきたら，テーブルを更新する
+            update_event_list(json);
+            close_edit_event();
+            alert("削除しました");
+        }, error => {
+            close_edit_event();
+            alert(error.message);
+        });
+    }
+}
+
+/*******************************************************************************************/
+/*                                      編集ツール                                          */
+/*******************************************************************************************/
+// 編集
+function edit_entry() {
+    const $ = jQuery;
+    const id = $("#edit-id").text();
+    if(id.length) {
+        // サーバに変更を問い合わせ
+        fetch("/event/edit/" + id, {
+            method: 'post',
+            body: get_form("#edit-form"),
+        }).then(res => {
+            if(!res.ok) {
+                throw new Error("変更できませんでした");
+            } else {
+                return res.json();
+            }
+        }).then(json => {
+            // 正常な応答が返ってきたら，テーブルを更新する
+            update_event_list(json);
+            close_edit_event();
+        }, error => {
+            close_edit_event();
+            alert(error.message);
+        });
+    }
+}
+
+// 編集画面を開く
+function open_edit_event(id) {
+    // 詳細情報をサーバに問い合わせる
+    fetch("/event/entry/" + id).then(res => {
+        if(!res.ok) {
+            throw new Error("開けませんでした");
+        } else {
+            return res.json();
+        }
+    }).then(json => {
+        const $ = jQuery;
+        // id取得
+        $("#edit-id").text(json["id"]);
+        // jsonからの日付時間情報の取得
+        const startDate = json["start_date_string"].replace(/ /g, "T").replace(/\//g, "-");
+        console.log(startDate); // for debug
+        const endDate = json["end_date_string"].replace(/ /g, "T").replace(/\//g, "-");
+        console.log(endDate); // for debug
+
+        $("#edit-title").val(json["title"]);
+        $("#edit-start_date").val(startDate);
+        $("#edit-end_date").val(endDate);
+        $(".colorselector").val(json["color"]);
+        $("#editModal").modal();
+    }, error => {
+        alert(error.message);
+    });
+}
+
+// 編集画面を閉じる
+function close_edit_event(){
+    $("#editModal").modal("hide");
+}
+
+/*******************************************************************************************/
+/*                                      支援ツール                                          */
+/*******************************************************************************************/
 function get_form(tag) {
     const data = new URLSearchParams();
     for (const pair of new FormData($(tag)[0])) {
@@ -183,6 +283,7 @@ function jumpDay(element){
     const col = element.getAttribute("col");
     $(".year-num").text(year);
     $(".month-num").text(month);
+    $(".date-num").text(col);
     $(".display-day").text(day);
     $(".display-date").text(day_of_week[col]);
     update_event_list();

@@ -1,14 +1,12 @@
 package controllers;
 
 import io.ebean.Ebean;
+import models.Event;
 import models.User;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.section.calendar.month.calendar;
-import models.Task;
 
-import java.text.ParseException;
 import java.text.ParsePosition;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +21,10 @@ public class EventController extends Controller {
      * @return JSON形式のエントリーリスト
      */
     public Result list() {
-        List<Task> result = new ArrayList<>();
-        List<Task> entries = Ebean.find(Task.class).findList();
+        List<Event> result = new ArrayList<>();
+        List<Event> entries = Ebean.find(Event.class).findList();
         Optional<User> user = Ebean.find(User.class).where().eq("sessionid",request().cookies().get("sessionid").value()).findOneOrEmpty();
-        for (Task entry : entries) {
+        for (Event entry : entries) {
             if(user.isPresent() && entry.username.equals(user.get().username)){
                 result.add(entry);
             }
@@ -50,19 +48,67 @@ public class EventController extends Controller {
             endDate = endDate.replaceAll("-","/");
             endDate = endDate.replaceAll("T"," ");
 
-            final Task newTask = new Task(username, title);
+            final Event newEvent = new Event(username, title);
 
-            newTask.start_date = sdf.parse(startDate, new ParsePosition(0));
-            newTask.end_date = sdf.parse(endDate, new ParsePosition(0));
-            newTask.color = color;
+            newEvent.start_date = sdf.parse(startDate, new ParsePosition(0));
+            newEvent.end_date = sdf.parse(endDate, new ParsePosition(0));
+            newEvent.color = color;
 
-            newTask.save();
-            System.out.println(newTask.start_date_string);
-            return ok(Json.toJson(newTask));
+            newEvent.save();
+            System.out.println(newEvent.start_date_string);
+            return list();
 
         } catch(Exception e) {
-
             return badRequest();
         }
+    }
+
+    /**
+     * フォームを受け取り，指定したエントリを編集する
+     * @return 指定したエントリの変更を保存した後の投稿リスト
+     */
+    public Result edit(Long id){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+        try {
+            Event entry = Ebean.find(Event.class).setId(id).findOne();
+            if(entry == null) {
+                return notFound();
+            }
+            Map<String, String[]> form = request().body().asFormUrlEncoded();
+            entry.title = form.get("title")[0];
+            entry.start_date = sdf.parse(form.get("start_date")[0].replaceAll("-","/")
+                    .replaceAll("T"," "), new ParsePosition(0));
+            entry.end_date = sdf.parse(form.get("end_date")[0].replaceAll("-","/")
+                    .replaceAll("T"," "), new ParsePosition(0));
+            entry.color = form.get("color")[0];
+            entry.update();
+            entry.save();
+        } catch(Exception e) {
+            return badRequest();
+        }
+        return list();
+    }
+
+    /**
+     * 特定のエントリのみを返す
+     * @param id 返して欲しいエントリのID
+     * @return JSON形式でエントリ（あるいは空のJSON）を返す
+     */
+    public Result fetch(Long id) {
+        Event entry = Ebean.find(Event.class).setId(id).findOne();
+        if(entry == null) {
+            return notFound();
+        }
+        return ok(Json.toJson(entry));
+    }
+
+    /**
+     * 特定のエントリを削除する
+     * @param id 削除するエントリのID
+     * @return 削除後の投稿リスト
+     */
+    public Result delete(Long id) {
+        Ebean.find(Event.class).setId(id).findOneOrEmpty().map(entry -> entry.delete());
+        return list();
     }
 }

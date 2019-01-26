@@ -61,6 +61,7 @@ function check(){
                                     if(!res.ok){
                                         alert("登録できませんでした");
                                     }else{
+                                        $(".sign-up-box").toggleClass("showed-sign-up");
                                         alert("登録しました");
                                     }
                                 });

@@ -26,6 +26,18 @@ create table comment (
   constraint pk_comment primary key (id)
 );
 
+create table event (
+  id                            bigint auto_increment not null,
+  title                         varchar(255) not null,
+  start_date                    timestamp not null,
+  end_date                      timestamp not null,
+  color                         varchar(255),
+  start_date_string             varchar(255),
+  end_date_string               varchar(255),
+  username                      varchar(255) not null,
+  constraint pk_event primary key (id)
+);
+
 create table grade (
   id                            bigint auto_increment not null,
   username                      varchar(255) not null,
@@ -34,16 +46,6 @@ create table grade (
   tag                           varchar(255) not null,
   user_id                       bigint,
   constraint pk_grade primary key (id)
-);
-
-create table task (
-  title                         varchar(255) not null,
-  start_date                    timestamp not null,
-  end_date                      timestamp not null,
-  color                         varchar(255),
-  start_date_string             varchar(255),
-  end_date_string               varchar(255),
-  username                      varchar(255) not null
 );
 
 create table thread (
@@ -135,9 +137,9 @@ drop table if exists accgrade;
 
 drop table if exists comment;
 
-drop table if exists grade;
+drop table if exists event;
 
-drop table if exists task;
+drop table if exists grade;
 
 drop table if exists thread;
 

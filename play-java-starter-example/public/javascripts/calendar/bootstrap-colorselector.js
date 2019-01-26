@@ -136,4 +136,4 @@
 
 })(jQuery, window, document);
 
-$('#colorselector').colorselector();
+$('.colorselector').colorselector();

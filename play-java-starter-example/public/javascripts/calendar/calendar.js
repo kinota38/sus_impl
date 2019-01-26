@@ -255,7 +255,7 @@ function open_register_task(e){
     var HH_end = $("#HH_end").text();
     var MM_end = $("#mm_end").text();
     var time_start = yy_start;
-    var time_end   = yy_end
+    var time_end   = yy_end;
 
     var time_hh_start = "";
     var time_hh_end = "";
@@ -332,11 +332,14 @@ function open_register_task(e){
     dateControl.value = time_hh_end;
     */
     var start_time_local = time_start + "T" + time_hh_start;
+    console.log(start_time_local);
     var end_time_local = time_end + "T" + time_hh_end;
-    var dateControl = document.querySelector('#start_date');
+    $("#start_date").val(start_time_local);
+    $("#end_date").val(end_time_local);
+    /*var dateControl = document.querySelector('#start_date');
     dateControl.value = start_time_local;
-    var dateControl = document.querySelector('#end_date');
-    dateControl.value = end_time_local;
+    dateControl = document.querySelector('#end_date');
+    dateControl.value = end_time_local;*/
      //$(".overlay").fadeIn("slow");
      //var w = $window.width();
      //var h = $window.height();
@@ -347,10 +350,6 @@ function open_register_task(e){
 }
 
 function close_register_task(){
-    /*$(".overlay").fadeOut("fast");
-    $(".main-window").fadeOut("fast");
-    document.getElementById( "title" ).value = "" ;
-    $("#error-field").empty();*/
     $("#exampleModal").modal("hide");
 }
 
