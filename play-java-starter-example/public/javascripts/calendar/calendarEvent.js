@@ -156,6 +156,7 @@ function create_label(entries) {
                     "border-color": entry["color"],
                     "pointer-events": "auto"
                 }).append(hiddenInfo).append(display).on("click", function(){
+                    $("#exampleModal").modal("toggle");
                     open_edit_event(entry["id"]);
             });
         labels.append(oneEvent);
@@ -219,6 +220,7 @@ function edit_entry() {
 
 // 編集画面を開く
 function open_edit_event(id) {
+    $("#exampleModal").modal("toggle");
     // 詳細情報をサーバに問い合わせる
     fetch("/event/entry/" + id).then(res => {
         if(!res.ok) {
@@ -239,7 +241,11 @@ function open_edit_event(id) {
         $("#edit-title").val(json["title"]);
         $("#edit-start_date").val(startDate);
         $("#edit-end_date").val(endDate);
-        $(".colorselector").val(json["color"]);
+        $("select option[value=\""+ json["color"] +"\"]").attr("selected","selected");
+        $(".btn-colorselector").css("background-color", json["color"]);
+        $("ul li a[data-color*=\"#\"]").removeClass("selected");
+        $("ul li a[data-color=\""+ json["color"] +"\"]").addClass("selected");
+        $("#exampleModal").modal("toggle");
         $("#editModal").modal();
     }, error => {
         alert(error.message);
@@ -248,6 +254,8 @@ function open_edit_event(id) {
 
 // 編集画面を閉じる
 function close_edit_event(){
+    $("#exampleModal").modal("toggle");
+    $("ul li a[data-color*=\"#\"]").removeClass("selected");
     $("#editModal").modal("hide");
 }
 
@@ -274,8 +282,8 @@ function toDate(e) {
 }
 
 function jumpDay(element){
-    $("[selected = 'true']").removeAttr("selected");
-    element.setAttribute("selected", "true");
+    $("[select = 'true']").removeAttr("select");
+    element.setAttribute("select", "true");
     const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
     const year = element.getAttribute("yy");
     const month = element.getAttribute("mm");

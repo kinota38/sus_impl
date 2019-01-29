@@ -167,7 +167,6 @@ function backdd(e) {
             month = 12;
             day = 31;
         } else {
-            month = month - 1;
             switch (parseInt(month)) {
                 case 2:
                 case 4:
@@ -192,11 +191,13 @@ function backdd(e) {
                         day = 28;
                     }
             }
+            month = month - 1;
         }
     }
     showDate(year,  month, dateNum, dayOfWeekStr, day);
     setMiniCalendar(year, month);
-    $("[yy = " + year + "]" + "[mm = " + month + "]" + "[dd = " + day + "]").attr("selected", "true");
+    update_event_list();
+    $("[yy = \"" + year + "\"]" + "[mm = \"" + month + "\"]" + "[dd = \"" + day + "\"]").attr("select", "true");
 }
 
 // 翌日へ移動(計算量が多いため、連続で押すと競合発生)
@@ -269,10 +270,10 @@ function nextdd(e) {
             }
             break;
     }
-
     showDate(year,  month, dateNum, dayOfWeekStr, day);
     setMiniCalendar(year, month);
-    $("[yy = " + year + "]" + "[mm = " + month + "]" + "[dd = " + day + "]").attr("selected", "true");
+    update_event_list();
+    $("[yy = " + year + "]" + "[mm = " + month + "]" + "[dd = " + day + "]").attr("select", "true");
 }
 
 function open_register_task(e){
@@ -358,4 +359,9 @@ function open_register_task(e){
     dateControl.value = start_time_local;
     var dateControl = document.querySelector('#end_date');
     dateControl.value = end_time_local;
+    $("#exampleModal").modal();
+}
+
+function close_register_task(){
+    $("#exampleModal").modal("toggle");
 }

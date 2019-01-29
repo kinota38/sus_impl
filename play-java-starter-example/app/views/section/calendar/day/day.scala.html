@@ -458,7 +458,7 @@
                                                 <div class="mmsF1c"></div>
                                             </div>
                                             <div class="EdAri"></div>
-                                            <div role="gridcell" tabindex="-1" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
+                                            <div role="gridcell" tabindex="-1" style="pointer-events: none" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
                                                 <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
                                                 <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
                                                 <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
@@ -547,7 +547,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalCenteredLabel">編集</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="close_register_task();">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -579,7 +579,7 @@
                         </div>
                         <div class="form-group">
                             <select class="colorselector" name="color">
-                                <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                <option value="#039BE5" data-color="#039BE5">青</option>
                                 <option value="#be2edd" data-color="#be2edd">紫</option>
                                 <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
                                 <option value="#EA2027" data-color="#EA2027">赤</option>
@@ -591,7 +591,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task();">閉じる</button>
                     <button type="button" class="btn btn-primary" onclick="edit_entry(); return false;">変更</button>
                     <button type="button" class="btn btn-secondary" data-toggle="tooltip" title="削除" onclick="delete_entry(); return false;">
                         <i class="fas fa-trash-alt"></i>

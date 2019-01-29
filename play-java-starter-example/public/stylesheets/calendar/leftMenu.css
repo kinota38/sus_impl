@@ -289,7 +289,7 @@
     justify-content: center;
 }
 
-.date[selected="true"] {
+.date[select="true"] {
     background-color: #7ed6df;
     color: white;
 }
