@@ -370,7 +370,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                                 <div class="mmsF1c"></div>
                                             </div>
                                             <div class="EdAri"></div>
-                                            <div role="gridcell" tabindex="-1" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
+                                            <div role="gridcell" tabindex="-1" style="pointer-events: none" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
                                                 <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
                                                 <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
                                                 <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
@@ -459,7 +459,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalCenteredLabel">編集</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="close_register_task();">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -491,7 +491,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                         </div>
                         <div class="form-group">
                             <select class="colorselector" name="color">
-                                <option value="#039BE5" data-color="#039BE5"　selected="selected">青</option>
+                                <option value="#039BE5" data-color="#039BE5">青</option>
                                 <option value="#be2edd" data-color="#be2edd">紫</option>
                                 <option value="#EE5A24" data-color="#EE5A24">オレンジ</option>
                                 <option value="#EA2027" data-color="#EA2027">赤</option>
@@ -503,7 +503,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                     """),format.raw/*591.21*/("""</form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task();">閉じる</button>
                     <button type="button" class="btn btn-primary" onclick="edit_entry(); return false;">変更</button>
                     <button type="button" class="btn btn-secondary" data-toggle="tooltip" title="削除" onclick="delete_entry(); return false;">
                         <i class="fas fa-trash-alt"></i>
@@ -528,10 +528,10 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 27 02:04:47 JST 2019
+                  DATE: Sun Jan 27 22:44:33 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 72f3aae590dbfe4f41367e7cddd6aad4242a5789
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3105->10602|3131->10606|3307->10754|3333->10758|6208->13604|6235->13608|6266->13609|20914->28683|20984->28724|31806->39518|31832->39522|34076->41738|34092->41744|34129->41759|34179->41780|35440->43013|35466->43017|37698->45221|37714->45227|37751->45242|37801->45263
+                  HASH: 8ed26b6f46cac1f6f74bdc5f556fd6150cef0ef6
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1420->9017|1446->9021|2199->9746|2225->9750|3105->10602|3131->10606|3307->10754|3333->10758|6208->13604|6235->13608|6266->13609|20914->28683|20984->28724|31835->39547|31861->39551|34105->41767|34121->41773|34158->41788|34208->41809|35502->43075|35528->43079|37740->45263|37756->45269|37793->45284|37843->45305
                   LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|38->122|38->122|49->133|49->133|61->145|61->145|63->147|63->147|99->183|99->183|99->183|281->369|282->370|413->501|413->501|445->533|445->533|445->533|446->534|470->558|470->558|502->590|502->590|502->590|503->591
                   -- GENERATED --
               */
