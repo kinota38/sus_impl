@@ -1,3 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/shibainu/Documents2/sus_impl/play-java-starter-example/conf/routes:55:1: value newEvent is not a member of controllers.TodoController[0m
-[0m[[0m[31merror[0m] [0m[0mPOST    /todoApplication/newtask                controllers.TodoController.newEvent[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/calendar.scala.html:1:1: day is already defined as package day[0m
+[0m[[0m[31merror[0m] [0m[0m@(name :String)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html:1:1: day is already defined as object day[0m
+[0m[[0m[31merror[0m] [0m[0m@(name :String)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
