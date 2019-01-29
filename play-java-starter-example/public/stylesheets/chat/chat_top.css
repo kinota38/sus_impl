@@ -1,10 +1,13 @@
 body{
-    background: #f1f1f1;
+    background-color: #FFFFEE;
     font-family:'Helvetica Neue';
     text-align:center;
 }
 header{
     text-align:left;
+}
+main{
+    height: 50px;
 }
 .layer{
     display: none;  /* 初期表示は非表示 */
@@ -43,9 +46,10 @@ header{
     position:relative;
     margin:auto;
     width:300px;
-    background-color:white;
-    border:thin solid #E6E6FA;
     cursor:pointer;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
 }
 
 .threadname-label{
@@ -73,19 +77,22 @@ header{
 }
 
 .menu-box{
-    position:fixed;
-    top:100px;
-    width:150px;
-    height:120px;
-    border:thin solid #000;
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 400px;
+    height: 100px;
     z-index:-1;
 }
 
 .menu{
+    float: left;
     height:30px;
     color:white;
     line-height: 30px;
     background-color:#333333;
+    border:thin solid white;
     cursor:pointer;
     transition: .3s;
 }
@@ -96,19 +103,21 @@ header{
 }
 
 .menu1.active {
-    border-left:medium double #E6E6FA;
+    color: #000;
+    background-color: #CCCCCC;
 }
 
 #field{
-    position:fixed;
-    margin-left:200px;
-    top:100px;
+    clear: both;
+    position: relative;
+    top: 100px;
     z-index:-1;
 }
 
 .search{
-    position:fixed;
-    top:70px;
+    float: left;
+    position:relative;
+    top:20px;
     left:10px;
     z-index:-1;
 }

@@ -1,5 +1,5 @@
 body{
-    background: #f1f1f1;
+    background: #FFFFEE;
     font-family:'Helvetica Neue';
 }
 
@@ -213,9 +213,9 @@ p.kaiwa-text:last-child {
 }
 
 .pictureform{
-    position:fixed;
+    position:relative;
     left:20%;
-    top:550px;
+    top:-130px;
     width:200px;
     z-index:6;
     text-align:left;

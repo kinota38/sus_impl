@@ -52,9 +52,10 @@
         </div>
     </nav>
 </header>
+
 <form class="search">
     <input type="search" class="input-search" placeholder="キーワードを入力">
-    <input type="button" onclick="search();" value="検索">
+    <button type="button" class="btn btn-primary btn-sm" onclick="search();">検索</button>
 </form>
 <div class="menu-box">
     <div class="menu" onclick="show_thread_form()">チャット作成</div>
@@ -62,6 +63,7 @@
     <div id="mythread" class="menu menu1" onclick="show_mythread_list()">自分のチャット</div>
     <div class="menu menu1" onclick="show_favthread_list()">お気に入り</div>
 </div>
+<!--<hr color="#009999">!-->
 
 <div id="field"></div>
 
