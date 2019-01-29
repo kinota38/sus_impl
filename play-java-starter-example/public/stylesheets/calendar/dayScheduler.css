@@ -35,7 +35,8 @@
     display: -moz-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    /*display: flex;*/
+    display:none;
     -webkit-flex-direction: column;
     flex-direction: column;
     position: relative;

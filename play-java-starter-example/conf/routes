@@ -12,8 +12,9 @@ GET     /logout                                 controllers.UserController.logou
 GET     /helper/:username                       controllers.MainController.mypageForm(username: String)
 
 # calendar & event controller
+GET     /calendar                               controllers.MainController.calendarMonth
 GET     /calendar/month                         controllers.MainController.calendarMonth
-GET     /calendar/day                           controllers.MainController.calendarDay
+#GET    /calendar/day                           controllers.MainController.calendarDay
 GET     /event/entries                          controllers.EventController.list
 POST    /event/create                           controllers.EventController.eventRegister
 POST    /event/edit/:id                         controllers.EventController.edit(id: Long)

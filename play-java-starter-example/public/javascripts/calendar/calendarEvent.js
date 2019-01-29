@@ -293,6 +293,21 @@ function jumpDay(element){
     $(".month-num").text(month);
     $(".date-num").text(col);
     $(".display-day").text(day);
+    console.log(day);
     $(".display-date").text(day_of_week[col]);
     update_event_list();
+    toDay();
+    $("#year_start").text(year);
+    $("#month_start").text(month);
+    $("#date_start").text(day);
+
+    $("#year_end").text(year);
+    $("#month_end").text(month);
+    $("#date_end").text(day);
+}
+
+function toDay(){
+    $("#calendar-result").css('display','none');
+    $(".date-scheduler-core").css('display','flex');
+
 }

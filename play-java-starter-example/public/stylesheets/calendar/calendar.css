@@ -1,7 +1,7 @@
-div.wrapper:not(.overlay){
+/*div.wrapper:not(.overlay){
     display: flex;
     padding-top:50px
-}
+}*/
 
 div.menu{
     width: 200px;
@@ -12,9 +12,9 @@ div.menu{
 
 }
 
-body{
+/*body{
     float: left;
-}
+}*/
 
 div.calendar{
 
@@ -64,6 +64,9 @@ div.day{
     transition: 0.4s ;
 
 }
+div.day:hover{
+    background-color: #A4C6FF;
+}
 /*div.date:last-child{
     border-right: 0;
 }*/
@@ -75,9 +78,7 @@ div.day{
   // display: block;
 }
 
-div.day:hover{
-    background-color: #A4C6FF;
-}
+
 .tdlink:hover {
   background-color: #ff0000;
 }
