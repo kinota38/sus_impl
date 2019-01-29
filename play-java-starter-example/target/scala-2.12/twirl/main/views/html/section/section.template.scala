@@ -172,8 +172,8 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Jan 25 11:46:04 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
+                  DATE: Fri Jan 25 12:06:10 JST 2019
+                  SOURCE: /Users/kosuke_murakami/IdeaProjects/sus_impl3/play-java-starter-example/app/views/section/section.scala.html
                   HASH: 3be971a66738ac0405e3644e2988d42cf352b53e
                   MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2948->1681|2973->1685|3140->1825|3165->1829|3923->2559|3949->2563|3979->2564|6017->4575|6042->4579|6641->5150|6667->5154
                   LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|124->93|124->93|138->107|138->107
