@@ -5,6 +5,20 @@ window.onload = function() {
   setMiniCalendar();
 };
 
+!function ($) {
+    // ページロード完了時に行う操作
+    $(document).ready(() => {
+        // ページロード完了時に作成済みイベント一覧表をアップデートする
+        const year = $(".year-num").text();
+        const month = $(".month-num").text();
+        setMiniCalendar(year,  month);
+        const dateNum = $(".date-num").text();
+        const dayOfWeekStr = $(".display-date").text();
+        const day = $(".display-day").text();
+        showDate(year,  month, dateNum,  dayOfWeekStr, day);
+    });
+}(jQuery);
+
 var clientX;
 var clientY;
 var miniWindowSize = 200;
@@ -31,8 +45,6 @@ $window.resize(function (){
           $("#year_start").text(e.getAttribute('yy'));
           $("#month_start").text(e.getAttribute('mm'));
           $("#date_start").text(e.getAttribute('dd'));
-          $("#x_page").text(clientX);
-          $("#y_page").text(clientY);
        }
     function mouseup(e){
         var row_end = e.getAttribute('row');
@@ -40,7 +52,6 @@ $window.resize(function (){
         $("#month_end").text(e.getAttribute('mm'));
         $("#date_end").text(e.getAttribute('dd'));
         if(e.className=="day"){
-            $("#exampleModal").modal();
             open_register_task(e);
         }
 
@@ -214,6 +225,137 @@ function nextmm(e) {
   setCalendar(yy, mm);
   setMiniCalendar(yy,mm);
 }
+function backdd(e) {
+    let year = $(".year-num").text();
+    let month = $(".month-num").text();
+    let dateNum = $(".date-num").text();
+    let day = $(".display-day").text();
+
+    // 曜日は１つずれるだけ
+    if (dateNum != 0) {
+        dateNum = parseInt(dateNum) - 1;
+    } else {
+        dateNum = 6;
+    }
+    const dayOfWeekStr = ["日", "月","火","水","木","金","土"][dateNum];
+
+    // 年月日
+    if (day != 1) {
+        day = parseInt(day) - 1;
+    } else {
+        if (month == 1) {
+            year = year - 1;
+            month = 12;
+            day = 31;
+        } else {
+            switch (parseInt(month)) {
+                case 2:
+                case 4:
+                case 6:
+                case 8:
+                case 9:
+                case 11:
+                    day = 31;
+                    break;
+                case 5:
+                case 7:
+                case 10:
+                case 12:
+                    day = 30;
+                    break;
+                case 3:
+                    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                        // leap year
+                        day = 29;
+                    } else {
+                        // normal year
+                        day = 28;
+                    }
+            }
+            month = month - 1;
+        }
+    }
+    showDate(year,  month, dateNum, dayOfWeekStr, day);
+    setMiniCalendar(year, month);
+    update_event_list();
+    $("[yy = \"" + year + "\"]" + "[mm = \"" + month + "\"]" + "[dd = \"" + day + "\"]").attr("select", "true");
+}
+
+// 翌日へ移動(計算量が多いため、連続で押すと競合発生)
+function nextdd(e) {
+    let year = $(".year-num").text();
+    let month = $(".month-num").text();
+    let dateNum = $(".date-num").text();
+    let day = $(".display-day").text();
+
+    // 曜日は１つずれるだけ
+    if (dateNum != 6) {
+        dateNum = parseInt(dateNum) + 1;
+    } else {
+        dateNum = 0;
+    }
+    const dayOfWeekStr = ["日", "月","火","水","木","金","土"][dateNum];
+
+    // 年月日
+    switch (parseInt(month)) {
+        case 2:
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                // leap year
+                if (day != 29) {
+                    day = parseInt(day) + 1;
+                } else {
+                    day = 1;
+                    month = parseInt(month) + 1;
+                }
+            } else {
+                // normal year
+                if (day != 28) {
+                    day = parseInt(day) + 1;
+                } else {
+                    day = 1;
+                    month = parseInt(month) + 1;
+                }
+            }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            if (day != 30) {
+                day = parseInt(day) + 1;
+            } else {
+                day = 1;
+            }
+            month = parseInt(month) + 1;
+            break;
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+            if (day != 31) {
+                day = parseInt(day) + 1;
+            } else {
+                day = 1;
+                month = parseInt(month) + 1;
+            }
+            break;
+        case 12:
+            if (day != 31) {
+                day = parseInt(day) + 1;
+            } else {
+                day = 1;
+                year = parseInt(year) + 1;
+                month = 1;
+            }
+            break;
+    }
+    showDate(year,  month, dateNum, dayOfWeekStr, day);
+    setMiniCalendar(year, month);
+    update_event_list();
+    $("[yy = " + year + "]" + "[mm = " + month + "]" + "[dd = " + day + "]").attr("select", "true");
+}
 
 // 日付をクリックしたときに日付をアラートさせる（年と月の拾い方、年またぎに注意）
 function show(e) {
@@ -347,6 +489,7 @@ function open_register_task(e){
      $(".overlay").width(w);
      $(".overlay").fadeIn();
      $(".main-window").fadeIn("fast");*/
+     $("#exampleModal").modal();
 }
 
 function close_register_task(){
@@ -440,16 +583,19 @@ function setMiniCalendar(yy,mm){
     var out = makeMiniCalendar(yy,mm);
     document.getElementById("mini-calendar-result").innerHTML = out;
 }
-function jumpDay(element){
-    $("[selected = 'true']").removeAttr("selected");
-    element.setAttribute("selected", "true");
-    const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
-    const year = element.getAttribute("yy");
-    const month = element.getAttribute("mm");
-    const day = element.getAttribute("dd");
-    const col = element.getAttribute("col");
+
+function showDate(year, month, dateNum, dayOfWeekStr, day) {
+    if (!year && !month && !dayOfWeekStr && !dateNum && !day) {
+        const date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() -(-1);
+        dateNum = date.getDay();
+        dayOfWeekStr = ["日", "月","火","水","木","金","土"][dateNum];
+        day = date.getDate();
+    }
     $(".year-num").text(year);
     $(".month-num").text(month);
+    $(".date-num").text(dateNum);
+    $(".display-date").text(dayOfWeekStr);
     $(".display-day").text(day);
-    $(".display-date").text(day_of_week[col]);
 }
