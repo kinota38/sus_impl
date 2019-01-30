@@ -4,7 +4,7 @@
 		module="sus_impl$sources"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190126044021"
+		publication="20190129144709"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -117,6 +117,10 @@
                 </div>
             </div>
         </header>*@
+        <span hidden ><span id="HH_start">0</span>:<span id="mm_start">0</span></span>
+        <span hidden ><span id="HH_end">0</span>:<span id="mm_end">0</span></span>
+        <span hidden><span id="year_start"></span>/<span id="month_start"></span>/<span id="date_start"></span></span>
+        <span hidden><span id="year_end"></span>/<span id="month_end"></span>/<span id="date_end"></span></span>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="/helper/@name" style="font-style: oblique; font-family: 'Arial Black', sans-serif;">
@@ -150,29 +154,37 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="tmonth" onclick="setMiniCalendar(); showDate();" style="cursor: pointer">今日</div>
+                            <div class="nav-link chosen-month" id="tmonth" onclick="setCalendar(); setMiniCalendar();" style="cursor: pointer">
+                                今月
+                            </div>
+                            <div class="nav-link chosen-day" id="tday" onclick="setMiniCalendar(); showDate(); update_event_list();" style="cursor: pointer; display: none;">
+                                今日
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="bmonth" onclick='backdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-month" id="bmonth" onclick="backmm(this);" style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-day" id="bday" onclick="backdd(this);" style="cursor: pointer; display: none;"><i class="fas fa-angle-left"></i></div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="nmonth" onclick='nextdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-month" id="nmonth" onclick="nextmm(this);" style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-day" id="nday" onclick="nextdd(this);" style="cursor: pointer; display: none; margin: auto;"><i class="fas fa-angle-right"></i></div>
                         </li>
                         <li class="nav-item active">
                             <div class="nav-link"><span class="year-num" style="color: white;"></span>年<span class="month-num" style="color: white;"></span>月</div>
                         </li>
                         <li class="nav-item dropdown active " style="background-color: white; color: black; margin-left: 10px;">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
-                                日
+                                <span class="chosen-day" style="display: none">日</span>
+                                <span class="chosen-month">月</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">年(作成未定)</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/calendar/month">月</a>
+                                <a class="dropdown-item active" href="/calendar/month">月</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">週(作成未定)</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item active" href="/calendar/day">日<span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item day-link" onclick="jumpDay()">日</a>
                             </div>
                         </li>
                     </ul>
@@ -197,7 +209,7 @@
         <div class="calendar-body">
             <div class="left-menu-wrapper">
                 <div class="left-menu">
-                    <div class="htpigd"></div>
+                    <div class="htpigd"><span hidden id="x-place"></span><span hidden id="y-place"></span><span hidden id="scroll-value"></span><span hidden id="start-Y"></span><span hidden id="end-Y"></span></div>
                     <div class="leftmenu-bottom">
                         <h1 tabindex="-1" class="ynRLnc">ドロワー</h1>
                         <div class="nav-calendar-all">
@@ -262,10 +274,13 @@
                     </div>
                 </div>
             </div>
+            <div id="calendar-result" ></div>
             <div class="date-scheduler-wrapper">
+
                 <div class="date-scheduler-all">
                     <h1 id="c1836" class="ynRLnc"> 2019年 1月 3日 (木曜日)</h1>
                     <div class="date-scheduler">
+
                         <div role="grid" class="date-scheduler-core">
                             <div class="date-scheduler-top">
                                 <div class="NBzXR">
@@ -356,17 +371,28 @@
                                             <div aria-hidden="true" class="wcMO4d"></div>
                                         </div>
                                     </div>
-                                    <div role="presentation" aria-hidden="true" class="jRJqje" jsname="sZR1Lb">
+                                    <div role="presentation" aria-hidden="true" class="jRJqje">
                                         <div class="xsOpqe"></div>
                                         <div class="MVMVEe  GFiTfe">
-                                            <ul aria-hidden="true" class="ZHdPfd" jsname="GkYald">
-                                                <li class="yEkOpe" jsname="LF4U9b"></li>
+                                            <ul aria-hidden="true" class="ZHdPfd">
+                                                <li class="yEkOpe"></li>
                                             </ul>
-                                            @*<div role="presentation" class="rES0Be elYzab-cXXICe-Hjleke  uj9dId" style="height:0em;" jscontroller="njBlKd">
+                                            <div role="presentation" class="rES0Be elYzab-cXXICe-Hjleke  uj9dId" style="height:0em;">
                                                 <div role="gridcell" aria-labelledby="c1856" tabindex="-1" class="eADW5d">
-                                                    <h2 id="c1856" class="ynRLnc">終日の予定なし、natade cocoa さん</h2>
+                                                    <h2 id="c1856" class="ynRLnc">終日の予定一覧</h2>
+                                                    <div role="presentation">
+                                                        <div data-opens-details="true" data-keyboardactiontype="0;1" class="ifwtOb elYzab-cXXICe-Hjleke NlL62b" data-dragsource-type="6" style="left:0%; width:100%; top:0em;border-color:#039BE5;">
+                                                            <div class="g3dbUc jKgTF XFPdgf QGRmIf" style="background-color:#039BE5;" role="button" tabindex="0">
+                                                                <div class="zWcBU BvHyo gpOGPc" aria-hidden="true" style="border-left-color:#039BE5"></div>
+                                                                <span aria-hidden="true" class="c1wk3e">
+                                                                    <span class="yzifAd">ここここ</span>
+                                                                </span>
+                                                                <span class="ynRLnc">終日、ここここ、username、承諾済み、場所の指定なし、2019年 1月 2日 ～ 3日</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>*@
+                                            </div>
                                         </div>
                                         <div aria-hidden="true" class="Xk5jT"></div>
                                     </div>
@@ -430,7 +456,7 @@
                                         </div>
                                     </div>
                                     <div class="right-time-space">
-                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" style="z-index: 1" onclick="open_register_task(); return false;" data-dragsource-type="4">
+                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" style="z-index: 1"  data-dragsource-type="4">
                                             <div aria-hidden="true" class="wyrRZc">
                                                 <div class="mmsF1c"></div>
                                                 <div class="mmsF1c"></div>
@@ -479,6 +505,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -491,7 +518,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenteredLabel">新規作成</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="close_register_task()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -500,7 +527,7 @@
                     <form id="registration-form">
                         <input type="hidden" name="username" value="@name">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" name="title" id="title" placeholder="タイトルを入力">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="タイトルを入力">
                         </div>
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker1">
@@ -534,7 +561,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task()">閉じる</button>
                     <button type="button" class="btn btn-primary" onclick="register_new(); return false;">保存</button>
                 </div>
             </div>

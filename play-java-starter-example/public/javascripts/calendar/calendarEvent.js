@@ -140,6 +140,7 @@ function create_label(entries) {
         if (minLength > 30) {
             height = minLength * 2.0 / 3.0;
         }
+        const startTop = (parseInt(startTime[0]) * 60 + parseInt(startTime[1])) * 2/3 - 1;
         const oneEvent = $("<div>").attr({
                 role: "button",
                 tabindex: "0",
@@ -147,7 +148,7 @@ function create_label(entries) {
                 title: entry["title"]
             }).addClass("NlL62b EfQccc elYzab-cXXICe-Hjleke EiZ8Dd jKgTF")
                 .css({
-                    'top': String(Number(startTime[0]) * 40 - 1)+"px",
+                    'top': String(startTop)+"px",
                     'height': String(height)+"px",
                     "left": "0%",
                     "width": "100%",
@@ -156,7 +157,7 @@ function create_label(entries) {
                     "border-color": entry["color"],
                     "pointer-events": "auto"
                 }).append(hiddenInfo).append(display).on("click", function(){
-                    $("#exampleModal").modal("toggle");
+                    $("#exampleModal").modal("hide");
                     open_edit_event(entry["id"]);
             });
         labels.append(oneEvent);
@@ -220,7 +221,7 @@ function edit_entry() {
 
 // 編集画面を開く
 function open_edit_event(id) {
-    $("#exampleModal").modal("toggle");
+    $("#exampleModal").modal("hide");
     // 詳細情報をサーバに問い合わせる
     fetch("/event/entry/" + id).then(res => {
         if(!res.ok) {
@@ -245,7 +246,7 @@ function open_edit_event(id) {
         $(".btn-colorselector").css("background-color", json["color"]);
         $("ul li a[data-color*=\"#\"]").removeClass("selected");
         $("ul li a[data-color=\""+ json["color"] +"\"]").addClass("selected");
-        $("#exampleModal").modal("toggle");
+        $("#exampleModal").modal("hide");
         $("#editModal").modal();
     }, error => {
         alert(error.message);
@@ -254,7 +255,7 @@ function open_edit_event(id) {
 
 // 編集画面を閉じる
 function close_edit_event(){
-    $("#exampleModal").modal("toggle");
+    $("#exampleModal").modal("hide");
     $("ul li a[data-color*=\"#\"]").removeClass("selected");
     $("#editModal").modal("hide");
 }
@@ -283,16 +284,46 @@ function toDate(e) {
 
 function jumpDay(element){
     $("[select = 'true']").removeAttr("select");
-    element.setAttribute("select", "true");
+    let year, month, day, col;
     const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
-    const year = element.getAttribute("yy");
-    const month = element.getAttribute("mm");
-    const day = element.getAttribute("dd");
-    const col = element.getAttribute("col");
+    if (!element) {
+        const date = new Date();
+        year = date.getUTCFullYear();
+        month = date.getMonth() - (-1);
+        col = date.getDay();
+        day = date.getDate();
+    } else {
+        element.setAttribute("select", "true");
+        year = element.getAttribute("yy");
+        month = element.getAttribute("mm");
+        day = element.getAttribute("dd");
+        col = element.getAttribute("col");
+    }
     $(".year-num").text(year);
     $(".month-num").text(month);
     $(".date-num").text(col);
     $(".display-day").text(day);
+    console.log(day);
     $(".display-date").text(day_of_week[col]);
     update_event_list();
+    toDay();
+    $("#year_start").text(year);
+    $("#month_start").text(month);
+    $("#date_start").text(day);
+
+    $("#year_end").text(year);
+    $("#month_end").text(month);
+    $("#date_end").text(day);
+    $("#tmonth").text("今日");
+}
+
+function toDay(){
+    $("[href=\"/calendar/month\"]").removeClass("active");
+    $(".day-link").addClass("active");
+    $(".chosen-day").css('display','inline');
+    $("#tday,#bday,#nday").css("display", "block");
+    $(".chosen-month").css('display','none');
+    $("#calendar-result").css('display','none');
+    $(".date-scheduler-core").css('display','flex');
+
 }

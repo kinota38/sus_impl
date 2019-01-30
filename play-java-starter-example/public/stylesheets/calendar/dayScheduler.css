@@ -35,7 +35,8 @@
     display: -moz-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    /*display: flex;*/
+    display:none;
     -webkit-flex-direction: column;
     flex-direction: column;
     position: relative;
@@ -336,7 +337,7 @@
     flex: 1 0 128px;
     min-width: 128px;
 }
-.eh5oYe .GFiTfe .uj9dId {
+.GFiTfe .uj9dId {
     /* -webkit-box-flex: 1 0 129px; */
     -webkit-flex: 1 0 129px;
     flex: 1 0 129px;
@@ -355,9 +356,10 @@
 }
 .eADW5d {
     /* -webkit-box-flex: 1 1 0%;
-    -webkit-flex: 1 1 0%;
-    flex: 1 1 0%; */
+    -webkit-flex: 1 1 0%;*/
+    flex: 1 1 128px;
     border-right: 1px solid transparent;
+    min-width: 128px;
 }
 .ynRLnc {
     clip: rect(1px,1px,1px,1px);

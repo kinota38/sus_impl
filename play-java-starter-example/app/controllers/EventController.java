@@ -48,6 +48,13 @@ public class EventController extends Controller {
             endDate = endDate.replaceAll("-","/");
             endDate = endDate.replaceAll("T"," ");
 
+            if(startDate.compareTo(endDate)==1){
+                String temp = startDate;
+                startDate = endDate;
+                endDate = temp;
+            }
+
+
             final Event newEvent = new Event(username, title);
 
             newEvent.start_date = sdf.parse(startDate, new ParsePosition(0));

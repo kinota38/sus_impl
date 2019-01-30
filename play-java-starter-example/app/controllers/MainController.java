@@ -9,7 +9,7 @@ import play.libs.Json;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import utility.Digest;
-import views.html.section.calendar.month.calendar;
+//import views.html.section.calendar.calendar;
 import views.html.section.calendar.day.*;
 import views.html.section.grades.grades;
 import views.html.section.section;
@@ -44,7 +44,7 @@ public class MainController extends Controller {
         }
         Optional<User> user = Ebean.find(User.class).where().eq("sessionid",sessionid).findOneOrEmpty();
         if(user.isPresent()){
-            return ok(calendar.render(user.get().username));
+            return ok(day.render(user.get().username));
         }
         flash("error_msg", "ログインしてください");
         return redirect("/");

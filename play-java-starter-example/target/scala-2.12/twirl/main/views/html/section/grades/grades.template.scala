@@ -188,7 +188,7 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 26 00:04:43 JST 2019
+                  DATE: Tue Jan 29 14:09:22 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
                   HASH: b83eb4b2f61b4f494a2422a4e6e87cb33691896f
                   MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2873->1626|2898->1630|3104->1809|3129->1813|3902->2558|3928->2562|3958->2563|4793->3371|4808->3377|4844->3392|4880->3401|8268->6761|8284->6767|8321->6782|8371->6803|8783->7187|8799->7193|8836->7208|8878->7221

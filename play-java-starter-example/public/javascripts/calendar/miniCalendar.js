@@ -363,5 +363,5 @@ function open_register_task(e){
 }
 
 function close_register_task(){
-    $("#exampleModal").modal("toggle");
+    $("#exampleModal").modal("hide");
 }

@@ -172,7 +172,7 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 26 00:04:43 JST 2019
+                  DATE: Tue Jan 29 14:09:22 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/section.scala.html
                   HASH: 22d38c44aa0a05e27249e910f8a219fef7435a5c
                   MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2928->1661|2953->1665|3120->1805|3145->1809|3918->2554|3944->2558|3974->2559|6018->4576|6043->4580|6642->5151|6668->5155
