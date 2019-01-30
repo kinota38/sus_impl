@@ -321,6 +321,7 @@ function toDay(){
     $("[href=\"/calendar/month\"]").removeClass("active");
     $(".day-link").addClass("active");
     $(".chosen-day").css('display','inline');
+    $("#tday,#bday,#nday").css("display", "block");
     $(".chosen-month").css('display','none');
     $("#calendar-result").css('display','none');
     $(".date-scheduler-core").css('display','flex');
