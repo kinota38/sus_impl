@@ -43,10 +43,10 @@ window.onload = function() {
                             "pointer-events": "auto"
                         });
                     $(".WJVfWe").append(oneEvent);
-                    console.log("startY:"+startY);
+                    // console.log("startY:"+startY);
                     $("#start-Y").text("startY:"+startY);
                     $("#end-Y").text("tmpY:"+tmpY);
-                    console.log("tmpY:"+tmpY);
+                    // console.log("tmpY:"+tmpY);
                     fromYcoordToTime(startY, tmpY);
                 },
                 200
