@@ -33,7 +33,7 @@ function create_analyze(lists) {
 
     for(var i=0;i<16;i++){
         if(num[i]>0){
-            var subject
+            var subject;
             if(i==0)　subject="英語";
             if(i==1)　subject="リスニング";
             if(i==2)　subject="現代文";
@@ -50,7 +50,7 @@ function create_analyze(lists) {
             if(i==13)　subject="地理";
             if(i==14)　subject="倫理・政治経済";
             if(i==15)　subject="現代社会";
-            const bar =$("<li class=\"chart__bar\" style=\"width: "+num[i]*10+"px;\">");
+            const bar =$("<li class=\"chart__bar\" style=\"width: "+num[i]*5+5+"px;\">");
             const title = $("<span>").text(num[i]+" "+subject).addClass("chart__label");
             horiz.append(bar);
             bar.append(title);

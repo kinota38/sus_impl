@@ -44,9 +44,6 @@
     font-weight: bold; }
 
 .charts {
-  position: fixed;
-  top: 100px;
-  left: 330px;
   z-index: 1; }
 
 .chart {
@@ -69,7 +66,6 @@
   overflow: hidden; }
 
 .chart__bar {
-  position: absolute;
   left: -50px;
   height: 30px;
   margin-bottom: 10px;
@@ -121,7 +117,7 @@
 .analysis-circle{
   position: fixed;
   top: 100px;
-  left: 500px;
+  left: 600px;
   z-index: 1;
 }
 
