@@ -314,6 +314,7 @@ function jumpDay(element){
     $("#year_end").text(year);
     $("#month_end").text(month);
     $("#date_end").text(day);
+    $("#tmonth").text("今日");
 }
 
 function toDay(){

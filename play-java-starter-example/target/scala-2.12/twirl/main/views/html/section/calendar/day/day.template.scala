@@ -70,13 +70,20 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                             </div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="tmonth" onclick="setMiniCalendar(); showDate();" style="cursor: pointer">今日</div>
+                            <div class="nav-link chosen-month" id="tmonth" onclick="setCalendar(); setMiniCalendar();" style="cursor: pointer">
+                                今月
+                            </div>
+                            <div class="nav-link chosen-day" id="tday" onclick="setMiniCalendar(); showDate(); update_event_list();" style="cursor: pointer; display: none;">
+                                今日
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="bmonth" onclick='backdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-month" id="bmonth" onclick="backmm(this);" style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-day" id="bday" onclick="backdd(this);" style="cursor: pointer; display: none;"><i class="fas fa-angle-left"></i></div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link" id="nmonth" onclick='nextdd(this);return false;' style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-month" id="nmonth" onclick="nextmm(this);" style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-day" id="nday" onclick="nextdd(this);" style="cursor: pointer; display: none; margin: auto;"><i class="fas fa-angle-right"></i></div>
                         </li>
                         <li class="nav-item active">
                             <div class="nav-link"><span class="year-num" style="color: white;"></span>年<span class="month-num" style="color: white;"></span>月</div>
@@ -101,7 +108,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*188.129*/name),format.raw/*188.133*/(""" """),format.raw/*188.134*/("""さん"></i>
+                                    <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*195.129*/name),format.raw/*195.133*/(""" """),format.raw/*195.134*/("""さん"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
@@ -280,14 +287,29 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             <div aria-hidden="true" class="wcMO4d"></div>
                                         </div>
                                     </div>
-                                    <div role="presentation" aria-hidden="true" class="jRJqje" jsname="sZR1Lb">
+                                    <div role="presentation" aria-hidden="true" class="jRJqje">
                                         <div class="xsOpqe"></div>
                                         <div class="MVMVEe  GFiTfe">
-                                            <ul aria-hidden="true" class="ZHdPfd" jsname="GkYald">
-                                                <li class="yEkOpe" jsname="LF4U9b"></li>
+                                            <ul aria-hidden="true" class="ZHdPfd">
+                                                <li class="yEkOpe"></li>
                                             </ul>
-                                            """),format.raw/*377.53*/("""
-                                        """),format.raw/*378.41*/("""</div>
+                                            <div role="presentation" class="rES0Be elYzab-cXXICe-Hjleke  uj9dId" style="height:0em;">
+                                                <div role="gridcell" aria-labelledby="c1856" tabindex="-1" class="eADW5d">
+                                                    <h2 id="c1856" class="ynRLnc">終日の予定一覧</h2>
+                                                    <div role="presentation">
+                                                        <div data-opens-details="true" data-keyboardactiontype="0;1" class="ifwtOb elYzab-cXXICe-Hjleke NlL62b" data-dragsource-type="6" style="left:0%; width:100%; top:0em;border-color:#039BE5;">
+                                                            <div class="g3dbUc jKgTF XFPdgf QGRmIf" style="background-color:#039BE5;" role="button" tabindex="0">
+                                                                <div class="zWcBU BvHyo gpOGPc" aria-hidden="true" style="border-left-color:#039BE5"></div>
+                                                                <span aria-hidden="true" class="c1wk3e">
+                                                                    <span class="yzifAd">ここここ</span>
+                                                                </span>
+                                                                <span class="ynRLnc">終日、ここここ、username、承諾済み、場所の指定なし、2019年 1月 2日 ～ 3日</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div aria-hidden="true" class="Xk5jT"></div>
                                     </div>
                                 </div>
@@ -324,7 +346,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                                 <div class="lmNFmc pCoqfc">GMT+09</div>
                                                 <div class="lmNFmc MANBAf">午前12時</div>
                                                 <div class="lmNFmc MANBAf">午前1時</div>
-                                                <div class="lmNFmc MANBAf">午前2時</div>
+                                                <div class="lmNFmc MANBAf">午前"""),
+format.raw("""2時</div>
                                                 <div class="lmNFmc MANBAf">午前3時</div>
                                                 <div class="lmNFmc MANBAf">午前4時</div>
                                                 <div class="lmNFmc MANBAf">午前5時</div>
@@ -412,16 +435,16 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalCenteredLabel">新規作成</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="close_register_task()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <span id="error-field"></span>
                     <form id="registration-form">
-                        <input type="hidden" name="username" value=""""),_display_(/*510.70*/name),format.raw/*510.74*/("""">
+                        <input type="hidden" name="username" value=""""),_display_(/*528.70*/name),format.raw/*528.74*/("""">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" name="title" id="title" placeholder="タイトルを入力">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="タイトルを入力">
                         </div>
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker1">
@@ -451,8 +474,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 <option value="#cd6133" data-color="#cd6133">茶</option>
                             </select>
                         </div>
-                        """),_display_(/*542.26*/helper/*542.32*/.CSRF.formField),format.raw/*542.47*/("""
-                    """),format.raw/*543.21*/("""</form>
+                        """),_display_(/*560.26*/helper/*560.32*/.CSRF.formField),format.raw/*560.47*/("""
+                    """),format.raw/*561.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task()">閉じる</button>
@@ -476,7 +499,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                     <span hidden id="edit-id"></span>
                     <span id="error-field"></span>
                     <form id="edit-form">
-                        <input type="hidden" name="username" value=""""),_display_(/*567.70*/name),format.raw/*567.74*/("""">
+                        <input type="hidden" name="username" value=""""),_display_(/*585.70*/name),format.raw/*585.74*/("""">
                         <div class="form-group">
                             <input type="text" class="form-control" name="title" id="edit-title" placeholder="タイトルを入力">
                         </div>
@@ -508,8 +531,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 <option value="#cd6133" data-color="#cd6133">茶</option>
                             </select>
                         </div>
-                        """),_display_(/*599.26*/helper/*599.32*/.CSRF.formField),format.raw/*599.47*/("""
-                    """),format.raw/*600.21*/("""</form>
+                        """),_display_(/*617.26*/helper/*617.32*/.CSRF.formField),format.raw/*617.47*/("""
+                    """),format.raw/*618.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task();">閉じる</button>
@@ -537,11 +560,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jan 30 12:27:48 JST 2019
+                  DATE: Wed Jan 30 15:01:13 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 704e3f559fc8f08ac1aad5b4c79097b85a721f91
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|6702->14098|6729->14102|6760->14103|21624->29393|21694->29434|32501->40213|32527->40217|34771->42433|34787->42439|34824->42454|34874->42475|36200->43773|36226->43777|38438->45961|38454->45967|38491->45982|38541->46003
-                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|104->188|104->188|104->188|289->377|290->378|422->510|422->510|454->542|454->542|454->542|455->543|479->567|479->567|511->599|511->599|511->599|512->600
+                  HASH: 12fe48a091ba0c13dfc66764964ede47a3c05536
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34794->42089|34820->42093|37037->44282|37053->44288|37090->44303|37140->44324|38466->45622|38492->45626|40704->47810|40720->47816|40757->47831|40807->47852
+                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|111->195|111->195|111->195|445->528|445->528|477->560|477->560|477->560|478->561|502->585|502->585|534->617|534->617|534->617|535->618
                   -- GENERATED --
               */
           

@@ -177,8 +177,10 @@ function makeCalendar(yy, mm) {
 
 
   var out="<div class='calendar'>";
-  $("#year").text(yy);
-  $("#month").text(mm);
+  // $("#year").text(yy);
+  // $("#month").text(mm);
+  $(".year-num").text(yy);
+  $(".month-num").text(mm);
   var youbi = ["日", "月", "火", "水", "木", "金", "土"];
   /*out += "<tr>";
   for (var i in youbi) {
@@ -544,12 +546,14 @@ function open_register_task(e){
      $(".overlay").width(w);
      $(".overlay").fadeIn();
      $(".main-window").fadeIn("fast");*/
-     $("#exampleModal").modal();
+    // $("#title").val("");
+    $("#exampleModal").modal();
 }
 
 function close_register_task(){
     $(".tmpEV").remove();
     $("#exampleModal").modal("hide");
+    $("#title").val("");
 }
 
 function makeMiniCalendar(yy,mm) {
