@@ -167,16 +167,17 @@
                         </li>
                         <li class="nav-item dropdown active " style="background-color: white; color: black; margin-left: 10px;">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
-                                日
+                                <span class="chosen-day" style="display: none">日</span>
+                                <span class="chosen-month">月</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">年(作成未定)</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/calendar/month">月</a>
+                                <a class="dropdown-item active" href="/calendar/month">月</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">週(作成未定)</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item active" href="/calendar/day">日<span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item day-link" onclick="jumpDay()">日</a>
                             </div>
                         </li>
                     </ul>
@@ -201,7 +202,7 @@
         <div class="calendar-body">
             <div class="left-menu-wrapper">
                 <div class="left-menu">
-                    <div class="htpigd"></div>
+                    <div class="htpigd"><span hidden id="x-place"></span><span hidden id="y-place"></span><span hidden id="scroll-value"></span><span hidden id="start-Y"></span><span hidden id="end-Y"></span></div>
                     <div class="leftmenu-bottom">
                         <h1 tabindex="-1" class="ynRLnc">ドロワー</h1>
                         <div class="nav-calendar-all">
@@ -437,7 +438,7 @@
                                         </div>
                                     </div>
                                     <div class="right-time-space">
-                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" style="z-index: 1" onclick="open_register_task();"  data-dragsource-type="4">
+                                        <div role="row" id="c3250" class="cOpq4e elYzab-cXXICe-Hjleke" style="z-index: 1"  data-dragsource-type="4">
                                             <div aria-hidden="true" class="wyrRZc">
                                                 <div class="mmsF1c"></div>
                                                 <div class="mmsF1c"></div>
@@ -542,7 +543,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task()">閉じる</button>
                     <button type="button" class="btn btn-primary" onclick="register_new(); return false;">保存</button>
                 </div>
             </div>
