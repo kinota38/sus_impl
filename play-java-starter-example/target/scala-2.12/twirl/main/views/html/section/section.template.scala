@@ -146,8 +146,7 @@ Seq[Any](format.raw/*2.1*/("""
                         </div>
                         <h3 class="title">TO DO リスト</h3>
                         <p class="description">
-                            something....<br>
-                            something....
+                            これから勉強することをまとめて成果を確認しよう!
                         </p>
                         <a href="/todoApplication" class="read-more">今すぐ始める</a>
                     </div>
@@ -172,9 +171,9 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Jan 31 21:32:15 JST 2019
-                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 22d38c44aa0a05e27249e910f8a219fef7435a5c
+                  DATE: Thu Jan 31 23:16:34 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/section.scala.html
+                  HASH: 163504f5b3aaa02d55ea96a5260df348c8c4484c
                   MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2928->1661|2953->1665|3120->1805|3145->1809|3918->2554|3944->2558|3974->2559|6018->4576|6043->4580|6642->5151|6668->5155
                   LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|124->93|124->93|138->107|138->107
                   -- GENERATED --

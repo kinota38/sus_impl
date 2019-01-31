@@ -1,5 +1,5 @@
 body{
-    background: #f1f1f1;
+    background: #FFFFEE;
     font-family:'Helvetica Neue';
 }
 
@@ -26,7 +26,7 @@ body{
     margin-top: -100px;
     background-color: white;
     border-radius: 5px;
-    border:thin solid #6495ED;
+    border:thin solid #FFA500;
     z-index:5;
     text-align:center;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -61,7 +61,7 @@ body{
 }
 
 .scroll-to-bottom:hover{
-    background-color: #9cd6e7;
+    background-color:#FFA500;
 }
 
 .sankaku{
@@ -184,19 +184,7 @@ p.kaiwa-text:last-child {
     z-index:-1;
 }
 
-#fav-button{
-    position:fixed;
-    top:550px;
-    margin-left:10%;
-    width:40px;
-    height:40px;
-    z-index:2;
-    border:thin solid #000;
-    border-radius:20px;
-    text-align:center;
-    line-height: 40px;
-    cursor:pointer;
-}
+
 
 #add-comment-button{
     width:100px;
@@ -209,13 +197,13 @@ p.kaiwa-text:last-child {
 }
 
 #add-comment-button:hover{
-    background-color: #9cd6e7;
+    background-color: #ffa500;
 }
 
 .pictureform{
-    position:fixed;
+    position:relative;
     left:20%;
-    top:550px;
+    top:-130px;
     width:200px;
     z-index:6;
     text-align:left;
@@ -231,7 +219,7 @@ label{
 }
 
 label:hover{
-    background-color: #9cd6e7;
+    background-color: #FFA500;
 }
 
 label input{
@@ -244,13 +232,28 @@ img {
 }
 
 .back{
-    position:fixed;
     top:100px;
     cursor:pointer;
     text-decoration: underline;
     z-index:-1;
+    position: fixed;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
 }
 
+.back:after{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    content: '';
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #FFFFEE #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
 #advice{
     font-size:30%;
 }
@@ -291,9 +294,51 @@ img {
 }
 
 #create-reply-button:hover{
-    background-color: #6495ED;
+    background-color: #FFA500;
 }
 
 .num{
     font-size:200%;
+}
+
+.ribbon1 {
+    position:fixed;
+    top:550px;
+    width:150px;
+    height:40px;
+    margin-left:-40px;
+    z-index:2;
+    height: 50px;/*リボンの高さ*/
+    line-height: 50px;/*リボンの高さ*/
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;/*横の大きさ*/
+    font-size: 18px;/*文字の大きさ*/
+    background: #f57a78;/*塗りつぶし色*/
+    box-sizing: border-box;
+    cursor:pointer;
+}
+
+.ribbon1:before, .ribbon1:after{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.ribbon1:before{
+    top: 0;
+    left: 0;
+    border-width: 25px 0px 25px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+
+.ribbon1:after{
+    top: 0;
+    right: 0;
+    border-width: 25px 15px 25px 0px;
+    border-color: transparent #FFFFEE transparent transparent;
+    border-style: solid;
 }

@@ -52,7 +52,7 @@ Seq[Any](format.raw/*8.1*/("""
             """),_display_(/*23.14*/content),format.raw/*23.21*/("""
         """),format.raw/*24.9*/("""</main>
         <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("/javascripts/jquery/jquery.js")),format.raw/*25.79*/(""""></script>
-        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*26.77*/(""""></script>
+        <script src=""""),_display_(/*26.23*/routes/*26.29*/.Assets.versioned("/javascripts/fetch/fetch.js")),format.raw/*26.77*/(""""　type="module"></script>
         <script src=""""),_display_(/*27.23*/routes/*27.29*/.Assets.versioned("javascripts/signupandin/signup.js")),format.raw/*27.83*/("""" type="text/javascript"></script>
     </body>
 </html>
@@ -72,10 +72,10 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Jan 31 21:32:15 JST 2019
-                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/main.scala.html
-                  HASH: adcaf4ff6ef65e6736641a522f500056b11bedff
-                  MATRIX: 1206->260|1330->291|1357->292|1437->397|1473->406|1508->414|1534->419|1608->466|1623->472|1684->512|1772->573|1787->579|1848->618|1916->659|1931->665|2024->736|2106->883|2147->897|2175->904|2211->913|2268->943|2283->949|2354->999|2415->1033|2430->1039|2499->1087|2560->1121|2575->1127|2650->1181
+                  DATE: Thu Jan 31 23:16:34 JST 2019
+                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/main.scala.html
+                  HASH: 4050ebf6964a8f12ab4d897d203f045b8cd46f7a
+                  MATRIX: 1206->260|1330->291|1357->292|1437->397|1473->406|1508->414|1534->419|1608->466|1623->472|1684->512|1772->573|1787->579|1848->618|1916->659|1931->665|2024->736|2106->883|2147->897|2175->904|2211->913|2268->943|2283->949|2354->999|2415->1033|2430->1039|2499->1087|2574->1135|2589->1141|2664->1195
                   LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|51->22|52->23|52->23|53->24|54->25|54->25|54->25|55->26|55->26|55->26|56->27|56->27|56->27
                   -- GENERATED --
               */
