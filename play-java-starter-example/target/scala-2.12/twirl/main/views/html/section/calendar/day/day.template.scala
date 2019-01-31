@@ -284,7 +284,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                                     <h2 class="rpCPrc">
                                                         <span hidden class="date-num"></span>
                                                         <div class="MmhHI qAeuG N4XV7d" aria-hidden="true"><span class="display-date"></span></div>
-                                                        <div class="MmhHI KSxb4d N4XV7d" tabindex="0"><span class="display-day" style="color: white"></span></div>
+                                                        <div class="MmhHI KSxb4d N4XV7d" tabindex="0"><span class="display-day"></span></div>
                                                     </h2>
                                                 </div>
                                             </div>
@@ -349,8 +349,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             <div class="Pgg38c">
                                                 <div class="lmNFmc pCoqfc">GMT+09</div>
                                                 <div class="lmNFmc MANBAf">午前12時</div>
-                                      """),
-format.raw("""          <div class="lmNFmc MANBAf">午前1時</div>
+                                                <div class="""),
+format.raw(""""lmNFmc MANBAf">午前1時</div>
                                                 <div class="lmNFmc MANBAf">午前2時</div>
                                                 <div class="lmNFmc MANBAf">午前3時</div>
                                                 <div class="lmNFmc MANBAf">午前4時</div>
@@ -405,10 +405,10 @@ format.raw("""          <div class="lmNFmc MANBAf">午前1時</div>
                                                 <div class="mmsF1c"></div>
                                             </div>
                                             <div class="EdAri"></div>
-                                            <div role="gridcell" tabindex="-1" style="pointer-events: none" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob event-field">
+                                            <div role="gridcell" tabindex="-1" style="pointer-events: none" aria-labelledby="tsc-0" data-column-index="0" data-datekey="25123" class="YvjgZe Qbfsob">
                                                 <h2 id="tsc-0" class="ynRLnc">予定一覧</h2>
-                                                <div aria-hidden="true" class="H3tRZe" key="now-indicator" style="top: 890px;"></div>
-                                                <div aria-hidden="true" class="h11RHc" key="now-indicator-dot" style="top: 890px;"></div>
+                                                <div aria-hidden="true" class="H3tRZe" key="now-indicator"></div>
+                                                <div aria-hidden="true" class="h11RHc" key="now-indicator-dot"></div>
                                                 <div role="presentation" class="WJVfWe A3o4Oe event-field">
                                                     <div role="button" tabindex="0" data-keyboardactiontype="0;1" class="NlL62b EfQccc elYzab-cXXICe-Hjleke  EiZ8Dd jKgTF" style=" top:359px; height:58px;left:0%; width:100%;z-index:4;background-color: #039BE5;border-color: #039BE5;">
                                                         <div class="ynRLnc">午前9時～午前10:30、英語第九、場所: W934、2019年 1月 30日</div>
@@ -564,10 +564,10 @@ format.raw("""          <div class="lmNFmc MANBAf">午前1時</div>
 
               /*
                   -- GENERATED --
-                  DATE: Thu Jan 31 23:16:34 JST 2019
-                  SOURCE: /Users/itoutakeru/IdeaProjects/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: e24fedac16ed8c40abab5b74faced7cc580f00e2
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34919->42214|34945->42218|37162->44407|37178->44413|37215->44428|37265->44449|38591->45747|38617->45751|40829->47935|40845->47941|40882->47956|40932->47977
+                  DATE: Fri Feb 01 00:25:40 JST 2019
+                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
+                  HASH: 43b6381620f8ede6ddc87f0223f9c8dd47044f90
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34846->42141|34872->42145|37089->44334|37105->44340|37142->44355|37192->44376|38518->45674|38544->45678|40756->47862|40772->47868|40809->47883|40859->47904
                   LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|111->195|111->195|111->195|449->532|449->532|481->564|481->564|481->564|482->565|506->589|506->589|538->621|538->621|538->621|539->622
                   -- GENERATED --
               */

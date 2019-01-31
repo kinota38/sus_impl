@@ -38,6 +38,7 @@ function update_event_list() {
     }).then(entries => {
         update_calendar_day(entries);
         update_calendar_month(entries);
+        update_current_time();
     });
 }
 
@@ -276,8 +277,8 @@ function jumpDay(element){
     $("[select = 'true']").removeAttr("select");
     let year, month, day, col;
     const day_of_week = ["日", "月", "火", "水", "木", "金", "土"];
+    const date = new Date();
     if (!element) {
-        const date = new Date();
         year = date.getUTCFullYear();
         month = date.getMonth() - (-1);
         col = date.getDay();
@@ -288,6 +289,21 @@ function jumpDay(element){
         month = element.getAttribute("mm");
         day = element.getAttribute("dd");
         col = element.getAttribute("col");
+    }
+    if (year == date.getFullYear() && month == (date.getMonth() - (-1)) && day == date.getDate()) {
+        console.log("Today");
+        $(".KSxb4d").css({
+            "background-color": "#1a73e8",
+            "color": "white"
+        });
+        $(".display-day").css("color", "white");
+    } else {
+        console.log("Not Today");
+        $(".KSxb4d").css({
+            "background-color": "white",
+            "color": "black"
+        });
+        $(".display-day").css("color", "black");
     }
     $(".year-num").text(year);
     $(".month-num").text(month);
@@ -316,4 +332,35 @@ function toDay(){
     $("#month-scheduler-wrapper").css('display','none');
     $(".date-scheduler-core").css('display','flex');
 
+}
+
+function update_current_time() {
+    const pageYear = $(".year-num").text();
+    const pageMonth = $(".month-num").text();
+    const pageDay = $(".display-day").text();
+    const nowDate = new Date();
+    const nowYear = nowDate.getFullYear();
+    const nowMonth = nowDate.getMonth() - (-1);
+    const nowDay = nowDate.getDate();
+    if (pageYear == nowYear && pageMonth == nowMonth && pageDay == nowDay) {
+        const nowHour = nowDate.getHours();
+        const nowMin = nowDate.getMinutes();
+        const top = (nowHour * 60 + nowMin) * 2 / 3;
+        console.log(top);
+        $(".h11RHc").css({
+            "display": "inline",
+            "top": String(top) + "px"
+        });
+        $(".H3tRZe").css({
+            "display": "inline",
+            "top": String(top) + "px"
+        });
+    } else {
+        $(".h11RHc").css({
+            "display": "none"
+        });
+        $(".H3tRZe").css({
+            "display": "none"
+        });
+    }
 }

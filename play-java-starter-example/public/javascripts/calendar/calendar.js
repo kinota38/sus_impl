@@ -1,8 +1,63 @@
 const $ = jQuery;
 var $window = $(window);
 window.onload = function() {
-  setCalendar();
-  setMiniCalendar();
+    var scrollValue = 0;
+    var tmpY = 0;
+    setCalendar();
+    setMiniCalendar();
+    $(".date-scheduler-main-core").scroll(function() {
+        $("#scroll-value").text("y:" + $(this).scrollTop());
+        scrollValue = $(this).scrollTop();
+    });
+    $("#c3250").mousemove( function(e){
+        const xy = muuXY(e, this);
+        tmpY = xy[1] - 160 + scrollValue;
+        $("#x-place").text("x:" + xy[0]);
+        $("#y-place").text("y:" + xy[1]);
+    }).mousedown(function ( event ) {
+        if( event.button == 0 ){
+            const startXY = muuXY(event, this);
+            const startY = startXY[1] - 160 + scrollValue;
+            $intervalID = setInterval(
+                function(){
+                    let height;
+                    if (tmpY-startY < 30) {
+                        height = 30;
+                    } else {
+                        height = tmpY-startY;
+                    }
+                    $(".tmpEV").remove();
+                    const oneEvent = $("<div>").attr({
+                        role: "button",
+                        tabindex: "0",
+                        "data-toggle": "tooltip",
+                    }).addClass("NlL62b EfQccc elYzab-cXXICe-Hjleke EiZ8Dd jKgTF tmpEV")
+                        .css({
+                            'top': String(startY)+"px",
+                            'height': String(height)+"px",
+                            "left": "0%",
+                            "width": "100%",
+                            "z-index": "100",
+                            "background-color": "#039BE5",
+                            "border-color": "#039BE5",
+                            "pointer-events": "auto"
+                        });
+                    $(".WJVfWe").append(oneEvent);
+                    console.log("startY:"+startY);
+                    $("#start-Y").text("startY:"+startY);
+                    $("#end-Y").text("tmpY:"+tmpY);
+                    console.log("tmpY:"+tmpY);
+                    fromYcoordToTime(startY, tmpY);
+                },
+                200
+            );
+        }
+    }).mouseup(function ( event ) {
+        if( event.button == 0 ){
+            clearInterval( $intervalID );
+            open_register_task(event);
+        }
+    });
 };
 
 !function ($) {
@@ -445,6 +500,8 @@ function makeCalendar(yy, mm) {
   var out="<div class='calendar'>";
   $("#year").text(yy);
   $("#month").text(mm);
+  $(".year-num").text(yy);
+  $(".month-num").text(mm);
   var youbi = ["日", "月", "火", "水", "木", "金", "土"];
   /*out += "<tr>";
   for (var i in youbi) {
@@ -828,7 +885,9 @@ function open_register_task(e){
 }
 
 function close_register_task(){
+    $(".tmpEV").remove();
     $("#exampleModal").modal("hide");
+    $("#title").val("");
 }
 
 function makeMiniCalendar(yy,mm) {
@@ -920,8 +979,8 @@ function setMiniCalendar(yy,mm){
 }
 
 function showDate(year, month, dateNum, dayOfWeekStr, day) {
+    const date = new Date();
     if (!year && !month && !dayOfWeekStr && !dateNum && !day) {
-        const date = new Date();
         year = date.getFullYear();
         month = date.getMonth() -(-1);
         dateNum = date.getDay();
@@ -933,4 +992,42 @@ function showDate(year, month, dateNum, dayOfWeekStr, day) {
     $(".date-num").text(dateNum);
     $(".display-date").text(dayOfWeekStr);
     $(".display-day").text(day);
+    if (year == date.getFullYear() && month == (date.getMonth() - (-1)) && day == date.getDate()) {
+        console.log("Today");
+        $(".KSxb4d").css({
+            "background-color": "#1a73e8",
+            "color": "white"
+        });
+        $(".display-day").css("color", "white");
+    } else {
+        console.log("Not Today");
+        $(".KSxb4d").css({
+            "background-color": "white",
+            "color": "black"
+        });
+    }
+}
+
+function muuXY(e, that) {
+    if (!e) e = window.event;
+    let x, y;
+    if (e.targetTouches) {
+        x = e.targetTouches[0].pageX - e.target.offsetLeft;
+        y = e.targetTouches[0].pageY - e.target.offsetTop;
+    }else if (that){
+        x = e.pageX - that.offsetLeft;
+        y = e.pageY - that.offsetTop;
+    }
+    return [x,y];
+}
+
+function fromYcoordToTime(startY, endY) {
+    let startH = Math.floor(startY / 40);
+    let endH = Math.floor(endY / 40);
+    let startM = (Math.floor(startY / 20) % 2) * 30;
+    let endM = (Math.floor(endY / 20) % 2) * 30;
+    $("#HH_start").text(startH);
+    $("#mm_start").text(startM);
+    $("#HH_end").text(endH);
+    $("#mm_end").text(endM);
 }
