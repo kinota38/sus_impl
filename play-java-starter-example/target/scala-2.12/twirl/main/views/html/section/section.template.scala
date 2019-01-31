@@ -48,7 +48,7 @@ Seq[Any](format.raw/*2.1*/("""
                         <a class="nav-link" href="/helper/"""),_display_(/*17.60*/name),format.raw/*17.64*/("""">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">リンク</a>
+                        <a class="nav-link disabled" href="#">リンク</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,8 +72,8 @@ Seq[Any](format.raw/*2.1*/("""
                                 <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*41.125*/name),format.raw/*41.129*/(""" """),format.raw/*41.130*/("""さん"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
+                                <a class="dropdown-item disabled" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                                <a class="dropdown-item disabled" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                             </div>
@@ -118,10 +118,9 @@ Seq[Any](format.raw/*2.1*/("""
                         </div>
                         <h3 class="title">成績</h3>
                         <p class="description">
-                            something....<br>
-                            something....
+                            今までの成績を管理し、自分の弱点を見つけよう!
                         </p>
-                        <a href="/grades/"""),_display_(/*93.43*/name),format.raw/*93.47*/("""" class="read-more">今すぐ始める</a>
+                        <a href="/grades/"""),_display_(/*92.43*/name),format.raw/*92.47*/("""" class="read-more">今すぐ始める</a>
                     </div>
                 </div>
 
@@ -132,10 +131,9 @@ Seq[Any](format.raw/*2.1*/("""
                         </div>
                         <h3 class="title">掲示板</h3>
                         <p class="description">
-                            something....<br>
-                            something....
+                            わからないことがあったら他の人に質問してみよう!
                         </p>
-                        <a href="/chat/"""),_display_(/*107.41*/name),format.raw/*107.45*/("""" class="read-more">今すぐ始める</a>
+                        <a href="/chat/"""),_display_(/*105.41*/name),format.raw/*105.45*/("""" class="read-more">今すぐ始める</a>
                     </div>
                 </div>
 
@@ -171,11 +169,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 01 00:13:56 JST 2019
+                  DATE: Fri Feb 01 01:23:32 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/section.scala.html
-                  HASH: 163504f5b3aaa02d55ea96a5260df348c8c4484c
-                  MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2928->1661|2953->1665|3120->1805|3145->1809|3918->2554|3944->2558|3974->2559|6018->4576|6043->4580|6642->5151|6668->5155
-                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|124->93|124->93|138->107|138->107
+                  HASH: b5ab2ae2fbe38bfdc5a6e31ecdfce8fa496e1da4
+                  MATRIX: 958->1|1066->16|1093->18|1116->33|1155->35|1186->40|1338->166|1362->170|2085->866|2110->870|2937->1670|2962->1674|3129->1814|3154->1818|3927->2563|3953->2567|3983->2568|6009->4567|6034->4571|6598->5107|6624->5111
+                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|37->6|37->6|48->17|48->17|60->29|60->29|62->31|62->31|72->41|72->41|72->41|123->92|123->92|136->105|136->105
                   -- GENERATED --
               */
           
