@@ -117,15 +117,28 @@ function makeMonthLabels(entries){
 
 
 //------------------
-
+//日にちの条件分岐 commentは古いクソコード
      var dayS = new Date(startY,startM-1, startD); //start
      var dayE = new Date(endY , endM - 1 , endD);   //end
 
      var rowS=0,rowE = 0;
-     var lineS=0,line_end=6;
+     var lineS=0,lineE=0;
 
     if(nowYearNum + 1 == startY){
-        if(startM != 1 && nowMonth == 12){
+        if(startM==1 && nowMonthNum==12 && 6-tedy >= startD){
+            rowS = (zedy + tedd) / 7;
+            lineS = dayS.getDay();
+            rowE = rowS;
+        }else{
+            continue;
+        }
+
+        if(startY == endY && startM == endM && 6 - tedy >= endD){
+            lineE = dayE.getDay();
+        }else{
+            lineE = 6;
+        }
+        /*if(startM != 1 && nowMonth == 12){
             continue;
         }
         if(6-tedy < startD){
@@ -133,14 +146,32 @@ function makeMonthLabels(entries){
         }
 
         if(startY == endY && startM == endM && 6 - tedy >= endD){
-            var row = (zedy + tedd) / 7;
+            rowS = (zedy + tedd) / 7;
+            row
             result += makeMonthLabel(row,dayS.getDay(),row,dayE.getDay(),entry);
         }else{
             var row = (zedy + tedd) / 7;
             result.append(makeMonthLabel(row,dayS.getDay(),row,6,entry));
+        }*/
+
+    }
+    else if(nowYearNum - 1 == endY){
+
+        if(endM == 12 && nowMonthNum == 1 && zedd - zedy <= endD){
+            rowS = 0;
+            rowE = 0;
+            lineE = dayE.getDay();
+        }else{
+            continue;
         }
-    }else if(nowYearNum - 1 == endY){
-        if(endM != 12 || nowMonth == 1){
+
+        if(startY == endY && startM == endM && zedd - zedy <= startD){
+            lineS = dayS.getDay();
+        }else{
+            lineS = 0;
+        }
+
+        /*if(endM != 12 || nowMonth == 1){
             continue;
         }
         if(zedd - zedy > endD){
@@ -154,8 +185,59 @@ function makeMonthLabels(entries){
             var row = 0;
             result.append( makeMonthLabel(0,0,row,dayE.getDay(),entry));
         }
-    }else if(nowYearNum - 1 == startY){
-        if(nowMonthNum != 1){
+        */
+    }
+    else if(nowYearNum - 1 == startY){
+        if(endY == nowYearNum){
+            if(endM == nowMonthNum){
+                rowE = (zedy + dayE.getDate()) / 7;
+                lineE = dayE.getDay();
+            }else if(endM == nowMonthNum + 1){
+                rowE = (zedy + tedd)/7;
+                lineE = (6-tedy>=endD)? dayE.getDay():6;
+            }else if(endM == nowMonthNum - 1){
+                if(zedd - zedy >= endD){
+                    rowE = 0;
+                    lineE = dayE.getDay();
+                }else{
+                    continue;
+                }
+
+            }else if(endM > nowMonthNum + 1){
+                rowE = (zedy + tedd)/7;
+                lineE = 6;
+            }else{
+                continue;
+            }
+        }
+        else if(endY >= nowYearNum + 1){
+            rowE = (zedy + tedd)/7;
+            if(endY == nowYearNum + 1 && endM == 1 && nowMonthNum == 12 && 6 - tedy >= endD){
+                lineE = dayE.getDay();
+            }else{
+                lineE = 6;
+            }
+        }
+        else if(endY <= nowYearNum - 1){
+            if(endY == nowYearNum - 1 && endM == 12 && nowMonthNum == 1 && zedd - zedy <= endD){
+                rowE = 0;
+                lineE = dayE.getDay();
+            }else{
+                continue;
+            }
+        }
+
+        if(startM == 12 && nowMonthNum == 1 && zedd - zedy <= startD){
+            rowS = 0;
+            lineS = dayS.getDay();
+        }
+        else{
+            rowS = 0;
+            lineS = 0;
+        }
+
+
+        /*if(nowMonthNum != 1){
             if(endY == startY ){
                 continue;
             }
@@ -213,8 +295,59 @@ function makeMonthLabels(entries){
 
             }
         }
-    }else if(nowYearNum + 1 == endY){
-        if(nowMonthNum != 12||(endM==1&&endD > 6 - tedy)||endM != 1){
+        */
+    }
+    else if(nowYearNum + 1 == endY){
+        if(startY == nowYearNum){
+            if(startM == nowMonthNum){
+                rowS = (zedy + dayS.getDate())/7;
+                lineS = dayS.getDay();
+            }
+            else if(startM == nowMonthNum + 1){
+                if(6 - tedy >= startD){
+                    rowS = (zedy + tedd)/7;
+                    lineS = dayS.getDay();
+                }else{
+                    continue;
+                }
+            }
+            else if(startM == nowMonthNum - 1){
+                rowS = 0;
+                lineS = (zedd - zedy<=startD)? dayS.getDay():0;
+            }
+            else if(startM < nowMonthNum - 1){
+                rowS = 0;
+                lineS = 0;
+            }
+            else{
+                continue;
+            }
+        }
+        else if(startY <= nowYearNum - 1){
+            rowS = 0;
+            if(startY == nowYearNum - 1 && startM == 12 && nowMonthNum == 1 && zedd - zedy <= startD){
+                lineS = dayS.getDay();
+            }
+            else{
+                lineS = 0;
+            }
+        }
+        else if(startY >= nowYearNum + 1){
+            if(startY == nowYearNum + 1 && startM == 1 && nowMonthNum == 12 && 6 - tedy >= startD){
+                rowS = 0;
+                lineS = dayS.getDay();
+            }
+        }
+
+        if(endM == 1 && nowMonthNum == 12 && 6 - tedy >= endD){
+            rowE = (zedy + tedd)/7;
+            lineE = dayE.getDay();
+        }else{
+            rowE = (zedy + tedd)/7;
+            lineE = 6;
+        }
+
+        /*if(nowMonthNum != 12||(endM==1&&endD > 6 - tedy)||endM != 1){
             if(startY == endY){
                 continue;
             }else if(nowYearNum != startY || startM < nowMonthNum - 1){
@@ -270,14 +403,76 @@ function makeMonthLabels(entries){
 
                 }
             }
-        }
+        }*/
     }
-    else if(startY > nowYearNum + 1 ){
+    else if(nowYearNum + 1 < startY){
         continue;
-    }else if(endY < nowYearNum -1){
+
+    }
+    else if(nowYearNum - 1 > endY){
         continue;
-    }else{//endY == startY == nowYearNum
-        if(startM > nowMonthNum +1 || endM < nowMonthNum - 1){
+
+    }
+    else{//endY == startY == nowYearNum
+
+        if(startM == nowMonthNum + 1){
+            if(6 - tedy >= startD){
+                rowS = (zedy + tedd)/7;
+                lineS = dayS.getDay();
+            }
+            else{
+                continue;
+            }
+        }
+        else if(startM <= nowMonthNum - 1){
+            if(startM == nowMonthNum - 1 && zedd - zedy <= startD){
+                rowS = 0;
+                lineS = dayS.getDay();
+            }else{
+                rowS = 0;
+                lineS = 0;
+            }
+        }
+        else if(startM == nowMonthNum){
+            rowS = (zedy + dayS.getDate())/7;
+            lineS = dayS.getDay();
+        }
+        else{
+            continue;
+
+
+        }
+
+        if(endM >= nowMonthNum + 1){
+            if(endM == nowMonthNum + 1 && 6 - tedy >= endD){
+                rowE = (zedy+tedd)/7;
+                lineE = dayE.getDay();
+            }
+            else{
+                rowE = (zedy+tedd)/7;
+                lineE = 6;
+            }
+        }
+        else if(endM == nowMonthNum - 1){
+            if(zedd - zedy <= endD){
+                rowE = 0;
+                lineE = dayE.getDay();
+            }
+            else{
+
+                continue;
+            }
+        }
+        else if(endM == nowMonthNum){
+            rowE = (zedy + dayE.getDate())/7;
+            lineE = dayE.getDay();
+        }
+        else{
+
+            continue;
+        }
+
+        /*if(startM > nowMonthNum +1 || endM < nowMonthNum - 1){
             continue;
         }else if(startM == nowMonthNum + 1){
             if(startD > 6 - tedy){
@@ -382,8 +577,9 @@ function makeMonthLabels(entries){
             lineE = dayE.getDay();
             result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
         }
-
+    */
     }
+    result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
   }
   //
 
@@ -404,8 +600,6 @@ function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
 
     console.log(entry["start_date_string"]);
     console.log(entry["end_date_string"]);
-    console.log(windowWidth);
-    console.log(init_left);
     for(var i = row_start * 7 + line_start; i<= row_end * 7 +line_end; i++){
         var top = Math.floor(i/7)*label_height*3 + init_top;
         var left = (i%7)*label_width + init_left;
