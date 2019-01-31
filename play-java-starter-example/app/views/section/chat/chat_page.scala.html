@@ -59,7 +59,7 @@
 <form id="dummy-form">
     @helper.CSRF.formField
 </form>
-<div class="back" onclick='location.href="/chat/@username"'><i class="far fa-arrow-left"></i>戻る</div>
+<div class="back" onclick='location.href="/chat/@username"'><i class="fas fa-arrow-left"></i>戻る</div>
 <div class="chat-title"></div>
 <div class="chat-display">
 
@@ -103,20 +103,20 @@
                 }
             </div>
         </div>
-        <div class="scroll-to-bottom"><div class="sankaku"></div></div>
+        <div class="scroll-to-bottom" data-toggle="tooltip" title="下へスクロールする"><div class="sankaku"></div></div>
         @if(isfav==0) {
-        <div id="fav-button" class="ribbon1" style="background-color:#f1f1f1;" onclick="add_to_fav()">
+        <div id="fav-button" class="ribbon1" style="background-color:#f1f1f1;" onclick="add_to_fav()" data-toggle="tooltip" title="お気に入り">
             <i class="far fa-star"></i>
         </div>
         } else {
-        <div id="fav-button" class="ribbon1" style="background-color:yellow;" onclick="add_to_fav()">
+        <div id="fav-button" class="ribbon1" style="background-color:yellow;" onclick="add_to_fav()"　data-toggle="tooltip" title="お気に入り">
             <i class="far fa-star"></i>
         </div>
         }
         <div class="popup" id="create-reply">
             <form action="/chat/photo/add" method="post" id="pictureform2" class="pictureform2" enctype="multipart/form-data" target="sendData">
                 @helper.CSRF.formField
-                <label for="file_upload2"><i class="far fa-image"></i>
+                <label for="file_upload2"　data-toggle="tooltip" title="アップロードファイルを選択する"><i class="far fa-image"></i>
                     <input type="file" id="file2" name="picture" onchange="$('#filename2').val($(this).val())">
                     <input type="text" id="file_upload2" onClick="$('#file2').click();">
                     <input type="hidden" name="username" value="@username">
@@ -124,7 +124,7 @@
                     <input type="hidden" name="anchor" value="">
 
                 </label>
-                <label for="image-submit2" ><i class="far fa-arrow-right"></i>
+                <label for="image-submit2" data-toggle="tooltip" title="選択したファイルをアップロードする"><i class="fas fa-upload"></i>
                     <input type="submit" id="image-submit2">
                 </label>
                 <br>
@@ -155,13 +155,13 @@
                 <input type="hidden" id="threadid" name="threadid" value="@threadid">
                 <input type="hidden" name="anchor" value="0">
             </form>
-            <div id="add-comment-button" class="button" onclick="add_comment();">
+            <div id="add-comment-button" class="button" onclick="add_comment();"　data-toggle="tooltip" title="コメントを送信する">
                 <i class="far fa-comment fa-flip-horizontal"></i>
             </div>
 
             <form action="/chat/photo/add" method="post" id="pictureform" class="pictureform" enctype="multipart/form-data" target="sendData">
                 @helper.CSRF.formField
-                <label for="file_upload"><i class="far fa-image"></i>
+                <label for="file_upload" data-toggle="tooltip" title="アップロードファイルを選択する"><i class="far fa-image"></i>
                     <input type="file" id="file" name="picture" onchange="$('#file-name').val($(this).val())">
                     <input type="text" id="file_upload" onClick="$('#file').click();">
                     <input type="hidden" name="username" value="@username">
@@ -169,7 +169,7 @@
                     <input type="hidden" name="anchor" value="0">
 
                 </label>
-                <label for="image-submit" ><i class="far fa-arrow-right"></i>
+                <label for="image-submit" data-toggle="tooltip" title="選択したファイルをアップロードする"><i class="fas fa-upload"></i>
                     <input type="submit" id="image-submit">
                 </label>
                 <br>
