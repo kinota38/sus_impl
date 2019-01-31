@@ -138,21 +138,6 @@ function makeMonthLabels(entries){
         }else{
             lineE = 6;
         }
-        /*if(startM != 1 && nowMonth == 12){
-            continue;
-        }
-        if(6-tedy < startD){
-            continue;
-        }
-
-        if(startY == endY && startM == endM && 6 - tedy >= endD){
-            rowS = (zedy + tedd) / 7;
-            row
-            result += makeMonthLabel(row,dayS.getDay(),row,dayE.getDay(),entry);
-        }else{
-            var row = (zedy + tedd) / 7;
-            result.append(makeMonthLabel(row,dayS.getDay(),row,6,entry));
-        }*/
 
     }
     else if(nowYearNum - 1 == endY){
@@ -171,21 +156,6 @@ function makeMonthLabels(entries){
             lineS = 0;
         }
 
-        /*if(endM != 12 || nowMonth == 1){
-            continue;
-        }
-        if(zedd - zedy > endD){
-            continue;
-        }
-
-        if(startY == endY && startM == endM && startD >= zedd-zedy ){
-            var row = 0;
-            result.append( makeMonthLabel(row,dayS.getDay(),row,dayE.getDay(),entry));
-        }else{
-            var row = 0;
-            result.append( makeMonthLabel(0,0,row,dayE.getDay(),entry));
-        }
-        */
     }
     else if(nowYearNum - 1 == startY){
         if(endY == nowYearNum){
@@ -237,65 +207,7 @@ function makeMonthLabels(entries){
         }
 
 
-        /*if(nowMonthNum != 1){
-            if(endY == startY ){
-                continue;
-            }
-            else if(endY != nowYearNum){
-                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
-                continue;
-            }else if(endM < nowMonthNum){
-                continue;
-            }else if(endM - 1 == nowMonthNum && 6 - tedy){
-                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,dayE.getDay(),entry));
-                continue;
-            }else if(endM == nowMonthNum){
-                result.append( makeMonthLabel(0,0,(zedy+endD)/7,dayE.getDay(),entry));
-                continue;
-            }else{
-                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
-                continue;
-            }
-        }else{
-            if (startM != 12 || startD < zedd - zedy){
-                if(endY == startY){
-                    if(endM != 12){
-                        continue;
-                    }else if(zedd - zedy <= endD){
-                        result.append( makeMonthLabel(0,0,0,dayE.getDay(),entry));
-                        continue;
-                    }else {
-                        continue;
-                    }
 
-                }else if (endY != nowYearNum || endM != nowMonthNum){
-                    result.append(makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
-                    continue;
-                }else{
-                    result.append(makeMonthLabel(0,0,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
-                    continue;
-                }
-            }else{
-                if(endY == startY){
-                    result.append( makeMonthLabel(0,dayS.getDay,0,dayE.getDay(),entry));
-                    continue;
-                }else if(endY == nowYearNum){
-                    if(endM == nowMonthNum){
-                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
-                        continue;
-                    }
-                    else if(endM == nowMonthNum + 1 && endD <= 6-tedy){
-                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + tedd)/7,dayE.getDay(),entry));
-                        continue;
-                    }else {
-                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + tedd)/7,6,entry));
-                        continue;
-                    }
-                }
-
-            }
-        }
-        */
     }
     else if(nowYearNum + 1 == endY){
         if(startY == nowYearNum){
@@ -347,63 +259,7 @@ function makeMonthLabels(entries){
             lineE = 6;
         }
 
-        /*if(nowMonthNum != 12||(endM==1&&endD > 6 - tedy)||endM != 1){
-            if(startY == endY){
-                continue;
-            }else if(nowYearNum != startY || startM < nowMonthNum - 1){
-                result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,6,entry));
-                continue;
-            }else{
-                if(startM >nowMonthNum ){
-                    continue;
-                }else{
-                    if(startM == nowMonthNum - 1){
-                        if(startD >= zedd - zedy ){
-                            result.append(makeMonthLabel(0,dayS.getDay(),(zedy + tedd) / 7,6,entry));
-                        }else{
-                            result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,6,entry));
-                        }
-                        continue;
-                    }else {
-                        result.append(makeMonthLabel((zedy + dayS.getDate())/7 ,dayS.getDay(),(zedy + tedd) / 7,6,entry));
-                        continue;
-                    }
 
-                }
-            }
-
-        }else{
-            if(endM == 1){
-                if(endD <= 6 - tedy){
-                    if(startY == endY){
-                        result.append(makeMonthLabel((zedy + tedd) / 7,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
-                        continue;
-                    }
-                    else if(nowYearNum != startY || startM < nowMonthNum - 1){
-                        result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,dayE.getDay(),entry));
-                        continue;
-                    }else{
-                        if(startM >nowMonthNum ){
-                            continue;
-                        }else{
-                            if(startM == nowMonthNum - 1){
-                                if(startD >= zedd - zedy ){
-                                    result.append( makeMonthLabel(0,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
-                                }else{
-                                    result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,dayE.getDay(),entry));
-                                }
-                                continue;
-                            }else {
-                                result.append(makeMonthLabel((zedy + dayS.getDate())/7 ,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
-                                continue;
-                            }
-
-                        }
-                    }
-
-                }
-            }
-        }*/
     }
     else if(nowYearNum + 1 < startY){
         continue;
@@ -472,112 +328,7 @@ function makeMonthLabels(entries){
             continue;
         }
 
-        /*if(startM > nowMonthNum +1 || endM < nowMonthNum - 1){
-            continue;
-        }else if(startM == nowMonthNum + 1){
-            if(startD > 6 - tedy){
-                continue;
-            }else{
-                if(endM != startM || (endM ==startM && endD > 6 - tedy)){
-                    result.append(makeMonthLabel((zedy+tedd)/7,dayS.getDay(),(zedy+tedd)/7,6,entry));
-                    continue;
-                }else {
-                    result.append(makeMonthLabel((zedy+tedd)/7,dayS.getDay(),(zedy+tedd)/7,dayE.getDay(),entry));
-                    continue;
-                }
-            }
-        }else if(endM == nowMonthNum -1){
-            if(endD < zedd - zedy){
-                continue;
-            }else{
-                if(startM != endM || (endM == startM && startD < zedd - zedy)){
-                    result.append(makeMonthLabel(0,0,0,dayE.getDay(),entry));
-                    continue;
-                }else{
-                    result.append( makeMonthLabel(0,dayS.getDay(),0,dayE.getDay(),entry));
-                }
-            }
-        }else if(startM == nowMonthNum - 1){
-
-            if(startD >= zedd - zedy){
-                lineS = dayS.getDay();
-            }
-            if(endM == startM){
-                if(endD < zedd - zedy){
-                    continue;
-                }else{
-                    result.append(makeMonthLabel(0,lineS,0,dayE.getDay(),entry));
-                    continue;
-                }
-            }else{
-                if(endM == nowMonthNum){
-                    if(startD < zedd - zedy){
-                        result.append(makeMonthLabel(0,0,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
-                        continue;
-                    }else{
-                        result.append(makeMonthLabel(0,dayS.getDay(),(zedy + dayE.getDate())/7,dayE.getDay(),entry));
-                        continue;
-                    }
-                }else if(endM == nowMonthNum + 1){
-                    if(endD > 6 - tedy){
-                        result.append(makeMonthLabel(0,lineS,(zedy + tedd)/7,6,entry));
-                        continue;
-                    }else{
-                        result.append(makeMonthLabel(0,lineS,(zedy + tedd)/7,dayE.getDay(),entry));
-                        continue;
-                    }
-                }else{
-                    result.append( makeMonthLabel(0,lineS,(zedy + tedd)/7,dayE.getDay(),entry));
-                }
-            }
-        }else if(endM == nowMonthNum + 1){
-
-            if(endD <= 6 - tedy){
-                rowE = (zedy + tedd)/7;
-                lineE = dayE.getDay();
-            }else{
-                rowE = (zedy + tedd)/7;
-                lineE = 6;
-            }
-
-            if(startM == endM){
-                if(startD  > 6 - tedy){
-                    continue;
-                }else{
-                    rowS = rowE;
-                    lineS =dayS.getDay();
-                    result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
-                    continue;
-                }
-            }else if(startM == nowMonthNum){
-                rowS = (dayS.getDate() + zedy)/7;
-                lineS = dayS.getDay();
-                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
-                continue;
-            }else if(startM == nowMonthNum - 1){
-                rowS = 0;
-                if(startD >= zedd -zedy){
-                    lineS = dayS.getDay();
-                }else{
-                    lineS = 0;
-                }
-                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
-                continue;
-            }else{
-                rowS = 0;
-                lineS = 0;
-                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
-                continue;
-            }
-
-        }else{//endM = startM = nowMonthNum
-            rowS = Math.floor((zedy + dayS.getDate()))/7;
-            lineS = dayS.getDay();
-            rowE = Math.floor((zedy + dayE.getDate()))/7;
-            lineE = dayE.getDay();
-            result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
-        }
-    */
+        
     }
     result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
   }
