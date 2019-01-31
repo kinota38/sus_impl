@@ -53,7 +53,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                             <a class="nav-link" href="/helper/"""),_display_(/*137.64*/name),format.raw/*137.68*/("""">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">リンク</a>
+                            <a class="nav-link disabled" href="#">リンク</a>
                         </li>
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,12 +78,12 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                             </div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link chosen-month" id="bmonth" onclick="backmm(this);" style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
-                            <div class="nav-link chosen-day" id="bday" onclick="backdd(this);" style="cursor: pointer; display: none;"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-month" id="bmonth"　data-toggle="tooltip" title="前月" onclick="backmm(this);" style="cursor: pointer"><i class="fas fa-angle-left"></i></div>
+                            <div class="nav-link chosen-day" id="bday"　data-toggle="tooltip" title="前日" onclick="backdd(this);" style="cursor: pointer; display: none;"><i class="fas fa-angle-left"></i></div>
                         </li>
                         <li class="nav-item">
-                            <div class="nav-link chosen-month" id="nmonth" onclick="nextmm(this);" style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
-                            <div class="nav-link chosen-day" id="nday" onclick="nextdd(this);" style="cursor: pointer; display: none; margin: auto;"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-month" id="nmonth"　data-toggle="tooltip" title="翌月" onclick="nextmm(this);" style="cursor: pointer"><i class="fas fa-angle-right"></i></div>
+                            <div class="nav-link chosen-day" id="nday"　data-toggle="tooltip" title="翌日" onclick="nextdd(this);" style="cursor: pointer; display: none; margin: auto;"><i class="fas fa-angle-right"></i></div>
                         </li>
                         <li class="nav-item active">
                             <div class="nav-link"><span class="year-num" style="color: white;"></span>年<span class="month-num" style="color: white;"></span>月</div>
@@ -94,11 +94,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                 <span class="chosen-month">月</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">年(作成未定)</a>
+                                <a class="dropdown-item disabled" href="#">年(作成未定)</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item active" href="/calendar/month">月</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">週(作成未定)</a>
+                                <a class="dropdown-item disabled" href="#">週(作成未定)</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item day-link" onclick="jumpDay()">日</a>
                             </div>
@@ -111,8 +111,8 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                     <i class="fas fa-user" data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*195.129*/name),format.raw/*195.133*/(""" """),format.raw/*195.134*/("""さん"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
+                                    <a class="dropdown-item disabled" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                                    <a class="dropdown-item disabled" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                                 </div>
@@ -133,7 +133,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                             <div class="nav-calendar">
                                 <div class="nav-calendar-op">
                                     <span jsname="B1A7Xe" class="r4nke "><span id="year"></span>年 <span id="month"></span>月</span>
-                                    <div class="nav-calendar-display-pre" onclick="backmm()">
+                                    <div class="nav-calendar-display-pre" data-toggle="tooltip" title="前月" onclick="backmm()">
                                         <div class="VTBa7b MbhUzd" jsname="ksKsZd" style="top: 12px; left: 12px; width: 24px; height: 24px;"></div>
                                         <content class="xjKiLb">
                                             <span style="top: -9px">
@@ -141,7 +141,7 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             </span>
                                         </content>
                                     </div>
-                                    <div class="nav-calendar-display-next" onclick="nextmm()">
+                                    <div class="nav-calendar-display-next" data-toggle="tooltip" title="翌月" onclick="nextmm()">
                                         <div class="VTBa7b MbhUzd" jsname="ksKsZd" style="top: 12px; left: 12px; width: 24px; height: 24px;"></div>
                                         <content class="xjKiLb">
                                             <span style="top: -9px">
@@ -348,9 +348,9 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             <div class="s4ZaLd"><span class="ebZ3od MANBAf">午後11時</span></div>
                                             <div class="Pgg38c">
                                                 <div class="lmNFmc pCoqfc">GMT+09</div>
-                                                <div class="lmNFmc MANBAf">午前12時</div>
-                                                <div class="""),
-format.raw(""""lmNFmc MANBAf">午前1時</div>
+                                                <div class="lm"""),
+format.raw("""NFmc MANBAf">午前12時</div>
+                                                <div class="lmNFmc MANBAf">午前1時</div>
                                                 <div class="lmNFmc MANBAf">午前2時</div>
                                                 <div class="lmNFmc MANBAf">午前3時</div>
                                                 <div class="lmNFmc MANBAf">午前4時</div>
@@ -564,10 +564,10 @@ format.raw(""""lmNFmc MANBAf">午前1時</div>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 01 00:25:40 JST 2019
+                  DATE: Fri Feb 01 01:47:59 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 43b6381620f8ede6ddc87f0223f9c8dd47044f90
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34846->42141|34872->42145|37089->44334|37105->44340|37142->44355|37192->44376|38518->45674|38544->45678|40756->47862|40772->47868|40809->47883|40859->47904
+                  HASH: 78c98dc4adaf965bb8f6915140a0f13f3ff7c1de
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3516->11013|3542->11017|3718->11165|3744->11169|7548->14944|7575->14948|7606->14949|35089->42384|35115->42388|37332->44577|37348->44583|37385->44598|37435->44619|38761->45917|38787->45921|40999->48105|41015->48111|41052->48126|41102->48147
                   LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|111->195|111->195|111->195|449->532|449->532|481->564|481->564|481->564|482->565|506->589|506->589|538->621|538->621|538->621|539->622
                   -- GENERATED --
               */

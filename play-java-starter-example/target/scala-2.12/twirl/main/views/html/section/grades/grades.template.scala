@@ -47,7 +47,7 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
                         <a class="nav-link" href="/helper/"""),_display_(/*16.60*/name),format.raw/*16.64*/("""">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">リンク</a>
+                        <a class="nav-link disabled" href="#">リンク</a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,8 +71,8 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
                                 <i class="fas fa-user"　data-toggle="tooltip" data-html="true" title="Study Helper アカウント<br>"""),_display_(/*40.125*/name),format.raw/*40.129*/(""" """),format.raw/*40.130*/("""さん"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
+                                <a class="dropdown-item disabled" href="#"><i class="fas fa-wrench"></i>&nbsp;アカウント管理</a>
+                                <a class="dropdown-item disabled" href="#"><i class="fas fa-question"></i>&nbsp;Another action</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;ログアウト</a>
                             </div>
@@ -188,10 +188,10 @@ Seq[Any](_display_(/*2.2*/main("成績")/*2.12*/ {_display_(Seq[Any](format.raw/
 
               /*
                   -- GENERATED --
-                  DATE: Fri Feb 01 00:13:55 JST 2019
+                  DATE: Fri Feb 01 01:23:32 JST 2019
                   SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/grades/grades.scala.html
-                  HASH: 6aaedbaab24d4b90993bd2384dbe5b1c105221e0
-                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2873->1626|2898->1630|3104->1809|3129->1813|3902->2558|3928->2562|3958->2563|4793->3371|4808->3377|4844->3392|4880->3401|4925->3451|4961->3460|8294->6765|8310->6771|8347->6786|8397->6807|8809->7191|8825->7197|8862->7212|8904->7225
+                  HASH: 3f2a759658b162cfe5b99ad8c2408f657c217d5f
+                  MATRIX: 964->1|1072->17|1090->27|1129->29|1160->34|1312->160|1336->164|2055->856|2080->860|2882->1635|2907->1639|3113->1818|3138->1822|3911->2567|3937->2571|3967->2572|4820->3398|4835->3404|4871->3419|4907->3428|4952->3478|4988->3487|8321->6792|8337->6798|8374->6813|8424->6834|8836->7218|8852->7224|8889->7239|8931->7252
                   LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|47->16|47->16|59->28|59->28|61->30|61->30|71->40|71->40|71->40|88->57|88->57|88->57|89->58|91->60|92->61|159->128|159->128|159->128|160->129|170->139|170->139|170->139|171->140
                   -- GENERATED --
               */

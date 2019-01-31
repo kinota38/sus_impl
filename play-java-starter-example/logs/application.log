@@ -1779,3 +1779,953 @@ java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1
 2019-02-01 01:23:48,027 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
 2019-02-01 01:23:48,198 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /event/entries
 2019-02-01 01:23:48,242 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:25:00,564 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /helper/a
+2019-02-01 01:25:00,638 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
+2019-02-01 01:25:00,638 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:00,647 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:00,655 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
+2019-02-01 01:25:00,656 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:00,675 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:00,691 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:00,712 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:00,716 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:00,767 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-02-01 01:25:00,778 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:00,829 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:00,993 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:00,995 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:02,395 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /grades/a
+2019-02-01 01:25:02,473 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grade/nice-select.css
+2019-02-01 01:25:02,474 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:02,476 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:02,478 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grade/grades.css
+2019-02-01 01:25:02,481 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:02,482 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:02,510 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:02,522 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grade/grades.js
+2019-02-01 01:25:02,525 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:02,530 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grade/jquery.nice-select.js
+2019-02-01 01:25:02,535 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:02,541 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
+2019-02-01 01:25:02,581 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:02,644 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:02,651 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:02,795 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:02,851 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /grades/gradeslist/a
+2019-02-01 01:25:02,853 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /grades/accgradelist/a
+2019-02-01 01:25:07,348 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:25:07,401 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:07,405 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:07,405 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:07,409 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:07,416 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:25:07,419 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:07,428 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:07,435 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:07,436 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:25:07,490 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:07,495 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:07,530 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:07,588 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:25:07,615 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:11,854 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /todoApplication
+2019-02-01 01:25:11,918 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/todo.css
+2019-02-01 01:25:11,921 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/todofield.css
+2019-02-01 01:25:11,924 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:11,926 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:11,927 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:11,930 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:11,943 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/todoanalysis.css
+2019-02-01 01:25:11,946 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:11,946 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:11,948 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:11,955 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.cookie.js
+2019-02-01 01:25:11,956 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/todo.js
+2019-02-01 01:25:12,129 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:12,133 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:12,168 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:12,230 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:12,230 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/todo.css.map
+2019-02-01 01:25:12,273 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /database/task
+2019-02-01 01:25:12,282 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-296 - access from 0:0:0:0:0:0:0:1 to /database/analyze
+2019-02-01 01:25:21,767 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /helper/a
+2019-02-01 01:25:21,822 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:21,824 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:21,828 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:21,824 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:21,835 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:21,836 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
+2019-02-01 01:25:21,840 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:21,855 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
+2019-02-01 01:25:21,855 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:21,916 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:21,918 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:21,934 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:21,942 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-02-01 01:25:22,069 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:24,891 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:25:24,971 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:25:24,971 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:25:24,972 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:25:24,974 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:25:24,975 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:25:24,977 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:25:24,990 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:25:24,990 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:25:24,992 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:25:24,996 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:25:24,996 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:25:25,001 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:25:25,011 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:25:25,021 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:25:25,021 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:25:25,022 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:25:25,072 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:25:25,072 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:25:25,104 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:25:25,164 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:25:25,308 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:25:25,353 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:25:28,288 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:25:32,107 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:18,146 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:18,847 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:19,740 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,004 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,163 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,318 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,476 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,622 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:21,799 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:23,016 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:24,500 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:24,809 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:25,655 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:30,155 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:32:30,284 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:32:30,415 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:32:30,442 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:32:30,457 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:32:30,457 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:32:30,458 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:32:30,465 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:32:30,465 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:32:30,476 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:32:30,485 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:32:30,493 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:32:30,494 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:32:30,512 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:32:30,525 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:32:30,537 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:32:30,545 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:32:30,753 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:32:30,800 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:30,824 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:32:30,833 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:32:30,857 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:30,881 [INFO] from application in application-akka.actor.default-dispatcher-27 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:32:32,969 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:35,575 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:39,441 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:32:39,513 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:32:39,514 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:32:39,515 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:32:39,515 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:32:39,518 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:32:39,522 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:32:39,534 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:32:39,537 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:32:39,543 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:32:39,556 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:32:39,556 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:32:39,561 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:32:39,563 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:32:39,568 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:32:39,572 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:32:39,572 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:32:39,623 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:32:39,800 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:32:39,833 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:32:39,838 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:32:39,929 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:39,956 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:41,172 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:42,382 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:43,046 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:43,243 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:44,007 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:45,158 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:46,080 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:47,319 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:47,466 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:47,666 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:48,333 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:54,662 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:32:58,126 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:33:12,130 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /logout
+2019-02-01 01:33:12,152 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:33:12,230 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:33:12,231 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:33:12,232 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:33:12,235 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:33:12,251 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:33:12,310 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:33:12,312 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-02-01 01:33:12,387 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:04,482 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:04,734 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:04,734 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:04,736 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:04,756 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:04,756 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:04,775 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:34:04,946 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:04,980 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:34:12,032 [INFO] from application in application-akka.actor.default-dispatcher-38 - ApplicationTimer demo: Stopping application at 2019-01-31T16:34:12.032Z after 634s.
+2019-02-01 01:34:12,033 [INFO] from application in application-akka.actor.default-dispatcher-38 - Shutting down connection pool.
+2019-02-01 01:34:12,263 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-307 - Creating Pool for datasource 'default'
+2019-02-01 01:34:12,268 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-307 - Database [default] connected at jdbc:h2:mem:play
+2019-02-01 01:34:12,444 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-307 - ApplicationTimer demo: Starting application at 2019-01-31T16:34:12.444Z
+2019-02-01 01:34:12,544 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-307 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-02-01 01:34:12,548 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-307 - Application started (Dev)
+2019-02-01 01:34:12,573 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:12,720 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:12,721 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:12,721 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:12,722 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:12,725 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:12,906 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:12,907 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:34:17,009 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:17,045 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:17,046 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:17,048 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:17,050 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:17,050 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:17,165 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:17,167 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:34:18,091 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:18,179 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:18,179 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:18,186 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:18,186 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:18,186 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:18,324 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:34:18,324 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:52,574 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:52,645 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:52,646 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:52,646 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:52,650 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:52,679 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:52,776 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:34:52,777 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:54,553 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:34:54,604 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:34:54,606 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:34:54,608 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:34:54,608 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:34:54,604 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:34:54,685 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:34:54,686 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:35:32,536 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2019-01-31T16:35:32.535Z after 80s.
+2019-02-01 01:35:32,536 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-02-01 01:35:32,696 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-301 - Creating Pool for datasource 'default'
+2019-02-01 01:35:32,698 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-301 - Database [default] connected at jdbc:h2:mem:play
+2019-02-01 01:35:32,782 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-301 - ApplicationTimer demo: Starting application at 2019-01-31T16:35:32.782Z
+2019-02-01 01:35:32,966 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-301 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-02-01 01:35:32,969 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-301 - Application started (Dev)
+2019-02-01 01:35:32,977 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /
+2019-02-01 01:35:33,030 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/signup.js
+2019-02-01 01:35:33,030 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:35:33,031 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:35:33,032 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/top.css
+2019-02-01 01:35:33,034 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:35:33,111 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/signupandin/areaandschool.js
+2019-02-01 01:35:33,111 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:36:17,917 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /signin
+2019-02-01 01:36:17,961 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:17,962 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:17,977 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/login.css
+2019-02-01 01:36:23,092 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-303 - access from 0:0:0:0:0:0:0:1 to /signin
+2019-02-01 01:36:23,134 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /helper/a
+2019-02-01 01:36:23,189 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:23,189 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:36:23,190 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:36:23,190 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:23,192 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/section.css
+2019-02-01 01:36:23,200 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:36:23,203 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/mypage.js
+2019-02-01 01:36:23,210 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:36:23,207 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:36:23,307 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:36:23,319 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-02-01 01:36:23,322 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:36:23,407 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:36:25,979 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:36:26,079 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:36:26,080 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:36:26,080 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:36:26,080 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:36:26,083 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:36:26,083 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:36:26,106 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:36:26,106 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:36:26,106 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:36:26,107 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:26,108 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:26,110 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:36:26,121 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:36:26,121 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:36:26,122 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:36:26,124 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:36:26,169 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:36:26,170 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:36:26,205 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:36:26,314 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:36:26,419 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:26,450 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:30,201 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:31,747 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:33,879 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:34,432 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:34,995 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:36,803 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:39,859 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:36:42,375 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /grades/a
+2019-02-01 01:36:42,460 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grade/nice-select.css
+2019-02-01 01:36:42,460 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:42,460 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:36:42,463 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/grade/grades.css
+2019-02-01 01:36:42,464 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:36:42,467 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:42,485 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:36:42,486 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:36:42,487 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:36:42,491 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/Chart.bundle.js
+2019-02-01 01:36:42,501 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grade/grades.js
+2019-02-01 01:36:42,502 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/grade/jquery.nice-select.js
+2019-02-01 01:36:42,573 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:36:42,575 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:36:42,637 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:36:42,693 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /grades/gradeslist/a
+2019-02-01 01:36:42,694 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /grades/accgradelist/a
+2019-02-01 01:36:44,749 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:36:44,796 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:36:44,800 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:44,800 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:44,802 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:36:44,802 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:36:44,806 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:36:44,816 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:36:44,816 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:36:44,818 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:36:44,866 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:36:44,866 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:36:44,898 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:36:44,914 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:36:47,907 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/page/a/1
+2019-02-01 01:36:47,976 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:36:47,977 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/
+2019-02-01 01:36:47,979 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-02-01 01:36:47,980 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:36:47,984 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:36:47,993 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:36:48,011 [ERROR] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-306 - Error during preStart in [FileSource(./private/thread/1, 8192)]: requirement failed: Path './private/thread/1' is a directory
+java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1' is a directory
+	at scala.Predef$.require(Predef.scala:277)
+	at akka.stream.impl.io.FileSource$$anon$1.preStart(IOSources.scala:76)
+	at akka.stream.impl.fusing.GraphInterpreter.init(GraphInterpreter.scala:295)
+	at akka.stream.impl.fusing.GraphInterpreterShell.init(ActorGraphInterpreter.scala:557)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.tryInit(ActorGraphInterpreter.scala:679)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.preStart(ActorGraphInterpreter.scala:727)
+	at akka.actor.Actor.aroundPreStart(Actor.scala:528)
+	at akka.actor.Actor.aroundPreStart$(Actor.scala:528)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundPreStart(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.create(ActorCell.scala:652)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:523)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-02-01 01:36:48,019 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:36:48,023 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:36:48,028 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:36:48,036 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-02-01 01:36:48,096 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:36:48,118 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:36:48,119 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:36:48,169 [INFO] from application in application-akka.actor.default-dispatcher-18 - access from 0:0:0:0:0:0:0:1 to /chat/threadinfo/1
+2019-02-01 01:37:12,107 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-302 - access from 0:0:0:0:0:0:0:1 to /chat/photo/add
+2019-02-01 01:37:12,234 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/Avicii.png
+2019-02-01 01:37:23,565 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-306 - access from 0:0:0:0:0:0:0:1 to /chat/page/addcomment
+2019-02-01 01:37:37,283 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-307 - access from 0:0:0:0:0:0:0:1 to /chat/page/addcomment
+2019-02-01 01:37:56,150 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-306 - access from 0:0:0:0:0:0:0:1 to /chat/addtofav/a/1
+2019-02-01 01:37:57,514 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:37:57,576 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:37:57,577 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:37:57,578 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:37:57,585 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:37:57,602 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:37:57,603 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:37:57,603 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:37:57,613 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:37:57,613 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:37:57,779 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:37:57,782 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:37:57,812 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:37:57,815 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:00,458 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/top/mythreadlist/a
+2019-02-01 01:38:01,084 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/top/favthreadlist/a
+2019-02-01 01:38:02,540 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:05,506 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /chat/top/favthreadlist/a
+2019-02-01 01:38:06,280 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/page/a/1
+2019-02-01 01:38:06,334 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-02-01 01:38:06,335 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/Avicii.png
+2019-02-01 01:38:06,336 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/
+2019-02-01 01:38:06,337 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:06,338 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:06,346 [ERROR] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-305 - Error during preStart in [FileSource(./private/thread/1, 8192)]: requirement failed: Path './private/thread/1' is a directory
+java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1' is a directory
+	at scala.Predef$.require(Predef.scala:277)
+	at akka.stream.impl.io.FileSource$$anon$1.preStart(IOSources.scala:76)
+	at akka.stream.impl.fusing.GraphInterpreter.init(GraphInterpreter.scala:295)
+	at akka.stream.impl.fusing.GraphInterpreterShell.init(ActorGraphInterpreter.scala:557)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.tryInit(ActorGraphInterpreter.scala:679)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.preStart(ActorGraphInterpreter.scala:727)
+	at akka.actor.Actor.aroundPreStart(Actor.scala:528)
+	at akka.actor.Actor.aroundPreStart$(Actor.scala:528)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundPreStart(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.create(ActorCell.scala:652)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:523)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-02-01 01:38:06,361 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:06,387 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:06,387 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:06,389 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:06,407 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-02-01 01:38:06,408 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:06,472 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:06,473 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:06,605 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:06,632 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/threadinfo/1
+2019-02-01 01:38:07,905 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:38:07,940 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:07,941 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:07,941 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:07,942 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:07,941 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:38:07,945 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:07,966 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:07,966 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:07,968 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:38:08,011 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:08,039 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:08,055 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:08,072 [INFO] from application in application-akka.actor.default-dispatcher-38 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:08,918 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/top/favthreadlist/a
+2019-02-01 01:38:12,091 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/top/mythreadlist/a
+2019-02-01 01:38:12,866 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/top/favthreadlist/a
+2019-02-01 01:38:14,155 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /chat/page/a/1
+2019-02-01 01:38:14,239 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/
+2019-02-01 01:38:14,240 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/Avicii.png
+2019-02-01 01:38:14,253 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-02-01 01:38:14,253 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:14,254 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:14,253 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:14,257 [ERROR] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-307 - Error during preStart in [FileSource(./private/thread/1, 8192)]: requirement failed: Path './private/thread/1' is a directory
+java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1' is a directory
+	at scala.Predef$.require(Predef.scala:277)
+	at akka.stream.impl.io.FileSource$$anon$1.preStart(IOSources.scala:76)
+	at akka.stream.impl.fusing.GraphInterpreter.init(GraphInterpreter.scala:295)
+	at akka.stream.impl.fusing.GraphInterpreterShell.init(ActorGraphInterpreter.scala:557)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.tryInit(ActorGraphInterpreter.scala:679)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.preStart(ActorGraphInterpreter.scala:727)
+	at akka.actor.Actor.aroundPreStart(Actor.scala:528)
+	at akka.actor.Actor.aroundPreStart$(Actor.scala:528)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundPreStart(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.create(ActorCell.scala:652)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:523)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-02-01 01:38:14,291 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:14,291 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:14,291 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:14,297 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-02-01 01:38:14,315 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:14,542 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:14,564 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:14,586 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:14,613 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/threadinfo/1
+2019-02-01 01:38:15,425 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-301 - access from 0:0:0:0:0:0:0:1 to /chat/addtofav/a/1
+2019-02-01 01:38:16,284 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:38:16,324 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:16,329 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:16,330 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:38:16,330 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:16,332 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:16,336 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:16,346 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:16,354 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:16,354 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:38:16,444 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:16,463 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:16,464 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:16,506 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:17,346 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/top/favthreadlist/a
+2019-02-01 01:38:18,565 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /chat/top/mythreadlist/a
+2019-02-01 01:38:19,137 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:20,398 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/page/a/1
+2019-02-01 01:38:20,463 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-02-01 01:38:20,466 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/Avicii.png
+2019-02-01 01:38:20,467 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:20,468 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/
+2019-02-01 01:38:20,470 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:20,476 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:20,488 [ERROR] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-302 - Error during preStart in [FileSource(./private/thread/1, 8192)]: requirement failed: Path './private/thread/1' is a directory
+java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1' is a directory
+	at scala.Predef$.require(Predef.scala:277)
+	at akka.stream.impl.io.FileSource$$anon$1.preStart(IOSources.scala:76)
+	at akka.stream.impl.fusing.GraphInterpreter.init(GraphInterpreter.scala:295)
+	at akka.stream.impl.fusing.GraphInterpreterShell.init(ActorGraphInterpreter.scala:557)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.tryInit(ActorGraphInterpreter.scala:679)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.preStart(ActorGraphInterpreter.scala:727)
+	at akka.actor.Actor.aroundPreStart(Actor.scala:528)
+	at akka.actor.Actor.aroundPreStart$(Actor.scala:528)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundPreStart(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.create(ActorCell.scala:652)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:523)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-02-01 01:38:20,506 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:20,508 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:20,513 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-02-01 01:38:20,515 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:20,527 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:20,603 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:20,628 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /chat/threadinfo/1
+2019-02-01 01:38:20,664 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:20,665 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:23,959 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:38:23,996 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:38:23,996 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:23,997 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:23,998 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:23,998 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:24,008 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:24,016 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:38:24,017 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:24,020 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:24,070 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:24,073 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:24,105 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:24,120 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:25,201 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /chat/page/a/1
+2019-02-01 01:38:25,235 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/Avicii.png
+2019-02-01 01:38:25,235 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets2/thread/1/
+2019-02-01 01:38:25,247 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:25,247 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_page.css
+2019-02-01 01:38:25,249 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:25,253 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:25,268 [ERROR] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-302 - Error during preStart in [FileSource(./private/thread/1, 8192)]: requirement failed: Path './private/thread/1' is a directory
+java.lang.IllegalArgumentException: requirement failed: Path './private/thread/1' is a directory
+	at scala.Predef$.require(Predef.scala:277)
+	at akka.stream.impl.io.FileSource$$anon$1.preStart(IOSources.scala:76)
+	at akka.stream.impl.fusing.GraphInterpreter.init(GraphInterpreter.scala:295)
+	at akka.stream.impl.fusing.GraphInterpreterShell.init(ActorGraphInterpreter.scala:557)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.tryInit(ActorGraphInterpreter.scala:679)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.preStart(ActorGraphInterpreter.scala:727)
+	at akka.actor.Actor.aroundPreStart(Actor.scala:528)
+	at akka.actor.Actor.aroundPreStart$(Actor.scala:528)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundPreStart(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.create(ActorCell.scala:652)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:523)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-02-01 01:38:25,286 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:25,286 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:25,291 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:25,301 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_page.js
+2019-02-01 01:38:25,322 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:25,454 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:25,493 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:25,496 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:25,534 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /chat/threadinfo/1
+2019-02-01 01:38:37,373 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /chat/a
+2019-02-01 01:38:37,420 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/chat/chat_top.css
+2019-02-01 01:38:37,426 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:37,436 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:37,439 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:37,440 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:37,442 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:37,443 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/chat/chat_top.js
+2019-02-01 01:38:37,459 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:37,461 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:37,519 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:37,519 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:37,568 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:37,592 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /chat/top/threadlistrecent
+2019-02-01 01:38:40,198 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:38:40,258 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:38:40,262 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:38:40,265 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:40,267 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:38:40,267 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:40,268 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:40,281 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:40,285 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:38:40,286 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:40,287 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:38:40,304 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:38:40,304 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:40,306 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:38:40,307 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:40,308 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:38:40,311 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:38:40,354 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:40,362 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:38:40,399 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:40,424 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:40,541 [INFO] from application in application-akka.actor.default-dispatcher-37 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:40,575 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:44,220 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-303 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:38:46,527 [INFO] from application in application-akka.actor.default-dispatcher-35 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:51,631 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:52,500 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:57,248 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:38:57,318 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:38:57,320 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:38:57,325 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:38:57,326 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:38:57,328 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:38:57,331 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:38:57,333 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:38:57,343 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:38:57,345 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:38:57,349 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:38:57,364 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:38:57,375 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:38:57,382 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:38:57,382 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:38:57,385 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:38:57,385 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:38:57,480 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:38:57,485 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:38:57,485 [INFO] from application in application-akka.actor.default-dispatcher-36 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:38:57,551 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:38:57,600 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:57,626 [INFO] from application in application-akka.actor.default-dispatcher-43 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:38:59,665 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:39:03,378 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /event/entry/1
+2019-02-01 01:39:08,093 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /event/entry/1
+2019-02-01 01:39:09,915 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /event/delete/1
+2019-02-01 01:39:09,930 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:39:15,054 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:39:15,117 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:39:15,119 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:39:15,124 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:39:15,127 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:39:15,128 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:39:15,144 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:39:15,149 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:39:15,150 [INFO] from application in application-akka.actor.default-dispatcher-42 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:39:15,158 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:39:15,164 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:39:15,171 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:39:15,184 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:39:15,201 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:39:15,203 [INFO] from application in application-akka.actor.default-dispatcher-40 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:39:15,203 [INFO] from application in application-akka.actor.default-dispatcher-41 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:39:15,204 [INFO] from application in application-akka.actor.default-dispatcher-47 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:39:15,285 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:39:15,285 [INFO] from application in application-akka.actor.default-dispatcher-44 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:39:15,311 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:39:15,409 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:39:15,514 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:39:15,561 [INFO] from application in application-akka.actor.default-dispatcher-46 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:39:26,338 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:39:32,083 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-302 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:39:32,849 [INFO] from application in application-akka.actor.default-dispatcher-39 - access from 0:0:0:0:0:0:0:1 to /event/entry/2
+2019-02-01 01:39:34,324 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /event/delete/2
+2019-02-01 01:39:34,336 [INFO] from application in application-akka.actor.default-dispatcher-45 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:03,810 [INFO] from application in application-akka.actor.default-dispatcher-49 - ApplicationTimer demo: Stopping application at 2019-01-31T16:48:03.810Z after 751s.
+2019-02-01 01:48:03,811 [INFO] from application in application-akka.actor.default-dispatcher-49 - Shutting down connection pool.
+2019-02-01 01:48:03,980 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-410 - Creating Pool for datasource 'default'
+2019-02-01 01:48:03,983 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-410 - Database [default] connected at jdbc:h2:mem:play
+2019-02-01 01:48:04,143 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-410 - ApplicationTimer demo: Starting application at 2019-01-31T16:48:04.143Z
+2019-02-01 01:48:04,204 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-410 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.gzip.GzipFilter
+    filters.sample.LoggingFilter
+
+2019-02-01 01:48:04,207 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-410 - Application started (Dev)
+2019-02-01 01:48:04,218 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:48:04,326 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:48:04,327 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:48:04,327 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:48:04,329 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:48:04,335 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:48:04,338 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:48:04,352 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:48:04,352 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:48:04,352 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:48:04,352 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:48:04,352 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:48:04,371 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:48:04,375 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:48:04,375 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:48:04,377 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:48:04,378 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:48:04,585 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:48:04,663 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:48:04,673 [INFO] from application in application-akka.actor.default-dispatcher-5 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:48:04,711 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:04,770 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:04,776 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:48:04,807 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:48:07,337 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:48:07,402 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:48:07,403 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:48:07,405 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:48:07,405 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:48:07,406 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:48:07,411 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:48:07,419 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:48:07,422 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:48:07,423 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:48:07,423 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:48:07,425 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:48:07,426 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:48:07,441 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:48:07,441 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:48:07,443 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:48:07,453 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:48:07,526 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:48:07,539 [INFO] from application in application-akka.actor.default-dispatcher-8 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:48:07,582 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:48:07,667 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:48:07,779 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:07,817 [INFO] from application in application-akka.actor.default-dispatcher-10 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:07,846 [INFO] from application in application-akka.actor.default-dispatcher-4 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:48:11,018 [INFO] from application in application-akka.actor.default-dispatcher-2 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:33,745 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:48:33,812 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:48:33,812 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:48:33,816 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:48:33,817 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:48:33,818 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:48:33,819 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:48:33,832 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:48:33,833 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:48:33,834 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:48:33,834 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:48:33,860 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:48:33,860 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:48:33,863 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:48:33,864 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:48:33,864 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:48:33,872 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:48:33,919 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:48:33,975 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:48:34,021 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:48:34,105 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:48:34,128 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:34,151 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:34,176 [INFO] from application in application-akka.actor.default-dispatcher-14 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:48:36,467 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:48:36,525 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:48:36,525 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:48:36,527 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:48:36,527 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:48:36,528 [INFO] from application in application-akka.actor.default-dispatcher-12 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:48:36,530 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:48:36,539 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:48:36,540 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:48:36,541 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:48:36,544 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:48:36,547 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:48:36,547 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:48:36,565 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:48:36,565 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:48:36,567 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:48:36,569 [INFO] from application in application-akka.actor.default-dispatcher-3 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:48:36,646 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:48:36,714 [INFO] from application in application-akka.actor.default-dispatcher-15 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:48:36,732 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:48:36,794 [INFO] from application in application-akka.actor.default-dispatcher-11 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:48:36,845 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:36,881 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:48:36,955 [INFO] from application in application-akka.actor.default-dispatcher-7 - access from 0:0:0:0:0:0:0:1 to /assets/images/favicon.png
+2019-02-01 01:48:52,169 [INFO] from application in application-akka.actor.default-dispatcher-9 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:12,055 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:12,564 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:13,441 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:13,813 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:15,195 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:16,876 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:17,808 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:17,986 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:18,132 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:19,530 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:21,208 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:27,675 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-414 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:49:32,977 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-412 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:49:44,997 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-415 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:49:51,236 [INFO] from application in application-akka.actor.default-dispatcher-19 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:49:54,293 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-416 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:50:06,052 [INFO] from application in application-akka.actor.default-dispatcher-13 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:06,896 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:07,618 [INFO] from application in application-akka.actor.default-dispatcher-16 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:11,110 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-416 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:50:12,811 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:28,239 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:29,066 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:29,909 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:30,773 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:31,525 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entry/6
+2019-02-01 01:50:34,417 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/delete/6
+2019-02-01 01:50:34,432 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:37,450 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:38,285 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entry/7
+2019-02-01 01:50:39,663 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/delete/7
+2019-02-01 01:50:39,678 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:44,525 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:50:44,603 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:50:44,607 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:50:44,616 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:50:44,616 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:50:44,618 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:50:44,619 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:50:44,626 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:50:44,627 [INFO] from application in application-akka.actor.default-dispatcher-22 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:50:44,627 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:50:44,632 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:50:44,638 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:50:44,638 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:50:44,639 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:50:44,641 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:50:44,645 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:50:44,647 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:50:44,835 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:50:44,837 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:50:44,865 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:50:44,901 [INFO] from application in application-akka.actor.default-dispatcher-24 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:50:44,913 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:45,000 [INFO] from application in application-akka.actor.default-dispatcher-21 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:48,681 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:50:49,379 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:01,755 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:02,431 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:02,971 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:03,538 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:04,099 [INFO] from application in application-akka.actor.default-dispatcher-6 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:04,709 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:05,432 [INFO] from application in application-akka.actor.default-dispatcher-17 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:06,225 [INFO] from application in application-akka.actor.default-dispatcher-23 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:39,513 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:39,794 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:40,288 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:41,784 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:43,384 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/entry/5
+2019-02-01 01:51:44,884 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/delete/5
+2019-02-01 01:51:44,933 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:46,746 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entry/3
+2019-02-01 01:51:48,032 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/delete/3
+2019-02-01 01:51:48,048 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:49,966 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entry/4
+2019-02-01 01:51:51,799 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/delete/4
+2019-02-01 01:51:51,813 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:51:55,431 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-416 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:51:57,531 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/entry/8
+2019-02-01 01:51:58,878 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /event/delete/8
+2019-02-01 01:51:58,890 [INFO] from application in application-akka.actor.default-dispatcher-31 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:05,239 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-414 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:52:08,390 [INFO] from application in application-akka.actor.default-dispatcher-28 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:19,680 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /calendar/month
+2019-02-01 01:52:19,767 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/calendar.css
+2019-02-01 01:52:19,767 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/style.css
+2019-02-01 01:52:19,778 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/leftMenu.css
+2019-02-01 01:52:19,785 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css
+2019-02-01 01:52:19,787 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/jquery/jquery.js
+2019-02-01 01:52:19,797 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/bootstrap-colorselector.css
+2019-02-01 01:52:19,799 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/calendar/dayScheduler.css
+2019-02-01 01:52:19,801 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/popper.js
+2019-02-01 01:52:19,804 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/css/all.css
+2019-02-01 01:52:19,804 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/bootstrap.min.js
+2019-02-01 01:52:19,851 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/fetch/fetch.js
+2019-02-01 01:52:19,851 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendarEvent.js
+2019-02-01 01:52:19,852 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/navBar.js
+2019-02-01 01:52:19,855 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/calendar.js
+2019-02-01 01:52:19,855 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/calendar/bootstrap-colorselector.js
+2019-02-01 01:52:19,861 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//javascripts/moment-with-locales.min.js
+2019-02-01 01:52:20,048 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-solid-900.woff2
+2019-02-01 01:52:20,100 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/popper.js.map
+2019-02-01 01:52:20,128 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /assets/javascripts/bootstrap.min.js.map
+2019-02-01 01:52:20,162 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:20,181 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /assets/stylesheets/bootstrap.min.css.map
+2019-02-01 01:52:20,242 [INFO] from application in application-akka.actor.default-dispatcher-30 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:22,181 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:23,023 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:23,628 [INFO] from application in application-akka.actor.default-dispatcher-26 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,224 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,568 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,687 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,715 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,884 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:33,967 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:34,040 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:34,741 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:34,922 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:35,452 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:35,490 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:35,732 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:35,811 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:35,901 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:38,310 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:38,486 [INFO] from application in application-akka.actor.default-dispatcher-32 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:38,719 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:38,753 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:38,833 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:39,017 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:39,181 [INFO] from application in application-akka.actor.default-dispatcher-33 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:39,233 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:43,037 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:52:46,800 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-411 - access from 0:0:0:0:0:0:0:1 to /event/create
+2019-02-01 01:52:48,657 [INFO] from application in application-akka.actor.default-dispatcher-34 - access from 0:0:0:0:0:0:0:1 to /event/entry/10
+2019-02-01 01:52:50,939 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /assets//stylesheets/fontawesome-free-5.5.0-web/webfonts/fa-regular-400.woff2
+2019-02-01 01:52:55,732 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-416 - access from 0:0:0:0:0:0:0:1 to /event/edit/10
+2019-02-01 01:52:55,772 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
+2019-02-01 01:53:02,803 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entry/10
+2019-02-01 01:53:09,551 [INFO] from application in application-akka.actor.default-dispatcher-20 - access from 0:0:0:0:0:0:0:1 to /event/entry/10
+2019-02-01 01:53:10,905 [INFO] from application in application-akka.actor.default-dispatcher-25 - access from 0:0:0:0:0:0:0:1 to /event/delete/10
+2019-02-01 01:53:10,926 [INFO] from application in application-akka.actor.default-dispatcher-29 - access from 0:0:0:0:0:0:0:1 to /event/entries
