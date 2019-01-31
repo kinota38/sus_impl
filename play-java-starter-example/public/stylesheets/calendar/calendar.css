@@ -12,6 +12,12 @@ div.menu{
 
 }
 
+div.event-month-field{
+    position:absolute;
+}
+div.month-label{
+    position: absolute;
+}
 /*body{
     float: left;
 }*/

@@ -190,7 +190,11 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                     </div>
                 </div>
             </div>
-            <div id="calendar-result" ></div>
+            <div id="month-scheduler-wrapper">
+                <div class="event-month-field"></div>
+                <div id="calendar-result" ></div>
+            </div>
+
             <div class="date-scheduler-wrapper">
 
                 <div class="date-scheduler-all">
@@ -345,9 +349,9 @@ Seq[Any](_display_(/*2.2*/main("カレンダー")/*2.15*/{_display_(Seq[Any](for
                                             <div class="Pgg38c">
                                                 <div class="lmNFmc pCoqfc">GMT+09</div>
                                                 <div class="lmNFmc MANBAf">午前12時</div>
-                                                <div class="lmNFmc MANBAf">午前1時</div>
-                                                <div class="lmNFmc MANBAf">午前"""),
-format.raw("""2時</div>
+                                      """),
+format.raw("""          <div class="lmNFmc MANBAf">午前1時</div>
+                                                <div class="lmNFmc MANBAf">午前2時</div>
                                                 <div class="lmNFmc MANBAf">午前3時</div>
                                                 <div class="lmNFmc MANBAf">午前4時</div>
                                                 <div class="lmNFmc MANBAf">午前5時</div>
@@ -442,7 +446,7 @@ format.raw("""2時</div>
                 <div class="modal-body">
                     <span id="error-field"></span>
                     <form id="registration-form">
-                        <input type="hidden" name="username" value=""""),_display_(/*528.70*/name),format.raw/*528.74*/("""">
+                        <input type="hidden" name="username" value=""""),_display_(/*532.70*/name),format.raw/*532.74*/("""">
                         <div class="form-group">
                             <input type="text" class="form-control" id="title" name="title" placeholder="タイトルを入力">
                         </div>
@@ -474,8 +478,8 @@ format.raw("""2時</div>
                                 <option value="#cd6133" data-color="#cd6133">茶</option>
                             </select>
                         </div>
-                        """),_display_(/*560.26*/helper/*560.32*/.CSRF.formField),format.raw/*560.47*/("""
-                    """),format.raw/*561.21*/("""</form>
+                        """),_display_(/*564.26*/helper/*564.32*/.CSRF.formField),format.raw/*564.47*/("""
+                    """),format.raw/*565.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task()">閉じる</button>
@@ -499,7 +503,7 @@ format.raw("""2時</div>
                     <span hidden id="edit-id"></span>
                     <span id="error-field"></span>
                     <form id="edit-form">
-                        <input type="hidden" name="username" value=""""),_display_(/*585.70*/name),format.raw/*585.74*/("""">
+                        <input type="hidden" name="username" value=""""),_display_(/*589.70*/name),format.raw/*589.74*/("""">
                         <div class="form-group">
                             <input type="text" class="form-control" name="title" id="edit-title" placeholder="タイトルを入力">
                         </div>
@@ -531,8 +535,8 @@ format.raw("""2時</div>
                                 <option value="#cd6133" data-color="#cd6133">茶</option>
                             </select>
                         </div>
-                        """),_display_(/*617.26*/helper/*617.32*/.CSRF.formField),format.raw/*617.47*/("""
-                    """),format.raw/*618.21*/("""</form>
+                        """),_display_(/*621.26*/helper/*621.32*/.CSRF.formField),format.raw/*621.47*/("""
+                    """),format.raw/*622.21*/("""</form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="close_register_task();">閉じる</button>
@@ -560,11 +564,11 @@ format.raw("""2時</div>
 
               /*
                   -- GENERATED --
-                  DATE: Wed Jan 30 15:01:13 JST 2019
-                  SOURCE: /Users/shibainu/Documents2/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
-                  HASH: 12fe48a091ba0c13dfc66764964ede47a3c05536
-                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34794->42089|34820->42093|37037->44282|37053->44288|37090->44303|37140->44324|38466->45622|38492->45626|40704->47810|40720->47816|40757->47831|40807->47852
-                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|111->195|111->195|111->195|445->528|445->528|477->560|477->560|477->560|478->561|502->585|502->585|534->617|534->617|534->617|535->618
+                  DATE: Thu Jan 31 14:15:25 JST 2019
+                  SOURCE: /cs-home/cs-student/kinota.w.aa/Desktop/git/sus_impl/play-java-starter-example/app/views/section/calendar/day/day.scala.html
+                  HASH: e24fedac16ed8c40abab5b74faced7cc580f00e2
+                  MATRIX: 967->1|1075->17|1096->30|1134->31|1165->36|1221->8874|1258->8883|1822->9419|1848->9423|2601->10148|2627->10152|3507->11004|3533->11008|3709->11156|3735->11160|7389->14785|7416->14789|7447->14790|34919->42214|34945->42218|37162->44407|37178->44413|37215->44428|37265->44449|38591->45747|38617->45751|40829->47935|40845->47941|40882->47956|40932->47977
+                  LINES: 28->1|33->2|33->2|33->2|34->3|35->119|36->120|42->126|42->126|53->137|53->137|65->149|65->149|67->151|67->151|111->195|111->195|111->195|449->532|449->532|481->564|481->564|481->564|482->565|506->589|506->589|538->621|538->621|538->621|539->622
                   -- GENERATED --
               */
           

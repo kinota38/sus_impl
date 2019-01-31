@@ -20,6 +20,7 @@ function register_new() {
     }).then(json => {
         // 正常な応答が返ってきたら，テーブルを更新する
         // update_calendar_month(json);
+        update_calendar_month(json);
         update_calendar_day(json);
         close_register_task();
     }, error => {
@@ -36,22 +37,11 @@ function update_event_list() {
         return response.json();
     }).then(entries => {
         update_calendar_day(entries);
+        update_calendar_month(entries);
     });
 }
 
-function update_calendar_month(event){
-    /*var flag = false;
-           var start_date = event["start_date"];
-           var end_date = event["end_date"];
-           var days = document.getElementsByClassName('date');
-           for(var date in days){
-               if(toDate(date) == start_date) { flag = true;}
-               if(toDate(date) == end_date) { flag = false;}
 
-               date.style.backgroundColor = '#A4C6FF'
-           }*/
-
-}
 
 // 日単位のカレンダー表示を更新する
 function update_calendar_day(entries){
@@ -323,7 +313,7 @@ function toDay(){
     $(".chosen-day").css('display','inline');
     $("#tday,#bday,#nday").css("display", "block");
     $(".chosen-month").css('display','none');
-    $("#calendar-result").css('display','none');
+    $("#month-scheduler-wrapper").css('display','none');
     $(".date-scheduler-core").css('display','flex');
 
 }

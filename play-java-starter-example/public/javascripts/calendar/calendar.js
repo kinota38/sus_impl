@@ -1,63 +1,8 @@
 const $ = jQuery;
 var $window = $(window);
 window.onload = function() {
-    var scrollValue = 0;
-    var tmpY = 0;
-    setCalendar();
-    setMiniCalendar();
-    $(".date-scheduler-main-core").scroll(function() {
-        $("#scroll-value").text("y:" + $(this).scrollTop());
-        scrollValue = $(this).scrollTop();
-    });
-    $("#c3250").mousemove( function(e){
-        const xy = muuXY(e, this);
-        tmpY = xy[1] - 160 + scrollValue;
-        $("#x-place").text("x:" + xy[0]);
-        $("#y-place").text("y:" + xy[1]);
-    }).mousedown(function ( event ) {
-        if( event.button == 0 ){
-            const startXY = muuXY(event, this);
-            const startY = startXY[1] - 160 + scrollValue;
-            $intervalID = setInterval(
-                function(){
-                    let height;
-                    if (tmpY-startY < 30) {
-                        height = 30;
-                    } else {
-                        height = tmpY-startY;
-                    }
-                    $(".tmpEV").remove();
-                    const oneEvent = $("<div>").attr({
-                        role: "button",
-                        tabindex: "0",
-                        "data-toggle": "tooltip",
-                    }).addClass("NlL62b EfQccc elYzab-cXXICe-Hjleke EiZ8Dd jKgTF tmpEV")
-                        .css({
-                            'top': String(startY)+"px",
-                            'height': String(height)+"px",
-                            "left": "0%",
-                            "width": "100%",
-                            "z-index": "100",
-                            "background-color": "#039BE5",
-                            "border-color": "#039BE5",
-                            "pointer-events": "auto"
-                        });
-                    $(".WJVfWe").append(oneEvent);
-                    // console.log("startY:"+startY);
-                    $("#start-Y").text("startY:"+startY);
-                    $("#end-Y").text("tmpY:"+tmpY);
-                    // console.log("tmpY:"+tmpY);
-                    fromYcoordToTime(startY, tmpY);
-                },
-                200
-            );
-        }
-    }).mouseup(function ( event ) {
-        if( event.button == 0 ){
-            clearInterval( $intervalID );
-            open_register_task(event);
-        }
-    });
+  setCalendar();
+  setMiniCalendar();
 };
 
 !function ($) {
@@ -74,10 +19,9 @@ window.onload = function() {
     });
 }(jQuery);
 
-var clientX;
-var clientY;
-var miniWindowSize = 200;
-var pushing_flag=0;
+var miniWindowSize = 256;
+const bar_height = 56;
+const day_base_height = 20;
 var row_start = 0;
 var yy_start = 0;
 var mm_start = 0;
@@ -88,8 +32,8 @@ var mm_end = 0;
 var dd_end = 0;
 
 $window.resize(function (){
-    var yy = $("year").text();
-    var mm = $("month").text();
+    var yy = $(".year-num").text();
+    var mm = $(".month-num").text();
     setCalendar(yy,mm)
 });
     function mousedown(e){
@@ -115,11 +59,390 @@ $window.resize(function (){
 //alert(yy_start+'/'+mm_start+'/'+dd_start+'\n' + yy_end+'/'+mm_end+'/'+dd_end);
 //}
 
+function update_calendar_month(entries){
+    if (entries.length !== 0) {
+
+            // 予定が存在するときは，フィールドをクリアしてカレンダーを再構築
+            $(".event-month-field")
+                .empty()
+                .append(makeMonthLabels(entries));
+        } else {
+            //console.log("through");
+            // タスクが一件もないときはフィールドをクリアしてメッセージを表示
+            $(".event-month-field")
+                .empty();
+        }
+}
+
+function makeMonthLabels(entries){
+  var result = $("<div>").attr("role", "presentation");
+    const nowYear = $(".year-num").text();
+    const nowMonth = $(".month-num").text();
+    const nowDay = $(".date-num").text();
+    const nowYearNum = parseInt(nowYear);
+    const nowMonthNum = parseInt(nowMonth);
+    const nowDayNum = parseInt(nowDay);
+    const zdate = new Date(nowYearNum,nowMonth-1,0); // 前月末
+    const tdate = new Date(nowYearNum,nowMonthNum,0); // 当月末
+    const zedd = zdate.getDate(); // 前月末日
+    const zedy = zdate.getDay(); // 前月末曜日
+    const tedd = tdate.getDate(); // 当月末日
+    const tedy = tdate.getDay(); // 当月末曜日
+
+   for(const entry of entries){
+    console.log("through");
+    /*if($("#register_username").text() != entry["username"]){
+        continue;
+    }*/
+    const nowYear = $(".year-num").text();
+    const nowMonth = $(".month-num").text();
+    const nowDay = $(".date-num").text();
+
+    const startDate = entry["start_date_string"].split(" ", 2);
+    const startYmd = startDate[0].split("/", 3);
+    const startTime = startDate[1].split(":", 2);
+    const endDate = entry["end_date_string"].split(" ", 2);
+    const endYmd = endDate[0].split("/", 3);
+    const endTime = endDate[1].split(":", 2);
+
+//整数型に置き換えたもの
+    const startY = parseInt(startYmd[0],10);
+    const startM = parseInt(startYmd[1],10);
+    const startD = parseInt(startYmd[2],10);
+
+    const endY = parseInt(endYmd[0],10);
+    const endM = parseInt(endYmd[1],10);
+    const endD = parseInt(endYmd[2],10);
+
+
+
+//------------------
+
+     var dayS = new Date(startY,startM-1, startD); //start
+     var dayE = new Date(endY , endM - 1 , endD);   //end
+
+     var rowS=0,rowE = 0;
+     var lineS=0,line_end=6;
+
+    if(nowYearNum + 1 == startY){
+        if(startM != 1 && nowMonth == 12){
+            continue;
+        }
+        if(6-tedy < startD){
+            continue;
+        }
+
+        if(startY == endY && startM == endM && 6 - tedy >= endD){
+            var row = (zedy + tedd) / 7;
+            result += makeMonthLabel(row,dayS.getDay(),row,dayE.getDay(),entry);
+        }else{
+            var row = (zedy + tedd) / 7;
+            result.append(makeMonthLabel(row,dayS.getDay(),row,6,entry));
+        }
+    }else if(nowYearNum - 1 == endY){
+        if(endM != 12 || nowMonth == 1){
+            continue;
+        }
+        if(zedd - zedy > endD){
+            continue;
+        }
+
+        if(startY == endY && startM == endM && startD >= zedd-zedy ){
+            var row = 0;
+            result.append( makeMonthLabel(row,dayS.getDay(),row,dayE.getDay(),entry));
+        }else{
+            var row = 0;
+            result.append( makeMonthLabel(0,0,row,dayE.getDay(),entry));
+        }
+    }else if(nowYearNum - 1 == startY){
+        if(nowMonthNum != 1){
+            if(endY == startY ){
+                continue;
+            }
+            else if(endY != nowYearNum){
+                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
+                continue;
+            }else if(endM < nowMonthNum){
+                continue;
+            }else if(endM - 1 == nowMonthNum && 6 - tedy){
+                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,dayE.getDay(),entry));
+                continue;
+            }else if(endM == nowMonthNum){
+                result.append( makeMonthLabel(0,0,(zedy+endD)/7,dayE.getDay(),entry));
+                continue;
+            }else{
+                result.append( makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
+                continue;
+            }
+        }else{
+            if (startM != 12 || startD < zedd - zedy){
+                if(endY == startY){
+                    if(endM != 12){
+                        continue;
+                    }else if(zedd - zedy <= endD){
+                        result.append( makeMonthLabel(0,0,0,dayE.getDay(),entry));
+                        continue;
+                    }else {
+                        continue;
+                    }
+
+                }else if (endY != nowYearNum || endM != nowMonthNum){
+                    result.append(makeMonthLabel(0,0,(zedy+tedd)/7,6,entry));
+                    continue;
+                }else{
+                    result.append(makeMonthLabel(0,0,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
+                    continue;
+                }
+            }else{
+                if(endY == startY){
+                    result.append( makeMonthLabel(0,dayS.getDay,0,dayE.getDay(),entry));
+                    continue;
+                }else if(endY == nowYearNum){
+                    if(endM == nowMonthNum){
+                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
+                        continue;
+                    }
+                    else if(endM == nowMonthNum + 1 && endD <= 6-tedy){
+                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + tedd)/7,dayE.getDay(),entry));
+                        continue;
+                    }else {
+                        result.append(makeMonthLabel(0,dayS.getDay,(zedy + tedd)/7,6,entry));
+                        continue;
+                    }
+                }
+
+            }
+        }
+    }else if(nowYearNum + 1 == endY){
+        if(nowMonthNum != 12||(endM==1&&endD > 6 - tedy)||endM != 1){
+            if(startY == endY){
+                continue;
+            }else if(nowYearNum != startY || startM < nowMonthNum - 1){
+                result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,6,entry));
+                continue;
+            }else{
+                if(startM >nowMonthNum ){
+                    continue;
+                }else{
+                    if(startM == nowMonthNum - 1){
+                        if(startD >= zedd - zedy ){
+                            result.append(makeMonthLabel(0,dayS.getDay(),(zedy + tedd) / 7,6,entry));
+                        }else{
+                            result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,6,entry));
+                        }
+                        continue;
+                    }else {
+                        result.append(makeMonthLabel((zedy + dayS.getDate())/7 ,dayS.getDay(),(zedy + tedd) / 7,6,entry));
+                        continue;
+                    }
+
+                }
+            }
+
+        }else{
+            if(endM == 1){
+                if(endD <= 6 - tedy){
+                    if(startY == endY){
+                        result.append(makeMonthLabel((zedy + tedd) / 7,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
+                        continue;
+                    }
+                    else if(nowYearNum != startY || startM < nowMonthNum - 1){
+                        result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,dayE.getDay(),entry));
+                        continue;
+                    }else{
+                        if(startM >nowMonthNum ){
+                            continue;
+                        }else{
+                            if(startM == nowMonthNum - 1){
+                                if(startD >= zedd - zedy ){
+                                    result.append( makeMonthLabel(0,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
+                                }else{
+                                    result.append(makeMonthLabel(0,0,(zedy + tedd) / 7,dayE.getDay(),entry));
+                                }
+                                continue;
+                            }else {
+                                result.append(makeMonthLabel((zedy + dayS.getDate())/7 ,dayS.getDay(),(zedy + tedd) / 7,dayE.getDay(),entry));
+                                continue;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    else if(startY > nowYearNum + 1 ){
+        continue;
+    }else if(endY < nowYearNum -1){
+        continue;
+    }else{//endY == startY == nowYearNum
+        if(startM > nowMonthNum +1 || endM < nowMonthNum - 1){
+            continue;
+        }else if(startM == nowMonthNum + 1){
+            if(startD > 6 - tedy){
+                continue;
+            }else{
+                if(endM != startM || (endM ==startM && endD > 6 - tedy)){
+                    result.append(makeMonthLabel((zedy+tedd)/7,dayS.getDay(),(zedy+tedd)/7,6,entry));
+                    continue;
+                }else {
+                    result.append(makeMonthLabel((zedy+tedd)/7,dayS.getDay(),(zedy+tedd)/7,dayE.getDay(),entry));
+                    continue;
+                }
+            }
+        }else if(endM == nowMonthNum -1){
+            if(endD < zedd - zedy){
+                continue;
+            }else{
+                if(startM != endM || (endM == startM && startD < zedd - zedy)){
+                    result.append(makeMonthLabel(0,0,0,dayE.getDay(),entry));
+                    continue;
+                }else{
+                    result.append( makeMonthLabel(0,dayS.getDay(),0,dayE.getDay(),entry));
+                }
+            }
+        }else if(startM == nowMonthNum - 1){
+
+            if(startD >= zedd - zedy){
+                lineS = dayS.getDay();
+            }
+            if(endM == startM){
+                if(endD < zedd - zedy){
+                    continue;
+                }else{
+                    result.append(makeMonthLabel(0,lineS,0,dayE.getDay(),entry));
+                    continue;
+                }
+            }else{
+                if(endM == nowMonthNum){
+                    if(startD < zedd - zedy){
+                        result.append(makeMonthLabel(0,0,(zedy + dayE.getDate())/7,dayE.getDay(),entry));
+                        continue;
+                    }else{
+                        result.append(makeMonthLabel(0,dayS.getDay(),(zedy + dayE.getDate())/7,dayE.getDay(),entry));
+                        continue;
+                    }
+                }else if(endM == nowMonthNum + 1){
+                    if(endD > 6 - tedy){
+                        result.append(makeMonthLabel(0,lineS,(zedy + tedd)/7,6,entry));
+                        continue;
+                    }else{
+                        result.append(makeMonthLabel(0,lineS,(zedy + tedd)/7,dayE.getDay(),entry));
+                        continue;
+                    }
+                }else{
+                    result.append( makeMonthLabel(0,lineS,(zedy + tedd)/7,dayE.getDay(),entry));
+                }
+            }
+        }else if(endM == nowMonthNum + 1){
+
+            if(endD <= 6 - tedy){
+                rowE = (zedy + tedd)/7;
+                lineE = dayE.getDay();
+            }else{
+                rowE = (zedy + tedd)/7;
+                lineE = 6;
+            }
+
+            if(startM == endM){
+                if(startD  > 6 - tedy){
+                    continue;
+                }else{
+                    rowS = rowE;
+                    lineS =dayS.getDay();
+                    result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
+                    continue;
+                }
+            }else if(startM == nowMonthNum){
+                rowS = (dayS.getDate() + zedy)/7;
+                lineS = dayS.getDay();
+                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
+                continue;
+            }else if(startM == nowMonthNum - 1){
+                rowS = 0;
+                if(startD >= zedd -zedy){
+                    lineS = dayS.getDay();
+                }else{
+                    lineS = 0;
+                }
+                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
+                continue;
+            }else{
+                rowS = 0;
+                lineS = 0;
+                result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
+                continue;
+            }
+
+        }else{//endM = startM = nowMonthNum
+            rowS = Math.floor((zedy + dayS.getDate()))/7;
+            lineS = dayS.getDay();
+            rowE = Math.floor((zedy + dayE.getDate()))/7;
+            lineE = dayE.getDay();
+            result.append(makeMonthLabel(rowS,lineS,rowE,lineE,entry));
+        }
+
+    }
+  }
+  //
+
+  return result;
+}
+
+function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
+    var windowWidth = $(".calendar-body").width();
+    var windowHeight = $(".calendar-body").height();
+    const label_width = (windowWidth - $(".left-menu-wrapper").width())/7;
+    const label_height = windowHeight/6/3;
+    const labels = $("<div>").attr("role", "presentation").addClass("label-month-all");
+    const init_top = bar_height + day_base_height;
+    const init_left = 0;
+
+    row_start = Math.floor(row_start);
+    row_end = Math.floor(row_end);
+
+    console.log(entry["start_date_string"]);
+    console.log(entry["end_date_string"]);
+    console.log(windowWidth);
+    console.log(init_left);
+    for(var i = row_start * 7 + line_start; i<= row_end * 7 +line_end; i++){
+        var top = Math.floor(i/7)*label_height*3 + init_top;
+        var left = (i%7)*label_width + init_left;
+        var r=5;
+        r = (i==row_start * 7 + line_start||i==row_end * 7 +line_end) ? r:0;
+
+        const label = $("<div>").attr({
+          role:"button",
+          tabindex:"0",
+          "data-toggle": "tooltip",
+          title: entry["title"]
+        }).addClass("month-label")
+            .css({
+                "top":top+"px",
+                "left":left+"px",
+                "width":label_width +"px",
+                "height":label_height + "px",
+                "z-index":"101",
+                //"border-radius": r+"px",
+                "background-color": entry["color"],
+                "border-color": entry["color"],
+                "pointer-events": "auto"
+            });
+        labels.append(label);
+    }
+    labels.on("click",function(){
+                          $("#exampleModal").modal("toggle");
+                          open_edit_event(entry["id"]);
+                      });
+    return labels;
+}
+
 // カレンダー生成（引数は前月や翌月移動に備えてのもの）
 function makeCalendar(yy, mm) {
   var yy, mm;
   // yy,mmが未定義なら（つまり一番最初にページを開いたときに）そのときの年月を変数yy,mmに付与する
-  if (!yy && !mm) {
+  if (!yy || !mm) {
     var yy = new Date().getFullYear();
     var mm = new Date().getMonth();
     mm = mm -(-1); // mmは前月を指してしまうのでプラス1してあげる（-(-1)はJavaScriptが足し算苦手なため）
@@ -172,28 +495,25 @@ function makeCalendar(yy, mm) {
 
   // DOM生成（いよいよ描画）
 
-  var windowWidth = $window.width();
-  var windowHeight = $window.height();
-
-
+  var windowWidth = $(".calendar-body").width();
+  var windowHeight = $(".calendar-body").height();
   var out="<div class='calendar'>";
-  // $("#year").text(yy);
-  // $("#month").text(mm);
-  $(".year-num").text(yy);
-  $(".month-num").text(mm);
+  $("#year").text(yy);
+  $("#month").text(mm);
   var youbi = ["日", "月", "火", "水", "木", "金", "土"];
   /*out += "<tr>";
   for (var i in youbi) {
     out += "<td>"+youbi[i]+"</td>";
   }*/
+  var width = (windowWidth-miniWindowSize-7)/7;
+  var height = (windowHeight-day_base_height)/6
   out += "<div class='week_base'>"
   for(var i in youbi){
-    out += "<div class='date_base'>" + youbi[i] + "</div>";
+    out += "<div class='date_base' style='width:"+ width+"px;'>" + youbi[i] + "</div>";
   }
   out += "</div>"
 
-  var windowWidth = $window.width();
-  var windowHeight = $window.height();
+
 
   // ここからさきほど作った配列daysの中身を展開していく
 
@@ -226,8 +546,9 @@ function makeCalendar(yy, mm) {
                                         +output_str+"</div>";
                                         */
         out += "<div class='day' row='"+i+"' yy='"+y_now+"' mm='"+m_now+"' dd='"+days[j-1]+"' onmousedown='mousedown(this)' onmouseup='mouseup(this)'"
-       +" style='color:#"+ color_day +";' >"
-                                                +output_str+"</div>";
+         +" style='color:#"+ color_day +"; width:"+width+"px; height:" +height +"px;' >"+output_str;
+        //out += makeMonthLabel(1,2,1,5);
+        out +="</div>";
     }
 
     out += "</div>"
@@ -244,10 +565,15 @@ function makeCalendar(yy, mm) {
 
 function setCalendar(yy,mm){
     var out = makeCalendar(yy,mm);
-    var windowWidth = $window.width();
-    var windowHeight = $window.height();
+    var windowWidth = $(".calendar-body").width();
     document.getElementById("calendar-result").innerHTML = out;
-    document.getElementById("calendar-result").style.width = ((windowWidth-miniWindowSize)+9)  + 'px';
+    document.getElementById("calendar-result").style.width = ((windowWidth-miniWindowSize -7))  + 'px';
+    fetch("/event/entries").then(response => {
+            // 結果をJSONとして受け取る
+            return response.json();
+        }).then(entries => {
+            update_calendar_month(entries);
+        });
 }
 
 // 前月へ移動（年度をまたぐときはyyを調整する必要がある点に留意）
@@ -262,6 +588,10 @@ function backmm(e) {
     mm = 12;
     yy = yy - 1;
   }
+
+  $(".year-num").text(yy);
+  $(".month-num").text(mm);
+
   setCalendar(yy, mm);
   setMiniCalendar(yy,mm);
 }
@@ -278,6 +608,9 @@ function nextmm(e) {
     mm = 1;
     yy = parseInt(yy) + 1;
   }
+
+  $(".year-num").text(yy);
+  $(".month-num").text(mm);
 
   setCalendar(yy, mm);
   setMiniCalendar(yy,mm);
@@ -546,14 +879,11 @@ function open_register_task(e){
      $(".overlay").width(w);
      $(".overlay").fadeIn();
      $(".main-window").fadeIn("fast");*/
-    // $("#title").val("");
-    $("#exampleModal").modal();
+     $("#exampleModal").modal();
 }
 
 function close_register_task(){
-    $(".tmpEV").remove();
     $("#exampleModal").modal("hide");
-    $("#title").val("");
 }
 
 function makeMiniCalendar(yy,mm) {
@@ -658,28 +988,4 @@ function showDate(year, month, dateNum, dayOfWeekStr, day) {
     $(".date-num").text(dateNum);
     $(".display-date").text(dayOfWeekStr);
     $(".display-day").text(day);
-}
-
-function muuXY(e, that) {
-    if (!e) e = window.event;
-    let x, y;
-    if (e.targetTouches) {
-        x = e.targetTouches[0].pageX - e.target.offsetLeft;
-        y = e.targetTouches[0].pageY - e.target.offsetTop;
-    }else if (that){
-        x = e.pageX - that.offsetLeft;
-        y = e.pageY - that.offsetTop;
-    }
-    return [x,y];
-}
-
-function fromYcoordToTime(startY, endY) {
-    let startH = Math.floor(startY / 40);
-    let endH = Math.floor(endY / 40);
-    let startM = (Math.floor(startY / 20) % 2) * 30;
-    let endM = (Math.floor(endY / 20) % 2) * 30;
-    $("#HH_start").text(startH);
-    $("#mm_start").text(startM);
-    $("#HH_end").text(endH);
-    $("#mm_end").text(endM);
 }
