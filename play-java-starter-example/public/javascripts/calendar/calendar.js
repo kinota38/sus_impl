@@ -395,8 +395,8 @@ function makeMonthLabels(entries){
 function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
     var windowWidth = $(".calendar-body").width();
     var windowHeight = $(".calendar-body").height();
-    const label_width = (windowWidth - $(".left-menu-wrapper").width())/7;
-    const label_height = windowHeight/6/3;
+    const label_width = (windowWidth - $(".left-menu-wrapper").width() )/7 -1;
+    const label_height = windowHeight/6/4;
     const labels = $("<div>").attr("role", "presentation").addClass("label-month-all");
     const init_top = bar_height + day_base_height;
     const init_left = 0;
@@ -407,10 +407,10 @@ function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
     console.log(entry["start_date_string"]);
     console.log(entry["end_date_string"]);
     for(var i = row_start * 7 + line_start; i<= row_end * 7 +line_end; i++){
-        var top = Math.floor(i/7)*label_height*3 + init_top;
+        var top = Math.floor(i/7)*label_height*4 + init_top;
         var left = (i%7)*label_width + init_left;
-        var r=5;
-        r = (i==row_start * 7 + line_start||i==row_end * 7 +line_end) ? r:0;
+        var r="0px 0px 0px 0px / 0px 0px 0px 0px";
+        r = (i==row_start * 7 + line_start) ? "5px 0px 0px 5px / 5px 0px 0px 5px":(i == row_end*7 + line_end)?"0px 5px 5px 0px / 0px 5px 5px 5px":r;
 
         const label = $("<div>").attr({
           role:"button",
@@ -424,7 +424,7 @@ function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
                 "width":label_width +"px",
                 "height":label_height + "px",
                 "z-index":"101",
-                //"border-radius": r+"px",
+                "border-radius": r,
                 "background-color": entry["color"],
                 "border-color": entry["color"],
                 "pointer-events": "auto"
@@ -437,7 +437,6 @@ function makeMonthLabel(row_start,line_start,row_end,line_end,entry){
                       });
     return labels;
 }
-
 // カレンダー生成（引数は前月や翌月移動に備えてのもの）
 function makeCalendar(yy, mm) {
   var yy, mm;
